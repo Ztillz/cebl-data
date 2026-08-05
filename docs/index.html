@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>CEBL Synergy Browser</title>
+
+    <link
+        rel="stylesheet"
+        href="css/styles.css"
+    >
+</head>
+
+<body>
+
+    <header class="site-header">
+
+        <div class="site-header__inner">
+
+            <div>
+                <div class="eyebrow">
+                    CEBL DATA
+                </div>
+
+                <h1>
+                    Synergy Browser
+                </h1>
+
+                <p
+                    id="seasonLabel"
+                    class="season-label"
+                >
+                    Loading data...
+                </p>
+            </div>
+
+            <div
+                id="dataStatus"
+                class="data-status"
+            >
+                Loading
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main class="page-shell">
+
+        <!-- ===================================================
+             MAIN NAVIGATION
+        ==================================================== -->
+
+        <div class="view-tabs">
+
+            <button
+                class="view-tab active"
+                data-view="players"
+                type="button"
+            >
+                Players
+            </button>
+
+            <button
+                class="view-tab"
+                data-view="teams"
+                type="button"
+            >
+                Team Cumulative Box
+            </button>
+
+        </div>
+
+
+        <!-- ===================================================
+             PLAYER VIEW
+        ==================================================== -->
+
+        <section
+            id="playersView"
+            class="main-view active"
+        >
+
+            <div class="browser-layout">
+
+                <!-- ===========================================
+                     PLAYER SIDEBAR
+                ============================================ -->
+
+                <aside class="sidebar">
+
+                    <div class="sidebar-header">
+
+                        <h2>
+                            Players
+                        </h2>
+
+                        <span
+                            id="playerCount"
+                            class="count-badge"
+                        >
+                            0
+                        </span>
+
+                    </div>
+
+
+                    <div class="filter-stack">
+
+                        <input
+                            id="playerSearch"
+                            class="control"
+                            type="search"
+                            placeholder="Search player..."
+                        >
+
+                        <select
+                            id="playerTeamFilter"
+                            class="control"
+                        >
+                            <option value="">
+                                All teams
+                            </option>
+                        </select>
+
+                    </div>
+
+
+                    <div
+                        id="playerList"
+                        class="entity-list"
+                    ></div>
+
+                </aside>
+
+
+                <!-- ===========================================
+                     PLAYER CONTENT
+                ============================================ -->
+
+                <section class="content-panel">
+
+                    <div
+                        id="playerEmptyState"
+                        class="empty-state"
+                    >
+                        <div class="empty-state__icon">
+                            P
+                        </div>
+
+                        <h2>
+                            Select a player
+                        </h2>
+
+                        <p>
+                            Choose a player from the list to browse their
+                            Synergy Play Types and Shot Types.
+                        </p>
+                    </div>
+
+
+                    <div
+                        id="playerContent"
+                        class="hidden"
+                    >
+
+                        <div class="entity-header">
+
+                            <div>
+
+                                <div class="eyebrow">
+                                    PLAYER REPORT
+                                </div>
+
+                                <h2
+                                    id="selectedPlayerName"
+                                    class="entity-title"
+                                ></h2>
+
+                                <div
+                                    id="selectedPlayerTeam"
+                                    class="entity-subtitle"
+                                ></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- REPORT TYPE -->
+
+                        <div class="toolbar">
+
+                            <div class="segmented-control">
+
+                                <button
+                                    class="report-button active"
+                                    data-report="play_types"
+                                    type="button"
+                                >
+                                    Play Types
+                                </button>
+
+                                <button
+                                    class="report-button"
+                                    data-report="shot_types"
+                                    type="button"
+                                >
+                                    Shot Types
+                                </button>
+
+                            </div>
+
+
+                            <div class="segmented-control">
+
+                                <button
+                                    class="side-button active"
+                                    data-side="offense"
+                                    type="button"
+                                >
+                                    Offense
+                                </button>
+
+                                <button
+                                    class="side-button"
+                                    data-side="defense"
+                                    type="button"
+                                >
+                                    Defense
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div
+                            id="playerLoading"
+                            class="loading-box hidden"
+                        >
+                            Loading player report...
+                        </div>
+
+
+                        <div
+                            id="playerTables"
+                            class="tables-container"
+                        ></div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </section>
+
+
+        <!-- ===================================================
+             TEAM VIEW
+        ==================================================== -->
+
+        <section
+            id="teamsView"
+            class="main-view"
+        >
+
+            <div class="team-toolbar">
+
+                <div>
+
+                    <div class="eyebrow">
+                        TEAM REPORT
+                    </div>
+
+                    <h2>
+                        Cumulative Box
+                    </h2>
+
+                </div>
+
+
+                <select
+                    id="teamSelect"
+                    class="control team-select"
+                >
+                    <option value="">
+                        Select team...
+                    </option>
+                </select>
+
+            </div>
+
+
+            <div
+                id="teamEmptyState"
+                class="empty-state team-empty-state"
+            >
+
+                <div class="empty-state__icon">
+                    T
+                </div>
+
+                <h2>
+                    Select a team
+                </h2>
+
+                <p>
+                    Browse the complete Synergy Cumulative Box for a CEBL team.
+                </p>
+
+            </div>
+
+
+            <div
+                id="teamContent"
+                class="hidden"
+            >
+
+                <div class="entity-header">
+
+                    <div>
+
+                        <div class="eyebrow">
+                            CUMULATIVE BOX
+                        </div>
+
+                        <h2
+                            id="selectedTeamName"
+                            class="entity-title"
+                        ></h2>
+
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="teamLoading"
+                    class="loading-box hidden"
+                >
+                    Loading team report...
+                </div>
+
+
+                <div
+                    id="teamTable"
+                    class="tables-container"
+                ></div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script
+        src="js/app.js"
+    ></script>
+
+</body>
+</html>

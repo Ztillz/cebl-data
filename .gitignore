@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+.venv/
+venv/
+
+# Environment / secrets
+.env
+.env.*
+
+# Local Synergy browser/login session
+.local/
+
+# Raw API captures
+data/raw/
+data/processed/
+
+docs/data/raw/
+docs/data/processed/
+
+# Debug files
+failed_*.png
+*.log
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+
+# VS Code local config
+.vscode/
+
+# Temporary exports
+tmp/
+temp/

@@ -1,0 +1,46 @@
+﻿PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,LEVEL_4,POSS,%TIME,PPP,TS%,TO%,%FT,3FG ATT,3 FG%,PPP RATING,PPP RANK,FG%,%TIME RANK,FG ATT,EFG%,%SF,SSQ,PPS,FG MADE,FG MISS,SSM,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,PTS
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Play types,P&R Ball Handler,1,,P&R Ball Handler,P&R Ball Handler,,,,1,100.0,1.0,56.8,0.0,100.0,0,,,,,,0,,0.0,,,0,0,,1,,100.0,0,0,0,,0,0,,1
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Play types,P&R Ball Handler - Overall,2,P&R Ball Handler,P&R Ball Handler > P&R Ball Handler - Overall,P&R Ball Handler,P&R Ball Handler - Overall,,,1,100.0,1.0,56.8,0.0,100.0,0,,,,,,0,,0.0,,,0,0,,1,,100.0,0,0,0,,0,0,,1
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Play types,High P&R,2,P&R Ball Handler,P&R Ball Handler > High P&R,P&R Ball Handler,High P&R,,,1,100.0,1.0,56.8,0.0,100.0,0,,,,,,0,,0.0,,,0,0,,1,,100.0,0,0,0,,0,0,,1
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Play types,Dribble Off Pick,3,High P&R,P&R Ball Handler > High P&R > Dribble Off Pick,P&R Ball Handler,High P&R,Dribble Off Pick,,1,100.0,1.0,56.8,0.0,100.0,0,,,,,,0,,0.0,,,0,0,,1,,100.0,0,0,0,,0,0,,1
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Play types,Foul,4,Dribble Off Pick,P&R Ball Handler > High P&R > Dribble Off Pick > Foul,P&R Ball Handler,High P&R,Dribble Off Pick,Foul,1,100.0,1.0,56.8,0.0,100.0,0,,,,,,0,,0.0,,,0,0,,1,,100.0,0,0,0,,0,0,,1
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Play types,Spot Up,1,,Spot Up,Spot Up,,,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Play types,Transition,1,,Transition,Transition,,,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Play types,Isolation,1,,Isolation,Isolation,,,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Play types,P&R Roll Man,1,,P&R Roll Man,P&R Roll Man,,,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Play types,Cut,1,,Cut,Cut,,,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Play types,Handoffs,1,,Handoffs,Handoffs,,,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Play types,Offensive Rebounds (Put Backs),1,,Offensive Rebounds (Put Backs),Offensive Rebounds (Put Backs),,,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Play types,Post-Up,1,,Post-Up,Post-Up,,,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Play types,Off Screen,1,,Off Screen,Off Screen,,,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Play types,Miscellaneous Plays,1,,Miscellaneous Plays,Miscellaneous Plays,,,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Overall Drive Direction,Overall,1,,Overall,Overall,,,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Overall Drive Direction,Drives Left,2,Overall,Overall > Drives Left,Overall,Drives Left,,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Overall Drive Direction,To Basket,3,Drives Left,Overall > Drives Left > To Basket,Overall,Drives Left,To Basket,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Overall Drive Direction,Turnover,3,Drives Left,Overall > Drives Left > Turnover,Overall,Drives Left,Turnover,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Overall Drive Direction,Dribble Jumper,3,Drives Left,Overall > Drives Left > Dribble Jumper,Overall,Drives Left,Dribble Jumper,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Overall Drive Direction,Foul,3,Drives Left,Overall > Drives Left > Foul,Overall,Drives Left,Foul,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Overall Drive Direction,Defense Commits,3,Drives Left,Overall > Drives Left > Defense Commits,Overall,Drives Left,Defense Commits,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Overall Drive Direction,Drives Right,2,Overall,Overall > Drives Right,Overall,Drives Right,,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Overall Drive Direction,To Basket,3,Drives Right,Overall > Drives Right > To Basket,Overall,Drives Right,To Basket,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Overall Drive Direction,Turnover,3,Drives Right,Overall > Drives Right > Turnover,Overall,Drives Right,Turnover,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Overall Drive Direction,Dribble Jumper,3,Drives Right,Overall > Drives Right > Dribble Jumper,Overall,Drives Right,Dribble Jumper,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Overall Drive Direction,Foul,3,Drives Right,Overall > Drives Right > Foul,Overall,Drives Right,Foul,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Overall Drive Direction,Defense Commits,3,Drives Right,Overall > Drives Right > Defense Commits,Overall,Drives Right,Defense Commits,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Overall Drive Direction,Drives Straight,2,Overall,Overall > Drives Straight,Overall,Drives Straight,,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Overall Drive Direction,To Basket,3,Drives Straight,Overall > Drives Straight > To Basket,Overall,Drives Straight,To Basket,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Overall Drive Direction,Turnover,3,Drives Straight,Overall > Drives Straight > Turnover,Overall,Drives Straight,Turnover,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Overall Drive Direction,Dribble Jumper,3,Drives Straight,Overall > Drives Straight > Dribble Jumper,Overall,Drives Straight,Dribble Jumper,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Overall Drive Direction,Foul,3,Drives Straight,Overall > Drives Straight > Foul,Overall,Drives Straight,Foul,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Overall Drive Direction,Defense Commits,3,Drives Straight,Overall > Drives Straight > Defense Commits,Overall,Drives Straight,Defense Commits,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,P&R ball handler,P&R Including Passes,1,,P&R Including Passes,P&R Including Passes,,,,1,100.0,1.0,56.8,0.0,100.0,0,,,,,,0,,0.0,,,0,0,,1,,100.0,0,0,0,,0,0,,1
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,P&R ball handler,High P&R,2,P&R Including Passes,P&R Including Passes > High P&R,P&R Including Passes,High P&R,,,1,100.0,1.0,56.8,0.0,100.0,0,,,,,,0,,0.0,,,0,0,,1,,100.0,0,0,0,,0,0,,1
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,P&R ball handler,Dribble Off Pick,3,High P&R,P&R Including Passes > High P&R > Dribble Off Pick,P&R Including Passes,High P&R,Dribble Off Pick,,1,100.0,1.0,56.8,0.0,100.0,0,,,,,,0,,0.0,,,0,0,,1,,100.0,0,0,0,,0,0,,1
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,P&R ball handler,Foul,4,Dribble Off Pick,P&R Including Passes > High P&R > Dribble Off Pick > Foul,P&R Including Passes,High P&R,Dribble Off Pick,Foul,1,100.0,1.0,56.8,0.0,100.0,0,,,,,,0,,0.0,,,0,0,,1,,100.0,0,0,0,,0,0,,1
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,P&R ball handler,P&R BH - Defense Commits,1,,P&R BH - Defense Commits,P&R BH - Defense Commits,,,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,P&R ball handler,P&R BH - Traps,1,,P&R BH - Traps,P&R BH - Traps,,,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Isolation,ISO Including Passes,1,,ISO Including Passes,ISO Including Passes,,,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Isolation,ISO - Defense Commits,1,,ISO - Defense Commits,ISO - Defense Commits,,,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Post up,Post-Ups Including Passes,1,,Post-Ups Including Passes,Post-Ups Including Passes,,,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Post up,Post-Up - Defense Commits,1,,Post-Up - Defense Commits,Post-Up - Defense Commits,,,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0
+Lansana Nwosu,Montréal Alliance,2026-2027,defense,Post up,Post-Up - Hard Double,1,,Post-Up - Hard Double,Post-Up - Hard Double,,,,0,0.0,,,,,0,,,,,,0,,,,,0,0,,0,,,0,0,0,,0,0,,0

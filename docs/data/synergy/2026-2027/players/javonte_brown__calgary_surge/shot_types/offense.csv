@@ -1,0 +1,20 @@
+﻿PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Javonté Brown,Calgary Surge,2026-2027,offense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,120.0,0.0,,72.5,100.0,,Excellent,178.0,120.0,1.45,87.0,33.0,72.5,99.0,,,72.6,123.0,0.05,72.5,120.0,87.0,33.0,72.5,0.0,0.0,0.0,5.0
+Javonté Brown,Calgary Surge,2026-2027,offense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,4.0,0.0,,0.0,3.3,,,0.0,4.0,0.0,0.0,4.0,0.0,,,,0.0,4.0,0.0,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0,0.0
+Javonté Brown,Calgary Surge,2026-2027,offense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,0.0,0.0,,,0.0,,,0.0,0.0,,0.0,0.0,,,,,,0.0,,,0.0,0.0,0.0,,0.0,0.0,,
+Javonté Brown,Calgary Surge,2026-2027,offense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,0.0,0.0,,,0.0,,,0.0,0.0,,0.0,0.0,,,,,,0.0,,,0.0,0.0,0.0,,0.0,0.0,,
+Javonté Brown,Calgary Surge,2026-2027,offense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,0.0,0.0,,,0.0,,,0.0,0.0,,0.0,0.0,,,,,,0.0,,,0.0,0.0,0.0,,0.0,0.0,,
+Javonté Brown,Calgary Surge,2026-2027,offense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,0.0,0.0,,,0.0,,,0.0,0.0,,0.0,0.0,,,,,,0.0,,,0.0,0.0,0.0,,0.0,0.0,,
+Javonté Brown,Calgary Surge,2026-2027,offense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,0.0,0.0,,,0.0,,,0.0,0.0,,0.0,0.0,,,,,,0.0,,,0.0,0.0,0.0,,0.0,0.0,,
+Javonté Brown,Calgary Surge,2026-2027,offense,Shot types,Runner,1,,Runner,Runner,,,3.0,0.0,,33.3,2.5,,,2.0,3.0,0.67,1.0,2.0,33.3,,,,33.3,3.0,0.0,33.3,3.0,1.0,2.0,33.3,0.0,0.0,0.0,0.0
+Javonté Brown,Calgary Surge,2026-2027,offense,Shot types,Hook,1,,Hook,Hook,,,6.0,0.0,,0.0,5.0,,,0.0,6.0,0.0,0.0,6.0,0.0,,,,0.0,6.0,0.0,0.0,6.0,0.0,6.0,0.0,0.0,0.0,0.0,0.0
+Javonté Brown,Calgary Surge,2026-2027,offense,Shot types,At Rim,1,,At Rim,At Rim,,,107.0,0.0,,80.4,89.2,97.0,Excellent,176.0,107.0,1.61,86.0,21.0,80.4,97.0,,,80.3,110.0,0.06,80.4,107.0,86.0,21.0,80.4,0.0,0.0,0.0,5.6
+Javonté Brown,Calgary Surge,2026-2027,offense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,56.0,0.0,,73.2,52.3,1.0,Excellent,86.0,56.0,1.46,41.0,15.0,73.2,91.0,,,73.3,59.0,0.11,73.2,56.0,41.0,15.0,73.2,0.0,0.0,0.0,10.7
+Javonté Brown,Calgary Surge,2026-2027,offense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,45.0,0.0,,97.8,42.1,93.0,Very Good,88.0,45.0,1.96,44.0,1.0,97.8,83.0,,,97.8,45.0,0.0,97.8,45.0,44.0,1.0,97.8,0.0,0.0,0.0,0.0
+Javonté Brown,Calgary Surge,2026-2027,offense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,6.0,0.0,,16.7,5.6,,,2.0,6.0,0.33,1.0,5.0,16.7,,,,16.7,6.0,0.0,16.7,6.0,1.0,5.0,16.7,0.0,0.0,0.0,0.0
+Javonté Brown,Calgary Surge,2026-2027,offense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,4.0,0.0,,0.0,100.0,,,0.0,4.0,0.0,0.0,4.0,0.0,,,,0.0,4.0,0.0,0.0,4.0,0.0,4.0,0.0,0.0,0.0,0.0,0.0
+Javonté Brown,Calgary Surge,2026-2027,offense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,0.0,0.0,,,0.0,,,0.0,0.0,,0.0,0.0,,,,,,0.0,,,0.0,0.0,0.0,,0.0,0.0,,
+Javonté Brown,Calgary Surge,2026-2027,offense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,0.0,0.0,,,0.0,,,0.0,0.0,,0.0,0.0,,,,,,0.0,,,0.0,0.0,0.0,,0.0,0.0,,
+Javonté Brown,Calgary Surge,2026-2027,offense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Javonté Brown,Calgary Surge,2026-2027,offense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Javonté Brown,Calgary Surge,2026-2027,offense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
