@@ -787,3 +787,64 @@ button {
     }
 
 }
+
+/* ============================================================
+   SORTABLE TEAM TABLE HEADERS
+============================================================ */
+
+.sortable-team-table th {
+    padding: 0;
+}
+
+.sortable-header-button {
+    width: 100%;
+    min-height: 34px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    gap: 6px;
+
+    padding: 8px 9px;
+
+    border: 0;
+
+    background: transparent;
+    color: inherit;
+
+    font-size: inherit;
+    font-weight: inherit;
+
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.sortable-team-table th:first-child
+.sortable-header-button {
+    justify-content: flex-start;
+}
+
+.sortable-header-button:hover {
+    background: #e5e9ee;
+}
+
+.sortable-header-button.active {
+    background: #e2e7ec;
+    color: var(--text);
+}
+
+.sort-symbol {
+    min-width: 10px;
+
+    color: #9aa4b0;
+
+    font-size: 11px;
+    text-align: center;
+}
+
+.sortable-header-button.active
+.sort-symbol {
+    color: var(--text);
+    font-weight: 900;
+}

@@ -8,7 +8,10 @@ let selectedReport = "play_types";
 let selectedSide = "offense";
 
 let selectedTeam = null;
-
+let teamSortState = {
+    column: null,
+    direction: null
+};
 
 /* ============================================================
    DOM
@@ -857,6 +860,11 @@ teamSelect.addEventListener(
         const key =
             teamSelect.value;
 
+        teamSortState = {
+            column: null,
+            direction: null
+        };
+
 
         // ====================================================
         // NOTHING SELECTED
@@ -977,6 +985,228 @@ async function loadTeamReport() {
 /* ============================================================
    TEAM TABLE
 ============================================================ */
+/* ============================================================
+   TEAM TABLE SORTING
+============================================================ */
+
+function cycleTeamSort(column) {
+    // First click:
+    // highest -> lowest
+    if (
+        teamSortState.column !== column ||
+        teamSortState.direction === null
+    ) {
+        teamSortState = {
+            column,
+            direction: "desc"
+        };
+
+        return;
+    }
+
+    // Second click:
+    // lowest -> highest
+    if (
+        teamSortState.direction === "desc"
+    ) {
+        teamSortState = {
+            column,
+            direction: "asc"
+        };
+
+        return;
+    }
+
+    // Third click:
+    // reset to original Synergy order
+    teamSortState = {
+        column: null,
+        direction: null
+    };
+}
+
+
+function getSortableValue(value) {
+    if (
+        value === null ||
+        value === undefined ||
+        value === "" ||
+        value === "-" ||
+        value === "—"
+    ) {
+        return null;
+    }
+
+    if (
+        typeof value === "number"
+    ) {
+        return value;
+    }
+
+    const text =
+        String(value).trim();
+
+    const numericText =
+        text
+            .replaceAll(",", "")
+            .replace("%", "")
+            .trim();
+
+    if (
+        numericText !== "" &&
+        !Number.isNaN(
+            Number(numericText)
+        )
+    ) {
+        return Number(
+            numericText
+        );
+    }
+
+    return text.toLowerCase();
+}
+
+
+function sortTeamRecords(
+    records,
+    column,
+    direction
+) {
+    if (
+        !column ||
+        !direction
+    ) {
+        return [
+            ...records
+        ];
+    }
+
+    return records
+        .map(
+            (record, index) => ({
+                record,
+                originalIndex: index
+            })
+        )
+        .sort(
+            (a, b) => {
+                const aValue =
+                    getSortableValue(
+                        a.record[column]
+                    );
+
+                const bValue =
+                    getSortableValue(
+                        b.record[column]
+                    );
+
+
+                // --------------------------------------------
+                // Missing values always go to the bottom.
+                // --------------------------------------------
+
+                if (
+                    aValue === null &&
+                    bValue === null
+                ) {
+                    return (
+                        a.originalIndex -
+                        b.originalIndex
+                    );
+                }
+
+                if (
+                    aValue === null
+                ) {
+                    return 1;
+                }
+
+                if (
+                    bValue === null
+                ) {
+                    return -1;
+                }
+
+
+                // --------------------------------------------
+                // Numeric comparison
+                // --------------------------------------------
+
+                if (
+                    typeof aValue === "number" &&
+                    typeof bValue === "number"
+                ) {
+                    if (
+                        aValue === bValue
+                    ) {
+                        return (
+                            a.originalIndex -
+                            b.originalIndex
+                        );
+                    }
+
+                    return (
+                        direction === "desc"
+                            ? bValue - aValue
+                            : aValue - bValue
+                    );
+                }
+
+
+                // --------------------------------------------
+                // Text comparison
+                // --------------------------------------------
+
+                const comparison =
+                    String(aValue)
+                        .localeCompare(
+                            String(bValue)
+                        );
+
+                if (
+                    comparison === 0
+                ) {
+                    return (
+                        a.originalIndex -
+                        b.originalIndex
+                    );
+                }
+
+                return (
+                    direction === "desc"
+                        ? -comparison
+                        : comparison
+                );
+            }
+        )
+        .map(
+            item =>
+                item.record
+        );
+}
+
+
+function getTeamSortSymbol(column) {
+    if (
+        teamSortState.column !== column
+    ) {
+        return "↕";
+    }
+
+    if (
+        teamSortState.direction === "desc"
+    ) {
+        return "↓";
+    }
+
+    if (
+        teamSortState.direction === "asc"
+    ) {
+        return "↑";
+    }
+
+    return "↕";
+}
 
 function renderTeamTable(records) {
     teamTable.innerHTML = "";
@@ -999,15 +1229,9 @@ function renderTeamTable(records) {
         selectedTeam?.allTeams === true;
 
 
-    // ========================================================
-    // COLUMNS
-    //
-    // For individual teams:
-    // TEAM is redundant, so hide it.
-    //
-    // For All Teams:
-    // TEAM becomes one of the most important columns.
-    // ========================================================
+    /* ========================================================
+       COLUMNS
+    ======================================================== */
 
     const excluded =
         new Set(
@@ -1038,10 +1262,6 @@ function renderTeamTable(records) {
             )
     );
 
-
-    // ========================================================
-    // COLUMN ORDER
-    // ========================================================
 
     const preferred =
         isAllTeams
@@ -1109,9 +1329,21 @@ function renderTeamTable(records) {
     ];
 
 
-    // ========================================================
-    // BLOCK
-    // ========================================================
+    /* ========================================================
+       APPLY CURRENT SORT
+    ======================================================== */
+
+    const displayedRecords =
+        sortTeamRecords(
+            records,
+            teamSortState.column,
+            teamSortState.direction
+        );
+
+
+    /* ========================================================
+       BLOCK
+    ======================================================== */
 
     const block =
         document.createElement(
@@ -1122,9 +1354,9 @@ function renderTeamTable(records) {
         "report-table-block team-table";
 
 
-    // ========================================================
-    // HEADER
-    // ========================================================
+    /* ========================================================
+       HEADER
+    ======================================================== */
 
     const header =
         document.createElement(
@@ -1184,9 +1416,12 @@ function renderTeamTable(records) {
     downloadButton.addEventListener(
         "click",
         () => {
-
+            /*
+             * Download the table in the same order
+             * currently displayed on screen.
+             */
             downloadTeamTableCsv(
-                records
+                displayedRecords
             );
         }
     );
@@ -1215,9 +1450,9 @@ function renderTeamTable(records) {
     );
 
 
-    // ========================================================
-    // TABLE
-    // ========================================================
+    /* ========================================================
+       TABLE
+    ======================================================== */
 
     const wrapper =
         document.createElement(
@@ -1234,8 +1469,12 @@ function renderTeamTable(records) {
         );
 
     table.className =
-        "data-table";
+        "data-table sortable-team-table";
 
+
+    /* ========================================================
+       TABLE HEADER
+    ======================================================== */
 
     const thead =
         document.createElement(
@@ -1250,14 +1489,82 @@ function renderTeamTable(records) {
 
     columns.forEach(
         column => {
-
             const th =
                 document.createElement(
                     "th"
                 );
 
-            th.textContent =
+
+            const button =
+                document.createElement(
+                    "button"
+                );
+
+            button.type =
+                "button";
+
+            button.className =
+                "sortable-header-button";
+
+
+            if (
+                teamSortState.column === column
+            ) {
+                button.classList.add(
+                    "active"
+                );
+            }
+
+
+            const label =
+                document.createElement(
+                    "span"
+                );
+
+            label.textContent =
                 column;
+
+
+            const sortSymbol =
+                document.createElement(
+                    "span"
+                );
+
+            sortSymbol.className =
+                "sort-symbol";
+
+            sortSymbol.textContent =
+                getTeamSortSymbol(
+                    column
+                );
+
+
+            button.appendChild(
+                label
+            );
+
+            button.appendChild(
+                sortSymbol
+            );
+
+
+            button.addEventListener(
+                "click",
+                () => {
+                    cycleTeamSort(
+                        column
+                    );
+
+                    renderTeamTable(
+                        records
+                    );
+                }
+            );
+
+
+            th.appendChild(
+                button
+            );
 
             headerRow.appendChild(
                 th
@@ -1275,15 +1582,18 @@ function renderTeamTable(records) {
     );
 
 
+    /* ========================================================
+       TABLE BODY
+    ======================================================== */
+
     const tbody =
         document.createElement(
             "tbody"
         );
 
 
-    records.forEach(
+    displayedRecords.forEach(
         record => {
-
             const tr =
                 document.createElement(
                     "tr"
@@ -1292,7 +1602,6 @@ function renderTeamTable(records) {
 
             columns.forEach(
                 column => {
-
                     const td =
                         document.createElement(
                             "td"
