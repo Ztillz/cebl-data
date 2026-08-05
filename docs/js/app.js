@@ -801,19 +801,51 @@ function collapseTreeRow(
 ============================================================ */
 
 function populateTeamSelect() {
+    // ========================================================
+    // ALL TEAMS
+    // ========================================================
+
+    const allTeamsOption =
+        document.createElement("option");
+
+    allTeamsOption.value =
+        "__all__";
+
+    allTeamsOption.textContent =
+        "All Teams";
+
+    teamSelect.appendChild(
+        allTeamsOption
+    );
+
+
+    // ========================================================
+    // INDIVIDUAL TEAMS
+    // ========================================================
+
     manifest.teams
         .slice()
         .sort((a, b) =>
-            a.team.localeCompare(b.team)
+            a.team.localeCompare(
+                b.team
+            )
         )
         .forEach(team => {
+
             const option =
-                document.createElement("option");
+                document.createElement(
+                    "option"
+                );
 
-            option.value = team.key;
-            option.textContent = team.team;
+            option.value =
+                team.key;
 
-            teamSelect.appendChild(option);
+            option.textContent =
+                team.team;
+
+            teamSelect.appendChild(
+                option
+            );
         });
 }
 
@@ -821,14 +853,20 @@ function populateTeamSelect() {
 teamSelect.addEventListener(
     "change",
     async () => {
-        const key = teamSelect.value;
 
-        selectedTeam =
-            manifest.teams.find(
-                team => team.key === key
-            ) || null;
+        const key =
+            teamSelect.value;
 
-        if (!selectedTeam) {
+
+        // ====================================================
+        // NOTHING SELECTED
+        // ====================================================
+
+        if (!key) {
+
+            selectedTeam =
+                null;
+
             teamEmptyState.classList.remove(
                 "hidden"
             );
@@ -839,6 +877,61 @@ teamSelect.addEventListener(
 
             return;
         }
+
+
+        // ====================================================
+        // ALL TEAMS
+        // ====================================================
+
+        if (
+            key === "__all__"
+        ) {
+
+            selectedTeam = {
+                key:
+                    "__all__",
+
+                team:
+                    "All Teams",
+
+                allTeams:
+                    true,
+
+                cumulative_box:
+                    manifest.combined[
+                        "team_cumulative_box.json"
+                    ]
+            };
+
+        }
+
+        // ====================================================
+        // INDIVIDUAL TEAM
+        // ====================================================
+
+        else {
+
+            selectedTeam =
+                manifest.teams.find(
+                    team =>
+                        team.key === key
+                ) || null;
+        }
+
+
+        if (!selectedTeam) {
+
+            teamEmptyState.classList.remove(
+                "hidden"
+            );
+
+            teamContent.classList.add(
+                "hidden"
+            );
+
+            return;
+        }
+
 
         await loadTeamReport();
     }
@@ -901,103 +994,183 @@ function renderTeamTable(records) {
         return;
     }
 
-    const excluded = new Set([
-        "TEAM",
-        "SEASON"
-    ]);
+
+    const isAllTeams =
+        selectedTeam?.allTeams === true;
+
+
+    // ========================================================
+    // COLUMNS
+    //
+    // For individual teams:
+    // TEAM is redundant, so hide it.
+    //
+    // For All Teams:
+    // TEAM becomes one of the most important columns.
+    // ========================================================
+
+    const excluded =
+        new Set(
+            isAllTeams
+                ? [
+                    "SEASON"
+                ]
+                : [
+                    "TEAM",
+                    "SEASON"
+                ]
+        );
+
 
     const allColumns = [
         ...new Set(
             records.flatMap(
                 record =>
-                    Object.keys(record)
+                    Object.keys(
+                        record
+                    )
             )
         )
     ].filter(
         column =>
-            !excluded.has(column)
+            !excluded.has(
+                column
+            )
     );
 
-    const preferred = [
-        "PLAYER",
-        "GP",
-        "POSS",
-        "PTS",
-        "PPP",
-        "TS%",
-        "FG%",
-        "EFG%",
-        "3 FG%",
-        "AST",
-        "AST/TO",
-        "TO",
-        "TO%",
-        "TOT REB",
-        "OFF REB",
-        "DEF REB",
-        "STL",
-        "BLK",
-        "GM SCORE",
-        "OFFENSIVE ROLE"
-    ];
+
+    // ========================================================
+    // COLUMN ORDER
+    // ========================================================
+
+    const preferred =
+        isAllTeams
+            ? [
+                "TEAM",
+                "PLAYER",
+                "GP",
+                "POSS",
+                "PTS",
+                "PPP",
+                "TS%",
+                "FG%",
+                "EFG%",
+                "3 FG%",
+                "AST",
+                "AST/TO",
+                "TO",
+                "TO%",
+                "TOT REB",
+                "OFF REB",
+                "DEF REB",
+                "STL",
+                "BLK",
+                "GM SCORE",
+                "OFFENSIVE ROLE"
+            ]
+            : [
+                "PLAYER",
+                "GP",
+                "POSS",
+                "PTS",
+                "PPP",
+                "TS%",
+                "FG%",
+                "EFG%",
+                "3 FG%",
+                "AST",
+                "AST/TO",
+                "TO",
+                "TO%",
+                "TOT REB",
+                "OFF REB",
+                "DEF REB",
+                "STL",
+                "BLK",
+                "GM SCORE",
+                "OFFENSIVE ROLE"
+            ];
+
 
     const columns = [
         ...preferred.filter(
             column =>
-                allColumns.includes(column)
+                allColumns.includes(
+                    column
+                )
         ),
 
         ...allColumns.filter(
             column =>
-                !preferred.includes(column)
+                !preferred.includes(
+                    column
+                )
         )
     ];
 
 
+    // ========================================================
+    // BLOCK
+    // ========================================================
+
     const block =
-        document.createElement("section");
+        document.createElement(
+            "section"
+        );
 
     block.className =
         "report-table-block team-table";
 
 
-    /* ========================================================
-       HEADER
-    ======================================================== */
+    // ========================================================
+    // HEADER
+    // ========================================================
 
     const header =
-        document.createElement("div");
+        document.createElement(
+            "div"
+        );
 
     header.className =
         "report-table-title";
 
 
     const title =
-        document.createElement("span");
+        document.createElement(
+            "span"
+        );
 
     title.textContent =
         selectedTeam.team;
 
 
     const actions =
-        document.createElement("div");
+        document.createElement(
+            "div"
+        );
 
     actions.className =
         "report-table-title-actions";
 
 
     const count =
-        document.createElement("span");
+        document.createElement(
+            "span"
+        );
 
     count.className =
         "report-table-count";
 
     count.textContent =
-        `${records.length} players`;
+        isAllTeams
+            ? `${records.length} player rows`
+            : `${records.length} players`;
 
 
     const downloadButton =
-        document.createElement("button");
+        document.createElement(
+            "button"
+        );
 
     downloadButton.type =
         "button";
@@ -1011,6 +1184,7 @@ function renderTeamTable(records) {
     downloadButton.addEventListener(
         "click",
         () => {
+
             downloadTeamTableCsv(
                 records
             );
@@ -1041,42 +1215,55 @@ function renderTeamTable(records) {
     );
 
 
-    /* ========================================================
-       TABLE
-    ======================================================== */
+    // ========================================================
+    // TABLE
+    // ========================================================
 
     const wrapper =
-        document.createElement("div");
+        document.createElement(
+            "div"
+        );
 
     wrapper.className =
         "table-scroll";
 
 
     const table =
-        document.createElement("table");
+        document.createElement(
+            "table"
+        );
 
     table.className =
         "data-table";
 
 
     const thead =
-        document.createElement("thead");
+        document.createElement(
+            "thead"
+        );
 
     const headerRow =
-        document.createElement("tr");
-
-
-    columns.forEach(column => {
-        const th =
-            document.createElement("th");
-
-        th.textContent =
-            column;
-
-        headerRow.appendChild(
-            th
+        document.createElement(
+            "tr"
         );
-    });
+
+
+    columns.forEach(
+        column => {
+
+            const th =
+                document.createElement(
+                    "th"
+                );
+
+            th.textContent =
+                column;
+
+            headerRow.appendChild(
+                th
+            );
+        }
+    );
 
 
     thead.appendChild(
@@ -1089,34 +1276,48 @@ function renderTeamTable(records) {
 
 
     const tbody =
-        document.createElement("tbody");
+        document.createElement(
+            "tbody"
+        );
 
 
-    records.forEach(record => {
-        const tr =
-            document.createElement("tr");
+    records.forEach(
+        record => {
 
-
-        columns.forEach(column => {
-            const td =
-                document.createElement("td");
-
-            td.textContent =
-                formatValue(
-                    record[column],
-                    column
+            const tr =
+                document.createElement(
+                    "tr"
                 );
 
-            tr.appendChild(
-                td
+
+            columns.forEach(
+                column => {
+
+                    const td =
+                        document.createElement(
+                            "td"
+                        );
+
+                    td.textContent =
+                        formatValue(
+                            record[
+                                column
+                            ],
+                            column
+                        );
+
+                    tr.appendChild(
+                        td
+                    );
+                }
             );
-        });
 
 
-        tbody.appendChild(
-            tr
-        );
-    });
+            tbody.appendChild(
+                tr
+            );
+        }
+    );
 
 
     table.appendChild(
