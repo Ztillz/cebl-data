@@ -848,3 +848,141 @@ button {
     color: var(--text);
     font-weight: 900;
 }
+
+/* ============================================================
+   CUMULATIVE BOX FILTERS
+============================================================ */
+
+.team-filter-bar {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    padding: 12px 14px;
+
+    border-top: 1px solid var(--border);
+    border-bottom: 1px solid var(--border);
+
+    background: #f7f8fa;
+}
+
+.team-filter-title {
+    align-self: center;
+
+    margin-right: 4px;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    white-space: nowrap;
+}
+
+.team-filter-field {
+    display: flex;
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+.team-filter-field > span {
+    color: var(--muted);
+
+    font-size: 10px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.team-filter-select,
+.team-filter-input {
+    height: 34px;
+
+    padding: 0 9px;
+
+    border: 1px solid var(--border-dark);
+    border-radius: 6px;
+
+    background: white;
+    color: var(--text);
+
+    font: inherit;
+    font-size: 12px;
+}
+
+.team-filter-select {
+    min-width: 145px;
+}
+
+.team-filter-input {
+    width: 115px;
+}
+
+.team-filter-actions {
+    display: flex;
+    align-items: center;
+
+    gap: 7px;
+}
+
+.team-filter-button {
+    height: 34px;
+
+    padding: 0 12px;
+
+    border: 1px solid var(--border-dark);
+    border-radius: 6px;
+
+    background: white;
+    color: var(--text);
+
+    font-size: 11px;
+    font-weight: 800;
+
+    cursor: pointer;
+}
+
+.team-filter-button:hover {
+    background: #e9edf2;
+}
+
+.team-filter-button.primary {
+    border-color: var(--text);
+
+    background: var(--text);
+    color: white;
+}
+
+.team-filter-button.primary:hover {
+    opacity: 0.88;
+}
+
+.team-filter-empty {
+    padding: 34px 16px;
+
+    color: var(--muted);
+
+    font-size: 13px;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .team-filter-bar {
+        align-items: stretch;
+    }
+
+    .team-filter-title {
+        width: 100%;
+    }
+
+    .team-filter-field {
+        flex: 1 1 130px;
+    }
+
+    .team-filter-select,
+    .team-filter-input {
+        width: 100%;
+        min-width: 0;
+    }
+}

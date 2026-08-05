@@ -13,6 +13,12 @@ let teamSortState = {
     direction: null
 };
 
+let teamFilterState = {
+    column: null,
+    min: null,
+    max: null
+};
+
 /* ============================================================
    DOM
 ============================================================ */
@@ -864,6 +870,12 @@ teamSelect.addEventListener(
             column: null,
             direction: null
         };
+        resetTeamFilter();
+        let teamFilterState = {
+            column: null,
+            min: null,
+            max: null
+        };
 
 
         // ====================================================
@@ -1208,6 +1220,103 @@ function getTeamSortSymbol(column) {
     return "↕";
 }
 
+/* ============================================================
+   TEAM TABLE FILTERING
+============================================================ */
+
+function getNumericTeamColumns(records, columns) {
+    return columns.filter(column => {
+        const values = records
+            .map(record => record[column])
+            .filter(value =>
+                value !== null &&
+                value !== undefined &&
+                value !== "" &&
+                value !== "-" &&
+                value !== "—"
+            );
+
+        if (values.length === 0) {
+            return false;
+        }
+
+        return values.every(value => {
+            const sortableValue =
+                getSortableValue(value);
+
+            return (
+                typeof sortableValue === "number" &&
+                !Number.isNaN(sortableValue)
+            );
+        });
+    });
+}
+
+
+function filterTeamRecords(records) {
+    const {
+        column,
+        min,
+        max
+    } = teamFilterState;
+
+    /*
+     * No active filter.
+     */
+    if (
+        !column ||
+        (
+            min === null &&
+            max === null
+        )
+    ) {
+        return [...records];
+    }
+
+    return records.filter(record => {
+        const value =
+            getSortableValue(
+                record[column]
+            );
+
+        /*
+         * Missing or non-numeric values are excluded whenever
+         * a numeric filter is active.
+         */
+        if (
+            typeof value !== "number" ||
+            Number.isNaN(value)
+        ) {
+            return false;
+        }
+
+        if (
+            min !== null &&
+            value < min
+        ) {
+            return false;
+        }
+
+        if (
+            max !== null &&
+            value > max
+        ) {
+            return false;
+        }
+
+        return true;
+    });
+}
+
+
+function resetTeamFilter() {
+    teamFilterState = {
+        column: null,
+        min: null,
+        max: null
+    };
+}
+
 function renderTeamTable(records) {
     teamTable.innerHTML = "";
 
@@ -1250,16 +1359,12 @@ function renderTeamTable(records) {
         ...new Set(
             records.flatMap(
                 record =>
-                    Object.keys(
-                        record
-                    )
+                    Object.keys(record)
             )
         )
     ].filter(
         column =>
-            !excluded.has(
-                column
-            )
+            !excluded.has(column)
     );
 
 
@@ -1315,40 +1420,59 @@ function renderTeamTable(records) {
     const columns = [
         ...preferred.filter(
             column =>
-                allColumns.includes(
-                    column
-                )
+                allColumns.includes(column)
         ),
 
         ...allColumns.filter(
             column =>
-                !preferred.includes(
-                    column
-                )
+                !preferred.includes(column)
         )
     ];
 
 
+    const numericColumns =
+        getNumericTeamColumns(
+            records,
+            columns
+        );
+
+
+    /*
+     * If the currently selected filter column does not exist
+     * in this team, clear the filter automatically.
+     */
+    if (
+        teamFilterState.column &&
+        !numericColumns.includes(
+            teamFilterState.column
+        )
+    ) {
+        resetTeamFilter();
+    }
+
+
     /* ========================================================
-       APPLY CURRENT SORT
+       FILTER AND SORT
     ======================================================== */
+
+    const filteredRecords =
+        filterTeamRecords(records);
+
 
     const displayedRecords =
         sortTeamRecords(
-            records,
+            filteredRecords,
             teamSortState.column,
             teamSortState.direction
         );
 
 
     /* ========================================================
-       BLOCK
+       REPORT BLOCK
     ======================================================== */
 
     const block =
-        document.createElement(
-            "section"
-        );
+        document.createElement("section");
 
     block.className =
         "report-table-block team-table";
@@ -1359,50 +1483,49 @@ function renderTeamTable(records) {
     ======================================================== */
 
     const header =
-        document.createElement(
-            "div"
-        );
+        document.createElement("div");
 
     header.className =
         "report-table-title";
 
 
     const title =
-        document.createElement(
-            "span"
-        );
+        document.createElement("span");
 
     title.textContent =
         selectedTeam.team;
 
 
     const actions =
-        document.createElement(
-            "div"
-        );
+        document.createElement("div");
 
     actions.className =
         "report-table-title-actions";
 
 
     const count =
-        document.createElement(
-            "span"
-        );
+        document.createElement("span");
 
     count.className =
         "report-table-count";
 
-    count.textContent =
-        isAllTeams
-            ? `${records.length} player rows`
-            : `${records.length} players`;
+
+    if (
+        displayedRecords.length ===
+        records.length
+    ) {
+        count.textContent =
+            isAllTeams
+                ? `${records.length} player rows`
+                : `${records.length} players`;
+    } else {
+        count.textContent =
+            `${displayedRecords.length} of ${records.length} players`;
+    }
 
 
     const downloadButton =
-        document.createElement(
-            "button"
-        );
+        document.createElement("button");
 
     downloadButton.type =
         "button";
@@ -1417,8 +1540,8 @@ function renderTeamTable(records) {
         "click",
         () => {
             /*
-             * Download the table in the same order
-             * currently displayed on screen.
+             * Download only the rows currently shown,
+             * in their current sorted order.
              */
             downloadTeamTableCsv(
                 displayedRecords
@@ -1427,27 +1550,369 @@ function renderTeamTable(records) {
     );
 
 
-    actions.appendChild(
-        count
+    actions.appendChild(count);
+    actions.appendChild(downloadButton);
+
+    header.appendChild(title);
+    header.appendChild(actions);
+
+    block.appendChild(header);
+
+
+    /* ========================================================
+       FILTER CONTROLS
+    ======================================================== */
+
+    const filterBar =
+        document.createElement("div");
+
+    filterBar.className =
+        "team-filter-bar";
+
+
+    const filterTitle =
+        document.createElement("span");
+
+    filterTitle.className =
+        "team-filter-title";
+
+    filterTitle.textContent =
+        "Filter players";
+
+
+    const columnGroup =
+        document.createElement("label");
+
+    columnGroup.className =
+        "team-filter-field";
+
+
+    const columnLabel =
+        document.createElement("span");
+
+    columnLabel.textContent =
+        "Stat";
+
+
+    const columnSelect =
+        document.createElement("select");
+
+    columnSelect.className =
+        "team-filter-select";
+
+
+    const emptyOption =
+        document.createElement("option");
+
+    emptyOption.value = "";
+    emptyOption.textContent =
+        "Choose a stat";
+
+    columnSelect.appendChild(
+        emptyOption
     );
 
-    actions.appendChild(
-        downloadButton
+
+    numericColumns.forEach(column => {
+        const option =
+            document.createElement("option");
+
+        option.value =
+            column;
+
+        option.textContent =
+            column;
+
+        if (
+            teamFilterState.column ===
+            column
+        ) {
+            option.selected =
+                true;
+        }
+
+        columnSelect.appendChild(
+            option
+        );
+    });
+
+
+    columnGroup.appendChild(
+        columnLabel
+    );
+
+    columnGroup.appendChild(
+        columnSelect
     );
 
 
-    header.appendChild(
-        title
+    const minGroup =
+        document.createElement("label");
+
+    minGroup.className =
+        "team-filter-field";
+
+
+    const minLabel =
+        document.createElement("span");
+
+    minLabel.textContent =
+        "Minimum";
+
+
+    const minInput =
+        document.createElement("input");
+
+    minInput.type =
+        "number";
+
+    minInput.step =
+        "any";
+
+    minInput.className =
+        "team-filter-input";
+
+    minInput.placeholder =
+        "No minimum";
+
+    minInput.value =
+        teamFilterState.min ??
+        "";
+
+
+    minGroup.appendChild(
+        minLabel
     );
 
-    header.appendChild(
-        actions
+    minGroup.appendChild(
+        minInput
+    );
+
+
+    const maxGroup =
+        document.createElement("label");
+
+    maxGroup.className =
+        "team-filter-field";
+
+
+    const maxLabel =
+        document.createElement("span");
+
+    maxLabel.textContent =
+        "Maximum";
+
+
+    const maxInput =
+        document.createElement("input");
+
+    maxInput.type =
+        "number";
+
+    maxInput.step =
+        "any";
+
+    maxInput.className =
+        "team-filter-input";
+
+    maxInput.placeholder =
+        "No maximum";
+
+    maxInput.value =
+        teamFilterState.max ??
+        "";
+
+
+    maxGroup.appendChild(
+        maxLabel
+    );
+
+    maxGroup.appendChild(
+        maxInput
+    );
+
+
+    const filterActions =
+        document.createElement("div");
+
+    filterActions.className =
+        "team-filter-actions";
+
+
+    const applyButton =
+        document.createElement("button");
+
+    applyButton.type =
+        "button";
+
+    applyButton.className =
+        "team-filter-button primary";
+
+    applyButton.textContent =
+        "Apply filter";
+
+
+    applyButton.addEventListener(
+        "click",
+        () => {
+            const column =
+                columnSelect.value ||
+                null;
+
+
+            let min =
+                minInput.value === ""
+                    ? null
+                    : Number(
+                        minInput.value
+                    );
+
+
+            let max =
+                maxInput.value === ""
+                    ? null
+                    : Number(
+                        maxInput.value
+                    );
+
+
+            if (
+                min !== null &&
+                Number.isNaN(min)
+            ) {
+                min =
+                    null;
+            }
+
+
+            if (
+                max !== null &&
+                Number.isNaN(max)
+            ) {
+                max =
+                    null;
+            }
+
+
+            /*
+             * If the values were accidentally entered backwards,
+             * reverse them automatically.
+             */
+            if (
+                min !== null &&
+                max !== null &&
+                min > max
+            ) {
+                [
+                    min,
+                    max
+                ] = [
+                    max,
+                    min
+                ];
+            }
+
+
+            teamFilterState = {
+                column,
+                min,
+                max
+            };
+
+
+            renderTeamTable(
+                records
+            );
+        }
+    );
+
+
+    const clearButton =
+        document.createElement("button");
+
+    clearButton.type =
+        "button";
+
+    clearButton.className =
+        "team-filter-button";
+
+    clearButton.textContent =
+        "Clear";
+
+
+    clearButton.addEventListener(
+        "click",
+        () => {
+            resetTeamFilter();
+
+            renderTeamTable(
+                records
+            );
+        }
+    );
+
+
+    filterActions.appendChild(
+        applyButton
+    );
+
+    filterActions.appendChild(
+        clearButton
+    );
+
+
+    filterBar.appendChild(
+        filterTitle
+    );
+
+    filterBar.appendChild(
+        columnGroup
+    );
+
+    filterBar.appendChild(
+        minGroup
+    );
+
+    filterBar.appendChild(
+        maxGroup
+    );
+
+    filterBar.appendChild(
+        filterActions
     );
 
 
     block.appendChild(
-        header
+        filterBar
     );
+
+
+    /* ========================================================
+       EMPTY FILTER RESULT
+    ======================================================== */
+
+    if (
+        displayedRecords.length === 0
+    ) {
+        const noResults =
+            document.createElement("div");
+
+        noResults.className =
+            "team-filter-empty";
+
+        noResults.textContent =
+            "No players match the current filter.";
+
+        block.appendChild(
+            noResults
+        );
+
+        teamTable.appendChild(
+            block
+        );
+
+        return;
+    }
 
 
     /* ========================================================
@@ -1455,122 +1920,101 @@ function renderTeamTable(records) {
     ======================================================== */
 
     const wrapper =
-        document.createElement(
-            "div"
-        );
+        document.createElement("div");
 
     wrapper.className =
         "table-scroll";
 
 
     const table =
-        document.createElement(
-            "table"
-        );
+        document.createElement("table");
 
     table.className =
         "data-table sortable-team-table";
 
 
-    /* ========================================================
-       TABLE HEADER
-    ======================================================== */
-
     const thead =
-        document.createElement(
-            "thead"
-        );
+        document.createElement("thead");
 
     const headerRow =
-        document.createElement(
-            "tr"
+        document.createElement("tr");
+
+
+    columns.forEach(column => {
+        const th =
+            document.createElement("th");
+
+
+        const button =
+            document.createElement("button");
+
+        button.type =
+            "button";
+
+        button.className =
+            "sortable-header-button";
+
+
+        if (
+            teamSortState.column ===
+            column
+        ) {
+            button.classList.add(
+                "active"
+            );
+        }
+
+
+        const label =
+            document.createElement("span");
+
+        label.textContent =
+            column;
+
+
+        const sortSymbol =
+            document.createElement("span");
+
+        sortSymbol.className =
+            "sort-symbol";
+
+        sortSymbol.textContent =
+            getTeamSortSymbol(
+                column
+            );
+
+
+        button.appendChild(
+            label
+        );
+
+        button.appendChild(
+            sortSymbol
         );
 
 
-    columns.forEach(
-        column => {
-            const th =
-                document.createElement(
-                    "th"
-                );
-
-
-            const button =
-                document.createElement(
-                    "button"
-                );
-
-            button.type =
-                "button";
-
-            button.className =
-                "sortable-header-button";
-
-
-            if (
-                teamSortState.column === column
-            ) {
-                button.classList.add(
-                    "active"
-                );
-            }
-
-
-            const label =
-                document.createElement(
-                    "span"
-                );
-
-            label.textContent =
-                column;
-
-
-            const sortSymbol =
-                document.createElement(
-                    "span"
-                );
-
-            sortSymbol.className =
-                "sort-symbol";
-
-            sortSymbol.textContent =
-                getTeamSortSymbol(
+        button.addEventListener(
+            "click",
+            () => {
+                cycleTeamSort(
                     column
                 );
 
-
-            button.appendChild(
-                label
-            );
-
-            button.appendChild(
-                sortSymbol
-            );
+                renderTeamTable(
+                    records
+                );
+            }
+        );
 
 
-            button.addEventListener(
-                "click",
-                () => {
-                    cycleTeamSort(
-                        column
-                    );
+        th.appendChild(
+            button
+        );
 
-                    renderTeamTable(
-                        records
-                    );
-                }
-            );
-
-
-            th.appendChild(
-                button
-            );
-
-            headerRow.appendChild(
-                th
-            );
-        }
-    );
+        headerRow.appendChild(
+            th
+        );
+    });
 
 
     thead.appendChild(
@@ -1582,51 +2026,35 @@ function renderTeamTable(records) {
     );
 
 
-    /* ========================================================
-       TABLE BODY
-    ======================================================== */
-
     const tbody =
-        document.createElement(
-            "tbody"
-        );
+        document.createElement("tbody");
 
 
-    displayedRecords.forEach(
-        record => {
-            const tr =
-                document.createElement(
-                    "tr"
+    displayedRecords.forEach(record => {
+        const tr =
+            document.createElement("tr");
+
+
+        columns.forEach(column => {
+            const td =
+                document.createElement("td");
+
+            td.textContent =
+                formatValue(
+                    record[column],
+                    column
                 );
 
-
-            columns.forEach(
-                column => {
-                    const td =
-                        document.createElement(
-                            "td"
-                        );
-
-                    td.textContent =
-                        formatValue(
-                            record[
-                                column
-                            ],
-                            column
-                        );
-
-                    tr.appendChild(
-                        td
-                    );
-                }
+            tr.appendChild(
+                td
             );
+        });
 
 
-            tbody.appendChild(
-                tr
-            );
-        }
-    );
+        tbody.appendChild(
+            tr
+        );
+    });
 
 
     table.appendChild(
