@@ -19,6 +19,41 @@ let teamFilterState = {
     max: null
 };
 
+let leaderboardState = {
+    report: "play_types",
+    side: "offense",
+    table: "",
+    levelSelections: [],
+    rankMetric: "PPP",
+    minPoss: 10,
+    currentData: null,
+    currentResults: []
+};
+
+const leaderboardDataCache = {};
+
+let leaderboardMode = "simple";
+
+let nextAdvancedFilterId = 1;
+
+let advancedLeaderboardState = {
+    rank: {
+        report: "play_types",
+        side: "offense",
+        table: "",
+        levelSelections: [],
+        metric: "PPP",
+        direction: "desc",
+        min: null,
+        max: null,
+        data: null
+    },
+
+    filters: [],
+
+    results: []
+};
+
 /* ============================================================
    DOM
 ============================================================ */
@@ -28,6 +63,7 @@ const dataStatus = document.getElementById("dataStatus");
 
 const playersView = document.getElementById("playersView");
 const teamsView = document.getElementById("teamsView");
+const leaderboardsView = document.getElementById("leaderboardsView");
 
 const playerSearch = document.getElementById("playerSearch");
 const playerTeamFilter = document.getElementById("playerTeamFilter");
@@ -51,6 +87,82 @@ const selectedTeamName = document.getElementById("selectedTeamName");
 const teamLoading = document.getElementById("teamLoading");
 const teamTable = document.getElementById("teamTable");
 
+const leaderboardReport = document.getElementById("leaderboardReport");
+const leaderboardSide = document.getElementById("leaderboardSide");
+const leaderboardTable = document.getElementById("leaderboardTable");
+const leaderboardHierarchyFields = document.getElementById("leaderboardHierarchyFields");
+const leaderboardMetric = document.getElementById("leaderboardMetric");
+const leaderboardMinPoss = document.getElementById("leaderboardMinPoss");
+const leaderboardRun = document.getElementById("leaderboardRun");
+const leaderboardDownload = document.getElementById("leaderboardDownload");
+const leaderboardLoading = document.getElementById("leaderboardLoading");
+const leaderboardSummary = document.getElementById("leaderboardSummary");
+const leaderboardResults = document.getElementById("leaderboardResults");
+
+const leaderboardSimpleMode =
+    document.getElementById(
+        "leaderboardSimpleMode"
+    );
+
+const leaderboardAdvancedMode =
+    document.getElementById(
+        "leaderboardAdvancedMode"
+    );
+
+const simpleLeaderboardPanel =
+    document.getElementById(
+        "simpleLeaderboardPanel"
+    );
+
+const advancedLeaderboardPanel =
+    document.getElementById(
+        "advancedLeaderboardPanel"
+    );
+
+const advancedRankBuilder =
+    document.getElementById(
+        "advancedRankBuilder"
+    );
+
+const advancedAddFilter =
+    document.getElementById(
+        "advancedAddFilter"
+    );
+
+const advancedFilters =
+    document.getElementById(
+        "advancedFilters"
+    );
+
+const advancedQueryDescription =
+    document.getElementById(
+        "advancedQueryDescription"
+    );
+
+const advancedRun =
+    document.getElementById(
+        "advancedRun"
+    );
+
+const advancedDownload =
+    document.getElementById(
+        "advancedDownload"
+    );
+
+const advancedLoading =
+    document.getElementById(
+        "advancedLoading"
+    );
+
+const advancedSummary =
+    document.getElementById(
+        "advancedSummary"
+    );
+
+const advancedResults =
+    document.getElementById(
+        "advancedResults"
+    );
 
 /* ============================================================
    FETCH
@@ -90,6 +202,7 @@ async function initialize() {
         populateTeamFilters();
         renderPlayerList();
         populateTeamSelect();
+        await initializeLeaderboardControls();
 
     } catch (error) {
         console.error(error);
@@ -110,6 +223,12 @@ async function initialize() {
    VIEW NAVIGATION
 ============================================================ */
 
+const VIEW_MAP = {
+    players: playersView,
+    teams: teamsView,
+    leaderboards: leaderboardsView
+};
+
 document.querySelectorAll(".view-tab").forEach(button => {
     button.addEventListener("click", () => {
         document
@@ -120,19 +239,16 @@ document.querySelectorAll(".view-tab").forEach(button => {
 
         const view = button.dataset.view;
 
-        playersView.classList.toggle(
-            "active",
-            view === "players"
-        );
-
-        teamsView.classList.toggle(
-            "active",
-            view === "teams"
+        Object.entries(VIEW_MAP).forEach(
+            ([key, element]) => {
+                element.classList.toggle(
+                    "active",
+                    key === view
+                );
+            }
         );
     });
 });
-
-
 /* ============================================================
    PLAYER FILTERS
 ============================================================ */
@@ -870,12 +986,8 @@ teamSelect.addEventListener(
             column: null,
             direction: null
         };
+
         resetTeamFilter();
-        let teamFilterState = {
-            column: null,
-            min: null,
-            max: null
-        };
 
 
         // ====================================================
@@ -2073,6 +2185,4122 @@ function renderTeamTable(records) {
         block
     );
 }
+
+/* ============================================================
+   LEADERBOARDS
+============================================================ */
+
+const LEADERBOARD_METRIC_PRIORITY = [
+    "PPP",
+    "PPS",
+    "POSS",
+    "PTS",
+    "%TIME",
+    "TS%",
+    "FG%",
+    "EFG%",
+    "2 FG%",
+    "3 FG%",
+    "TO%",
+    "%FT",
+    "%SF",
+    "SCORE%",
+    "PPP RANK",
+    "FG ATT",
+    "FG MADE",
+    "2 FG ATT",
+    "2 FG MADE",
+    "3FG ATT",
+    "3 FG MADE",
+    "+1%"
+];
+
+
+function getOrderedUniqueValues(values) {
+    const seen = new Set();
+    const ordered = [];
+
+    values.forEach(value => {
+        if (
+            value === null ||
+            value === undefined
+        ) {
+            return;
+        }
+
+        const text =
+            String(value).trim();
+
+        if (
+            !text ||
+            seen.has(text)
+        ) {
+            return;
+        }
+
+        seen.add(text);
+        ordered.push(text);
+    });
+
+    return ordered;
+}
+
+
+function getLeaderboardPath(
+    report,
+    side
+) {
+    return (
+        manifest?.leaderboards?.[report]?.[side]
+        ||
+        `combined/leaderboard_${report}_${side}.json`
+    );
+}
+
+
+async function initializeLeaderboardControls() {
+    if (!leaderboardReport) {
+        return;
+    }
+
+    leaderboardReport.value =
+        leaderboardState.report;
+
+    leaderboardSide.value =
+        leaderboardState.side;
+
+    leaderboardMinPoss.value =
+        leaderboardState.minPoss;
+
+    leaderboardReport.addEventListener(
+        "change",
+        async () => {
+            leaderboardState.report =
+                leaderboardReport.value;
+
+            leaderboardState.table =
+                "";
+
+            leaderboardState.levelSelections =
+                [];
+
+            leaderboardState.rankMetric =
+                "PPP";
+
+            await loadLeaderboardDataset();
+        }
+    );
+
+    leaderboardSide.addEventListener(
+        "change",
+        async () => {
+            leaderboardState.side =
+                leaderboardSide.value;
+
+            leaderboardState.table =
+                "";
+
+            leaderboardState.levelSelections =
+                [];
+
+            leaderboardState.rankMetric =
+                "PPP";
+
+            await loadLeaderboardDataset();
+        }
+    );
+
+    leaderboardTable.addEventListener(
+        "change",
+        () => {
+            leaderboardState.table =
+                leaderboardTable.value;
+
+            leaderboardState.levelSelections =
+                [];
+
+            buildLeaderboardHierarchyControls();
+            populateLeaderboardMetricSelect();
+            runLeaderboardQuery();
+        }
+    );
+
+    leaderboardMetric.addEventListener(
+        "change",
+        () => {
+            leaderboardState.rankMetric =
+                leaderboardMetric.value;
+
+            runLeaderboardQuery();
+        }
+    );
+
+    leaderboardRun.addEventListener(
+        "click",
+        () => {
+            runLeaderboardQuery();
+        }
+    );
+
+    leaderboardDownload.addEventListener(
+        "click",
+        () => {
+            downloadLeaderboardResultsCsv();
+        }
+    );
+
+    await loadLeaderboardDataset();
+}
+
+
+async function loadLeaderboardDataset() {
+    leaderboardLoading.classList.remove(
+        "hidden"
+    );
+
+    leaderboardResults.innerHTML = "";
+    leaderboardSummary.innerHTML = "";
+    leaderboardSummary.classList.add(
+        "hidden"
+    );
+
+    try {
+        const path =
+            getLeaderboardPath(
+                leaderboardState.report,
+                leaderboardState.side
+            );
+
+        if (
+            !leaderboardDataCache[path]
+        ) {
+            leaderboardDataCache[path] =
+                await fetchJson(
+                    `${DATA_ROOT}/${path}`
+                );
+        }
+
+        leaderboardState.currentData =
+            leaderboardDataCache[path];
+
+        populateLeaderboardTableSelect();
+        buildLeaderboardHierarchyControls();
+        populateLeaderboardMetricSelect();
+        runLeaderboardQuery();
+
+    } catch (error) {
+        console.error(error);
+
+        leaderboardResults.innerHTML = `
+            <div class="error-box">
+                ${escapeHtml(error.message)}
+            </div>
+        `;
+
+    } finally {
+        leaderboardLoading.classList.add(
+            "hidden"
+        );
+    }
+}
+
+
+function populateLeaderboardTableSelect() {
+    const data =
+        leaderboardState.currentData;
+
+    leaderboardTable.innerHTML = "";
+
+    if (
+        !data ||
+        !Array.isArray(data.table_names)
+    ) {
+        return;
+    }
+
+    data.table_names.forEach(tableName => {
+        const option =
+            document.createElement("option");
+
+        option.value =
+            tableName;
+
+        option.textContent =
+            tableName;
+
+        leaderboardTable.appendChild(
+            option
+        );
+    });
+
+    if (
+        !data.table_names.includes(
+            leaderboardState.table
+        )
+    ) {
+        leaderboardState.table =
+            data.table_names[0] || "";
+    }
+
+    leaderboardTable.value =
+        leaderboardState.table;
+}
+
+
+function getLeaderboardTableRows() {
+    const data =
+        leaderboardState.currentData;
+
+    if (
+        !data ||
+        !Array.isArray(data.rows)
+    ) {
+        return [];
+    }
+
+    return data.rows.filter(
+        row =>
+            row.TABLE ===
+            leaderboardState.table
+    );
+}
+
+
+function buildLeaderboardHierarchyControls() {
+    const data =
+        leaderboardState.currentData;
+
+    leaderboardHierarchyFields.innerHTML = "";
+
+    if (
+        !data ||
+        !leaderboardState.table
+    ) {
+        return;
+    }
+
+    const levelColumns =
+        data.level_columns || [];
+
+    let workingRows =
+        getLeaderboardTableRows();
+
+    const nextSelections = [];
+
+
+    for (
+        let index = 0;
+        index < levelColumns.length;
+        index += 1
+    ) {
+        const levelColumn =
+            levelColumns[index];
+
+
+        const options =
+            getOrderedUniqueValues(
+                workingRows.map(
+                    row =>
+                        row[levelColumn]
+                )
+            );
+
+
+        if (
+            options.length === 0
+        ) {
+            break;
+        }
+
+
+        /* ====================================================
+           SELECTED VALUE
+
+           Level 1:
+           Always requires a selection.
+
+           Level 2+:
+           Blank means "stop hierarchy here".
+        ==================================================== */
+
+        let selectedValue =
+            leaderboardState.levelSelections[
+                index
+            ] || "";
+
+
+        // ----------------------------------------------------
+        // LEVEL 1
+        // ----------------------------------------------------
+
+        if (
+            index === 0
+        ) {
+            if (
+                !selectedValue ||
+                !options.includes(
+                    selectedValue
+                )
+            ) {
+                selectedValue =
+                    options[0];
+            }
+        }
+
+        // ----------------------------------------------------
+        // LEVEL 2+
+        // ----------------------------------------------------
+
+        else {
+            if (
+                selectedValue &&
+                !options.includes(
+                    selectedValue
+                )
+            ) {
+                selectedValue =
+                    "";
+            }
+        }
+
+
+        /* ====================================================
+           CREATE FIELD
+        ==================================================== */
+
+        const field =
+            document.createElement(
+                "label"
+            );
+
+        field.className =
+            "leaderboard-field";
+
+
+        const label =
+            document.createElement(
+                "span"
+            );
+
+        label.textContent =
+            index === 0
+                ? "Stat"
+                : `Level ${index + 1}`;
+
+
+        const select =
+            document.createElement(
+                "select"
+            );
+
+        select.className =
+            "control";
+
+
+        /* ====================================================
+           LEVEL 2+ GETS A STOP OPTION
+        ==================================================== */
+
+        if (
+            index > 0
+        ) {
+            const stopOption =
+                document.createElement(
+                    "option"
+                );
+
+            stopOption.value =
+                "";
+
+            const parentName =
+                nextSelections[
+                    nextSelections.length - 1
+                ] || "current level";
+
+            stopOption.textContent =
+                `Stop at ${parentName}`;
+
+            select.appendChild(
+                stopOption
+            );
+        }
+
+
+        /* ====================================================
+           OPTIONS
+        ==================================================== */
+
+        options.forEach(
+            optionValue => {
+                const option =
+                    document.createElement(
+                        "option"
+                    );
+
+                option.value =
+                    optionValue;
+
+                option.textContent =
+                    optionValue;
+
+                if (
+                    optionValue ===
+                    selectedValue
+                ) {
+                    option.selected =
+                        true;
+                }
+
+                select.appendChild(
+                    option
+                );
+            }
+        );
+
+
+        /* ====================================================
+           CHANGE
+        ==================================================== */
+
+        select.addEventListener(
+            "change",
+            () => {
+                const previousSelections =
+                    leaderboardState
+                        .levelSelections
+                        .slice(
+                            0,
+                            index
+                        );
+
+
+                if (
+                    select.value
+                ) {
+                    leaderboardState
+                        .levelSelections = [
+                            ...previousSelections,
+                            select.value
+                        ];
+                } else {
+                    /*
+                     * Blank means stop at the parent level.
+                     */
+                    leaderboardState
+                        .levelSelections =
+                        previousSelections;
+                }
+
+
+                buildLeaderboardHierarchyControls();
+
+                populateLeaderboardMetricSelect();
+
+                runLeaderboardQuery();
+            }
+        );
+
+
+        field.appendChild(
+            label
+        );
+
+        field.appendChild(
+            select
+        );
+
+        leaderboardHierarchyFields.appendChild(
+            field
+        );
+
+
+        /* ====================================================
+           STOP HERE
+
+           If Level 2+ is blank, don't create Level 3/4/5...
+        ==================================================== */
+
+        if (
+            index > 0 &&
+            !selectedValue
+        ) {
+            break;
+        }
+
+
+        nextSelections.push(
+            selectedValue
+        );
+
+
+        workingRows =
+            workingRows.filter(
+                row =>
+                    row[levelColumn] ===
+                    selectedValue
+            );
+    }
+
+
+    leaderboardState.levelSelections =
+        nextSelections;
+}
+
+
+function getLeaderboardExactRows() {
+    const data =
+        leaderboardState.currentData;
+
+    if (
+        !data ||
+        !leaderboardState.table
+    ) {
+        return [];
+    }
+
+    const levelColumns =
+        data.level_columns || [];
+
+    let rows =
+        getLeaderboardTableRows();
+
+    const selectedLevels =
+        leaderboardState.levelSelections
+            .filter(Boolean);
+
+    selectedLevels.forEach(
+        (selectedValue, index) => {
+            const levelColumn =
+                levelColumns[index];
+
+            rows = rows.filter(
+                row =>
+                    row[levelColumn] ===
+                    selectedValue
+            );
+        }
+    );
+
+    if (
+        selectedLevels.length > 0
+    ) {
+        rows = rows.filter(
+            row =>
+                Number(
+                    row.DEPTH
+                ) ===
+                selectedLevels.length
+        );
+    }
+
+    return rows;
+}
+
+
+function getLeaderboardMetricOptions(
+    rows
+) {
+    const data =
+        leaderboardState.currentData;
+
+    if (!data) {
+        return [];
+    }
+
+    const baseMetricColumns =
+        data.numeric_metric_columns || [];
+
+    const availableMetrics =
+        baseMetricColumns.filter(
+            column =>
+                rows.some(row => {
+                    const value =
+                        getSortableValue(
+                            row[column]
+                        );
+
+                    return (
+                        typeof value ===
+                        "number"
+                    );
+                })
+        );
+
+    const priority =
+        LEADERBOARD_METRIC_PRIORITY.filter(
+            column =>
+                availableMetrics.includes(
+                    column
+                )
+        );
+
+    const remaining =
+        availableMetrics.filter(
+            column =>
+                !LEADERBOARD_METRIC_PRIORITY.includes(
+                    column
+                )
+        ).sort();
+
+    return [
+        ...priority,
+        ...remaining
+    ];
+}
+
+
+function populateLeaderboardMetricSelect() {
+    const exactRows =
+        getLeaderboardExactRows();
+
+    const fallbackRows =
+        getLeaderboardTableRows();
+
+    const sourceRows =
+        exactRows.length > 0
+            ? exactRows
+            : fallbackRows;
+
+    const metricOptions =
+        getLeaderboardMetricOptions(
+            sourceRows
+        );
+
+    leaderboardMetric.innerHTML = "";
+
+    metricOptions.forEach(column => {
+        const option =
+            document.createElement(
+                "option"
+            );
+
+        option.value =
+            column;
+
+        option.textContent =
+            column;
+
+        leaderboardMetric.appendChild(
+            option
+        );
+    });
+
+    let nextMetric =
+        leaderboardState.rankMetric;
+
+    if (
+        !metricOptions.includes(
+            nextMetric
+        )
+    ) {
+        nextMetric =
+            metricOptions.includes(
+                "PPP"
+            )
+                ? "PPP"
+                : (
+                    metricOptions[0]
+                    || ""
+                );
+    }
+
+    leaderboardState.rankMetric =
+        nextMetric;
+
+    leaderboardMetric.value =
+        nextMetric;
+}
+
+
+function runLeaderboardQuery() {
+    const minPossValue =
+        Number(
+            leaderboardMinPoss.value
+        );
+
+    leaderboardState.minPoss =
+        Number.isNaN(
+            minPossValue
+        )
+            ? 0
+            : minPossValue;
+
+    leaderboardState.rankMetric =
+        leaderboardMetric.value;
+
+    const metric =
+        leaderboardState.rankMetric;
+
+    const exactRows =
+        getLeaderboardExactRows();
+
+    const filteredRows =
+        exactRows.filter(row => {
+            const possValue =
+                getSortableValue(
+                    row.POSS
+                );
+
+            return (
+                typeof possValue ===
+                "number"
+                &&
+                possValue >=
+                leaderboardState.minPoss
+            );
+        });
+
+    const rankedRows =
+        filteredRows
+            .slice()
+            .sort(
+                (a, b) => {
+                    const aValue =
+                        getSortableValue(
+                            a[metric]
+                        );
+
+                    const bValue =
+                        getSortableValue(
+                            b[metric]
+                        );
+
+                    if (
+                        aValue === null &&
+                        bValue === null
+                    ) {
+                        return String(
+                            a.PLAYER
+                        ).localeCompare(
+                            String(
+                                b.PLAYER
+                            )
+                        );
+                    }
+
+                    if (
+                        aValue === null
+                    ) {
+                        return 1;
+                    }
+
+                    if (
+                        bValue === null
+                    ) {
+                        return -1;
+                    }
+
+                    if (
+                        typeof aValue ===
+                        "number"
+                        &&
+                        typeof bValue ===
+                        "number"
+                    ) {
+                        if (
+                            aValue !== bValue
+                        ) {
+                            return (
+                                bValue - aValue
+                            );
+                        }
+                    } else {
+                        const comparison =
+                            String(
+                                aValue
+                            ).localeCompare(
+                                String(
+                                    bValue
+                                )
+                            );
+
+                        if (
+                            comparison !== 0
+                        ) {
+                            return comparison;
+                        }
+                    }
+
+                    const aPoss =
+                        getSortableValue(
+                            a.POSS
+                        ) ?? 0;
+
+                    const bPoss =
+                        getSortableValue(
+                            b.POSS
+                        ) ?? 0;
+
+                    if (
+                        aPoss !== bPoss
+                    ) {
+                        return (
+                            bPoss - aPoss
+                        );
+                    }
+
+                    return String(
+                        a.PLAYER
+                    ).localeCompare(
+                        String(
+                            b.PLAYER
+                        )
+                    );
+                }
+            )
+            .map(
+                (row, index) => ({
+                    RANK:
+                        index + 1,
+                    ...row
+                })
+            );
+
+    leaderboardState.currentResults =
+        rankedRows;
+
+    renderLeaderboardSummary();
+    renderLeaderboardResults();
+}
+
+
+function renderLeaderboardSummary() {
+    const selectedLevels =
+        leaderboardState.levelSelections
+            .filter(Boolean);
+
+    const pieces = [
+        `Report: ${
+            leaderboardState.report ===
+            "play_types"
+                ? "Play Types"
+                : "Shot Types"
+        }`,
+        `Side: ${
+            leaderboardState.side
+                .charAt(0)
+                .toUpperCase()
+            + leaderboardState.side
+                .slice(1)
+        }`,
+        `Table: ${
+            leaderboardState.table
+        }`
+    ];
+
+    if (
+        selectedLevels.length > 0
+    ) {
+        pieces.push(
+            `Path: ${
+                selectedLevels.join(
+                    " > "
+                )
+            }`
+        );
+    }
+
+    pieces.push(
+        `Rank By: ${
+            leaderboardState.rankMetric
+        }`
+    );
+
+    pieces.push(
+        `Min POSS: ${
+            leaderboardState.minPoss
+        }`
+    );
+
+    pieces.push(
+        `Results: ${
+            leaderboardState.currentResults
+                .length
+        }`
+    );
+
+    leaderboardSummary.innerHTML = "";
+
+    pieces.forEach(piece => {
+        const pill =
+            document.createElement(
+                "span"
+            );
+
+        pill.className =
+            "leaderboard-pill";
+
+        pill.textContent =
+            piece;
+
+        leaderboardSummary.appendChild(
+            pill
+        );
+    });
+
+    leaderboardSummary.classList.remove(
+        "hidden"
+    );
+}
+
+
+function renderLeaderboardResults() {
+    leaderboardResults.innerHTML = "";
+
+    const metric =
+        leaderboardState.rankMetric;
+
+    const results =
+        leaderboardState.currentResults;
+
+    if (
+        !results ||
+        results.length === 0
+    ) {
+        leaderboardResults.innerHTML = `
+            <div class="empty-state">
+                <p>No players matched the current leaderboard query.</p>
+            </div>
+        `;
+
+        return;
+    }
+
+    const columns = [
+        "RANK",
+        "PLAYER",
+        "TEAM",
+        "POSS"
+    ];
+
+    if (
+        metric &&
+        metric !== "POSS"
+    ) {
+        columns.push(metric);
+    }
+
+    const block =
+        document.createElement(
+            "section"
+        );
+
+    block.className =
+        "report-table-block";
+
+    const header =
+        document.createElement(
+            "div"
+        );
+
+    header.className =
+        "report-table-title";
+
+    const title =
+        document.createElement(
+            "span"
+        );
+
+    title.textContent =
+        "Leaderboard Results";
+
+    const count =
+        document.createElement(
+            "span"
+        );
+
+    count.className =
+        "report-table-count";
+
+    count.textContent =
+        `${results.length} rows`;
+
+    header.appendChild(
+        title
+    );
+
+    header.appendChild(
+        count
+    );
+
+    block.appendChild(
+        header
+    );
+
+    const wrapper =
+        document.createElement(
+            "div"
+        );
+
+    wrapper.className =
+        "table-scroll";
+
+    const table =
+        document.createElement(
+            "table"
+        );
+
+    table.className =
+        "data-table leaderboard-table";
+
+    const thead =
+        document.createElement(
+            "thead"
+        );
+
+    const headerRow =
+        document.createElement(
+            "tr"
+        );
+
+    columns.forEach(column => {
+        const th =
+            document.createElement(
+                "th"
+            );
+
+        th.textContent =
+            column;
+
+        if (column === "RANK") {
+            th.className =
+                "leaderboard-rank-col";
+        } else if (column === "PLAYER") {
+            th.className =
+                "leaderboard-player-col";
+        } else if (column === "TEAM") {
+            th.className =
+                "leaderboard-team-col";
+        } else {
+            th.className =
+                "leaderboard-number-col";
+        }
+
+        headerRow.appendChild(
+            th
+        );
+    });
+
+    thead.appendChild(
+        headerRow
+    );
+
+    table.appendChild(
+        thead
+    );
+
+    const tbody =
+        document.createElement(
+            "tbody"
+        );
+
+    results.forEach(row => {
+        const tr =
+            document.createElement(
+                "tr"
+            );
+
+        columns.forEach(column => {
+            const td =
+                document.createElement(
+                    "td"
+                );
+
+            td.textContent =
+                formatValue(
+                    row[column],
+                    column
+                );
+
+            if (column === "RANK") {
+                td.className =
+                    "leaderboard-rank-col";
+            } else if (column === "PLAYER") {
+                td.className =
+                    "leaderboard-player-col";
+            } else if (column === "TEAM") {
+                td.className =
+                    "leaderboard-team-col";
+            } else {
+                td.className =
+                    "leaderboard-number-col";
+            }
+
+            tr.appendChild(
+                td
+            );
+        });
+
+        tbody.appendChild(
+            tr
+        );
+    });
+
+    table.appendChild(
+        tbody
+    );
+
+    wrapper.appendChild(
+        table
+    );
+
+    block.appendChild(
+        wrapper
+    );
+
+    leaderboardResults.appendChild(
+        block
+    );
+}
+
+
+function downloadLeaderboardResultsCsv() {
+    const results =
+        leaderboardState.currentResults;
+
+    const data =
+        leaderboardState.currentData;
+
+    if (
+        !results ||
+        results.length === 0 ||
+        !data
+    ) {
+        return;
+    }
+
+    const levelColumns =
+        data.level_columns || [];
+
+    const metricColumns =
+        data.metric_columns || [];
+
+    const columns = [
+        "RANK",
+        "PLAYER",
+        "TEAM",
+        "SEASON",
+        "SIDE",
+        "TABLE",
+        "STAT",
+        "DEPTH",
+        "PARENT",
+        "PATH",
+        ...levelColumns,
+        ...metricColumns
+    ];
+
+    const filename = [
+        "leaderboard",
+        leaderboardState.report,
+        leaderboardState.side,
+        sanitizeFilenamePart(
+            leaderboardState.table
+        ),
+        sanitizeFilenamePart(
+            leaderboardState.rankMetric
+        )
+    ]
+        .filter(Boolean)
+        .join("__")
+        + ".csv";
+
+    downloadCsv(
+        filename,
+        results,
+        columns
+    );
+}
+
+/* ============================================================
+   ADVANCED LEADERBOARD
+============================================================ */
+
+function createAdvancedFilter() {
+    return {
+        id:
+            nextAdvancedFilterId++,
+
+        report:
+            "play_types",
+
+        side:
+            "offense",
+
+        table:
+            "",
+
+        levelSelections:
+            [],
+
+        metric:
+            "POSS",
+
+        operator:
+            ">=",
+
+        value:
+            0,
+
+        data:
+            null
+    };
+}
+
+
+function setLeaderboardMode(
+    mode
+) {
+    leaderboardMode =
+        mode;
+
+    const simple =
+        mode === "simple";
+
+    leaderboardSimpleMode.classList.toggle(
+        "active",
+        simple
+    );
+
+    leaderboardAdvancedMode.classList.toggle(
+        "active",
+        !simple
+    );
+
+    simpleLeaderboardPanel.classList.toggle(
+        "hidden",
+        !simple
+    );
+
+    advancedLeaderboardPanel.classList.toggle(
+        "hidden",
+        simple
+    );
+}
+
+
+/* ============================================================
+   DATA LOADING
+============================================================ */
+
+async function loadAdvancedDefinitionData(
+    definition
+) {
+    const path =
+        getLeaderboardPath(
+            definition.report,
+            definition.side
+        );
+
+    if (
+        !leaderboardDataCache[
+            path
+        ]
+    ) {
+        leaderboardDataCache[
+            path
+        ] =
+            await fetchJson(
+                `${DATA_ROOT}/${path}`
+            );
+    }
+
+    definition.data =
+        leaderboardDataCache[
+            path
+        ];
+}
+
+
+function getAdvancedTableRows(
+    definition
+) {
+    if (
+        !definition.data ||
+        !Array.isArray(
+            definition.data.rows
+        )
+    ) {
+        return [];
+    }
+
+    return definition.data.rows.filter(
+        row =>
+            row.TABLE ===
+            definition.table
+    );
+}
+
+
+function normalizeAdvancedDefinition(
+    definition
+) {
+    if (!definition.data) {
+        return;
+    }
+
+    const tableNames =
+        definition.data
+            .table_names || [];
+
+    if (
+        !tableNames.includes(
+            definition.table
+        )
+    ) {
+        definition.table =
+            tableNames[0] || "";
+
+        definition.levelSelections =
+            [];
+    }
+
+    normalizeAdvancedHierarchy(
+        definition
+    );
+
+    normalizeAdvancedDefinitionMetric(
+        definition
+    );
+}
+
+
+async function prepareAdvancedDefinition(
+    definition
+) {
+    await loadAdvancedDefinitionData(
+        definition
+    );
+
+    normalizeAdvancedDefinition(
+        definition
+    );
+}
+
+
+/* ============================================================
+   HIERARCHY
+============================================================ */
+
+function normalizeAdvancedHierarchy(
+    definition
+) {
+    if (
+        !definition.data ||
+        !definition.table
+    ) {
+        definition.levelSelections =
+            [];
+
+        return;
+    }
+
+    const levelColumns =
+        definition.data
+            .level_columns || [];
+
+    let workingRows =
+        getAdvancedTableRows(
+            definition
+        );
+
+    const nextSelections = [];
+
+
+    for (
+        let index = 0;
+        index < levelColumns.length;
+        index += 1
+    ) {
+        const levelColumn =
+            levelColumns[index];
+
+        const options =
+            getOrderedUniqueValues(
+                workingRows.map(
+                    row =>
+                        row[levelColumn]
+                )
+            );
+
+
+        if (
+            options.length === 0
+        ) {
+            break;
+        }
+
+
+        let selected =
+            definition
+                .levelSelections[
+                    index
+                ] || "";
+
+
+        /*
+         * First level must have a value.
+         */
+        if (
+            index === 0
+        ) {
+            if (
+                !selected ||
+                !options.includes(
+                    selected
+                )
+            ) {
+                selected =
+                    options[0];
+            }
+
+        } else {
+
+            /*
+             * Blank means:
+             * stop at the parent level.
+             */
+            if (
+                !selected ||
+                !options.includes(
+                    selected
+                )
+            ) {
+                break;
+            }
+        }
+
+
+        nextSelections.push(
+            selected
+        );
+
+
+        workingRows =
+            workingRows.filter(
+                row =>
+                    row[levelColumn] ===
+                    selected
+            );
+    }
+
+
+    definition.levelSelections =
+        nextSelections;
+}
+
+
+function getAdvancedExactRows(
+    definition
+) {
+    if (
+        !definition.data ||
+        !definition.table
+    ) {
+        return [];
+    }
+
+    const selectedLevels =
+        definition
+            .levelSelections
+            .filter(Boolean);
+
+    if (
+        selectedLevels.length === 0
+    ) {
+        return [];
+    }
+
+    const levelColumns =
+        definition.data
+            .level_columns || [];
+
+    let rows =
+        getAdvancedTableRows(
+            definition
+        );
+
+
+    selectedLevels.forEach(
+        (
+            selectedValue,
+            index
+        ) => {
+            const levelColumn =
+                levelColumns[index];
+
+            rows =
+                rows.filter(
+                    row =>
+                        row[levelColumn] ===
+                        selectedValue
+                );
+        }
+    );
+
+
+    /*
+     * Important:
+     * only return the exact hierarchy depth selected.
+     *
+     * If Drives is selected and we stop there,
+     * we rank the Drives row itself,
+     * not its children.
+     */
+    return rows.filter(
+        row =>
+            Number(
+                row.DEPTH
+            ) ===
+            selectedLevels.length
+    );
+}
+
+
+function appendAdvancedHierarchyControls(
+    definition,
+    container,
+    onChange
+) {
+    const levelColumns =
+        definition.data
+            ?.level_columns || [];
+
+    let workingRows =
+        getAdvancedTableRows(
+            definition
+        );
+
+
+    for (
+        let index = 0;
+        index < levelColumns.length;
+        index += 1
+    ) {
+        const levelColumn =
+            levelColumns[index];
+
+        const options =
+            getOrderedUniqueValues(
+                workingRows.map(
+                    row =>
+                        row[levelColumn]
+                )
+            );
+
+
+        if (
+            options.length === 0
+        ) {
+            break;
+        }
+
+
+        const selected =
+            definition
+                .levelSelections[
+                    index
+                ] || "";
+
+
+        const field =
+            createAdvancedField(
+                index === 0
+                    ? "Category"
+                    : `Level ${index + 1}`
+            );
+
+
+        const select =
+            document.createElement(
+                "select"
+            );
+
+        select.className =
+            "control";
+
+
+        if (
+            index > 0
+        ) {
+            const stopOption =
+                document.createElement(
+                    "option"
+                );
+
+            stopOption.value =
+                "";
+
+            stopOption.textContent =
+                `Stop at ${
+                    definition
+                        .levelSelections[
+                            index - 1
+                        ]
+                }`;
+
+            select.appendChild(
+                stopOption
+            );
+        }
+
+
+        options.forEach(
+            value => {
+                const option =
+                    document.createElement(
+                        "option"
+                    );
+
+                option.value =
+                    value;
+
+                option.textContent =
+                    value;
+
+                option.selected =
+                    value ===
+                    selected;
+
+                select.appendChild(
+                    option
+                );
+            }
+        );
+
+
+        select.addEventListener(
+            "change",
+            () => {
+                const previous =
+                    definition
+                        .levelSelections
+                        .slice(
+                            0,
+                            index
+                        );
+
+
+                if (
+                    select.value
+                ) {
+                    definition
+                        .levelSelections = [
+                            ...previous,
+                            select.value
+                        ];
+
+                } else {
+                    definition
+                        .levelSelections =
+                            previous;
+                }
+
+
+                normalizeAdvancedHierarchy(
+                    definition
+                );
+
+                normalizeAdvancedDefinitionMetric(
+                    definition
+                );
+
+                onChange();
+            }
+        );
+
+
+        field.appendChild(
+            select
+        );
+
+        container.appendChild(
+            field
+        );
+
+
+        if (
+            index > 0 &&
+            !selected
+        ) {
+            break;
+        }
+
+
+        workingRows =
+            workingRows.filter(
+                row =>
+                    row[levelColumn] ===
+                    selected
+            );
+    }
+}
+
+
+/* ============================================================
+   METRICS
+============================================================ */
+
+function getAdvancedDefinitionMetrics(
+    definition
+) {
+    if (
+        !definition.data
+    ) {
+        return [];
+    }
+
+    const rows =
+        getAdvancedExactRows(
+            definition
+        );
+
+    const numericMetrics =
+        definition.data
+            .numeric_metric_columns ||
+        [];
+
+
+    return numericMetrics.filter(
+        metric =>
+            rows.some(
+                row => {
+                    const value =
+                        getSortableValue(
+                            row[metric]
+                        );
+
+                    return (
+                        typeof value ===
+                        "number"
+                    );
+                }
+            )
+    );
+}
+
+
+function normalizeAdvancedDefinitionMetric(
+    definition
+) {
+    const metrics =
+        getAdvancedDefinitionMetrics(
+            definition
+        );
+
+
+    if (
+        metrics.includes(
+            definition.metric
+        )
+    ) {
+        return;
+    }
+
+
+    if (
+        metrics.includes(
+            "PPP"
+        )
+    ) {
+        definition.metric =
+            "PPP";
+
+        return;
+    }
+
+
+    if (
+        metrics.includes(
+            "POSS"
+        )
+    ) {
+        definition.metric =
+            "POSS";
+
+        return;
+    }
+
+
+    definition.metric =
+        metrics[0] || "";
+}
+
+
+/* ============================================================
+   GENERAL FIELD BUILDER
+============================================================ */
+
+function createAdvancedField(
+    labelText
+) {
+    const field =
+        document.createElement(
+            "label"
+        );
+
+    field.className =
+        "leaderboard-field advanced-condition-field";
+
+
+    const label =
+        document.createElement(
+            "span"
+        );
+
+    label.textContent =
+        labelText;
+
+
+    field.appendChild(
+        label
+    );
+
+
+    return field;
+}
+
+
+/* ============================================================
+   PRIMARY RANK BUILDER
+============================================================ */
+
+function renderAdvancedRankBuilder() {
+    const rank =
+        advancedLeaderboardState.rank;
+
+    advancedRankBuilder.innerHTML =
+        "";
+
+
+    const controls =
+        document.createElement(
+            "div"
+        );
+
+    controls.className =
+        "advanced-condition-controls";
+
+
+    /* ========================================================
+       REPORT
+    ======================================================== */
+
+    const reportField =
+        createAdvancedField(
+            "Report"
+        );
+
+    const reportSelect =
+        document.createElement(
+            "select"
+        );
+
+    reportSelect.className =
+        "control";
+
+
+    [
+        [
+            "play_types",
+            "Play Types"
+        ],
+
+        [
+            "shot_types",
+            "Shot Types"
+        ]
+    ].forEach(
+        ([value, label]) => {
+            const option =
+                document.createElement(
+                    "option"
+                );
+
+            option.value =
+                value;
+
+            option.textContent =
+                label;
+
+            option.selected =
+                value ===
+                rank.report;
+
+            reportSelect.appendChild(
+                option
+            );
+        }
+    );
+
+
+    reportSelect.addEventListener(
+        "change",
+        async () => {
+            rank.report =
+                reportSelect.value;
+
+            rank.table =
+                "";
+
+            rank.levelSelections =
+                [];
+
+            rank.metric =
+                "PPP";
+
+
+            await prepareAdvancedDefinition(
+                rank
+            );
+
+            renderAdvancedRankBuilder();
+
+            updateAdvancedQueryDescription();
+        }
+    );
+
+
+    reportField.appendChild(
+        reportSelect
+    );
+
+    controls.appendChild(
+        reportField
+    );
+
+
+    /* ========================================================
+       SIDE
+    ======================================================== */
+
+    const sideField =
+        createAdvancedField(
+            "Side"
+        );
+
+    const sideSelect =
+        document.createElement(
+            "select"
+        );
+
+    sideSelect.className =
+        "control";
+
+
+    [
+        [
+            "offense",
+            "Offense"
+        ],
+
+        [
+            "defense",
+            "Defense"
+        ]
+    ].forEach(
+        ([value, label]) => {
+            const option =
+                document.createElement(
+                    "option"
+                );
+
+            option.value =
+                value;
+
+            option.textContent =
+                label;
+
+            option.selected =
+                value ===
+                rank.side;
+
+            sideSelect.appendChild(
+                option
+            );
+        }
+    );
+
+
+    sideSelect.addEventListener(
+        "change",
+        async () => {
+            rank.side =
+                sideSelect.value;
+
+            rank.table =
+                "";
+
+            rank.levelSelections =
+                [];
+
+            rank.metric =
+                "PPP";
+
+
+            await prepareAdvancedDefinition(
+                rank
+            );
+
+            renderAdvancedRankBuilder();
+
+            updateAdvancedQueryDescription();
+        }
+    );
+
+
+    sideField.appendChild(
+        sideSelect
+    );
+
+    controls.appendChild(
+        sideField
+    );
+
+
+    /* ========================================================
+       TABLE
+    ======================================================== */
+
+    const tableField =
+        createAdvancedField(
+            "Table"
+        );
+
+    const tableSelect =
+        document.createElement(
+            "select"
+        );
+
+    tableSelect.className =
+        "control";
+
+
+    (
+        rank.data
+            ?.table_names || []
+    ).forEach(
+        tableName => {
+            const option =
+                document.createElement(
+                    "option"
+                );
+
+            option.value =
+                tableName;
+
+            option.textContent =
+                tableName;
+
+            option.selected =
+                tableName ===
+                rank.table;
+
+            tableSelect.appendChild(
+                option
+            );
+        }
+    );
+
+
+    tableSelect.addEventListener(
+        "change",
+        () => {
+            rank.table =
+                tableSelect.value;
+
+            rank.levelSelections =
+                [];
+
+            normalizeAdvancedDefinition(
+                rank
+            );
+
+            renderAdvancedRankBuilder();
+
+            updateAdvancedQueryDescription();
+        }
+    );
+
+
+    tableField.appendChild(
+        tableSelect
+    );
+
+    controls.appendChild(
+        tableField
+    );
+
+
+    /* ========================================================
+       HIERARCHY
+    ======================================================== */
+
+    appendAdvancedHierarchyControls(
+        rank,
+        controls,
+        () => {
+            renderAdvancedRankBuilder();
+
+            updateAdvancedQueryDescription();
+        }
+    );
+
+
+    /* ========================================================
+       RANK STAT
+    ======================================================== */
+
+    const metricField =
+        createAdvancedField(
+            "Rank Stat"
+        );
+
+    const metricSelect =
+        document.createElement(
+            "select"
+        );
+
+    metricSelect.className =
+        "control";
+
+
+    getAdvancedDefinitionMetrics(
+        rank
+    ).forEach(
+        metric => {
+            const option =
+                document.createElement(
+                    "option"
+                );
+
+            option.value =
+                metric;
+
+            option.textContent =
+                metric;
+
+            option.selected =
+                metric ===
+                rank.metric;
+
+            metricSelect.appendChild(
+                option
+            );
+        }
+    );
+
+
+    metricSelect.addEventListener(
+        "change",
+        () => {
+            rank.metric =
+                metricSelect.value;
+
+            updateAdvancedQueryDescription();
+        }
+    );
+
+
+    metricField.appendChild(
+        metricSelect
+    );
+
+    controls.appendChild(
+        metricField
+    );
+
+
+    /* ========================================================
+       DIRECTION
+    ======================================================== */
+
+    const directionField =
+        createAdvancedField(
+            "Direction"
+        );
+
+    const directionSelect =
+        document.createElement(
+            "select"
+        );
+
+    directionSelect.className =
+        "control";
+
+
+    [
+        [
+            "desc",
+            "Highest to Lowest"
+        ],
+
+        [
+            "asc",
+            "Lowest to Highest"
+        ]
+    ].forEach(
+        ([value, label]) => {
+            const option =
+                document.createElement(
+                    "option"
+                );
+
+            option.value =
+                value;
+
+            option.textContent =
+                label;
+
+            option.selected =
+                value ===
+                rank.direction;
+
+            directionSelect.appendChild(
+                option
+            );
+        }
+    );
+
+
+    directionSelect.addEventListener(
+        "change",
+        () => {
+            rank.direction =
+                directionSelect.value;
+
+            updateAdvancedQueryDescription();
+        }
+    );
+
+
+    directionField.appendChild(
+        directionSelect
+    );
+
+    controls.appendChild(
+        directionField
+    );
+
+
+    /* ========================================================
+       OPTIONAL PRIMARY MIN
+    ======================================================== */
+
+    const minField =
+        createAdvancedField(
+            "Minimum"
+        );
+
+    const minInput =
+        document.createElement(
+            "input"
+        );
+
+    minInput.type =
+        "number";
+
+    minInput.step =
+        "any";
+
+    minInput.className =
+        "control";
+
+    minInput.placeholder =
+        "None";
+
+    minInput.value =
+        rank.min ?? "";
+
+
+    minInput.addEventListener(
+        "input",
+        () => {
+            rank.min =
+                minInput.value === ""
+                    ? null
+                    : Number(
+                        minInput.value
+                    );
+
+            updateAdvancedQueryDescription();
+        }
+    );
+
+
+    minField.appendChild(
+        minInput
+    );
+
+    controls.appendChild(
+        minField
+    );
+
+
+    /* ========================================================
+       OPTIONAL PRIMARY MAX
+    ======================================================== */
+
+    const maxField =
+        createAdvancedField(
+            "Maximum"
+        );
+
+    const maxInput =
+        document.createElement(
+            "input"
+        );
+
+    maxInput.type =
+        "number";
+
+    maxInput.step =
+        "any";
+
+    maxInput.className =
+        "control";
+
+    maxInput.placeholder =
+        "None";
+
+    maxInput.value =
+        rank.max ?? "";
+
+
+    maxInput.addEventListener(
+        "input",
+        () => {
+            rank.max =
+                maxInput.value === ""
+                    ? null
+                    : Number(
+                        maxInput.value
+                    );
+
+            updateAdvancedQueryDescription();
+        }
+    );
+
+
+    maxField.appendChild(
+        maxInput
+    );
+
+    controls.appendChild(
+        maxField
+    );
+
+
+    advancedRankBuilder.appendChild(
+        controls
+    );
+
+
+    const footer =
+        document.createElement(
+            "div"
+        );
+
+    footer.className =
+        "advanced-condition-footer";
+
+    footer.textContent =
+        `${getAdvancedExactRows(rank).length} player/team rows available for this ranking category`;
+
+
+    advancedRankBuilder.appendChild(
+        footer
+    );
+}
+
+
+/* ============================================================
+   FILTER CARDS
+============================================================ */
+
+function renderAdvancedFilters() {
+    advancedFilters.innerHTML =
+        "";
+
+
+    if (
+        advancedLeaderboardState
+            .filters.length === 0
+    ) {
+        advancedFilters.innerHTML = `
+            <div class="advanced-no-filters">
+                No additional filters.
+                Every player with the selected ranking stat can qualify.
+            </div>
+        `;
+
+        return;
+    }
+
+
+    advancedLeaderboardState
+        .filters
+        .forEach(
+            (
+                filter,
+                index
+            ) => {
+                advancedFilters.appendChild(
+                    buildAdvancedFilterCard(
+                        filter,
+                        index
+                    )
+                );
+            }
+        );
+}
+
+
+function buildAdvancedFilterCard(
+    filter,
+    index
+) {
+    const card =
+        document.createElement(
+            "section"
+        );
+
+    card.className =
+        "advanced-condition-card";
+
+
+    const header =
+        document.createElement(
+            "div"
+        );
+
+    header.className =
+        "advanced-condition-header";
+
+
+    const title =
+        document.createElement(
+            "div"
+        );
+
+
+    title.innerHTML = `
+        <strong>
+            Filter ${index + 1}
+        </strong>
+
+        <span>
+            ${escapeHtml(
+                getAdvancedDefinitionLabel(
+                    filter
+                )
+            )}
+        </span>
+    `;
+
+
+    const removeButton =
+        document.createElement(
+            "button"
+        );
+
+    removeButton.type =
+        "button";
+
+    removeButton.className =
+        "advanced-condition-remove";
+
+    removeButton.textContent =
+        "Remove";
+
+
+    removeButton.addEventListener(
+        "click",
+        () => {
+            advancedLeaderboardState
+                .filters =
+                    advancedLeaderboardState
+                        .filters
+                        .filter(
+                            item =>
+                                item.id !==
+                                filter.id
+                        );
+
+
+            renderAdvancedFilters();
+
+            updateAdvancedQueryDescription();
+        }
+    );
+
+
+    header.appendChild(
+        title
+    );
+
+    header.appendChild(
+        removeButton
+    );
+
+    card.appendChild(
+        header
+    );
+
+
+    const controls =
+        document.createElement(
+            "div"
+        );
+
+    controls.className =
+        "advanced-condition-controls";
+
+
+    /* ========================================================
+       REPORT
+    ======================================================== */
+
+    const reportField =
+        createAdvancedField(
+            "Report"
+        );
+
+    const reportSelect =
+        document.createElement(
+            "select"
+        );
+
+    reportSelect.className =
+        "control";
+
+
+    [
+        [
+            "play_types",
+            "Play Types"
+        ],
+
+        [
+            "shot_types",
+            "Shot Types"
+        ]
+    ].forEach(
+        ([value, label]) => {
+            const option =
+                document.createElement(
+                    "option"
+                );
+
+            option.value =
+                value;
+
+            option.textContent =
+                label;
+
+            option.selected =
+                value ===
+                filter.report;
+
+            reportSelect.appendChild(
+                option
+            );
+        }
+    );
+
+
+    reportSelect.addEventListener(
+        "change",
+        async () => {
+            filter.report =
+                reportSelect.value;
+
+            filter.table =
+                "";
+
+            filter.levelSelections =
+                [];
+
+            filter.metric =
+                "POSS";
+
+
+            await prepareAdvancedDefinition(
+                filter
+            );
+
+            renderAdvancedFilters();
+
+            updateAdvancedQueryDescription();
+        }
+    );
+
+
+    reportField.appendChild(
+        reportSelect
+    );
+
+    controls.appendChild(
+        reportField
+    );
+
+
+    /* ========================================================
+       SIDE
+    ======================================================== */
+
+    const sideField =
+        createAdvancedField(
+            "Side"
+        );
+
+    const sideSelect =
+        document.createElement(
+            "select"
+        );
+
+    sideSelect.className =
+        "control";
+
+
+    [
+        [
+            "offense",
+            "Offense"
+        ],
+
+        [
+            "defense",
+            "Defense"
+        ]
+    ].forEach(
+        ([value, label]) => {
+            const option =
+                document.createElement(
+                    "option"
+                );
+
+            option.value =
+                value;
+
+            option.textContent =
+                label;
+
+            option.selected =
+                value ===
+                filter.side;
+
+            sideSelect.appendChild(
+                option
+            );
+        }
+    );
+
+
+    sideSelect.addEventListener(
+        "change",
+        async () => {
+            filter.side =
+                sideSelect.value;
+
+            filter.table =
+                "";
+
+            filter.levelSelections =
+                [];
+
+            filter.metric =
+                "POSS";
+
+
+            await prepareAdvancedDefinition(
+                filter
+            );
+
+            renderAdvancedFilters();
+
+            updateAdvancedQueryDescription();
+        }
+    );
+
+
+    sideField.appendChild(
+        sideSelect
+    );
+
+    controls.appendChild(
+        sideField
+    );
+
+
+    /* ========================================================
+       TABLE
+    ======================================================== */
+
+    const tableField =
+        createAdvancedField(
+            "Table"
+        );
+
+    const tableSelect =
+        document.createElement(
+            "select"
+        );
+
+    tableSelect.className =
+        "control";
+
+
+    (
+        filter.data
+            ?.table_names || []
+    ).forEach(
+        tableName => {
+            const option =
+                document.createElement(
+                    "option"
+                );
+
+            option.value =
+                tableName;
+
+            option.textContent =
+                tableName;
+
+            option.selected =
+                tableName ===
+                filter.table;
+
+            tableSelect.appendChild(
+                option
+            );
+        }
+    );
+
+
+    tableSelect.addEventListener(
+        "change",
+        () => {
+            filter.table =
+                tableSelect.value;
+
+            filter.levelSelections =
+                [];
+
+            normalizeAdvancedDefinition(
+                filter
+            );
+
+            renderAdvancedFilters();
+
+            updateAdvancedQueryDescription();
+        }
+    );
+
+
+    tableField.appendChild(
+        tableSelect
+    );
+
+    controls.appendChild(
+        tableField
+    );
+
+
+    /* ========================================================
+       HIERARCHY
+    ======================================================== */
+
+    appendAdvancedHierarchyControls(
+        filter,
+        controls,
+        () => {
+            renderAdvancedFilters();
+
+            updateAdvancedQueryDescription();
+        }
+    );
+
+
+    /* ========================================================
+       FILTER STAT
+    ======================================================== */
+
+    const metricField =
+        createAdvancedField(
+            "Stat"
+        );
+
+    const metricSelect =
+        document.createElement(
+            "select"
+        );
+
+    metricSelect.className =
+        "control";
+
+
+    getAdvancedDefinitionMetrics(
+        filter
+    ).forEach(
+        metric => {
+            const option =
+                document.createElement(
+                    "option"
+                );
+
+            option.value =
+                metric;
+
+            option.textContent =
+                metric;
+
+            option.selected =
+                metric ===
+                filter.metric;
+
+            metricSelect.appendChild(
+                option
+            );
+        }
+    );
+
+
+    metricSelect.addEventListener(
+        "change",
+        () => {
+            filter.metric =
+                metricSelect.value;
+
+            updateAdvancedQueryDescription();
+        }
+    );
+
+
+    metricField.appendChild(
+        metricSelect
+    );
+
+    controls.appendChild(
+        metricField
+    );
+
+
+    /* ========================================================
+       OPERATOR
+    ======================================================== */
+
+    const operatorField =
+        createAdvancedField(
+            "Condition"
+        );
+
+    const operatorSelect =
+        document.createElement(
+            "select"
+        );
+
+    operatorSelect.className =
+        "control advanced-operator";
+
+
+    [
+        ">=",
+        ">",
+        "<=",
+        "<",
+        "="
+    ].forEach(
+        operator => {
+            const option =
+                document.createElement(
+                    "option"
+                );
+
+            option.value =
+                operator;
+
+            option.textContent =
+                operator;
+
+            option.selected =
+                operator ===
+                filter.operator;
+
+            operatorSelect.appendChild(
+                option
+            );
+        }
+    );
+
+
+    operatorSelect.addEventListener(
+        "change",
+        () => {
+            filter.operator =
+                operatorSelect.value;
+
+            updateAdvancedQueryDescription();
+        }
+    );
+
+
+    operatorField.appendChild(
+        operatorSelect
+    );
+
+    controls.appendChild(
+        operatorField
+    );
+
+
+    /* ========================================================
+       VALUE
+    ======================================================== */
+
+    const valueField =
+        createAdvancedField(
+            "Value"
+        );
+
+    const valueInput =
+        document.createElement(
+            "input"
+        );
+
+    valueInput.type =
+        "number";
+
+    valueInput.step =
+        "any";
+
+    valueInput.className =
+        "control advanced-value";
+
+    valueInput.value =
+        filter.value;
+
+
+    valueInput.addEventListener(
+        "input",
+        () => {
+            filter.value =
+                valueInput.value;
+
+            updateAdvancedQueryDescription();
+        }
+    );
+
+
+    valueField.appendChild(
+        valueInput
+    );
+
+    controls.appendChild(
+        valueField
+    );
+
+
+    card.appendChild(
+        controls
+    );
+
+
+    const footer =
+        document.createElement(
+            "div"
+        );
+
+    footer.className =
+        "advanced-condition-footer";
+
+    footer.textContent =
+        `${getAdvancedExactRows(filter).length} player/team rows available at this exact path`;
+
+
+    card.appendChild(
+        footer
+    );
+
+
+    return card;
+}
+
+
+/* ============================================================
+   LABELS
+============================================================ */
+
+function getAdvancedDefinitionLabel(
+    definition
+) {
+    const levels =
+        definition
+            .levelSelections
+            .filter(Boolean);
+
+    if (
+        levels.length > 0
+    ) {
+        return levels.join(
+            " > "
+        );
+    }
+
+    return (
+        definition.table ||
+        "No category selected"
+    );
+}
+
+
+/* ============================================================
+   FILTER COMPARISON
+============================================================ */
+
+function advancedValueMatches(
+    value,
+    operator,
+    threshold
+) {
+    switch (
+        operator
+    ) {
+        case ">=":
+            return (
+                value >= threshold
+            );
+
+        case ">":
+            return (
+                value > threshold
+            );
+
+        case "<=":
+            return (
+                value <= threshold
+            );
+
+        case "<":
+            return (
+                value < threshold
+            );
+
+        case "=":
+            return (
+                value === threshold
+            );
+
+        default:
+            return false;
+    }
+}
+
+
+function getAdvancedPlayerKey(
+    row
+) {
+    return (
+        `${row.PLAYER}|||${row.TEAM}`
+    );
+}
+
+
+/* ============================================================
+   PRIMARY RANK MAP
+============================================================ */
+
+function buildAdvancedRankMap() {
+    const rank =
+        advancedLeaderboardState.rank;
+
+    const rows =
+        getAdvancedExactRows(
+            rank
+        );
+
+    const map =
+        new Map();
+
+
+    rows.forEach(
+        row => {
+            const rankValue =
+                getSortableValue(
+                    row[
+                        rank.metric
+                    ]
+                );
+
+
+            if (
+                typeof rankValue !==
+                "number"
+            ) {
+                return;
+            }
+
+
+            if (
+                rank.min !== null &&
+                rank.min !== undefined &&
+                rank.min !== "" &&
+                rankValue <
+                Number(rank.min)
+            ) {
+                return;
+            }
+
+
+            if (
+                rank.max !== null &&
+                rank.max !== undefined &&
+                rank.max !== "" &&
+                rankValue >
+                Number(rank.max)
+            ) {
+                return;
+            }
+
+
+            const key =
+                getAdvancedPlayerKey(
+                    row
+                );
+
+
+            if (
+                !map.has(
+                    key
+                )
+            ) {
+                map.set(
+                    key,
+                    {
+                        row,
+                        value:
+                            rankValue
+                    }
+                );
+            }
+        }
+    );
+
+
+    return map;
+}
+
+
+/* ============================================================
+   FILTER MAP
+============================================================ */
+
+function buildAdvancedFilterMap(
+    filter
+) {
+    const threshold =
+        Number(
+            filter.value
+        );
+
+
+    if (
+        !filter.metric ||
+        Number.isNaN(
+            threshold
+        )
+    ) {
+        return new Map();
+    }
+
+
+    const rows =
+        getAdvancedExactRows(
+            filter
+        );
+
+    const map =
+        new Map();
+
+
+    rows.forEach(
+        row => {
+            const value =
+                getSortableValue(
+                    row[
+                        filter.metric
+                    ]
+                );
+
+
+            if (
+                typeof value !==
+                "number"
+            ) {
+                return;
+            }
+
+
+            if (
+                !advancedValueMatches(
+                    value,
+                    filter.operator,
+                    threshold
+                )
+            ) {
+                return;
+            }
+
+
+            const key =
+                getAdvancedPlayerKey(
+                    row
+                );
+
+
+            if (
+                !map.has(
+                    key
+                )
+            ) {
+                map.set(
+                    key,
+                    {
+                        row,
+                        value
+                    }
+                );
+            }
+        }
+    );
+
+
+    return map;
+}
+
+
+/* ============================================================
+   RUN ADVANCED QUERY
+============================================================ */
+
+function runAdvancedLeaderboardQuery() {
+    const rank =
+        advancedLeaderboardState.rank;
+
+
+    if (
+        !rank.metric
+    ) {
+        advancedLeaderboardState.results =
+            [];
+
+        renderAdvancedLeaderboardResults();
+
+        return;
+    }
+
+
+    const rankMap =
+        buildAdvancedRankMap();
+
+
+    const filterMaps =
+        advancedLeaderboardState
+            .filters
+            .map(
+                filter =>
+                    buildAdvancedFilterMap(
+                        filter
+                    )
+            );
+
+
+    let survivingKeys =
+        new Set(
+            rankMap.keys()
+        );
+
+
+    filterMaps.forEach(
+        map => {
+            survivingKeys =
+                new Set(
+                    [
+                        ...survivingKeys
+                    ].filter(
+                        key =>
+                            map.has(
+                                key
+                            )
+                    )
+                );
+        }
+    );
+
+
+    let results =
+        [
+            ...survivingKeys
+        ].map(
+            key => {
+                const rankEntry =
+                    rankMap.get(
+                        key
+                    );
+
+
+                const filterValues =
+                    {};
+
+
+                advancedLeaderboardState
+                    .filters
+                    .forEach(
+                        (
+                            filter,
+                            index
+                        ) => {
+                            filterValues[
+                                filter.id
+                            ] =
+                                filterMaps[
+                                    index
+                                ]
+                                .get(
+                                    key
+                                )
+                                ?.value ??
+                                null;
+                        }
+                    );
+
+
+                return {
+                    PLAYER:
+                        rankEntry
+                            .row
+                            .PLAYER,
+
+                    TEAM:
+                        rankEntry
+                            .row
+                            .TEAM,
+
+                    rankValue:
+                        rankEntry
+                            .value,
+
+                    filterValues
+                };
+            }
+        );
+
+
+    results.sort(
+        (a, b) => {
+            if (
+                a.rankValue !==
+                b.rankValue
+            ) {
+                return (
+                    rank.direction ===
+                    "desc"
+                        ? b.rankValue -
+                            a.rankValue
+                        : a.rankValue -
+                            b.rankValue
+                );
+            }
+
+
+            return a.PLAYER.localeCompare(
+                b.PLAYER
+            );
+        }
+    );
+
+
+    advancedLeaderboardState.results =
+        results.map(
+            (
+                row,
+                index
+            ) => ({
+                RANK:
+                    index + 1,
+
+                ...row
+            })
+        );
+
+
+    renderAdvancedSummary();
+
+    renderAdvancedLeaderboardResults();
+}
+
+
+/* ============================================================
+   SUMMARY
+============================================================ */
+
+function updateAdvancedQueryDescription() {
+    if (
+        !advancedQueryDescription
+    ) {
+        return;
+    }
+
+
+    const rank =
+        advancedLeaderboardState.rank;
+
+
+    let text =
+        `Rank by `
+        +
+        `${getAdvancedDefinitionLabel(
+            rank
+        )} `
+        +
+        `${rank.metric || ""}`;
+
+
+    if (
+        rank.min !== null &&
+        rank.min !== ""
+    ) {
+        text +=
+            ` • min ${rank.min}`;
+    }
+
+
+    if (
+        rank.max !== null &&
+        rank.max !== ""
+    ) {
+        text +=
+            ` • max ${rank.max}`;
+    }
+
+
+    const filterCount =
+        advancedLeaderboardState
+            .filters.length;
+
+
+    text +=
+        ` • ${filterCount} additional `
+        +
+        `${filterCount === 1
+            ? "filter"
+            : "filters"
+        }`;
+
+
+    advancedQueryDescription.textContent =
+        text;
+}
+
+
+function renderAdvancedSummary() {
+    advancedSummary.innerHTML =
+        "";
+
+
+    const rank =
+        advancedLeaderboardState.rank;
+
+
+    const rankPill =
+        document.createElement(
+            "span"
+        );
+
+    rankPill.className =
+        "leaderboard-pill";
+
+    rankPill.textContent =
+        `Rank: `
+        +
+        `${getAdvancedDefinitionLabel(rank)} `
+        +
+        `${rank.metric}`;
+
+
+    advancedSummary.appendChild(
+        rankPill
+    );
+
+
+    advancedLeaderboardState
+        .filters
+        .forEach(
+            (
+                filter,
+                index
+            ) => {
+                const pill =
+                    document.createElement(
+                        "span"
+                    );
+
+                pill.className =
+                    "leaderboard-pill";
+
+                pill.textContent =
+                    `Filter ${index + 1}: `
+                    +
+                    `${getAdvancedDefinitionLabel(
+                        filter
+                    )} `
+                    +
+                    `${filter.metric} `
+                    +
+                    `${filter.operator} `
+                    +
+                    `${filter.value}`;
+
+
+                advancedSummary.appendChild(
+                    pill
+                );
+            }
+        );
+
+
+    const resultPill =
+        document.createElement(
+            "span"
+        );
+
+    resultPill.className =
+        "leaderboard-pill";
+
+    resultPill.textContent =
+        `${advancedLeaderboardState.results.length} results`;
+
+
+    advancedSummary.appendChild(
+        resultPill
+    );
+
+
+    advancedSummary.classList.remove(
+        "hidden"
+    );
+}
+
+
+/* ============================================================
+   RESULTS
+============================================================ */
+
+function renderAdvancedLeaderboardResults() {
+    advancedResults.innerHTML =
+        "";
+
+
+    const results =
+        advancedLeaderboardState
+            .results;
+
+
+    if (
+        !results ||
+        results.length === 0
+    ) {
+        advancedResults.innerHTML = `
+            <div class="empty-state">
+                <p>
+                    No players satisfy the current query.
+                </p>
+            </div>
+        `;
+
+        return;
+    }
+
+
+    const rank =
+        advancedLeaderboardState.rank;
+
+    const filters =
+        advancedLeaderboardState.filters;
+
+
+    const block =
+        document.createElement(
+            "section"
+        );
+
+    block.className =
+        "report-table-block";
+
+
+    const header =
+        document.createElement(
+            "div"
+        );
+
+    header.className =
+        "report-table-title";
+
+
+    const title =
+        document.createElement(
+            "span"
+        );
+
+    title.textContent =
+        "Advanced Leaderboard Results";
+
+
+    const count =
+        document.createElement(
+            "span"
+        );
+
+    count.className =
+        "report-table-count";
+
+    count.textContent =
+        `${results.length} rows`;
+
+
+    header.appendChild(
+        title
+    );
+
+    header.appendChild(
+        count
+    );
+
+    block.appendChild(
+        header
+    );
+
+
+    const wrapper =
+        document.createElement(
+            "div"
+        );
+
+    wrapper.className =
+        "table-scroll";
+
+
+    const table =
+        document.createElement(
+            "table"
+        );
+
+    table.className =
+        "data-table leaderboard-table";
+
+
+    const thead =
+        document.createElement(
+            "thead"
+        );
+
+    const headerRow =
+        document.createElement(
+            "tr"
+        );
+
+
+    const headers = [
+        {
+            label:
+                "RANK",
+            className:
+                "leaderboard-rank-col"
+        },
+
+        {
+            label:
+                "PLAYER",
+            className:
+                "leaderboard-player-col"
+        },
+
+        {
+            label:
+                "TEAM",
+            className:
+                "leaderboard-team-col"
+        },
+
+        {
+            label:
+                `${getAdvancedDefinitionLabel(
+                    rank
+                )} ${rank.metric}`,
+
+            className:
+                "leaderboard-number-col"
+        },
+
+        ...filters.map(
+            filter => ({
+                label:
+                    `${getAdvancedDefinitionLabel(
+                        filter
+                    )} ${filter.metric}`,
+
+                className:
+                    "leaderboard-number-col"
+            })
+        )
+    ];
+
+
+    headers.forEach(
+        headerInfo => {
+            const th =
+                document.createElement(
+                    "th"
+                );
+
+            th.textContent =
+                headerInfo.label;
+
+            th.className =
+                headerInfo.className;
+
+            headerRow.appendChild(
+                th
+            );
+        }
+    );
+
+
+    thead.appendChild(
+        headerRow
+    );
+
+    table.appendChild(
+        thead
+    );
+
+
+    const tbody =
+        document.createElement(
+            "tbody"
+        );
+
+
+    results.forEach(
+        result => {
+            const tr =
+                document.createElement(
+                    "tr"
+                );
+
+
+            const values = [
+                {
+                    value:
+                        result.RANK,
+                    className:
+                        "leaderboard-rank-col",
+                    metric:
+                        "RANK"
+                },
+
+                {
+                    value:
+                        result.PLAYER,
+                    className:
+                        "leaderboard-player-col",
+                    metric:
+                        "PLAYER"
+                },
+
+                {
+                    value:
+                        result.TEAM,
+                    className:
+                        "leaderboard-team-col",
+                    metric:
+                        "TEAM"
+                },
+
+                {
+                    value:
+                        result.rankValue,
+                    className:
+                        "leaderboard-number-col",
+                    metric:
+                        rank.metric
+                },
+
+                ...filters.map(
+                    filter => ({
+                        value:
+                            result
+                                .filterValues[
+                                    filter.id
+                                ],
+
+                        className:
+                            "leaderboard-number-col",
+
+                        metric:
+                            filter.metric
+                    })
+                )
+            ];
+
+
+            values.forEach(
+                item => {
+                    const td =
+                        document.createElement(
+                            "td"
+                        );
+
+                    td.className =
+                        item.className;
+
+                    td.textContent =
+                        formatValue(
+                            item.value,
+                            item.metric
+                        );
+
+                    tr.appendChild(
+                        td
+                    );
+                }
+            );
+
+
+            tbody.appendChild(
+                tr
+            );
+        }
+    );
+
+
+    table.appendChild(
+        tbody
+    );
+
+    wrapper.appendChild(
+        table
+    );
+
+    block.appendChild(
+        wrapper
+    );
+
+    advancedResults.appendChild(
+        block
+    );
+}
+
+
+/* ============================================================
+   DOWNLOAD
+============================================================ */
+
+function downloadAdvancedLeaderboardCsv() {
+    const results =
+        advancedLeaderboardState
+            .results;
+
+    if (
+        !results ||
+        results.length === 0
+    ) {
+        return;
+    }
+
+
+    const rank =
+        advancedLeaderboardState.rank;
+
+    const filters =
+        advancedLeaderboardState.filters;
+
+
+    const rankColumn =
+        `${getAdvancedDefinitionLabel(
+            rank
+        )} ${rank.metric}`;
+
+
+    const filterColumns =
+        filters.map(
+            filter =>
+                `${getAdvancedDefinitionLabel(
+                    filter
+                )} ${filter.metric}`
+        );
+
+
+    const rows =
+        results.map(
+            result => {
+                const row = {
+                    RANK:
+                        result.RANK,
+
+                    PLAYER:
+                        result.PLAYER,
+
+                    TEAM:
+                        result.TEAM,
+
+                    [rankColumn]:
+                        result.rankValue
+                };
+
+
+                filters.forEach(
+                    (
+                        filter,
+                        index
+                    ) => {
+                        row[
+                            filterColumns[
+                                index
+                            ]
+                        ] =
+                            result
+                                .filterValues[
+                                    filter.id
+                                ];
+                    }
+                );
+
+
+                return row;
+            }
+        );
+
+
+    downloadCsv(
+        "advanced_synergy_leaderboard.csv",
+        rows,
+        Object.keys(
+            rows[0]
+        )
+    );
+}
+
+
+/* ============================================================
+   INITIALIZATION
+============================================================ */
+
+async function initializeAdvancedLeaderboard() {
+    advancedLoading.classList.remove(
+        "hidden"
+    );
+
+
+    try {
+        await prepareAdvancedDefinition(
+            advancedLeaderboardState.rank
+        );
+
+
+        await Promise.all(
+            advancedLeaderboardState
+                .filters
+                .map(
+                    filter =>
+                        prepareAdvancedDefinition(
+                            filter
+                        )
+                )
+        );
+
+
+        renderAdvancedRankBuilder();
+
+        renderAdvancedFilters();
+
+        updateAdvancedQueryDescription();
+
+
+    } finally {
+        advancedLoading.classList.add(
+            "hidden"
+        );
+    }
+}
+
+
+/* ============================================================
+   EVENTS
+============================================================ */
+
+leaderboardSimpleMode.addEventListener(
+    "click",
+    () => {
+        setLeaderboardMode(
+            "simple"
+        );
+    }
+);
+
+
+leaderboardAdvancedMode.addEventListener(
+    "click",
+    async () => {
+        setLeaderboardMode(
+            "advanced"
+        );
+
+        await initializeAdvancedLeaderboard();
+    }
+);
+
+
+advancedAddFilter.addEventListener(
+    "click",
+    async () => {
+        const filter =
+            createAdvancedFilter();
+
+
+        advancedLeaderboardState
+            .filters
+            .push(
+                filter
+            );
+
+
+        await prepareAdvancedDefinition(
+            filter
+        );
+
+
+        renderAdvancedFilters();
+
+        updateAdvancedQueryDescription();
+    }
+);
+
+
+advancedRun.addEventListener(
+    "click",
+    () => {
+        runAdvancedLeaderboardQuery();
+    }
+);
+
+
+advancedDownload.addEventListener(
+    "click",
+    () => {
+        downloadAdvancedLeaderboardCsv();
+    }
+);
 
 /* ============================================================
    CSV DOWNLOAD

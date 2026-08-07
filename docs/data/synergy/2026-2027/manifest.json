@@ -1,7 +1,7 @@
 {
   "season": "2026-2027",
   "league": "International",
-  "generated_at_utc": "2026-08-05T18:02:53+00:00",
+  "generated_at_utc": "2026-08-06T22:17:20+00:00",
   "player_count": 207,
   "team_count": 10,
   "combined": {
@@ -9,7 +9,21 @@
     "player_shot_types.csv": "combined/player_shot_types.csv",
     "player_shot_types.json": "combined/player_shot_types.json",
     "team_cumulative_box.csv": "combined/team_cumulative_box.csv",
-    "team_cumulative_box.json": "combined/team_cumulative_box.json"
+    "team_cumulative_box.json": "combined/team_cumulative_box.json",
+    "leaderboard_play_types_offense.json": "combined/leaderboard_play_types_offense.json",
+    "leaderboard_play_types_defense.json": "combined/leaderboard_play_types_defense.json",
+    "leaderboard_shot_types_offense.json": "combined/leaderboard_shot_types_offense.json",
+    "leaderboard_shot_types_defense.json": "combined/leaderboard_shot_types_defense.json"
+  },
+  "leaderboards": {
+    "play_types": {
+      "offense": "combined/leaderboard_play_types_offense.json",
+      "defense": "combined/leaderboard_play_types_defense.json"
+    },
+    "shot_types": {
+      "offense": "combined/leaderboard_shot_types_offense.json",
+      "defense": "combined/leaderboard_shot_types_defense.json"
+    }
   },
   "players": [
     {

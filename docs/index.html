@@ -75,6 +75,14 @@
                 Team Cumulative Box
             </button>
 
+            <button
+                class="view-tab"
+                data-view="leaderboards"
+                type="button"
+            >
+                Leaderboards
+            </button>
+
         </div>
 
 
@@ -358,7 +366,328 @@
             </div>
 
         </section>
+    
+        <!-- ===================================================
+             LEADERBOARD VIEW
+        ==================================================== -->
 
+        <section
+            id="leaderboardsView"
+            class="main-view"
+        >
+
+            <div class="content-panel">
+
+                <div class="entity-header">
+
+                    <div>
+
+                        <div class="eyebrow">
+                            QUERY TOOL
+                        </div>
+
+                        <h2>
+                            Synergy Leaderboards
+                        </h2>
+
+                        <div class="entity-subtitle">
+                            Rank CEBL players using Play Types and Shot Types data.
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ===================================================
+                    SIMPLE / ADVANCED MODE
+                ==================================================== -->
+
+                <div class="leaderboard-mode-bar">
+
+                    <div class="segmented-control">
+
+                        <button
+                            id="leaderboardSimpleMode"
+                            class="leaderboard-mode-button active"
+                            type="button"
+                        >
+                            Simple
+                        </button>
+
+                        <button
+                            id="leaderboardAdvancedMode"
+                            class="leaderboard-mode-button"
+                            type="button"
+                        >
+                            Advanced
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ===================================================
+                    SIMPLE LEADERBOARD
+                ==================================================== -->
+
+                <div
+                    id="simpleLeaderboardPanel"
+                >
+
+                    <div class="leaderboard-controls">
+
+                        <label class="leaderboard-field">
+                            <span>Report</span>
+
+                            <select
+                                id="leaderboardReport"
+                                class="control"
+                            >
+                                <option value="play_types">
+                                    Play Types
+                                </option>
+
+                                <option value="shot_types">
+                                    Shot Types
+                                </option>
+                            </select>
+                        </label>
+
+
+                        <label class="leaderboard-field">
+                            <span>Side</span>
+
+                            <select
+                                id="leaderboardSide"
+                                class="control"
+                            >
+                                <option value="offense">
+                                    Offense
+                                </option>
+
+                                <option value="defense">
+                                    Defense
+                                </option>
+                            </select>
+                        </label>
+
+
+                        <label class="leaderboard-field">
+                            <span>Table</span>
+
+                            <select
+                                id="leaderboardTable"
+                                class="control"
+                            ></select>
+                        </label>
+
+
+                        <div
+                            id="leaderboardHierarchyFields"
+                            class="leaderboard-hierarchy-grid"
+                        ></div>
+
+
+                        <label class="leaderboard-field">
+                            <span>Rank By</span>
+
+                            <select
+                                id="leaderboardMetric"
+                                class="control"
+                            ></select>
+                        </label>
+
+
+                        <label class="leaderboard-field">
+                            <span>Minimum POSS</span>
+
+                            <input
+                                id="leaderboardMinPoss"
+                                class="control"
+                                type="number"
+                                min="0"
+                                step="1"
+                                value="10"
+                            >
+                        </label>
+
+
+                        <div class="leaderboard-actions">
+
+                            <button
+                                id="leaderboardRun"
+                                class="download-button leaderboard-run-button"
+                                type="button"
+                            >
+                                Run Leaderboard
+                            </button>
+
+                            <button
+                                id="leaderboardDownload"
+                                class="download-button"
+                                type="button"
+                            >
+                                Download CSV
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        id="leaderboardLoading"
+                        class="loading-box hidden"
+                    >
+                        Loading leaderboard data...
+                    </div>
+
+
+                    <div
+                        id="leaderboardSummary"
+                        class="leaderboard-summary hidden"
+                    ></div>
+
+
+                    <div
+                        id="leaderboardResults"
+                        class="tables-container"
+                    ></div>
+
+                </div>
+
+
+                <!-- ===================================================
+                    ADVANCED LEADERBOARD
+                ==================================================== -->
+
+                <!-- ===================================================
+                    ADVANCED LEADERBOARD
+                ==================================================== -->
+
+                <div
+                    id="advancedLeaderboardPanel"
+                    class="hidden"
+                >
+
+                    <!-- ===================================================
+                        PRIMARY RANKING
+                    ==================================================== -->
+
+                    <div class="advanced-section-header">
+
+                        <div>
+                            <strong>
+                                Rank players by
+                            </strong>
+
+                            <span>
+                                This determines the order of the leaderboard.
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        id="advancedRankBuilder"
+                        class="advanced-builder-card"
+                    ></div>
+
+
+                    <!-- ===================================================
+                        ADDITIONAL FILTERS
+                    ==================================================== -->
+
+                    <div class="advanced-section-header advanced-filter-header">
+
+                        <div>
+                            <strong>
+                                Additional filters
+                            </strong>
+
+                            <span>
+                                Players must satisfy every filter below.
+                            </span>
+                        </div>
+
+                        <button
+                            id="advancedAddFilter"
+                            class="download-button"
+                            type="button"
+                        >
+                            + Add Filter
+                        </button>
+
+                    </div>
+
+
+                    <div
+                        id="advancedFilters"
+                        class="advanced-conditions"
+                    ></div>
+
+
+                    <!-- ===================================================
+                        ACTIONS
+                    ==================================================== -->
+
+                    <div class="advanced-rank-bar">
+
+                        <div
+                            id="advancedQueryDescription"
+                            class="advanced-query-description"
+                        ></div>
+
+                        <div class="leaderboard-actions">
+
+                            <button
+                                id="advancedRun"
+                                class="download-button leaderboard-run-button"
+                                type="button"
+                            >
+                                Run Leaderboard
+                            </button>
+
+                            <button
+                                id="advancedDownload"
+                                class="download-button"
+                                type="button"
+                            >
+                                Download CSV
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        id="advancedLoading"
+                        class="loading-box hidden"
+                    >
+                        Loading query data...
+                    </div>
+
+
+                    <div
+                        id="advancedSummary"
+                        class="leaderboard-summary hidden"
+                    ></div>
+
+
+                    <div
+                        id="advancedResults"
+                        class="tables-container"
+                    ></div>
+
+                </div>
+
+            </div>
+
+        </section>
     </main>
 
 

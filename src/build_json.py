@@ -876,6 +876,296 @@ def build_combined_json_file(
     )
 
 
+def get_level_columns(
+    df,
+):
+    level_columns = [
+        column
+        for column in df.columns
+        if column.startswith(
+            "LEVEL_"
+        )
+    ]
+
+    return sorted(
+        level_columns,
+        key=lambda column:
+            int(
+                column.split(
+                    "_"
+                )[1]
+            )
+    )
+
+
+def get_numeric_metric_columns(
+    df,
+    metric_columns,
+):
+    numeric_columns = []
+
+    for column in metric_columns:
+        numeric_series = pd.to_numeric(
+            df[column],
+            errors="coerce",
+        )
+
+        if numeric_series.notna().any():
+            numeric_columns.append(
+                column
+            )
+
+    return numeric_columns
+
+
+def write_empty_leaderboard_file(
+    *,
+    report_name,
+    side,
+    output_filename,
+):
+    output = {
+        "report":
+            report_name,
+
+        "side":
+            side,
+
+        "row_count":
+            0,
+
+        "table_names":
+            [],
+
+        "level_columns":
+            [],
+
+        "metric_columns":
+            [],
+
+        "numeric_metric_columns":
+            [],
+
+        "rows":
+            [],
+    }
+
+    write_json_file(
+        output,
+        COMBINED_DIR
+        / output_filename,
+    )
+
+    return 0
+
+
+def build_leaderboard_json_file(
+    source_df,
+    *,
+    report_name,
+    side,
+    output_filename,
+):
+    if (
+        source_df is None
+        or
+        source_df.empty
+    ):
+        return write_empty_leaderboard_file(
+            report_name=report_name,
+            side=side,
+            output_filename=output_filename,
+        )
+
+    if "SIDE" not in source_df.columns:
+        return write_empty_leaderboard_file(
+            report_name=report_name,
+            side=side,
+            output_filename=output_filename,
+        )
+
+    side_df = source_df[
+        source_df["SIDE"]
+        .astype(str)
+        .str.lower()
+        == side.lower()
+    ].copy()
+
+    if side_df.empty:
+        return write_empty_leaderboard_file(
+            report_name=report_name,
+            side=side,
+            output_filename=output_filename,
+        )
+
+    level_columns = get_level_columns(
+        side_df
+    )
+
+    base_columns = [
+        "PLAYER",
+        "TEAM",
+        "SEASON",
+        "SIDE",
+        "TABLE",
+        "STAT",
+        "DEPTH",
+        "PARENT",
+        "PATH",
+    ]
+
+    metadata_columns = [
+        column
+        for column in (
+            base_columns
+            + level_columns
+        )
+        if column in side_df.columns
+    ]
+
+    metric_columns = [
+        column
+        for column in side_df.columns
+        if column not in metadata_columns
+    ]
+
+    numeric_metric_columns = (
+        get_numeric_metric_columns(
+            side_df,
+            metric_columns,
+        )
+    )
+
+    ordered_columns = (
+        metadata_columns
+        + metric_columns
+    )
+
+    side_df = side_df[
+        ordered_columns
+    ].copy()
+
+    table_names = list(
+        dict.fromkeys(
+            [
+                str(value).strip()
+                for value in side_df[
+                    "TABLE"
+                ].tolist()
+                if (
+                    pd.notna(
+                        value
+                    )
+                    and
+                    str(value).strip()
+                )
+            ]
+        )
+    )
+
+    output = {
+        "report":
+            report_name,
+
+        "side":
+            side,
+
+        "row_count":
+            len(
+                side_df
+            ),
+
+        "table_names":
+            table_names,
+
+        "level_columns":
+            level_columns,
+
+        "metric_columns":
+            metric_columns,
+
+        "numeric_metric_columns":
+            numeric_metric_columns,
+
+        "rows":
+            dataframe_to_records(
+                side_df
+            ),
+    }
+
+    write_json_file(
+        output,
+        COMBINED_DIR
+        / output_filename,
+    )
+
+    return len(
+        side_df
+    )
+
+
+def build_leaderboard_json():
+    print()
+    print(
+        "================================"
+    )
+    print(
+        "LEADERBOARD JSON"
+    )
+    print(
+        "================================"
+    )
+
+    report_sources = [
+        (
+            "play_types",
+            "player_play_types.csv",
+        ),
+
+        (
+            "shot_types",
+            "player_shot_types.csv",
+        ),
+    ]
+
+    for report_name, csv_filename in report_sources:
+        csv_file = (
+            COMBINED_DIR
+            / csv_filename
+        )
+
+        df = read_csv_if_exists(
+            csv_file
+        )
+
+        if df is None:
+            df = pd.DataFrame()
+
+        for side in (
+            "offense",
+            "defense",
+        ):
+            output_filename = (
+                f"leaderboard_"
+                f"{report_name}_"
+                f"{side}.json"
+            )
+
+            count = (
+                build_leaderboard_json_file(
+                    df,
+                    report_name=report_name,
+                    side=side,
+                    output_filename=output_filename,
+                )
+            )
+
+            print(
+                f"{output_filename}: "
+                f"{count} rows"
+            )
+
+
 def build_combined_json():
     print()
     print(
@@ -924,7 +1214,8 @@ def build_combined_json():
         f"{team_count} rows"
     )
 
-
+    print()
+    build_leaderboard_json()
 # ============================================================
 # MAIN
 # ============================================================

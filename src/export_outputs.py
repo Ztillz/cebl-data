@@ -60,6 +60,10 @@ COMBINED_FILES = [
     "player_shot_types.json",
     "team_cumulative_box.csv",
     "team_cumulative_box.json",
+    "leaderboard_play_types_offense.json",
+    "leaderboard_play_types_defense.json",
+    "leaderboard_shot_types_offense.json",
+    "leaderboard_shot_types_defense.json",
 ]
 
 
@@ -546,6 +550,24 @@ def build_manifest(
         .isoformat()
     )
 
+    leaderboards = {
+        "play_types": {
+            "offense":
+                "combined/leaderboard_play_types_offense.json",
+
+            "defense":
+                "combined/leaderboard_play_types_defense.json",
+        },
+
+        "shot_types": {
+            "offense":
+                "combined/leaderboard_shot_types_offense.json",
+
+            "defense":
+                "combined/leaderboard_shot_types_defense.json",
+        },
+    }
+
     manifest = {
         "season":
             SYNERGY_SEASON,
@@ -569,6 +591,9 @@ def build_manifest(
         "combined":
             combined,
 
+        "leaderboards":
+            leaderboards,
+
         "players":
             players,
 
@@ -582,7 +607,6 @@ def build_manifest(
     )
 
     return manifest
-
 
 # ============================================================
 # MAIN
