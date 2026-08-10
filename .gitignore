@@ -33,3 +33,21 @@ Thumbs.db
 # Temporary exports
 tmp/
 temp/
+
+# Local Synergy team scraping / API discovery tools
+src/capture_team_tabs.py
+src/discover_team_network.py
+src/discover_team_page.py
+src/discover_team_variants.py
+src/inspect_team_leaderboard_record.py
+src/inspect_team_possession_reports.py
+src/build_team_tables.py
+src/capture_team_box.py
+
+# Internal Synergy capture/build data remains local
+data/raw/
+data/processed/
+
+# Discovery output must never be published
+**/network_discovery/
+**/variant_discovery/

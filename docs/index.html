@@ -12,7 +12,7 @@
 
     <link
         rel="stylesheet"
-        href="css/styles.css"
+        href="css/styles.css?v=20260809"
     >
 </head>
 
@@ -72,7 +72,7 @@
                 data-view="teams"
                 type="button"
             >
-                Team Cumulative Box
+                Teams
             </button>
 
             <button
@@ -271,7 +271,7 @@
         </section>
 
 
-        <!-- ===================================================
+                <!-- ===================================================
              TEAM VIEW
         ==================================================== -->
 
@@ -285,11 +285,11 @@
                 <div>
 
                     <div class="eyebrow">
-                        TEAM REPORT
+                        TEAM BROWSER
                     </div>
 
                     <h2>
-                        Cumulative Box
+                        Team Reports
                     </h2>
 
                 </div>
@@ -321,7 +321,8 @@
                 </h2>
 
                 <p>
-                    Browse the complete Synergy Cumulative Box for a CEBL team.
+                    Browse team Play Types, Shot Types, per-game breakdowns,
+                    and the cumulative box report.
                 </p>
 
             </div>
@@ -337,7 +338,7 @@
                     <div>
 
                         <div class="eyebrow">
-                            CUMULATIVE BOX
+                            TEAM REPORT
                         </div>
 
                         <h2
@@ -351,6 +352,79 @@
 
 
                 <div
+                    id="teamReportToolbar"
+                    class="toolbar team-report-toolbar"
+                >
+
+                    <div
+                        id="teamReportTabs"
+                        class="segmented-control"
+                    >
+                        <button
+                            class="active"
+                            data-team-report="play_types"
+                            type="button"
+                        >
+                            Play Types
+                        </button>
+
+                        <button
+                            data-team-report="shot_types"
+                            type="button"
+                        >
+                            Shot Types
+                        </button>
+
+                        <button
+                            data-team-report="cumulative_box"
+                            type="button"
+                        >
+                            Cumulative Box
+                        </button>
+                    </div>
+
+
+                    <div
+                        id="teamSideControls"
+                        class="segmented-control"
+                    >
+                        <button
+                            class="active"
+                            data-team-side="offense"
+                            type="button"
+                        >
+                            Offense
+                        </button>
+
+                        <button
+                            data-team-side="defense"
+                            type="button"
+                        >
+                            Defense
+                        </button>
+                    </div>
+
+                </div>
+
+
+                <div
+                    id="teamMetricBar"
+                    class="team-metric-bar"
+                >
+                    <label class="team-metric-field">
+                        <span>
+                            Per Game Metric
+                        </span>
+
+                        <select
+                            id="teamMetricSelect"
+                            class="control"
+                        ></select>
+                    </label>
+                </div>
+
+
+                <div
                     id="teamLoading"
                     class="loading-box hidden"
                 >
@@ -359,9 +433,70 @@
 
 
                 <div
-                    id="teamTable"
-                    class="tables-container"
-                ></div>
+                    id="teamSynergyContent"
+                >
+
+                    <div class="team-section-heading">
+
+                        <div>
+
+                            <div class="eyebrow">
+                                PER GAME BREAKDOWN
+                            </div>
+
+                            <h3>
+                                Game-by-Game
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        id="teamGameBreakdown"
+                        class="tables-container team-game-breakdown"
+                    ></div>
+
+
+                    <div
+                        class="team-section-heading team-section-heading--bordered"
+                    >
+
+                        <div>
+
+                            <div class="eyebrow">
+                                TEAM REPORT
+                            </div>
+
+                            <h3>
+                                Synergy Tables
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        id="teamReportTables"
+                        class="tables-container"
+                    ></div>
+
+                </div>
+
+
+                <div
+                    id="teamCumulativeContent"
+                    class="hidden"
+                >
+
+                    <div
+                        id="teamTable"
+                        class="tables-container"
+                    ></div>
+
+                </div>
 
             </div>
 
@@ -691,8 +826,12 @@
     </main>
 
 
+        <script
+        src="js/app.js?v=20260809"
+    ></script>
+
     <script
-        src="js/app.js"
+        src="js/team.js?v=20260809"
     ></script>
 
 </body>

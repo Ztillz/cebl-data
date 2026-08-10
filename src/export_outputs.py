@@ -77,10 +77,27 @@ PLAYER_SECTION_FILES = [
 ]
 
 
-TEAM_FILES = [
+TEAM_ROOT_FILES = [
     "cumulative_box.csv",
     "cumulative_box.json",
 ]
+
+TEAM_REPORTS = (
+    "play_types",
+    "shot_types",
+)
+
+TEAM_SIDES = (
+    "offense",
+    "defense",
+)
+
+TEAM_REPORT_FILE_TEMPLATES = {
+    "report": "{side}.json",
+    "tree": "{side}_tree.json",
+    "game_breakdown": "{side}_game_breakdown.json",
+    "csv": "{side}.csv",
+}
 
 
 # ============================================================
@@ -490,7 +507,11 @@ def publish_teams():
             / team_key
         )
 
-        for filename in TEAM_FILES:
+        # ====================================================
+        # CUMULATIVE BOX
+        # ====================================================
+
+        for filename in TEAM_ROOT_FILES:
 
             copy_required_file(
                 team_folder
@@ -499,6 +520,61 @@ def publish_teams():
                 destination_root
                 / filename,
             )
+
+        # ====================================================
+        # PLAY TYPES + SHOT TYPES
+        # ====================================================
+
+        reports = {}
+
+        for report in TEAM_REPORTS:
+
+            reports[report] = {}
+
+            for side in TEAM_SIDES:
+
+                side_files = {}
+
+                for (
+                    file_key,
+                    filename_template,
+                ) in TEAM_REPORT_FILE_TEMPLATES.items():
+
+                    filename = (
+                        filename_template.format(
+                            side=side
+                        )
+                    )
+
+                    source = (
+                        team_folder
+                        / report
+                        / filename
+                    )
+
+                    destination = (
+                        destination_root
+                        / report
+                        / filename
+                    )
+
+                    copy_required_file(
+                        source,
+                        destination,
+                    )
+
+                    side_files[
+                        file_key
+                    ] = (
+                        f"teams/"
+                        f"{team_key}/"
+                        f"{report}/"
+                        f"{filename}"
+                    )
+
+                reports[report][side] = (
+                    side_files
+                )
 
         teams.append(
             {
@@ -520,6 +596,16 @@ def publish_teams():
                         f"{team_key}/"
                         f"cumulative_box.json"
                     ),
+
+                "cumulative_box_csv":
+                    (
+                        f"teams/"
+                        f"{team_key}/"
+                        f"cumulative_box.csv"
+                    ),
+
+                "reports":
+                    reports,
             }
         )
 
@@ -528,7 +614,6 @@ def publish_teams():
         )
 
     return teams
-
 
 # ============================================================
 # MANIFEST
