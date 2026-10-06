@@ -1,4 +1,9 @@
-const DATA_ROOT = "data/synergy/2026-2027";
+const AVAILABLE_SEASONS = ["2026-2027", "2025-2026", "2024-2025"];
+const pageParams = new URLSearchParams(window.location.search);
+const SELECTED_SEASON = AVAILABLE_SEASONS.includes(pageParams.get("season"))
+    ? pageParams.get("season")
+    : AVAILABLE_SEASONS[0];
+const DATA_ROOT = `data/synergy/${SELECTED_SEASON}`;
 const MANIFEST_URL = `${DATA_ROOT}/manifest.json`;
 
 let manifest = null;
@@ -60,6 +65,19 @@ let advancedLeaderboardState = {
 
 const seasonLabel = document.getElementById("seasonLabel");
 const dataStatus = document.getElementById("dataStatus");
+const seasonSelect = document.getElementById("seasonSelect");
+const seasonCoverage = document.getElementById("seasonCoverage");
+
+seasonSelect.value = SELECTED_SEASON;
+seasonSelect.addEventListener("change", () => {
+    const url = new URL(window.location.href);
+    url.searchParams.set("season", seasonSelect.value);
+    const view = document.querySelector(".view-tab.active")?.dataset.view;
+    if (view) url.searchParams.set("view", view);
+    if (teamSelect.value) url.searchParams.set("team", teamSelect.value);
+    else url.searchParams.delete("team");
+    window.location.assign(url);
+});
 
 const playersView = document.getElementById("playersView");
 const teamsView = document.getElementById("teamsView");
@@ -202,7 +220,36 @@ async function initialize() {
         populateTeamFilters();
         renderPlayerList();
         populateTeamSelect();
-        await initializeLeaderboardControls();
+
+        const hasPlayers = manifest.players.length > 0;
+        const hasLeaderboards = Object.keys(manifest.leaderboards || {}).length > 0;
+        const limitedSeason = !hasPlayers && !hasLeaderboards;
+        document.querySelector('[data-view="players"]').disabled = !hasPlayers;
+        document.querySelector('[data-view="leaderboards"]').disabled = !hasLeaderboards;
+        seasonCoverage.classList.toggle("hidden", !limitedSeason);
+        seasonCoverage.textContent = limitedSeason
+            ? "Cumulative box reports are available for this season. Play Types and Shot Types have not been imported."
+            : "";
+        if (limitedSeason) {
+            document.querySelector("#teamEmptyState p").textContent =
+                "Choose a team to browse its cumulative box report.";
+        }
+
+        const requestedView = pageParams.get("view");
+        const requestedButton = document.querySelector(
+            `.view-tab[data-view="${["players", "teams", "leaderboards"].includes(requestedView) ? requestedView : "players"}"]`
+        );
+        const initialView = requestedButton.disabled ? "teams" : requestedButton.dataset.view;
+        document.querySelector(`.view-tab[data-view="${initialView}"]`).click();
+        const requestedTeam = pageParams.get("team");
+        if (requestedTeam === "__all__" || manifest.teams.some(team => team.key === requestedTeam)) {
+            teamSelect.value = requestedTeam;
+            teamSelect.dispatchEvent(new Event("change"));
+        } else if (limitedSeason) {
+            teamSelect.value = "__all__";
+            teamSelect.dispatchEvent(new Event("change"));
+        }
+        if (hasLeaderboards) await initializeLeaderboardControls();
 
     } catch (error) {
         console.error(error);
@@ -6413,7 +6460,7 @@ function downloadTeamTableCsv(
     const filename =
         `${sanitizeFilenamePart(
             selectedTeam?.team
-        )}__cumulative_box.csv`;
+        )}__${SELECTED_SEASON}__cumulative_box.csv`;
 
     downloadCsv(
         filename,

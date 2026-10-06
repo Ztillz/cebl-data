@@ -1,0 +1,96 @@
+{
+  "season": "2025-2026",
+  "league": "International",
+  "scope": "cumulative_box",
+  "generated_at_utc": "2026-10-06T23:45:14.496734+00:00",
+  "team_count": 10,
+  "player_count": 185,
+  "players": [],
+  "teams": [
+    {
+      "team": "Brampton Honey Badgers",
+      "key": "brampton_honey_badgers",
+      "path": "teams/brampton_honey_badgers/",
+      "cumulative_box": "teams/brampton_honey_badgers/cumulative_box.json",
+      "cumulative_box_csv": "teams/brampton_honey_badgers/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "team": "Calgary Surge",
+      "key": "calgary_surge",
+      "path": "teams/calgary_surge/",
+      "cumulative_box": "teams/calgary_surge/cumulative_box.json",
+      "cumulative_box_csv": "teams/calgary_surge/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "team": "Edmonton Stingers",
+      "key": "edmonton_stingers",
+      "path": "teams/edmonton_stingers/",
+      "cumulative_box": "teams/edmonton_stingers/cumulative_box.json",
+      "cumulative_box_csv": "teams/edmonton_stingers/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "team": "Montreal Alliance",
+      "key": "montreal_alliance",
+      "path": "teams/montreal_alliance/",
+      "cumulative_box": "teams/montreal_alliance/cumulative_box.json",
+      "cumulative_box_csv": "teams/montreal_alliance/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "team": "Niagara River Lions",
+      "key": "niagara_river_lions",
+      "path": "teams/niagara_river_lions/",
+      "cumulative_box": "teams/niagara_river_lions/cumulative_box.json",
+      "cumulative_box_csv": "teams/niagara_river_lions/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "team": "Ottawa Blackjacks",
+      "key": "ottawa_blackjacks",
+      "path": "teams/ottawa_blackjacks/",
+      "cumulative_box": "teams/ottawa_blackjacks/cumulative_box.json",
+      "cumulative_box_csv": "teams/ottawa_blackjacks/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "team": "Saskatoon Mamba",
+      "key": "saskatoon_mamba",
+      "path": "teams/saskatoon_mamba/",
+      "cumulative_box": "teams/saskatoon_mamba/cumulative_box.json",
+      "cumulative_box_csv": "teams/saskatoon_mamba/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "team": "Scarborough Shooting Stars",
+      "key": "scarborough_shooting_stars",
+      "path": "teams/scarborough_shooting_stars/",
+      "cumulative_box": "teams/scarborough_shooting_stars/cumulative_box.json",
+      "cumulative_box_csv": "teams/scarborough_shooting_stars/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "team": "Vancouver Bandits",
+      "key": "vancouver_bandits",
+      "path": "teams/vancouver_bandits/",
+      "cumulative_box": "teams/vancouver_bandits/cumulative_box.json",
+      "cumulative_box_csv": "teams/vancouver_bandits/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "team": "Winnipeg Sea Bears",
+      "key": "winnipeg_sea_bears",
+      "path": "teams/winnipeg_sea_bears/",
+      "cumulative_box": "teams/winnipeg_sea_bears/cumulative_box.json",
+      "cumulative_box_csv": "teams/winnipeg_sea_bears/cumulative_box.csv",
+      "reports": {}
+    }
+  ],
+  "leaderboards": {},
+  "combined": {
+    "team_cumulative_box.csv": "combined/team_cumulative_box.csv",
+    "team_cumulative_box.json": "combined/team_cumulative_box.json"
+  }
+}

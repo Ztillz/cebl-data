@@ -70,7 +70,7 @@ function syncTeamControls() {
     const isAllTeams =
         selectedTeam?.allTeams === true;
 
-    if (isAllTeams) {
+    if (isAllTeams || !selectedTeam?.reports?.[selectedTeamReport]) {
         selectedTeamReport =
             "cumulative_box";
     }
@@ -90,7 +90,7 @@ function syncTeamControls() {
             );
 
             button.disabled = (
-                isAllTeams &&
+                (isAllTeams || !selectedTeam?.reports?.[report]) &&
                 report !==
                     "cumulative_box"
             );
@@ -355,7 +355,7 @@ teamSelect.addEventListener(
 
             if (
                 selectedTeamReport ===
-                "cumulative_box"
+                "cumulative_box" && selectedTeam?.reports?.play_types
             ) {
                 selectedTeamReport =
                     "play_types";

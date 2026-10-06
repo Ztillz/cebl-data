@@ -12,7 +12,7 @@
 
     <link
         rel="stylesheet"
-        href="css/styles.css?v=20260809"
+        href="css/styles.css?v=20261006"
     >
 </head>
 
@@ -39,11 +39,16 @@
                 </p>
             </div>
 
-            <div
-                id="dataStatus"
-                class="data-status"
-            >
-                Loading
+            <div class="header-actions">
+                <label class="season-picker" for="seasonSelect">
+                    <span>Season</span>
+                    <select id="seasonSelect" class="season-select">
+                        <option value="2026-2027">2026</option>
+                        <option value="2025-2026">2025</option>
+                        <option value="2024-2025">2024</option>
+                    </select>
+                </label>
+                <div id="dataStatus" class="data-status">Loading</div>
             </div>
 
         </div>
@@ -85,6 +90,8 @@
 
         </div>
 
+
+        <p id="seasonCoverage" class="season-coverage hidden" role="status"></p>
 
         <!-- ===================================================
              PLAYER VIEW
@@ -827,11 +834,11 @@
 
 
         <script
-        src="js/app.js?v=20260809"
+        src="js/app.js?v=20261006"
     ></script>
 
     <script
-        src="js/team.js?v=20260809"
+        src="js/team.js?v=20261006"
     ></script>
 
 </body>
