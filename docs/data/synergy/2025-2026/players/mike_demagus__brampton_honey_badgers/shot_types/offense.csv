@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Mike Demagus,Brampton Honey Badgers,2025-2026,offense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,63,45,20.0,30.2,100.0,,Poor,47,63,0.75,19,44,37.3,9.0,,,37.3,63.0,0.0,30.2,18,10,8,55.6,9,36,0.71,0.0
+Mike Demagus,Brampton Honey Badgers,2025-2026,offense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,49,45,20.0,24.5,77.8,91.0,Poor,33,49,0.67,12,37,33.7,15.0,,,33.7,49.0,0.0,24.5,4,3,1,75.0,9,36,0.92,0.0
+Mike Demagus,Brampton Honey Badgers,2025-2026,offense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,40,40,22.5,22.5,81.6,79.0,Poor,27,40,0.68,9,31,33.8,8.0,,,33.8,40.0,0.0,22.5,0,0,0,,9,31,1.0,0.0
+Mike Demagus,Brampton Honey Badgers,2025-2026,offense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,24,24,16.7,16.7,60.0,66.0,Poor,12,24,0.5,4,20,25.0,1.0,,,25.0,24.0,0.0,16.7,0,0,0,,4,20,1.0,0.0
+Mike Demagus,Brampton Honey Badgers,2025-2026,offense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,16,16,31.3,31.3,40.0,21.0,Below Average,15,16,0.94,5,11,46.9,25.0,,,46.9,16.0,0.0,31.3,0,0,0,,5,11,1.0,0.0
+Mike Demagus,Brampton Honey Badgers,2025-2026,offense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,9,5,0.0,33.3,18.4,,,6,9,0.67,3,6,33.3,,,,33.3,9.0,0.0,33.3,4,3,1,75.0,0,5,0.56,0.0
+Mike Demagus,Brampton Honey Badgers,2025-2026,offense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Mike Demagus,Brampton Honey Badgers,2025-2026,offense,Shot types,Runner,1,,Runner,Runner,,,2,0,,50.0,3.2,,,2,2,1.0,1,1,50.0,,,,50.0,2.0,0.0,50.0,2,1,1,50.0,0,0,0.0,0.0
+Mike Demagus,Brampton Honey Badgers,2025-2026,offense,Shot types,Hook,1,,Hook,Hook,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Mike Demagus,Brampton Honey Badgers,2025-2026,offense,Shot types,At Rim,1,,At Rim,At Rim,,,12,0,,50.0,19.0,10.0,Below Average,12,12,1.0,6,6,50.0,26.0,,,50.0,12.0,0.0,50.0,12,6,6,50.0,0,0,0.0,0.0
+Mike Demagus,Brampton Honey Badgers,2025-2026,offense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,10,0,,40.0,83.3,34.0,Poor,8,10,0.8,4,6,40.0,12.0,,,40.0,10.0,0.0,40.0,10,4,6,40.0,0,0,0.0,0.0
+Mike Demagus,Brampton Honey Badgers,2025-2026,offense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,2,0,,100.0,16.7,,,4,2,2.0,2,0,100.0,,,,100.0,2.0,0.0,100.0,2,2,0,100.0,0,0,0.0,0.0
+Mike Demagus,Brampton Honey Badgers,2025-2026,offense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Mike Demagus,Brampton Honey Badgers,2025-2026,offense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,3,0,,100.0,6.1,,,6,3,2.0,3,0,100.0,,,,100.0,3.0,0.0,100.0,3,3,0,100.0,0,0,0.0,0.0
+Mike Demagus,Brampton Honey Badgers,2025-2026,offense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,1,0,,0.0,2.0,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,1,0,1,0.0,0,0,0.0,0.0
+Mike Demagus,Brampton Honey Badgers,2025-2026,offense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,45,45,20.0,20.0,91.8,78.0,Poor,27,45,0.6,9,36,30.0,7.0,,,30.0,45.0,0.0,20.0,0,0,0,,9,36,1.0,0.0
+Mike Demagus,Brampton Honey Badgers,2025-2026,offense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mike Demagus,Brampton Honey Badgers,2025-2026,offense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Mike Demagus,Brampton Honey Badgers,2025-2026,offense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

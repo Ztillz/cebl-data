@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Kyle Mangas,Vancouver Bandits,2025-2026,offense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,209,122,35.2,44.0,100.0,,Very Good,229,209,1.09,92,117,54.3,75.0,,,54.2,211.2,0.02,44.0,87,49,38,56.3,43,79,0.58,2.4
+Kyle Mangas,Vancouver Bandits,2025-2026,offense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,139,122,35.2,34.5,66.5,71.0,Very Good,140,139,1.0,48,91,50.0,66.0,,,49.9,140.3,0.02,34.5,17,5,12,29.4,43,79,0.88,2.2
+Kyle Mangas,Vancouver Bandits,2025-2026,offense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,67,64,40.6,40.3,48.2,30.0,Very Good,80,67,1.19,27,40,59.7,75.0,,,59.3,67.4,0.01,40.3,3,1,2,33.3,26,38,0.96,1.5
+Kyle Mangas,Vancouver Bandits,2025-2026,offense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,40,37,45.9,45.0,59.7,64.0,Excellent,53,40,1.33,18,22,66.3,87.0,,,65.5,40.4,0.03,45.0,3,1,2,33.3,17,20,0.93,2.5
+Kyle Mangas,Vancouver Bandits,2025-2026,offense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,27,27,33.3,33.3,40.3,24.0,Average,27,27,1.0,9,18,50.0,38.0,,,50.0,27.0,0.0,33.3,0,0,0,,9,18,1.0,0.0
+Kyle Mangas,Vancouver Bandits,2025-2026,offense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,70,57,29.8,30.0,50.4,50.0,Good,60,70,0.84,21,49,42.1,55.0,,,42.3,70.9,0.03,30.0,13,4,9,30.8,17,40,0.81,2.9
+Kyle Mangas,Vancouver Bandits,2025-2026,offense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,3,3,0.0,0.0,2.2,,,0,3,0.0,0,3,0.0,,,,0.0,3.0,0.0,0.0,0,0,0,,0,3,1.0,0.0
+Kyle Mangas,Vancouver Bandits,2025-2026,offense,Shot types,Runner,1,,Runner,Runner,,,6,0,,50.0,2.9,,,6,6,1.0,3,3,50.0,,,,50.0,6.0,0.0,50.0,6,3,3,50.0,0,0,0.0,0.0
+Kyle Mangas,Vancouver Bandits,2025-2026,offense,Shot types,Hook,1,,Hook,Hook,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Kyle Mangas,Vancouver Bandits,2025-2026,offense,Shot types,At Rim,1,,At Rim,At Rim,,,64,0,,64.1,30.6,27.0,Very Good,83,64,1.28,41,23,64.1,74.0,,,64.0,64.9,0.03,64.1,64,41,23,64.1,0,0,0.0,3.1
+Kyle Mangas,Vancouver Bandits,2025-2026,offense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,61,0,,62.3,95.3,67.0,Very Good,77,61,1.25,38,23,62.3,79.0,,,62.2,61.9,0.03,62.3,61,38,23,62.3,0,0,0.0,3.3
+Kyle Mangas,Vancouver Bandits,2025-2026,offense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,3,0,,100.0,4.7,,,6,3,2.0,3,0,100.0,,,,100.0,3.0,0.0,100.0,3,3,0,100.0,0,0,0.0,0.0
+Kyle Mangas,Vancouver Bandits,2025-2026,offense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Kyle Mangas,Vancouver Bandits,2025-2026,offense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,13,0,,23.1,9.4,10.0,Poor,6,13,0.46,3,10,23.1,7.0,,,23.1,13.0,0.0,23.1,13,3,10,23.1,0,0,0.0,0.0
+Kyle Mangas,Vancouver Bandits,2025-2026,offense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,4,0,,50.0,2.9,,,4,4,1.0,2,2,50.0,,,,50.0,4.0,0.0,50.0,4,2,2,50.0,0,0,0.0,0.0
+Kyle Mangas,Vancouver Bandits,2025-2026,offense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,122,122,35.2,35.2,87.8,70.0,Good,130,122,1.06,43,79,52.9,64.0,,,52.7,123.3,0.02,35.2,0,0,0,,43,79,1.0,2.5
+Kyle Mangas,Vancouver Bandits,2025-2026,offense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Kyle Mangas,Vancouver Bandits,2025-2026,offense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Kyle Mangas,Vancouver Bandits,2025-2026,offense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+David Muenkat,Winnipeg Sea Bears,2024-2025,offense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,118,46,23.9,35.6,100.0,,Poor,95,118,0.81,42,76,40.3,11.0,,,40.0,118.9,0.02,35.6,72,31,41,43.1,11,35,0.39,1.7
+David Muenkat,Winnipeg Sea Bears,2024-2025,offense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,50,46,23.9,24.0,42.4,22.0,Poor,35,50,0.7,12,38,35.0,8.0,,,35.0,50.0,0.0,24.0,4,1,3,25.0,11,35,0.92,0.0
+David Muenkat,Winnipeg Sea Bears,2024-2025,offense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,37,37,27.0,27.0,74.0,66.0,Below Average,30,37,0.81,10,27,40.5,18.0,,,40.5,37.0,0.0,27.0,0,0,0,,10,27,1.0,0.0
+David Muenkat,Winnipeg Sea Bears,2024-2025,offense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,22,22,22.7,22.7,59.5,65.0,Poor,15,22,0.68,5,17,34.1,13.0,,,34.1,22.0,0.0,22.7,0,0,0,,5,17,1.0,0.0
+David Muenkat,Winnipeg Sea Bears,2024-2025,offense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,15,15,33.3,33.3,40.5,29.0,Average,15,15,1.0,5,10,50.0,32.0,,,50.0,15.0,0.0,33.3,0,0,0,,5,10,1.0,0.0
+David Muenkat,Winnipeg Sea Bears,2024-2025,offense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,13,9,11.1,15.4,26.0,8.0,Poor,5,13,0.38,2,11,19.2,0.0,,,19.2,13.0,0.0,15.4,4,1,3,25.0,1,8,0.69,0.0
+David Muenkat,Winnipeg Sea Bears,2024-2025,offense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+David Muenkat,Winnipeg Sea Bears,2024-2025,offense,Shot types,Runner,1,,Runner,Runner,,,5,0,,60.0,4.2,,,6,5,1.2,3,2,60.0,,,,60.0,5.0,0.0,60.0,5,3,2,60.0,0,0,0.0,0.0
+David Muenkat,Winnipeg Sea Bears,2024-2025,offense,Shot types,Hook,1,,Hook,Hook,,,2,0,,50.0,1.7,,,2,2,1.0,1,1,50.0,,,,50.0,2.0,0.0,50.0,2,1,1,50.0,0,0,0.0,0.0
+David Muenkat,Winnipeg Sea Bears,2024-2025,offense,Shot types,At Rim,1,,At Rim,At Rim,,,61,0,,42.6,51.7,68.0,Poor,52,61,0.85,26,35,42.6,9.0,,,42.0,61.9,0.03,42.6,61,26,35,42.6,0,0,0.0,3.3
+David Muenkat,Winnipeg Sea Bears,2024-2025,offense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,54,0,,38.9,88.5,45.0,Poor,42,54,0.78,21,33,38.9,7.0,,,38.3,54.9,0.04,38.9,54,21,33,38.9,0,0,0.0,3.7
+David Muenkat,Winnipeg Sea Bears,2024-2025,offense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,6,0,,83.3,9.8,,,10,6,1.67,5,1,83.3,,,,83.3,6.0,0.0,83.3,6,5,1,83.3,0,0,0.0,0.0
+David Muenkat,Winnipeg Sea Bears,2024-2025,offense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,1,0,,0.0,1.6,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,1,0,1,0.0,0,0,0.0,0.0
+David Muenkat,Winnipeg Sea Bears,2024-2025,offense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,2,0,,0.0,4.0,,,0,2,0.0,0,2,0.0,,,,0.0,2.0,0.0,0.0,2,0,2,0.0,0,0,0.0,0.0
+David Muenkat,Winnipeg Sea Bears,2024-2025,offense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,2,0,,50.0,4.0,,,2,2,1.0,1,1,50.0,,,,50.0,2.0,0.0,50.0,2,1,1,50.0,0,0,0.0,0.0
+David Muenkat,Winnipeg Sea Bears,2024-2025,offense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,46,46,23.9,23.9,92.0,82.0,Poor,33,46,0.72,11,35,35.9,11.0,,,35.9,46.0,0.0,23.9,0,0,0,,11,35,1.0,0.0
+David Muenkat,Winnipeg Sea Bears,2024-2025,offense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+David Muenkat,Winnipeg Sea Bears,2024-2025,offense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+David Muenkat,Winnipeg Sea Bears,2024-2025,offense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

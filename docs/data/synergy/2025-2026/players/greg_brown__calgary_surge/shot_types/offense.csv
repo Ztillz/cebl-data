@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Greg Brown,Calgary Surge,2025-2026,offense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,357,145,34.5,50.4,100.0,,Very Good,418,357,1.15,180,177,57.4,82.0,,,57.5,363.6,0.04,50.4,212,130,82,61.3,50,95,0.41,4.2
+Greg Brown,Calgary Surge,2025-2026,offense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,164,145,34.5,34.1,45.9,26.0,Good,162,164,0.99,56,108,49.4,62.0,,,49.3,164.4,0.01,34.1,19,6,13,31.6,50,95,0.88,0.6
+Greg Brown,Calgary Surge,2025-2026,offense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,97,92,31.5,30.9,59.1,40.0,Below Average,89,97,0.92,30,67,45.9,26.0,,,45.7,97.4,0.01,30.9,5,1,4,20.0,29,63,0.95,1.0
+Greg Brown,Calgary Surge,2025-2026,offense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,51,49,28.6,29.4,52.6,37.0,Average,44,51,0.86,15,36,43.1,39.0,,,43.1,51.0,0.0,29.4,2,1,1,50.0,14,35,0.96,0.0
+Greg Brown,Calgary Surge,2025-2026,offense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,46,43,34.9,32.6,47.4,48.0,Average,45,46,0.98,15,31,48.9,32.0,,,48.4,46.4,0.02,32.6,3,0,3,0.0,15,28,0.93,2.2
+Greg Brown,Calgary Surge,2025-2026,offense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,64,51,39.2,37.5,39.0,33.0,Excellent,68,64,1.06,24,40,53.1,86.0,,,53.1,64.0,0.0,37.5,13,4,9,30.8,20,31,0.8,0.0
+Greg Brown,Calgary Surge,2025-2026,offense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,6,5,40.0,33.3,3.7,,,6,6,1.0,2,4,50.0,,,,50.0,6.0,0.0,33.3,1,0,1,0.0,2,3,0.83,0.0
+Greg Brown,Calgary Surge,2025-2026,offense,Shot types,Runner,1,,Runner,Runner,,,8,0,,12.5,2.2,,,2,8,0.25,1,7,12.5,,,,12.5,8.0,0.0,12.5,8,1,7,12.5,0,0,0.0,0.0
+Greg Brown,Calgary Surge,2025-2026,offense,Shot types,Hook,1,,Hook,Hook,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Greg Brown,Calgary Surge,2025-2026,offense,Shot types,At Rim,1,,At Rim,At Rim,,,185,0,,66.5,51.8,71.0,Very Good,254,185,1.33,123,62,66.5,80.0,,,66.4,191.2,0.08,66.5,185,123,62,66.5,0,0,0.0,7.6
+Greg Brown,Calgary Surge,2025-2026,offense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,103,0,,61.2,55.7,2.0,Very Good,133,103,1.22,63,40,61.2,75.0,,,61.2,108.7,0.13,61.2,103,63,40,61.2,0,0,0.0,12.6
+Greg Brown,Calgary Surge,2025-2026,offense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,73,0,,75.3,39.5,87.0,Below Average,111,73,1.51,55,18,75.3,17.0,,,75.6,73.4,0.01,75.3,73,55,18,75.3,0,0,0.0,1.4
+Greg Brown,Calgary Surge,2025-2026,offense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,9,0,,55.6,4.9,,,10,9,1.11,5,4,55.6,,,,55.6,9.0,0.0,55.6,9,5,4,55.6,0,0,0.0,0.0
+Greg Brown,Calgary Surge,2025-2026,offense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,6,0,,0.0,3.7,,,0,6,0.0,0,6,0.0,,,,0.0,6.0,0.0,0.0,6,0,6,0.0,0,0,0.0,0.0
+Greg Brown,Calgary Surge,2025-2026,offense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,13,0,,46.2,7.9,7.0,Very Good,12,13,0.92,6,7,46.2,78.0,,,46.2,13.0,0.0,46.2,13,6,7,46.2,0,0,0.0,0.0
+Greg Brown,Calgary Surge,2025-2026,offense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,145,145,34.5,34.5,88.4,68.0,Good,150,145,1.03,50,95,51.7,60.0,,,51.6,145.4,0.01,34.5,0,0,0,,50,95,1.0,0.7
+Greg Brown,Calgary Surge,2025-2026,offense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Greg Brown,Calgary Surge,2025-2026,offense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Greg Brown,Calgary Surge,2025-2026,offense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

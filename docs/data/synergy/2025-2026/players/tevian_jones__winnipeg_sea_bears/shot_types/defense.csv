@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Tevian Jones,Winnipeg Sea Bears,2025-2026,defense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,81,50,34.0,38.3,100.0,,Average,79,81,0.98,31,50,48.8,39.0,,,48.8,81.0,0.0,38.3,31,14,17,45.2,17,33,0.62,0.0
+Tevian Jones,Winnipeg Sea Bears,2025-2026,defense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,63,50,34.0,34.9,77.8,95.0,Average,61,63,0.97,22,41,48.4,44.0,,,48.4,63.0,0.0,34.9,13,5,8,38.5,17,33,0.79,0.0
+Tevian Jones,Winnipeg Sea Bears,2025-2026,defense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,30,28,42.9,43.3,47.6,33.0,Below Average,38,30,1.27,13,17,63.3,20.0,,,63.3,30.0,0.0,43.3,2,1,1,50.0,12,16,0.93,0.0
+Tevian Jones,Winnipeg Sea Bears,2025-2026,defense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,16,15,40.0,43.8,53.3,25.0,Below Average,20,16,1.25,7,9,62.5,20.0,,,62.5,16.0,0.0,43.8,1,1,0,100.0,6,9,0.94,0.0
+Tevian Jones,Winnipeg Sea Bears,2025-2026,defense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,14,13,46.2,42.9,46.7,58.0,Average,18,14,1.29,6,8,64.3,39.0,,,64.3,14.0,0.0,42.9,1,0,1,0.0,6,7,0.93,0.0
+Tevian Jones,Winnipeg Sea Bears,2025-2026,defense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,32,22,22.7,28.1,50.8,60.0,Very Good,23,32,0.72,9,23,35.9,70.0,,,35.9,32.0,0.0,28.1,10,4,6,40.0,5,17,0.69,0.0
+Tevian Jones,Winnipeg Sea Bears,2025-2026,defense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,5,5,20.0,20.0,7.9,,,3,5,0.6,1,4,30.0,,,,30.0,5.0,0.0,20.0,0,0,0,,1,4,1.0,0.0
+Tevian Jones,Winnipeg Sea Bears,2025-2026,defense,Shot types,Runner,1,,Runner,Runner,,,1,0,,0.0,1.2,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,1,0,1,0.0,0,0,0.0,0.0
+Tevian Jones,Winnipeg Sea Bears,2025-2026,defense,Shot types,Hook,1,,Hook,Hook,,,2,0,,50.0,2.5,,,2,2,1.0,1,1,50.0,,,,50.0,2.0,0.0,50.0,2,1,1,50.0,0,0,0.0,0.0
+Tevian Jones,Winnipeg Sea Bears,2025-2026,defense,Shot types,At Rim,1,,At Rim,At Rim,,,15,0,,53.3,18.5,16.0,Average,16,15,1.07,8,7,53.3,36.0,,,53.3,15.0,0.0,53.3,15,8,7,53.3,0,0,0.0,0.0
+Tevian Jones,Winnipeg Sea Bears,2025-2026,defense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,15,0,,53.3,100.0,100.0,Average,16,15,1.07,8,7,53.3,32.0,,,53.3,15.0,0.0,53.3,15,8,7,53.3,0,0,0.0,0.0
+Tevian Jones,Winnipeg Sea Bears,2025-2026,defense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Tevian Jones,Winnipeg Sea Bears,2025-2026,defense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Tevian Jones,Winnipeg Sea Bears,2025-2026,defense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,8,0,,37.5,12.7,,,6,8,0.75,3,5,37.5,,,,37.5,8.0,0.0,37.5,8,3,5,37.5,0,0,0.0,0.0
+Tevian Jones,Winnipeg Sea Bears,2025-2026,defense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,5,0,,40.0,7.9,,,4,5,0.8,2,3,40.0,,,,40.0,5.0,0.0,40.0,5,2,3,40.0,0,0,0.0,0.0
+Tevian Jones,Winnipeg Sea Bears,2025-2026,defense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,50,50,34.0,34.0,79.4,73.0,Average,51,50,1.02,17,33,51.0,48.0,,,51.0,50.0,0.0,34.0,0,0,0,,17,33,1.0,0.0
+Tevian Jones,Winnipeg Sea Bears,2025-2026,defense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Tevian Jones,Winnipeg Sea Bears,2025-2026,defense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Tevian Jones,Winnipeg Sea Bears,2025-2026,defense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

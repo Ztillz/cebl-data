@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Glen Yang,Vancouver Bandits,2025-2026,offense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,1,1,0.0,0.0,100.0,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,0,0,0,,0,1,1.0,0.0
+Glen Yang,Vancouver Bandits,2025-2026,offense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,1,1,0.0,0.0,100.0,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,0,0,0,,0,1,1.0,0.0
+Glen Yang,Vancouver Bandits,2025-2026,offense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,1,1,0.0,0.0,100.0,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,0,0,0,,0,1,1.0,0.0
+Glen Yang,Vancouver Bandits,2025-2026,offense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Glen Yang,Vancouver Bandits,2025-2026,offense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,1,1,0.0,0.0,100.0,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,0,0,0,,0,1,1.0,0.0
+Glen Yang,Vancouver Bandits,2025-2026,offense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Glen Yang,Vancouver Bandits,2025-2026,offense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Glen Yang,Vancouver Bandits,2025-2026,offense,Shot types,Runner,1,,Runner,Runner,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Glen Yang,Vancouver Bandits,2025-2026,offense,Shot types,Hook,1,,Hook,Hook,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Glen Yang,Vancouver Bandits,2025-2026,offense,Shot types,At Rim,1,,At Rim,At Rim,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Glen Yang,Vancouver Bandits,2025-2026,offense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Glen Yang,Vancouver Bandits,2025-2026,offense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Glen Yang,Vancouver Bandits,2025-2026,offense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Glen Yang,Vancouver Bandits,2025-2026,offense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Glen Yang,Vancouver Bandits,2025-2026,offense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Glen Yang,Vancouver Bandits,2025-2026,offense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,1,1,0.0,0.0,100.0,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,0,0,0,,0,1,1.0,0.0
+Glen Yang,Vancouver Bandits,2025-2026,offense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Glen Yang,Vancouver Bandits,2025-2026,offense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Glen Yang,Vancouver Bandits,2025-2026,offense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

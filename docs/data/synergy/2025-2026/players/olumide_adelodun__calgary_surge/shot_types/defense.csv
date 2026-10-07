@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Olumide Adelodun,Calgary Surge,2025-2026,defense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,109,58,34.5,33.0,100.0,,Very Good,92,109,0.84,36,73,42.2,75.0,,,42.0,109.4,0.01,33.0,51,16,35,31.4,20,38,0.53,0.9
+Olumide Adelodun,Calgary Surge,2025-2026,defense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,83,58,34.5,34.9,76.1,89.0,Average,78,83,0.94,29,54,47.0,44.0,,,46.7,83.4,0.01,34.9,25,9,16,36.0,20,38,0.7,1.2
+Olumide Adelodun,Calgary Surge,2025-2026,defense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,51,49,34.7,33.3,61.4,75.0,Good,51,51,1.0,17,34,50.0,65.0,,,50.0,51.0,0.0,33.3,2,0,2,0.0,17,32,0.96,0.0
+Olumide Adelodun,Calgary Surge,2025-2026,defense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,28,26,42.3,39.3,54.9,32.0,Below Average,33,28,1.18,11,17,58.9,27.0,,,58.9,28.0,0.0,39.3,2,0,2,0.0,11,15,0.93,0.0
+Olumide Adelodun,Calgary Surge,2025-2026,defense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,23,23,26.1,26.1,45.1,46.0,Excellent,18,23,0.78,6,17,39.1,88.0,,,39.1,23.0,0.0,26.1,0,0,0,,6,17,1.0,0.0
+Olumide Adelodun,Calgary Surge,2025-2026,defense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,29,9,33.3,41.4,34.9,16.0,Average,27,29,0.93,12,17,46.6,35.0,,,45.9,29.4,0.03,41.4,20,9,11,45.0,3,6,0.31,3.4
+Olumide Adelodun,Calgary Surge,2025-2026,defense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Olumide Adelodun,Calgary Surge,2025-2026,defense,Shot types,Runner,1,,Runner,Runner,,,7,0,,14.3,6.4,,,2,7,0.29,1,6,14.3,,,,14.3,7.0,0.0,14.3,7,1,6,14.3,0,0,0.0,0.0
+Olumide Adelodun,Calgary Surge,2025-2026,defense,Shot types,Hook,1,,Hook,Hook,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Olumide Adelodun,Calgary Surge,2025-2026,defense,Shot types,At Rim,1,,At Rim,At Rim,,,19,0,,31.6,17.4,6.0,Excellent,12,19,0.63,6,13,31.6,97.0,,,31.6,19.0,0.0,31.6,19,6,13,31.6,0,0,0.0,0.0
+Olumide Adelodun,Calgary Surge,2025-2026,defense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,18,0,,27.8,94.7,31.0,Excellent,10,18,0.56,5,13,27.8,98.0,,,27.8,18.0,0.0,27.8,18,5,13,27.8,0,0,0.0,0.0
+Olumide Adelodun,Calgary Surge,2025-2026,defense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,1,0,,100.0,5.3,,,2,1,2.0,1,0,100.0,,,,100.0,1.0,0.0,100.0,1,1,0,100.0,0,0,0.0,0.0
+Olumide Adelodun,Calgary Surge,2025-2026,defense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Olumide Adelodun,Calgary Surge,2025-2026,defense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,14,0,,28.6,16.9,35.0,Good,8,14,0.57,4,10,28.6,57.0,,,28.6,14.0,0.0,28.6,14,4,10,28.6,0,0,0.0,0.0
+Olumide Adelodun,Calgary Surge,2025-2026,defense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,11,0,,45.5,13.3,67.0,Below Average,10,11,0.91,5,6,45.5,29.0,,,43.7,11.4,0.09,45.5,11,5,6,45.5,0,0,0.0,9.1
+Olumide Adelodun,Calgary Surge,2025-2026,defense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,58,58,34.5,34.5,69.9,27.0,Average,60,58,1.03,20,38,51.7,45.0,,,51.7,58.0,0.0,34.5,0,0,0,,20,38,1.0,0.0
+Olumide Adelodun,Calgary Surge,2025-2026,defense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Olumide Adelodun,Calgary Surge,2025-2026,defense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Olumide Adelodun,Calgary Surge,2025-2026,defense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

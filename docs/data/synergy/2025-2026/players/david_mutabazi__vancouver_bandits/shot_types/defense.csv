@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+David Mutabazi,Vancouver Bandits,2025-2026,defense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,20,7,85.7,60.0,100.0,,Poor,31,20,1.5,12,8,75.0,1.0,,,75.8,20.4,0.05,60.0,13,6,7,46.2,6,1,0.35,5.0
+David Mutabazi,Vancouver Bandits,2025-2026,defense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,11,7,85.7,63.6,55.0,9.0,Poor,20,11,1.82,7,4,90.9,0.0,,,90.9,11.0,0.0,63.6,4,1,3,25.0,6,1,0.64,0.0
+David Mutabazi,Vancouver Bandits,2025-2026,defense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,7,7,85.7,85.7,63.6,,,18,7,2.57,6,1,128.6,,,,128.6,7.0,0.0,85.7,0,0,0,,6,1,1.0,0.0
+David Mutabazi,Vancouver Bandits,2025-2026,defense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,2,2,50.0,50.0,28.6,,,3,2,1.5,1,1,75.0,,,,75.0,2.0,0.0,50.0,0,0,0,,1,1,1.0,0.0
+David Mutabazi,Vancouver Bandits,2025-2026,defense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,5,5,100.0,100.0,71.4,,,15,5,3.0,5,0,150.0,,,,150.0,5.0,0.0,100.0,0,0,0,,5,0,1.0,0.0
+David Mutabazi,Vancouver Bandits,2025-2026,defense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,4,0,,25.0,36.4,,,2,4,0.5,1,3,25.0,,,,25.0,4.0,0.0,25.0,4,1,3,25.0,0,0,0.0,0.0
+David Mutabazi,Vancouver Bandits,2025-2026,defense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+David Mutabazi,Vancouver Bandits,2025-2026,defense,Shot types,Runner,1,,Runner,Runner,,,3,0,,33.3,15.0,,,2,3,0.67,1,2,33.3,,,,33.3,3.0,0.0,33.3,3,1,2,33.3,0,0,0.0,0.0
+David Mutabazi,Vancouver Bandits,2025-2026,defense,Shot types,Hook,1,,Hook,Hook,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+David Mutabazi,Vancouver Bandits,2025-2026,defense,Shot types,At Rim,1,,At Rim,At Rim,,,6,0,,66.7,30.0,,,9,6,1.33,4,2,66.7,,,,69.9,6.4,0.17,66.7,6,4,2,66.7,0,0,0.0,16.7
+David Mutabazi,Vancouver Bandits,2025-2026,defense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,6,0,,66.7,100.0,,,9,6,1.33,4,2,66.7,,,,69.9,6.4,0.17,66.7,6,4,2,66.7,0,0,0.0,16.7
+David Mutabazi,Vancouver Bandits,2025-2026,defense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+David Mutabazi,Vancouver Bandits,2025-2026,defense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+David Mutabazi,Vancouver Bandits,2025-2026,defense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,2,0,,50.0,18.2,,,2,2,1.0,1,1,50.0,,,,50.0,2.0,0.0,50.0,2,1,1,50.0,0,0,0.0,0.0
+David Mutabazi,Vancouver Bandits,2025-2026,defense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,2,0,,0.0,18.2,,,0,2,0.0,0,2,0.0,,,,0.0,2.0,0.0,0.0,2,0,2,0.0,0,0,0.0,0.0
+David Mutabazi,Vancouver Bandits,2025-2026,defense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,7,7,85.7,85.7,63.6,,,18,7,2.57,6,1,128.6,,,,128.6,7.0,0.0,85.7,0,0,0,,6,1,1.0,0.0
+David Mutabazi,Vancouver Bandits,2025-2026,defense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+David Mutabazi,Vancouver Bandits,2025-2026,defense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+David Mutabazi,Vancouver Bandits,2025-2026,defense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

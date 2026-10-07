@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Jalen Harris,Saskatoon Mamba,2024-2025,defense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,68,39,35.9,29.4,100.0,,Very Good,55,68,0.79,20,48,39.7,81.0,,,40.2,68.4,0.01,29.4,29,6,23,20.7,14,25,0.57,1.5
+Jalen Harris,Saskatoon Mamba,2024-2025,defense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,49,39,35.9,30.6,69.0,84.0,Very Good,44,49,0.9,15,34,44.9,67.0,,,44.9,49.0,0.0,30.6,10,1,9,10.0,14,25,0.8,0.0
+Jalen Harris,Saskatoon Mamba,2024-2025,defense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,27,27,40.7,40.7,51.9,38.0,Below Average,33,27,1.22,11,16,61.1,28.0,,,61.1,27.0,0.0,40.7,0,0,0,,11,16,1.0,0.0
+Jalen Harris,Saskatoon Mamba,2024-2025,defense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,15,15,33.3,33.3,51.7,24.0,Good,15,15,1.0,5,10,50.0,57.0,,,50.0,15.0,0.0,33.3,0,0,0,,5,10,1.0,0.0
+Jalen Harris,Saskatoon Mamba,2024-2025,defense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,12,12,50.0,50.0,41.4,59.0,Below Average,18,12,1.5,6,6,75.0,29.0,,,75.0,12.0,0.0,50.0,0,0,0,,6,6,1.0,0.0
+Jalen Harris,Saskatoon Mamba,2024-2025,defense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,22,12,25.0,18.2,42.3,51.0,Excellent,11,22,0.5,4,18,25.0,96.0,,,25.0,22.0,0.0,18.2,10,1,9,10.0,3,9,0.55,0.0
+Jalen Harris,Saskatoon Mamba,2024-2025,defense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,1,1,0.0,0.0,1.9,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,0,0,0,,0,1,1.0,0.0
+Jalen Harris,Saskatoon Mamba,2024-2025,defense,Shot types,Runner,1,,Runner,Runner,,,4,0,,50.0,5.6,,,4,4,1.0,2,2,50.0,,,,50.0,4.0,0.0,50.0,4,2,2,50.0,0,0,0.0,0.0
+Jalen Harris,Saskatoon Mamba,2024-2025,defense,Shot types,Hook,1,,Hook,Hook,,,2,0,,0.0,2.8,,,0,2,0.0,0,2,0.0,,,,0.0,2.0,0.0,0.0,2,0,2,0.0,0,0,0.0,0.0
+Jalen Harris,Saskatoon Mamba,2024-2025,defense,Shot types,At Rim,1,,At Rim,At Rim,,,13,0,,23.1,18.3,12.0,Excellent,7,13,0.46,3,10,23.1,98.0,,,26.0,13.4,0.08,23.1,13,3,10,23.1,0,0,0.0,7.7
+Jalen Harris,Saskatoon Mamba,2024-2025,defense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,12,0,,16.7,92.3,15.0,Excellent,4,12,0.33,2,10,16.7,99.0,,,16.7,12.0,0.0,16.7,12,2,10,16.7,0,0,0.0,0.0
+Jalen Harris,Saskatoon Mamba,2024-2025,defense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,1,0,,100.0,7.7,,,3,1,2.0,1,0,100.0,,,,104.2,1.4,1.0,100.0,1,1,0,100.0,0,0,0.0,100.0
+Jalen Harris,Saskatoon Mamba,2024-2025,defense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Jalen Harris,Saskatoon Mamba,2024-2025,defense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,5,0,,20.0,9.6,,,2,5,0.4,1,4,20.0,,,,20.0,5.0,0.0,20.0,5,1,4,20.0,0,0,0.0,0.0
+Jalen Harris,Saskatoon Mamba,2024-2025,defense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,5,0,,0.0,9.6,,,0,5,0.0,0,5,0.0,,,,0.0,5.0,0.0,0.0,5,0,5,0.0,0,0,0.0,0.0
+Jalen Harris,Saskatoon Mamba,2024-2025,defense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,39,39,35.9,35.9,75.0,57.0,Average,42,39,1.08,14,25,53.8,44.0,,,53.8,39.0,0.0,35.9,0,0,0,,14,25,1.0,0.0
+Jalen Harris,Saskatoon Mamba,2024-2025,defense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Jalen Harris,Saskatoon Mamba,2024-2025,defense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Jalen Harris,Saskatoon Mamba,2024-2025,defense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

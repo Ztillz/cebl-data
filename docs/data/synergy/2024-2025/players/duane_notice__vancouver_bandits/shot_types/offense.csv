@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Duane Notice,Vancouver Bandits,2024-2025,offense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,112,64,32.8,35.7,100.0,,Below Average,104,112,0.9,40,72,45.1,23.0,,,45.9,113.3,0.03,35.7,48,19,29,39.6,21,43,0.57,2.7
+Duane Notice,Vancouver Bandits,2024-2025,offense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,70,64,32.8,32.9,62.5,58.0,Average,67,70,0.96,23,47,47.9,49.0,,,47.9,70.0,0.0,32.9,6,2,4,33.3,21,43,0.91,0.0
+Duane Notice,Vancouver Bandits,2024-2025,offense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,61,61,32.8,32.8,87.1,91.0,Average,60,61,0.98,20,41,49.2,41.0,,,49.2,61.0,0.0,32.8,0,0,0,,20,41,1.0,0.0
+Duane Notice,Vancouver Bandits,2024-2025,offense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,26,26,26.9,26.9,42.6,15.0,Below Average,21,26,0.81,7,19,40.4,29.0,,,40.4,26.0,0.0,26.9,0,0,0,,7,19,1.0,0.0
+Duane Notice,Vancouver Bandits,2024-2025,offense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,35,35,37.1,37.1,57.4,76.0,Average,39,35,1.11,13,22,55.7,39.0,,,55.7,35.0,0.0,37.1,0,0,0,,13,22,1.0,0.0
+Duane Notice,Vancouver Bandits,2024-2025,offense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,6,3,33.3,33.3,8.6,,,5,6,0.83,2,4,41.7,,,,41.7,6.0,0.0,33.3,3,1,2,33.3,1,2,0.5,0.0
+Duane Notice,Vancouver Bandits,2024-2025,offense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Duane Notice,Vancouver Bandits,2024-2025,offense,Shot types,Runner,1,,Runner,Runner,,,6,0,,50.0,5.4,,,6,6,1.0,3,3,50.0,,,,50.0,6.0,0.0,50.0,6,3,3,50.0,0,0,0.0,0.0
+Duane Notice,Vancouver Bandits,2024-2025,offense,Shot types,Hook,1,,Hook,Hook,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Duane Notice,Vancouver Bandits,2024-2025,offense,Shot types,At Rim,1,,At Rim,At Rim,,,36,0,,38.9,32.1,31.0,Poor,31,36,0.78,14,22,38.9,4.0,,,41.5,37.3,0.08,38.9,36,14,22,38.9,0,0,0.0,8.3
+Duane Notice,Vancouver Bandits,2024-2025,offense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,36,0,,38.9,100.0,100.0,Poor,31,36,0.78,14,22,38.9,7.0,,,41.5,37.3,0.08,38.9,36,14,22,38.9,0,0,0.0,8.3
+Duane Notice,Vancouver Bandits,2024-2025,offense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Duane Notice,Vancouver Bandits,2024-2025,offense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Duane Notice,Vancouver Bandits,2024-2025,offense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,4,0,,25.0,5.7,,,2,4,0.5,1,3,25.0,,,,25.0,4.0,0.0,25.0,4,1,3,25.0,0,0,0.0,0.0
+Duane Notice,Vancouver Bandits,2024-2025,offense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,2,0,,50.0,2.9,,,2,2,1.0,1,1,50.0,,,,50.0,2.0,0.0,50.0,2,1,1,50.0,0,0,0.0,0.0
+Duane Notice,Vancouver Bandits,2024-2025,offense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,64,64,32.8,32.8,91.4,85.0,Average,63,64,0.98,21,43,49.2,43.0,,,49.2,64.0,0.0,32.8,0,0,0,,21,43,1.0,0.0
+Duane Notice,Vancouver Bandits,2024-2025,offense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Duane Notice,Vancouver Bandits,2024-2025,offense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Duane Notice,Vancouver Bandits,2024-2025,offense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

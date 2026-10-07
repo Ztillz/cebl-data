@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Grant Basile,Saskatoon Mamba,2024-2025,offense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,58,25,52.0,50.0,100.0,,Excellent,72,58,1.22,29,29,61.2,85.0,,,60.7,59.3,0.05,50.0,33,16,17,48.5,13,12,0.43,5.2
+Grant Basile,Saskatoon Mamba,2024-2025,offense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,26,25,52.0,50.0,39.4,19.0,Excellent,39,26,1.5,13,13,75.0,98.0,,,75.0,26.0,0.0,50.0,1,0,1,0.0,13,12,0.96,0.0
+Grant Basile,Saskatoon Mamba,2024-2025,offense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,23,23,56.5,56.5,85.2,89.0,Excellent,39,23,1.7,13,10,84.8,99.0,,,84.8,23.0,0.0,56.5,0,0,0,,13,10,1.0,0.0
+Grant Basile,Saskatoon Mamba,2024-2025,offense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,9,9,44.4,44.4,37.5,12.0,Excellent,12,9,1.33,4,5,66.7,83.0,,,66.7,9.0,0.0,44.4,0,0,0,,4,5,1.0,0.0
+Grant Basile,Saskatoon Mamba,2024-2025,offense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,14,14,64.3,64.3,58.3,80.0,Excellent,27,14,1.93,9,5,96.4,100.0,,,96.4,14.0,0.0,64.3,0,0,0,,9,5,1.0,0.0
+Grant Basile,Saskatoon Mamba,2024-2025,offense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,2,1,0.0,0.0,7.4,,,0,2,0.0,0,2,0.0,,,,0.0,2.0,0.0,0.0,1,0,1,0.0,0,1,0.5,0.0
+Grant Basile,Saskatoon Mamba,2024-2025,offense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Grant Basile,Saskatoon Mamba,2024-2025,offense,Shot types,Runner,1,,Runner,Runner,,,2,0,,0.0,3.0,,,0,2,0.0,0,2,0.0,,,,0.0,2.0,0.0,0.0,2,0,2,0.0,0,0,0.0,0.0
+Grant Basile,Saskatoon Mamba,2024-2025,offense,Shot types,Hook,1,,Hook,Hook,,,3,0,,33.3,4.5,,,2,3,0.67,1,2,33.3,,,,33.3,3.0,0.0,33.3,3,1,2,33.3,0,0,0.0,0.0
+Grant Basile,Saskatoon Mamba,2024-2025,offense,Shot types,At Rim,1,,At Rim,At Rim,,,27,0,,55.6,40.9,66.0,Average,31,27,1.11,15,12,55.6,38.0,,,54.7,28.3,0.11,55.6,27,15,12,55.6,0,0,0.0,11.1
+Grant Basile,Saskatoon Mamba,2024-2025,offense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,22,0,,54.5,66.7,35.0,Average,25,22,1.09,12,10,54.5,46.0,,,53.6,23.3,0.14,54.5,22,12,10,54.5,0,0,0.0,13.6
+Grant Basile,Saskatoon Mamba,2024-2025,offense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,4,0,,75.0,12.1,,,6,4,1.5,3,1,75.0,,,,75.0,4.0,0.0,75.0,4,3,1,75.0,0,0,0.0,0.0
+Grant Basile,Saskatoon Mamba,2024-2025,offense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,1,0,,0.0,3.0,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,1,0,1,0.0,0,0,0.0,0.0
+Grant Basile,Saskatoon Mamba,2024-2025,offense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Grant Basile,Saskatoon Mamba,2024-2025,offense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,1,0,,0.0,3.7,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,1,0,1,0.0,0,0,0.0,0.0
+Grant Basile,Saskatoon Mamba,2024-2025,offense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,25,25,52.0,52.0,92.6,91.0,Excellent,39,25,1.56,13,12,78.0,98.0,,,78.0,25.0,0.0,52.0,0,0,0,,13,12,1.0,0.0
+Grant Basile,Saskatoon Mamba,2024-2025,offense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Grant Basile,Saskatoon Mamba,2024-2025,offense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Grant Basile,Saskatoon Mamba,2024-2025,offense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

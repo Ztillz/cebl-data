@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Isiah Osbourne,Edmonton Stingers,2025-2026,defense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,27,10,20.0,51.9,100.0,,Below Average,30,27,1.11,14,13,55.6,16.0,,,54.7,27.4,0.04,51.9,17,12,5,70.6,2,8,0.37,3.7
+Isiah Osbourne,Edmonton Stingers,2025-2026,defense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,16,10,20.0,37.5,59.3,24.0,Good,14,16,0.88,6,10,43.8,62.0,,,43.8,16.0,0.0,37.5,6,4,2,66.7,2,8,0.63,0.0
+Isiah Osbourne,Edmonton Stingers,2025-2026,defense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,4,4,50.0,50.0,25.0,,,6,4,1.5,2,2,75.0,,,,75.0,4.0,0.0,50.0,0,0,0,,2,2,1.0,0.0
+Isiah Osbourne,Edmonton Stingers,2025-2026,defense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,2,2,50.0,50.0,50.0,,,3,2,1.5,1,1,75.0,,,,75.0,2.0,0.0,50.0,0,0,0,,1,1,1.0,0.0
+Isiah Osbourne,Edmonton Stingers,2025-2026,defense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,2,2,50.0,50.0,50.0,,,3,2,1.5,1,1,75.0,,,,75.0,2.0,0.0,50.0,0,0,0,,1,1,1.0,0.0
+Isiah Osbourne,Edmonton Stingers,2025-2026,defense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,12,6,0.0,33.3,75.0,99.0,Very Good,8,12,0.67,4,8,33.3,81.0,,,33.3,12.0,0.0,33.3,6,4,2,66.7,0,6,0.5,0.0
+Isiah Osbourne,Edmonton Stingers,2025-2026,defense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,1,1,0.0,0.0,6.3,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,0,0,0,,0,1,1.0,0.0
+Isiah Osbourne,Edmonton Stingers,2025-2026,defense,Shot types,Runner,1,,Runner,Runner,,,4,0,,50.0,14.8,,,4,4,1.0,2,2,50.0,,,,50.0,4.0,0.0,50.0,4,2,2,50.0,0,0,0.0,0.0
+Isiah Osbourne,Edmonton Stingers,2025-2026,defense,Shot types,Hook,1,,Hook,Hook,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Isiah Osbourne,Edmonton Stingers,2025-2026,defense,Shot types,At Rim,1,,At Rim,At Rim,,,7,0,,85.7,25.9,,,12,7,1.71,6,1,85.7,,,,80.6,7.4,0.14,85.7,7,6,1,85.7,0,0,0.0,14.3
+Isiah Osbourne,Edmonton Stingers,2025-2026,defense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,7,0,,85.7,100.0,,,12,7,1.71,6,1,85.7,,,,80.6,7.4,0.14,85.7,7,6,1,85.7,0,0,0.0,14.3
+Isiah Osbourne,Edmonton Stingers,2025-2026,defense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Isiah Osbourne,Edmonton Stingers,2025-2026,defense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Isiah Osbourne,Edmonton Stingers,2025-2026,defense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,3,0,,66.7,18.8,,,4,3,1.33,2,1,66.7,,,,66.7,3.0,0.0,66.7,3,2,1,66.7,0,0,0.0,0.0
+Isiah Osbourne,Edmonton Stingers,2025-2026,defense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,3,0,,66.7,18.8,,,4,3,1.33,2,1,66.7,,,,66.7,3.0,0.0,66.7,3,2,1,66.7,0,0,0.0,0.0
+Isiah Osbourne,Edmonton Stingers,2025-2026,defense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,10,10,20.0,20.0,62.5,3.0,Excellent,6,10,0.6,2,8,30.0,98.0,,,30.0,10.0,0.0,20.0,0,0,0,,2,8,1.0,0.0
+Isiah Osbourne,Edmonton Stingers,2025-2026,defense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Isiah Osbourne,Edmonton Stingers,2025-2026,defense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Isiah Osbourne,Edmonton Stingers,2025-2026,defense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Omari Moore,Niagara River Lions,2024-2025,defense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,121,59,32.2,32.2,100.0,,Very Good,97,121,0.8,39,82,40.1,82.0,,,40.1,121.0,0.0,32.2,62,20,42,32.3,19,40,0.49,0.0
+Omari Moore,Niagara River Lions,2024-2025,defense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,88,59,32.2,30.7,72.7,78.0,Very Good,73,88,0.83,27,61,41.5,79.0,,,41.5,88.0,0.0,30.7,29,8,21,27.6,19,40,0.67,0.0
+Omari Moore,Niagara River Lions,2024-2025,defense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,37,37,32.4,32.4,42.0,13.0,Very Good,36,37,0.97,12,25,48.6,69.0,,,48.6,37.0,0.0,32.4,0,0,0,,12,25,1.0,0.0
+Omari Moore,Niagara River Lions,2024-2025,defense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,22,22,18.2,18.2,59.5,49.0,Excellent,12,22,0.55,4,18,27.3,92.0,,,27.3,22.0,0.0,18.2,0,0,0,,4,18,1.0,0.0
+Omari Moore,Niagara River Lions,2024-2025,defense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,15,15,53.3,53.3,40.5,27.0,Poor,24,15,1.6,8,7,80.0,13.0,,,80.0,15.0,0.0,53.3,0,0,0,,8,7,1.0,0.0
+Omari Moore,Niagara River Lions,2024-2025,defense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,50,22,31.8,30.0,56.8,81.0,Very Good,37,50,0.74,15,35,37.0,68.0,,,37.0,50.0,0.0,30.0,28,8,20,28.6,7,15,0.44,0.0
+Omari Moore,Niagara River Lions,2024-2025,defense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,3,3,0.0,0.0,3.4,,,0,3,0.0,0,3,0.0,,,,0.0,3.0,0.0,0.0,0,0,0,,0,3,1.0,0.0
+Omari Moore,Niagara River Lions,2024-2025,defense,Shot types,Runner,1,,Runner,Runner,,,5,0,,40.0,4.1,,,4,5,0.8,2,3,40.0,,,,40.0,5.0,0.0,40.0,5,2,3,40.0,0,0,0.0,0.0
+Omari Moore,Niagara River Lions,2024-2025,defense,Shot types,Hook,1,,Hook,Hook,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Omari Moore,Niagara River Lions,2024-2025,defense,Shot types,At Rim,1,,At Rim,At Rim,,,28,0,,35.7,23.1,40.0,Excellent,20,28,0.71,10,18,35.7,86.0,,,35.7,28.0,0.0,35.7,28,10,18,35.7,0,0,0.0,0.0
+Omari Moore,Niagara River Lions,2024-2025,defense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,28,0,,35.7,100.0,100.0,Excellent,20,28,0.71,10,18,35.7,84.0,,,35.7,28.0,0.0,35.7,28,10,18,35.7,0,0,0.0,0.0
+Omari Moore,Niagara River Lions,2024-2025,defense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Omari Moore,Niagara River Lions,2024-2025,defense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Omari Moore,Niagara River Lions,2024-2025,defense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,20,0,,20.0,22.7,96.0,Excellent,8,20,0.4,4,16,20.0,89.0,,,20.0,20.0,0.0,20.0,20,4,16,20.0,0,0,0.0,0.0
+Omari Moore,Niagara River Lions,2024-2025,defense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,9,0,,44.4,10.2,,,8,9,0.89,4,5,44.4,,,,44.4,9.0,0.0,44.4,9,4,5,44.4,0,0,0.0,0.0
+Omari Moore,Niagara River Lions,2024-2025,defense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,59,59,32.2,32.2,67.0,12.0,Good,57,59,0.97,19,40,48.3,64.0,,,48.3,59.0,0.0,32.2,0,0,0,,19,40,1.0,0.0
+Omari Moore,Niagara River Lions,2024-2025,defense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Omari Moore,Niagara River Lions,2024-2025,defense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Omari Moore,Niagara River Lions,2024-2025,defense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

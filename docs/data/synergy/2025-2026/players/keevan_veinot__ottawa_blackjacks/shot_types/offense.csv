@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Keevan Veinot,Ottawa Blackjacks,2025-2026,offense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,117,43,32.6,41.9,100.0,,Average,112,117,0.96,49,68,47.9,43.0,,,47.9,117.0,0.0,41.9,74,35,39,47.3,14,29,0.37,0.0
+Keevan Veinot,Ottawa Blackjacks,2025-2026,offense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,52,43,32.6,34.6,44.4,21.0,Good,50,52,0.96,18,34,48.1,56.0,,,48.1,52.0,0.0,34.6,9,4,5,44.4,14,29,0.83,0.0
+Keevan Veinot,Ottawa Blackjacks,2025-2026,offense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,24,24,37.5,37.5,46.2,29.0,Good,27,24,1.13,9,15,56.3,65.0,,,56.3,24.0,0.0,37.5,0,0,0,,9,15,1.0,0.0
+Keevan Veinot,Ottawa Blackjacks,2025-2026,offense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,18,18,33.3,33.3,75.0,93.0,Good,18,18,1.0,6,12,50.0,53.0,,,50.0,18.0,0.0,33.3,0,0,0,,6,12,1.0,0.0
+Keevan Veinot,Ottawa Blackjacks,2025-2026,offense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,6,6,50.0,50.0,25.0,,,9,6,1.5,3,3,75.0,,,,75.0,6.0,0.0,50.0,0,0,0,,3,3,1.0,0.0
+Keevan Veinot,Ottawa Blackjacks,2025-2026,offense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,26,19,26.3,30.8,50.0,54.0,Average,21,26,0.81,8,18,40.4,49.0,,,40.4,26.0,0.0,30.8,7,3,4,42.9,5,14,0.73,0.0
+Keevan Veinot,Ottawa Blackjacks,2025-2026,offense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,3,3,0.0,0.0,5.8,,,0,3,0.0,0,3,0.0,,,,0.0,3.0,0.0,0.0,0,0,0,,0,3,1.0,0.0
+Keevan Veinot,Ottawa Blackjacks,2025-2026,offense,Shot types,Runner,1,,Runner,Runner,,,11,0,,36.4,9.4,57.0,Average,8,11,0.73,4,7,36.4,38.0,,,36.4,11.0,0.0,36.4,11,4,7,36.4,0,0,0.0,0.0
+Keevan Veinot,Ottawa Blackjacks,2025-2026,offense,Shot types,Hook,1,,Hook,Hook,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Keevan Veinot,Ottawa Blackjacks,2025-2026,offense,Shot types,At Rim,1,,At Rim,At Rim,,,54,0,,50.0,46.2,61.0,Below Average,54,54,1.0,27,27,50.0,26.0,,,50.0,54.0,0.0,50.0,54,27,27,50.0,0,0,0.0,0.0
+Keevan Veinot,Ottawa Blackjacks,2025-2026,offense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,51,0,,51.0,94.4,63.0,Average,52,51,1.02,26,25,51.0,41.0,,,51.0,51.0,0.0,51.0,51,26,25,51.0,0,0,0.0,0.0
+Keevan Veinot,Ottawa Blackjacks,2025-2026,offense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,1,0,,100.0,1.9,,,2,1,2.0,1,0,100.0,,,,100.0,1.0,0.0,100.0,1,1,0,100.0,0,0,0.0,0.0
+Keevan Veinot,Ottawa Blackjacks,2025-2026,offense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,2,0,,0.0,3.7,,,0,2,0.0,0,2,0.0,,,,0.0,2.0,0.0,0.0,2,0,2,0.0,0,0,0.0,0.0
+Keevan Veinot,Ottawa Blackjacks,2025-2026,offense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,7,0,,42.9,13.5,,,6,7,0.86,3,4,42.9,,,,42.9,7.0,0.0,42.9,7,3,4,42.9,0,0,0.0,0.0
+Keevan Veinot,Ottawa Blackjacks,2025-2026,offense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,2,0,,50.0,3.8,,,2,2,1.0,1,1,50.0,,,,50.0,2.0,0.0,50.0,2,1,1,50.0,0,0,0.0,0.0
+Keevan Veinot,Ottawa Blackjacks,2025-2026,offense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,43,43,32.6,32.6,82.7,62.0,Average,42,43,0.98,14,29,48.8,44.0,,,48.8,43.0,0.0,32.6,0,0,0,,14,29,1.0,0.0
+Keevan Veinot,Ottawa Blackjacks,2025-2026,offense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Keevan Veinot,Ottawa Blackjacks,2025-2026,offense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Keevan Veinot,Ottawa Blackjacks,2025-2026,offense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

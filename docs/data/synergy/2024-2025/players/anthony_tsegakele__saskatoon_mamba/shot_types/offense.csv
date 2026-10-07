@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Anthony Tsegakele,Saskatoon Mamba,2024-2025,offense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,31,3,66.7,38.7,100.0,,Below Average,26,31,0.84,12,19,41.9,24.0,,,41.9,31.0,0.0,38.7,28,10,18,35.7,2,1,0.1,0.0
+Anthony Tsegakele,Saskatoon Mamba,2024-2025,offense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,7,3,66.7,57.1,20.0,,,10,7,1.43,4,3,71.4,,,,71.4,7.0,0.0,57.1,4,2,2,50.0,2,1,0.43,0.0
+Anthony Tsegakele,Saskatoon Mamba,2024-2025,offense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,2,2,100.0,100.0,25.0,,,6,2,3.0,2,0,150.0,,,,150.0,2.0,0.0,100.0,0,0,0,,2,0,1.0,0.0
+Anthony Tsegakele,Saskatoon Mamba,2024-2025,offense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Anthony Tsegakele,Saskatoon Mamba,2024-2025,offense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,2,2,100.0,100.0,100.0,,,6,2,3.0,2,0,150.0,,,,150.0,2.0,0.0,100.0,0,0,0,,2,0,1.0,0.0
+Anthony Tsegakele,Saskatoon Mamba,2024-2025,offense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,5,1,0.0,40.0,62.5,,,4,5,0.8,2,3,40.0,,,,40.0,5.0,0.0,40.0,4,2,2,50.0,0,1,0.2,0.0
+Anthony Tsegakele,Saskatoon Mamba,2024-2025,offense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Anthony Tsegakele,Saskatoon Mamba,2024-2025,offense,Shot types,Runner,1,,Runner,Runner,,,2,0,,0.0,5.7,,,0,2,0.0,0,2,0.0,,,,0.0,2.0,0.0,0.0,2,0,2,0.0,0,0,0.0,0.0
+Anthony Tsegakele,Saskatoon Mamba,2024-2025,offense,Shot types,Hook,1,,Hook,Hook,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Anthony Tsegakele,Saskatoon Mamba,2024-2025,offense,Shot types,At Rim,1,,At Rim,At Rim,,,22,0,,36.4,62.9,83.0,Poor,16,22,0.73,8,14,36.4,11.0,,,36.4,22.0,0.0,36.4,22,8,14,36.4,0,0,0.0,0.0
+Anthony Tsegakele,Saskatoon Mamba,2024-2025,offense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,19,0,,31.6,76.0,34.0,Poor,12,19,0.63,6,13,31.6,5.0,,,31.6,19.0,0.0,31.6,19,6,13,31.6,0,0,0.0,0.0
+Anthony Tsegakele,Saskatoon Mamba,2024-2025,offense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,2,0,,100.0,8.0,,,4,2,2.0,2,0,100.0,,,,100.0,2.0,0.0,100.0,2,2,0,100.0,0,0,0.0,0.0
+Anthony Tsegakele,Saskatoon Mamba,2024-2025,offense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,1,0,,0.0,4.0,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,1,0,1,0.0,0,0,0.0,0.0
+Anthony Tsegakele,Saskatoon Mamba,2024-2025,offense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,4,0,,50.0,50.0,,,4,4,1.0,2,2,50.0,,,,50.0,4.0,0.0,50.0,4,2,2,50.0,0,0,0.0,0.0
+Anthony Tsegakele,Saskatoon Mamba,2024-2025,offense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Anthony Tsegakele,Saskatoon Mamba,2024-2025,offense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,3,3,66.7,66.7,37.5,,,6,3,2.0,2,1,100.0,,,,100.0,3.0,0.0,66.7,0,0,0,,2,1,1.0,0.0
+Anthony Tsegakele,Saskatoon Mamba,2024-2025,offense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Anthony Tsegakele,Saskatoon Mamba,2024-2025,offense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Anthony Tsegakele,Saskatoon Mamba,2024-2025,offense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

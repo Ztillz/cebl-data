@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Teddy Allen,Saskatoon Mamba,2024-2025,offense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,164,86,31.4,34.8,100.0,,Poor,142,164,0.86,57,107,43.0,15.0,,,43.2,164.4,0.01,34.8,78,30,48,38.5,27,59,0.52,0.6
+Teddy Allen,Saskatoon Mamba,2024-2025,offense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,108,86,31.4,30.6,65.9,64.0,Average,94,108,0.86,33,75,43.1,32.0,,,43.3,108.4,0.01,30.6,22,6,16,27.3,27,59,0.8,0.9
+Teddy Allen,Saskatoon Mamba,2024-2025,offense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,20,19,21.1,25.0,18.5,2.0,Poor,14,20,0.7,5,15,35.0,7.0,,,35.0,20.0,0.0,25.0,1,1,0,100.0,4,15,0.95,0.0
+Teddy Allen,Saskatoon Mamba,2024-2025,offense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,11,10,20.0,27.3,55.0,51.0,Below Average,8,11,0.73,3,8,36.4,19.0,,,36.4,11.0,0.0,27.3,1,1,0,100.0,2,8,0.91,0.0
+Teddy Allen,Saskatoon Mamba,2024-2025,offense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,9,9,22.2,22.2,45.0,,,6,9,0.67,2,7,33.3,,,,33.3,9.0,0.0,22.2,0,0,0,,2,7,1.0,0.0
+Teddy Allen,Saskatoon Mamba,2024-2025,offense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,82,66,33.3,31.7,75.9,93.0,Very Good,75,82,0.9,26,56,45.1,65.0,,,45.5,82.4,0.01,31.7,16,4,12,25.0,22,44,0.8,1.2
+Teddy Allen,Saskatoon Mamba,2024-2025,offense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,9,8,50.0,55.6,8.3,,,14,9,1.56,5,4,77.8,,,,77.8,9.0,0.0,55.6,1,1,0,100.0,4,4,0.89,0.0
+Teddy Allen,Saskatoon Mamba,2024-2025,offense,Shot types,Runner,1,,Runner,Runner,,,19,0,,36.8,11.6,75.0,Average,14,19,0.74,7,12,36.8,46.0,,,36.8,19.0,0.0,36.8,19,7,12,36.8,0,0,0.0,0.0
+Teddy Allen,Saskatoon Mamba,2024-2025,offense,Shot types,Hook,1,,Hook,Hook,,,2,0,,50.0,1.2,,,2,2,1.0,1,1,50.0,,,,50.0,2.0,0.0,50.0,2,1,1,50.0,0,0,0.0,0.0
+Teddy Allen,Saskatoon Mamba,2024-2025,offense,Shot types,At Rim,1,,At Rim,At Rim,,,35,0,,45.7,21.3,8.0,Poor,32,35,0.91,16,19,45.7,12.0,,,45.7,35.0,0.0,45.7,35,16,19,45.7,0,0,0.0,0.0
+Teddy Allen,Saskatoon Mamba,2024-2025,offense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,35,0,,45.7,100.0,100.0,Below Average,32,35,0.91,16,19,45.7,17.0,,,45.7,35.0,0.0,45.7,35,16,19,45.7,0,0,0.0,0.0
+Teddy Allen,Saskatoon Mamba,2024-2025,offense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Teddy Allen,Saskatoon Mamba,2024-2025,offense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Teddy Allen,Saskatoon Mamba,2024-2025,offense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,17,0,,23.5,15.7,29.0,Poor,8,17,0.47,4,13,23.5,9.0,,,23.5,17.0,0.0,23.5,17,4,13,23.5,0,0,0.0,0.0
+Teddy Allen,Saskatoon Mamba,2024-2025,offense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,5,0,,40.0,4.6,,,4,5,0.8,2,3,40.0,,,,40.0,5.0,0.0,40.0,5,2,3,40.0,0,0,0.0,0.0
+Teddy Allen,Saskatoon Mamba,2024-2025,offense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,86,86,31.4,31.4,79.6,44.0,Average,82,86,0.94,27,59,47.1,37.0,,,47.4,86.4,0.01,31.4,0,0,0,,27,59,1.0,1.2
+Teddy Allen,Saskatoon Mamba,2024-2025,offense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Teddy Allen,Saskatoon Mamba,2024-2025,offense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Teddy Allen,Saskatoon Mamba,2024-2025,offense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Gabe Osabuohien,Calgary Surge,2025-2026,offense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,101,27,25.9,36.6,100.0,,Below Average,82,101,0.8,37,64,40.1,15.0,,,40.1,102.3,0.03,36.6,74,30,44,40.5,7,20,0.27,3.0
+Gabe Osabuohien,Calgary Surge,2025-2026,offense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,30,27,25.9,30.0,29.7,8.0,Below Average,25,30,0.83,9,21,41.7,30.0,,,41.7,30.0,0.0,30.0,3,2,1,66.7,7,20,0.9,0.0
+Gabe Osabuohien,Calgary Surge,2025-2026,offense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,19,19,21.1,21.1,63.3,56.0,Poor,12,19,0.63,4,15,31.6,5.0,,,31.6,19.0,0.0,21.1,0,0,0,,4,15,1.0,0.0
+Gabe Osabuohien,Calgary Surge,2025-2026,offense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,4,4,25.0,25.0,21.1,,,3,4,0.75,1,3,37.5,,,,37.5,4.0,0.0,25.0,0,0,0,,1,3,1.0,0.0
+Gabe Osabuohien,Calgary Surge,2025-2026,offense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,15,15,20.0,20.0,78.9,98.0,Poor,9,15,0.6,3,12,30.0,7.0,,,30.0,15.0,0.0,20.0,0,0,0,,3,12,1.0,0.0
+Gabe Osabuohien,Calgary Surge,2025-2026,offense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,9,8,37.5,44.4,30.0,,,11,9,1.22,4,5,61.1,,,,61.1,9.0,0.0,44.4,1,1,0,100.0,3,5,0.89,0.0
+Gabe Osabuohien,Calgary Surge,2025-2026,offense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,1,1,100.0,100.0,3.3,,,3,1,3.0,1,0,150.0,,,,150.0,1.0,0.0,100.0,0,0,0,,1,0,1.0,0.0
+Gabe Osabuohien,Calgary Surge,2025-2026,offense,Shot types,Runner,1,,Runner,Runner,,,3,0,,33.3,3.0,,,2,3,0.67,1,2,33.3,,,,33.3,3.0,0.0,33.3,3,1,2,33.3,0,0,0.0,0.0
+Gabe Osabuohien,Calgary Surge,2025-2026,offense,Shot types,Hook,1,,Hook,Hook,,,1,0,,0.0,1.0,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,1,0,1,0.0,0,0,0.0,0.0
+Gabe Osabuohien,Calgary Surge,2025-2026,offense,Shot types,At Rim,1,,At Rim,At Rim,,,67,0,,40.3,66.3,84.0,Poor,55,67,0.81,27,40,40.3,8.0,,,40.3,68.3,0.04,40.3,67,27,40,40.3,0,0,0.0,4.5
+Gabe Osabuohien,Calgary Surge,2025-2026,offense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,61,0,,39.3,91.0,51.0,Poor,49,61,0.79,24,37,39.3,10.0,,,39.3,62.3,0.05,39.3,61,24,37,39.3,0,0,0.0,4.9
+Gabe Osabuohien,Calgary Surge,2025-2026,offense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,1,0,,100.0,1.5,,,2,1,2.0,1,0,100.0,,,,100.0,1.0,0.0,100.0,1,1,0,100.0,0,0,0.0,0.0
+Gabe Osabuohien,Calgary Surge,2025-2026,offense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,5,0,,40.0,7.5,,,4,5,0.8,2,3,40.0,,,,40.0,5.0,0.0,40.0,5,2,3,40.0,0,0,0.0,0.0
+Gabe Osabuohien,Calgary Surge,2025-2026,offense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,2,0,,50.0,6.7,,,2,2,1.0,1,1,50.0,,,,50.0,2.0,0.0,50.0,2,1,1,50.0,0,0,0.0,0.0
+Gabe Osabuohien,Calgary Surge,2025-2026,offense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,1,0,,100.0,3.3,,,2,1,2.0,1,0,100.0,,,,100.0,1.0,0.0,100.0,1,1,0,100.0,0,0,0.0,0.0
+Gabe Osabuohien,Calgary Surge,2025-2026,offense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,27,27,25.9,25.9,90.0,95.0,Below Average,21,27,0.78,7,20,38.9,18.0,,,38.9,27.0,0.0,25.9,0,0,0,,7,20,1.0,0.0
+Gabe Osabuohien,Calgary Surge,2025-2026,offense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Gabe Osabuohien,Calgary Surge,2025-2026,offense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Gabe Osabuohien,Calgary Surge,2025-2026,offense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Bahaide Haidara,Montreal Alliance,2024-2025,defense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,29,10,40.0,37.9,100.0,,Very Good,26,29,0.9,11,18,44.8,70.0,,,44.8,29.0,0.0,37.9,19,7,12,36.8,4,6,0.34,0.0
+Bahaide Haidara,Montreal Alliance,2024-2025,defense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,16,10,40.0,37.5,55.2,7.0,Good,16,16,1.0,6,10,50.0,53.0,,,50.0,16.0,0.0,37.5,6,2,4,33.3,4,6,0.63,0.0
+Bahaide Haidara,Montreal Alliance,2024-2025,defense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,7,7,42.9,42.9,43.8,,,9,7,1.29,3,4,64.3,,,,64.3,7.0,0.0,42.9,0,0,0,,3,4,1.0,0.0
+Bahaide Haidara,Montreal Alliance,2024-2025,defense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,3,3,0.0,0.0,42.9,,,0,3,0.0,0,3,0.0,,,,0.0,3.0,0.0,0.0,0,0,0,,0,3,1.0,0.0
+Bahaide Haidara,Montreal Alliance,2024-2025,defense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,4,4,75.0,75.0,57.1,,,9,4,2.25,3,1,112.5,,,,112.5,4.0,0.0,75.0,0,0,0,,3,1,1.0,0.0
+Bahaide Haidara,Montreal Alliance,2024-2025,defense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,9,3,33.3,33.3,56.3,,,7,9,0.78,3,6,38.9,,,,38.9,9.0,0.0,33.3,6,2,4,33.3,1,2,0.33,0.0
+Bahaide Haidara,Montreal Alliance,2024-2025,defense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,2,2,0.0,0.0,12.5,,,0,2,0.0,0,2,0.0,,,,0.0,2.0,0.0,0.0,0,0,0,,0,2,1.0,0.0
+Bahaide Haidara,Montreal Alliance,2024-2025,defense,Shot types,Runner,1,,Runner,Runner,,,4,0,,50.0,13.8,,,4,4,1.0,2,2,50.0,,,,50.0,4.0,0.0,50.0,4,2,2,50.0,0,0,0.0,0.0
+Bahaide Haidara,Montreal Alliance,2024-2025,defense,Shot types,Hook,1,,Hook,Hook,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Bahaide Haidara,Montreal Alliance,2024-2025,defense,Shot types,At Rim,1,,At Rim,At Rim,,,9,0,,33.3,31.0,,,6,9,0.67,3,6,33.3,,,,33.3,9.0,0.0,33.3,9,3,6,33.3,0,0,0.0,0.0
+Bahaide Haidara,Montreal Alliance,2024-2025,defense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,9,0,,33.3,100.0,,,6,9,0.67,3,6,33.3,,,,33.3,9.0,0.0,33.3,9,3,6,33.3,0,0,0.0,0.0
+Bahaide Haidara,Montreal Alliance,2024-2025,defense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Bahaide Haidara,Montreal Alliance,2024-2025,defense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Bahaide Haidara,Montreal Alliance,2024-2025,defense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,3,0,,33.3,18.8,,,2,3,0.67,1,2,33.3,,,,33.3,3.0,0.0,33.3,3,1,2,33.3,0,0,0.0,0.0
+Bahaide Haidara,Montreal Alliance,2024-2025,defense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,3,0,,33.3,18.8,,,2,3,0.67,1,2,33.3,,,,33.3,3.0,0.0,33.3,3,1,2,33.3,0,0,0.0,0.0
+Bahaide Haidara,Montreal Alliance,2024-2025,defense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,10,10,40.0,40.0,62.5,3.0,Average,12,10,1.2,4,6,60.0,31.0,,,60.0,10.0,0.0,40.0,0,0,0,,4,6,1.0,0.0
+Bahaide Haidara,Montreal Alliance,2024-2025,defense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Bahaide Haidara,Montreal Alliance,2024-2025,defense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Bahaide Haidara,Montreal Alliance,2024-2025,defense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Nick Ward,Vancouver Bandits,2024-2025,offense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,198,1,0.0,58.1,100.0,,Very Good,240,198,1.16,115,83,58.1,83.0,,,58.9,203.7,0.07,58.1,197,115,82,58.4,0,1,0.01,6.6
+Nick Ward,Vancouver Bandits,2024-2025,offense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,7,1,0.0,0.0,3.5,,,0,7,0.0,0,7,0.0,,,,0.0,7.0,0.0,0.0,6,0,6,0.0,0,1,0.14,0.0
+Nick Ward,Vancouver Bandits,2024-2025,offense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,1,1,0.0,0.0,14.3,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,0,0,0,,0,1,1.0,0.0
+Nick Ward,Vancouver Bandits,2024-2025,offense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Nick Ward,Vancouver Bandits,2024-2025,offense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,1,1,0.0,0.0,100.0,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,0,0,0,,0,1,1.0,0.0
+Nick Ward,Vancouver Bandits,2024-2025,offense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,3,0,,0.0,42.9,,,0,3,0.0,0,3,0.0,,,,0.0,3.0,0.0,0.0,3,0,3,0.0,0,0,0.0,0.0
+Nick Ward,Vancouver Bandits,2024-2025,offense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Nick Ward,Vancouver Bandits,2024-2025,offense,Shot types,Runner,1,,Runner,Runner,,,12,0,,41.7,6.1,14.0,Good,10,12,0.83,5,7,41.7,57.0,,,41.7,12.0,0.0,41.7,12,5,7,41.7,0,0,0.0,0.0
+Nick Ward,Vancouver Bandits,2024-2025,offense,Shot types,Hook,1,,Hook,Hook,,,21,0,,38.1,10.6,60.0,Below Average,17,21,0.76,8,13,38.1,20.0,,,39.6,21.4,0.05,38.1,21,8,13,38.1,0,0,0.0,4.8
+Nick Ward,Vancouver Bandits,2024-2025,offense,Shot types,At Rim,1,,At Rim,At Rim,,,158,0,,64.6,79.8,91.0,Very Good,213,158,1.29,102,56,64.6,78.0,,,65.2,163.3,0.08,64.6,158,102,56,64.6,0,0,0.0,7.6
+Nick Ward,Vancouver Bandits,2024-2025,offense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,122,0,,59.0,77.2,25.0,Very Good,152,122,1.18,72,50,59.0,70.0,,,59.9,126.8,0.09,59.0,122,72,50,59.0,0,0,0.0,9.0
+Nick Ward,Vancouver Bandits,2024-2025,offense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,31,0,,87.1,19.6,32.0,Average,55,31,1.74,27,4,87.1,37.0,,,87.5,31.4,0.03,87.1,31,27,4,87.1,0,0,0.0,3.2
+Nick Ward,Vancouver Bandits,2024-2025,offense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,5,0,,60.0,3.2,,,6,5,1.2,3,2,60.0,,,,60.0,5.0,0.0,60.0,5,3,2,60.0,0,0,0.0,0.0
+Nick Ward,Vancouver Bandits,2024-2025,offense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,5,0,,0.0,71.4,,,0,5,0.0,0,5,0.0,,,,0.0,5.0,0.0,0.0,5,0,5,0.0,0,0,0.0,0.0
+Nick Ward,Vancouver Bandits,2024-2025,offense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,1,0,,0.0,14.3,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,1,0,1,0.0,0,0,0.0,0.0
+Nick Ward,Vancouver Bandits,2024-2025,offense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,1,1,0.0,0.0,14.3,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,0,0,0,,0,1,1.0,0.0
+Nick Ward,Vancouver Bandits,2024-2025,offense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Nick Ward,Vancouver Bandits,2024-2025,offense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Nick Ward,Vancouver Bandits,2024-2025,offense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

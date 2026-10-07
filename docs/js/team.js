@@ -957,6 +957,13 @@ function renderTeamGameBreakdown(
         title
     );
 
+    if (data?.source_discrepancy?.message) {
+        const note = document.createElement("p");
+        note.className = "source-discrepancy-note";
+        note.textContent = data.source_discrepancy.message;
+        block.appendChild(note);
+    }
+
     block.appendChild(
         scroll
     );

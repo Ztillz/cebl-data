@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Nathan Bilamu,Winnipeg Sea Bears,2025-2026,offense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,76,36,33.3,44.7,100.0,,Very Good,84,76,1.05,34,42,52.6,66.0,,,54.0,77.8,0.05,44.7,40,22,18,55.0,12,24,0.47,5.3
+Nathan Bilamu,Winnipeg Sea Bears,2025-2026,offense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,40,36,33.3,37.5,52.6,39.0,Very Good,42,40,1.05,15,25,52.5,75.0,,,52.5,40.0,0.0,37.5,4,3,1,75.0,12,24,0.9,0.0
+Nathan Bilamu,Winnipeg Sea Bears,2025-2026,offense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,34,34,29.4,29.4,85.0,86.0,Below Average,30,34,0.88,10,24,44.1,21.0,,,44.1,34.0,0.0,29.4,0,0,0,,10,24,1.0,0.0
+Nathan Bilamu,Winnipeg Sea Bears,2025-2026,offense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,16,16,25.0,25.0,47.1,16.0,Below Average,12,16,0.75,4,12,37.5,24.0,,,37.5,16.0,0.0,25.0,0,0,0,,4,12,1.0,0.0
+Nathan Bilamu,Winnipeg Sea Bears,2025-2026,offense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,18,18,33.3,33.3,52.9,69.0,Average,18,18,1.0,6,12,50.0,38.0,,,50.0,18.0,0.0,33.3,0,0,0,,6,12,1.0,0.0
+Nathan Bilamu,Winnipeg Sea Bears,2025-2026,offense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,6,2,100.0,83.3,15.0,,,12,6,2.0,5,1,100.0,,,,100.0,6.0,0.0,83.3,4,3,1,75.0,2,0,0.33,0.0
+Nathan Bilamu,Winnipeg Sea Bears,2025-2026,offense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Nathan Bilamu,Winnipeg Sea Bears,2025-2026,offense,Shot types,Runner,1,,Runner,Runner,,,2,0,,0.0,2.6,,,0,2,0.0,0,2,0.0,,,,0.0,2.0,0.0,0.0,2,0,2,0.0,0,0,0.0,0.0
+Nathan Bilamu,Winnipeg Sea Bears,2025-2026,offense,Shot types,Hook,1,,Hook,Hook,,,1,0,,0.0,1.3,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,1,0,1,0.0,0,0,0.0,0.0
+Nathan Bilamu,Winnipeg Sea Bears,2025-2026,offense,Shot types,At Rim,1,,At Rim,At Rim,,,33,0,,57.6,43.4,57.0,Good,42,33,1.15,19,14,57.6,53.0,,,60.4,34.8,0.12,57.6,33,19,14,57.6,0,0,0.0,12.1
+Nathan Bilamu,Winnipeg Sea Bears,2025-2026,offense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,33,0,,57.6,100.0,100.0,Good,42,33,1.15,19,14,57.6,63.0,,,60.4,34.8,0.12,57.6,33,19,14,57.6,0,0,0.0,12.1
+Nathan Bilamu,Winnipeg Sea Bears,2025-2026,offense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Nathan Bilamu,Winnipeg Sea Bears,2025-2026,offense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Nathan Bilamu,Winnipeg Sea Bears,2025-2026,offense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,4,0,,75.0,10.0,,,6,4,1.5,3,1,75.0,,,,75.0,4.0,0.0,75.0,4,3,1,75.0,0,0,0.0,0.0
+Nathan Bilamu,Winnipeg Sea Bears,2025-2026,offense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Nathan Bilamu,Winnipeg Sea Bears,2025-2026,offense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,36,36,33.3,33.3,90.0,75.0,Good,36,36,1.0,12,24,50.0,52.0,,,50.0,36.0,0.0,33.3,0,0,0,,12,24,1.0,0.0
+Nathan Bilamu,Winnipeg Sea Bears,2025-2026,offense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Nathan Bilamu,Winnipeg Sea Bears,2025-2026,offense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Nathan Bilamu,Winnipeg Sea Bears,2025-2026,offense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

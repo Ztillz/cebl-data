@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Meshack Lufile,Ottawa Blackjacks,2025-2026,defense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,29,10,50.0,37.9,100.0,,Good,27,29,0.93,11,18,46.6,53.0,,,46.6,29.0,0.0,37.9,19,6,13,31.6,5,5,0.34,0.0
+Meshack Lufile,Ottawa Blackjacks,2025-2026,defense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,16,10,50.0,37.5,55.2,9.0,Below Average,17,16,1.06,6,10,53.1,27.0,,,53.1,16.0,0.0,37.5,6,1,5,16.7,5,5,0.63,0.0
+Meshack Lufile,Ottawa Blackjacks,2025-2026,defense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,6,5,60.0,50.0,37.5,,,9,6,1.5,3,3,75.0,,,,75.0,6.0,0.0,50.0,1,0,1,0.0,3,2,0.83,0.0
+Meshack Lufile,Ottawa Blackjacks,2025-2026,defense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,3,2,50.0,33.3,50.0,,,3,3,1.0,1,2,50.0,,,,50.0,3.0,0.0,33.3,1,0,1,0.0,1,1,0.67,0.0
+Meshack Lufile,Ottawa Blackjacks,2025-2026,defense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,3,3,66.7,66.7,50.0,,,6,3,2.0,2,1,100.0,,,,100.0,3.0,0.0,66.7,0,0,0,,2,1,1.0,0.0
+Meshack Lufile,Ottawa Blackjacks,2025-2026,defense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,10,5,40.0,30.0,62.5,94.0,Good,8,10,0.8,3,7,40.0,56.0,,,40.0,10.0,0.0,30.0,5,1,4,20.0,2,3,0.5,0.0
+Meshack Lufile,Ottawa Blackjacks,2025-2026,defense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,3,3,33.3,33.3,18.8,,,3,3,1.0,1,2,50.0,,,,50.0,3.0,0.0,33.3,0,0,0,,1,2,1.0,0.0
+Meshack Lufile,Ottawa Blackjacks,2025-2026,defense,Shot types,Runner,1,,Runner,Runner,,,4,0,,25.0,13.8,,,2,4,0.5,1,3,25.0,,,,25.0,4.0,0.0,25.0,4,1,3,25.0,0,0,0.0,0.0
+Meshack Lufile,Ottawa Blackjacks,2025-2026,defense,Shot types,Hook,1,,Hook,Hook,,,1,0,,0.0,3.4,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,1,0,1,0.0,0,0,0.0,0.0
+Meshack Lufile,Ottawa Blackjacks,2025-2026,defense,Shot types,At Rim,1,,At Rim,At Rim,,,8,0,,50.0,27.6,,,8,8,1.0,4,4,50.0,,,,50.0,8.0,0.0,50.0,8,4,4,50.0,0,0,0.0,0.0
+Meshack Lufile,Ottawa Blackjacks,2025-2026,defense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,8,0,,50.0,100.0,,,8,8,1.0,4,4,50.0,,,,50.0,8.0,0.0,50.0,8,4,4,50.0,0,0,0.0,0.0
+Meshack Lufile,Ottawa Blackjacks,2025-2026,defense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Meshack Lufile,Ottawa Blackjacks,2025-2026,defense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Meshack Lufile,Ottawa Blackjacks,2025-2026,defense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,4,0,,25.0,25.0,,,2,4,0.5,1,3,25.0,,,,25.0,4.0,0.0,25.0,4,1,3,25.0,0,0,0.0,0.0
+Meshack Lufile,Ottawa Blackjacks,2025-2026,defense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,2,0,,0.0,12.5,,,0,2,0.0,0,2,0.0,,,,0.0,2.0,0.0,0.0,2,0,2,0.0,0,0,0.0,0.0
+Meshack Lufile,Ottawa Blackjacks,2025-2026,defense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,10,10,50.0,50.0,62.5,3.0,Poor,15,10,1.5,5,5,75.0,2.0,,,75.0,10.0,0.0,50.0,0,0,0,,5,5,1.0,0.0
+Meshack Lufile,Ottawa Blackjacks,2025-2026,defense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Meshack Lufile,Ottawa Blackjacks,2025-2026,defense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Meshack Lufile,Ottawa Blackjacks,2025-2026,defense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

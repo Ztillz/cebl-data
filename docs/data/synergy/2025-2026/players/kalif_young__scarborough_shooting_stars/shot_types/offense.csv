@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Kalif Young,Scarborough Shooting Stars,2025-2026,offense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,45,1,0.0,53.3,100.0,,Very Good,49,45,1.07,24,21,53.3,69.0,,,53.4,45.9,0.04,53.3,44,24,20,54.5,0,1,0.02,4.4
+Kalif Young,Scarborough Shooting Stars,2025-2026,offense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,15,1,0.0,46.7,33.3,,,14,15,0.93,7,8,46.7,,,,46.7,15.0,0.0,46.7,14,7,7,50.0,0,1,0.07,0.0
+Kalif Young,Scarborough Shooting Stars,2025-2026,offense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,6,1,0.0,50.0,40.0,,,6,6,1.0,3,3,50.0,,,,50.0,6.0,0.0,50.0,5,3,2,60.0,0,1,0.17,0.0
+Kalif Young,Scarborough Shooting Stars,2025-2026,offense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,3,1,0.0,0.0,50.0,,,0,3,0.0,0,3,0.0,,,,0.0,3.0,0.0,0.0,2,0,2,0.0,0,1,0.33,0.0
+Kalif Young,Scarborough Shooting Stars,2025-2026,offense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,3,0,,100.0,50.0,,,6,3,2.0,3,0,100.0,,,,100.0,3.0,0.0,100.0,3,3,0,100.0,0,0,0.0,0.0
+Kalif Young,Scarborough Shooting Stars,2025-2026,offense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Kalif Young,Scarborough Shooting Stars,2025-2026,offense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Kalif Young,Scarborough Shooting Stars,2025-2026,offense,Shot types,Runner,1,,Runner,Runner,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Kalif Young,Scarborough Shooting Stars,2025-2026,offense,Shot types,Hook,1,,Hook,Hook,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Kalif Young,Scarborough Shooting Stars,2025-2026,offense,Shot types,At Rim,1,,At Rim,At Rim,,,30,0,,56.7,66.7,86.0,Average,35,30,1.13,17,13,56.7,49.0,,,56.7,30.9,0.07,56.7,30,17,13,56.7,0,0,0.0,6.7
+Kalif Young,Scarborough Shooting Stars,2025-2026,offense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,15,0,,53.3,50.0,1.0,Average,17,15,1.07,8,7,53.3,50.0,,,53.5,15.9,0.13,53.3,15,8,7,53.3,0,0,0.0,13.3
+Kalif Young,Scarborough Shooting Stars,2025-2026,offense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,4,0,,100.0,13.3,,,8,4,2.0,4,0,100.0,,,,100.0,4.0,0.0,100.0,4,4,0,100.0,0,0,0.0,0.0
+Kalif Young,Scarborough Shooting Stars,2025-2026,offense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,11,0,,45.5,36.7,100.0,Very Good,10,11,0.91,5,6,45.5,80.0,,,45.5,11.0,0.0,45.5,11,5,6,45.5,0,0,0.0,0.0
+Kalif Young,Scarborough Shooting Stars,2025-2026,offense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,11,0,,45.5,73.3,,,10,11,0.91,5,6,45.5,,,,45.5,11.0,0.0,45.5,11,5,6,45.5,0,0,0.0,0.0
+Kalif Young,Scarborough Shooting Stars,2025-2026,offense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,3,0,,66.7,20.0,,,4,3,1.33,2,1,66.7,,,,66.7,3.0,0.0,66.7,3,2,1,66.7,0,0,0.0,0.0
+Kalif Young,Scarborough Shooting Stars,2025-2026,offense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,1,1,0.0,0.0,6.7,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,0,0,0,,0,1,1.0,0.0
+Kalif Young,Scarborough Shooting Stars,2025-2026,offense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Kalif Young,Scarborough Shooting Stars,2025-2026,offense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Kalif Young,Scarborough Shooting Stars,2025-2026,offense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

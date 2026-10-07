@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Lj Thorpe,Brampton Honey Badgers,2024-2025,defense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,103,50,38.0,43.7,100.0,,Average,110,103,1.06,45,58,52.9,32.0,,,53.2,103.4,0.01,43.7,53,26,27,49.1,19,31,0.49,1.0
+Lj Thorpe,Brampton Honey Badgers,2024-2025,defense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,67,50,38.0,41.8,65.0,38.0,Below Average,75,67,1.12,28,39,56.0,22.0,,,56.0,67.0,0.0,41.8,17,9,8,52.9,19,31,0.75,0.0
+Lj Thorpe,Brampton Honey Badgers,2024-2025,defense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,37,36,41.7,43.2,55.2,41.0,Below Average,47,37,1.27,16,21,63.5,22.0,,,63.5,37.0,0.0,43.2,1,1,0,100.0,15,21,0.97,0.0
+Lj Thorpe,Brampton Honey Badgers,2024-2025,defense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,18,17,47.1,50.0,48.6,13.0,Poor,26,18,1.44,9,9,72.2,6.0,,,72.2,18.0,0.0,50.0,1,1,0,100.0,8,9,0.94,0.0
+Lj Thorpe,Brampton Honey Badgers,2024-2025,defense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,19,19,36.8,36.8,51.4,71.0,Good,21,19,1.11,7,12,55.3,57.0,,,55.3,19.0,0.0,36.8,0,0,0,,7,12,1.0,0.0
+Lj Thorpe,Brampton Honey Badgers,2024-2025,defense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,28,14,28.6,42.9,41.8,48.0,Average,28,28,1.0,12,16,50.0,35.0,,,50.0,28.0,0.0,42.9,14,8,6,57.1,4,10,0.5,0.0
+Lj Thorpe,Brampton Honey Badgers,2024-2025,defense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Lj Thorpe,Brampton Honey Badgers,2024-2025,defense,Shot types,Runner,1,,Runner,Runner,,,5,0,,40.0,4.9,,,4,5,0.8,2,3,40.0,,,,40.0,5.0,0.0,40.0,5,2,3,40.0,0,0,0.0,0.0
+Lj Thorpe,Brampton Honey Badgers,2024-2025,defense,Shot types,Hook,1,,Hook,Hook,,,1,0,,100.0,1.0,,,2,1,2.0,1,0,100.0,,,,100.0,1.0,0.0,100.0,1,1,0,100.0,0,0,0.0,0.0
+Lj Thorpe,Brampton Honey Badgers,2024-2025,defense,Shot types,At Rim,1,,At Rim,At Rim,,,30,0,,46.7,29.1,78.0,Good,29,30,0.93,14,16,46.7,62.0,,,47.6,30.4,0.03,46.7,30,14,16,46.7,0,0,0.0,3.3
+Lj Thorpe,Brampton Honey Badgers,2024-2025,defense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,30,0,,46.7,100.0,100.0,Good,29,30,0.93,14,16,46.7,64.0,,,47.6,30.4,0.03,46.7,30,14,16,46.7,0,0,0.0,3.3
+Lj Thorpe,Brampton Honey Badgers,2024-2025,defense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Lj Thorpe,Brampton Honey Badgers,2024-2025,defense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Lj Thorpe,Brampton Honey Badgers,2024-2025,defense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,9,0,,55.6,13.4,,,10,9,1.11,5,4,55.6,,,,55.6,9.0,0.0,55.6,9,5,4,55.6,0,0,0.0,0.0
+Lj Thorpe,Brampton Honey Badgers,2024-2025,defense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,8,0,,50.0,11.9,,,8,8,1.0,4,4,50.0,,,,50.0,8.0,0.0,50.0,8,4,4,50.0,0,0,0.0,0.0
+Lj Thorpe,Brampton Honey Badgers,2024-2025,defense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,50,50,38.0,38.0,74.6,45.0,Average,57,50,1.14,19,31,57.0,38.0,,,57.0,50.0,0.0,38.0,0,0,0,,19,31,1.0,0.0
+Lj Thorpe,Brampton Honey Badgers,2024-2025,defense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Lj Thorpe,Brampton Honey Badgers,2024-2025,defense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Lj Thorpe,Brampton Honey Badgers,2024-2025,defense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

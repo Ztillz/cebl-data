@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Maxime Boursiquot,Montreal Alliance,2024-2025,defense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,21,13,30.8,42.9,100.0,,Average,22,21,1.05,9,12,52.4,33.0,,,52.4,21.0,0.0,42.9,8,5,3,62.5,4,9,0.62,0.0
+Maxime Boursiquot,Montreal Alliance,2024-2025,defense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,16,13,30.8,31.3,76.2,93.0,Very Good,14,16,0.88,5,11,43.8,72.0,,,43.8,16.0,0.0,31.3,3,1,2,33.3,4,9,0.81,0.0
+Maxime Boursiquot,Montreal Alliance,2024-2025,defense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,11,11,27.3,27.3,68.8,81.0,Excellent,9,11,0.82,3,8,40.9,85.0,,,40.9,11.0,0.0,27.3,0,0,0,,3,8,1.0,0.0
+Maxime Boursiquot,Montreal Alliance,2024-2025,defense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,7,7,14.3,14.3,63.6,,,3,7,0.43,1,6,21.4,,,,21.4,7.0,0.0,14.3,0,0,0,,1,6,1.0,0.0
+Maxime Boursiquot,Montreal Alliance,2024-2025,defense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,4,4,50.0,50.0,36.4,,,6,4,1.5,2,2,75.0,,,,75.0,4.0,0.0,50.0,0,0,0,,2,2,1.0,0.0
+Maxime Boursiquot,Montreal Alliance,2024-2025,defense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,5,2,50.0,40.0,31.3,,,5,5,1.0,2,3,50.0,,,,50.0,5.0,0.0,40.0,3,1,2,33.3,1,1,0.4,0.0
+Maxime Boursiquot,Montreal Alliance,2024-2025,defense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Maxime Boursiquot,Montreal Alliance,2024-2025,defense,Shot types,Runner,1,,Runner,Runner,,,1,0,,100.0,4.8,,,2,1,2.0,1,0,100.0,,,,100.0,1.0,0.0,100.0,1,1,0,100.0,0,0,0.0,0.0
+Maxime Boursiquot,Montreal Alliance,2024-2025,defense,Shot types,Hook,1,,Hook,Hook,,,1,0,,100.0,4.8,,,2,1,2.0,1,0,100.0,,,,100.0,1.0,0.0,100.0,1,1,0,100.0,0,0,0.0,0.0
+Maxime Boursiquot,Montreal Alliance,2024-2025,defense,Shot types,At Rim,1,,At Rim,At Rim,,,3,0,,66.7,14.3,,,4,3,1.33,2,1,66.7,,,,66.7,3.0,0.0,66.7,3,2,1,66.7,0,0,0.0,0.0
+Maxime Boursiquot,Montreal Alliance,2024-2025,defense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,3,0,,66.7,100.0,,,4,3,1.33,2,1,66.7,,,,66.7,3.0,0.0,66.7,3,2,1,66.7,0,0,0.0,0.0
+Maxime Boursiquot,Montreal Alliance,2024-2025,defense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Maxime Boursiquot,Montreal Alliance,2024-2025,defense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Maxime Boursiquot,Montreal Alliance,2024-2025,defense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,1,0,,0.0,6.3,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,1,0,1,0.0,0,0,0.0,0.0
+Maxime Boursiquot,Montreal Alliance,2024-2025,defense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,2,0,,50.0,12.5,,,2,2,1.0,1,1,50.0,,,,50.0,2.0,0.0,50.0,2,1,1,50.0,0,0,0.0,0.0
+Maxime Boursiquot,Montreal Alliance,2024-2025,defense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,13,13,30.8,30.8,81.3,69.0,Very Good,12,13,0.92,4,9,46.2,75.0,,,46.2,13.0,0.0,30.8,0,0,0,,4,9,1.0,0.0
+Maxime Boursiquot,Montreal Alliance,2024-2025,defense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Maxime Boursiquot,Montreal Alliance,2024-2025,defense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Maxime Boursiquot,Montreal Alliance,2024-2025,defense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

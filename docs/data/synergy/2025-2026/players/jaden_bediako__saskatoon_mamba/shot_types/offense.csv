@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Jaden Bediako,Saskatoon Mamba,2025-2026,offense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,172,0,,47.1,100.0,,Average,165,172,0.94,81,91,47.1,43.0,,,47.1,175.1,0.04,47.1,172,81,91,47.1,0,0,0.0,4.1
+Jaden Bediako,Saskatoon Mamba,2025-2026,offense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,14,0,,28.6,7.9,1.0,Poor,8,14,0.57,4,10,28.6,6.0,,,28.6,14.0,0.0,28.6,14,4,10,28.6,0,0,0.0,0.0
+Jaden Bediako,Saskatoon Mamba,2025-2026,offense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,6,0,,33.3,42.9,,,4,6,0.67,2,4,33.3,,,,33.3,6.0,0.0,33.3,6,2,4,33.3,0,0,0.0,0.0
+Jaden Bediako,Saskatoon Mamba,2025-2026,offense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Jaden Bediako,Saskatoon Mamba,2025-2026,offense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,6,0,,33.3,100.0,,,4,6,0.67,2,4,33.3,,,,33.3,6.0,0.0,33.3,6,2,4,33.3,0,0,0.0,0.0
+Jaden Bediako,Saskatoon Mamba,2025-2026,offense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,1,0,,0.0,7.1,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,1,0,1,0.0,0,0,0.0,0.0
+Jaden Bediako,Saskatoon Mamba,2025-2026,offense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Jaden Bediako,Saskatoon Mamba,2025-2026,offense,Shot types,Runner,1,,Runner,Runner,,,6,0,,50.0,3.4,,,6,6,1.0,3,3,50.0,,,,50.0,6.0,0.0,50.0,6,3,3,50.0,0,0,0.0,0.0
+Jaden Bediako,Saskatoon Mamba,2025-2026,offense,Shot types,Hook,1,,Hook,Hook,,,44,0,,36.4,24.7,100.0,Average,32,44,0.73,16,28,36.4,46.0,,,36.0,44.4,0.02,36.4,44,16,28,36.4,0,0,0.0,2.3
+Jaden Bediako,Saskatoon Mamba,2025-2026,offense,Shot types,At Rim,1,,At Rim,At Rim,,,108,0,,53.7,60.7,80.0,Average,119,108,1.07,58,50,53.7,39.0,,,53.8,110.6,0.06,53.7,108,58,50,53.7,0,0,0.0,5.6
+Jaden Bediako,Saskatoon Mamba,2025-2026,offense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,80,0,,53.8,73.4,20.0,Average,89,80,1.08,43,37,53.8,49.0,,,54.1,82.2,0.06,53.8,80,43,37,53.8,0,0,0.0,6.3
+Jaden Bediako,Saskatoon Mamba,2025-2026,offense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,11,0,,72.7,10.1,3.0,Poor,16,11,1.45,8,3,72.7,3.0,,,72.7,11.0,0.0,72.7,11,8,3,72.7,0,0,0.0,0.0
+Jaden Bediako,Saskatoon Mamba,2025-2026,offense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,17,0,,41.2,15.6,80.0,Poor,14,17,0.82,7,10,41.2,0.0,,,40.1,17.4,0.06,41.2,17,7,10,41.2,0,0,0.0,5.9
+Jaden Bediako,Saskatoon Mamba,2025-2026,offense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,7,0,,28.6,50.0,,,4,7,0.57,2,5,28.6,,,,28.6,7.0,0.0,28.6,7,2,5,28.6,0,0,0.0,0.0
+Jaden Bediako,Saskatoon Mamba,2025-2026,offense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,7,0,,28.6,50.0,,,4,7,0.57,2,5,28.6,,,,28.6,7.0,0.0,28.6,7,2,5,28.6,0,0,0.0,0.0
+Jaden Bediako,Saskatoon Mamba,2025-2026,offense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Jaden Bediako,Saskatoon Mamba,2025-2026,offense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Jaden Bediako,Saskatoon Mamba,2025-2026,offense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Jaden Bediako,Saskatoon Mamba,2025-2026,offense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

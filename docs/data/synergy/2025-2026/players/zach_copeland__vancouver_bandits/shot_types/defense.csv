@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Zach Copeland,Vancouver Bandits,2025-2026,defense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,108,54,24.1,33.3,100.0,,Excellent,88,108,0.79,36,72,39.4,86.0,,,40.2,109.3,0.03,33.3,54,23,31,42.6,13,41,0.5,2.8
+Zach Copeland,Vancouver Bandits,2025-2026,defense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,71,54,24.1,29.6,65.7,39.0,Excellent,55,71,0.77,21,50,38.7,87.0,,,38.7,71.0,0.0,29.6,17,8,9,47.1,13,41,0.76,0.0
+Zach Copeland,Vancouver Bandits,2025-2026,defense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,35,35,28.6,28.6,49.3,41.0,Very Good,30,35,0.86,10,25,42.9,77.0,,,42.9,35.0,0.0,28.6,0,0,0,,10,25,1.0,0.0
+Zach Copeland,Vancouver Bandits,2025-2026,defense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,16,16,18.8,18.8,45.7,5.0,Excellent,9,16,0.56,3,13,28.1,91.0,,,28.1,16.0,0.0,18.8,0,0,0,,3,13,1.0,0.0
+Zach Copeland,Vancouver Bandits,2025-2026,defense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,19,19,36.8,36.8,54.3,79.0,Good,21,19,1.11,7,12,55.3,53.0,,,55.3,19.0,0.0,36.8,0,0,0,,7,12,1.0,0.0
+Zach Copeland,Vancouver Bandits,2025-2026,defense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,33,19,15.8,27.3,46.5,50.0,Excellent,21,33,0.64,9,24,31.8,84.0,,,31.8,33.0,0.0,27.3,14,6,8,42.9,3,16,0.58,0.0
+Zach Copeland,Vancouver Bandits,2025-2026,defense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,1,1,0.0,0.0,1.4,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,0,0,0,,0,1,1.0,0.0
+Zach Copeland,Vancouver Bandits,2025-2026,defense,Shot types,Runner,1,,Runner,Runner,,,9,0,,33.3,8.3,,,6,9,0.67,3,6,33.3,,,,33.3,9.0,0.0,33.3,9,3,6,33.3,0,0,0.0,0.0
+Zach Copeland,Vancouver Bandits,2025-2026,defense,Shot types,Hook,1,,Hook,Hook,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Zach Copeland,Vancouver Bandits,2025-2026,defense,Shot types,At Rim,1,,At Rim,At Rim,,,28,0,,42.9,25.9,71.0,Very Good,27,28,0.86,12,16,42.9,70.0,,,46.0,29.3,0.11,42.9,28,12,16,42.9,0,0,0.0,10.7
+Zach Copeland,Vancouver Bandits,2025-2026,defense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,27,0,,40.7,96.4,39.0,Very Good,25,27,0.81,11,16,40.7,77.0,,,44.1,28.3,0.11,40.7,27,11,16,40.7,0,0,0.0,11.1
+Zach Copeland,Vancouver Bandits,2025-2026,defense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,1,0,,100.0,3.6,,,2,1,2.0,1,0,100.0,,,,100.0,1.0,0.0,100.0,1,1,0,100.0,0,0,0.0,0.0
+Zach Copeland,Vancouver Bandits,2025-2026,defense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Zach Copeland,Vancouver Bandits,2025-2026,defense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,12,0,,50.0,16.9,,,12,12,1.0,6,6,50.0,,,,50.0,12.0,0.0,50.0,12,6,6,50.0,0,0,0.0,0.0
+Zach Copeland,Vancouver Bandits,2025-2026,defense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,5,0,,40.0,7.0,,,4,5,0.8,2,3,40.0,,,,40.0,5.0,0.0,40.0,5,2,3,40.0,0,0,0.0,0.0
+Zach Copeland,Vancouver Bandits,2025-2026,defense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,54,54,24.1,24.1,76.1,65.0,Excellent,39,54,0.72,13,41,36.1,90.0,,,36.1,54.0,0.0,24.1,0,0,0,,13,41,1.0,0.0
+Zach Copeland,Vancouver Bandits,2025-2026,defense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Zach Copeland,Vancouver Bandits,2025-2026,defense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Zach Copeland,Vancouver Bandits,2025-2026,defense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

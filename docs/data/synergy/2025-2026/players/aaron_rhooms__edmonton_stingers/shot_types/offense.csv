@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Aaron Rhooms,Edmonton Stingers,2025-2026,offense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,63,32,43.8,47.6,100.0,,Excellent,75,63,1.17,30,33,58.7,85.0,,,59.1,63.4,0.02,47.6,31,16,15,51.6,14,18,0.51,1.6
+Aaron Rhooms,Edmonton Stingers,2025-2026,offense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,43,32,43.8,41.9,68.3,66.0,Excellent,51,43,1.16,18,25,58.1,95.0,,,58.7,43.4,0.02,41.9,11,4,7,36.4,14,18,0.74,2.3
+Aaron Rhooms,Edmonton Stingers,2025-2026,offense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,31,29,48.3,51.6,72.1,71.0,Excellent,47,31,1.48,16,15,74.2,97.0,,,74.7,31.4,0.03,51.6,2,2,0,100.0,14,15,0.94,3.2
+Aaron Rhooms,Edmonton Stingers,2025-2026,offense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,15,13,46.2,53.3,48.4,20.0,Excellent,23,15,1.47,8,7,73.3,95.0,,,74.5,15.4,0.07,53.3,2,2,0,100.0,6,7,0.87,6.7
+Aaron Rhooms,Edmonton Stingers,2025-2026,offense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,16,16,50.0,50.0,51.6,65.0,Excellent,24,16,1.5,8,8,75.0,89.0,,,75.0,16.0,0.0,50.0,0,0,0,,8,8,1.0,0.0
+Aaron Rhooms,Edmonton Stingers,2025-2026,offense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,9,3,0.0,22.2,20.9,,,4,9,0.44,2,7,22.2,,,,22.2,9.0,0.0,22.2,6,2,4,33.3,0,3,0.33,0.0
+Aaron Rhooms,Edmonton Stingers,2025-2026,offense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Aaron Rhooms,Edmonton Stingers,2025-2026,offense,Shot types,Runner,1,,Runner,Runner,,,3,0,,33.3,4.8,,,2,3,0.67,1,2,33.3,,,,33.3,3.0,0.0,33.3,3,1,2,33.3,0,0,0.0,0.0
+Aaron Rhooms,Edmonton Stingers,2025-2026,offense,Shot types,Hook,1,,Hook,Hook,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Aaron Rhooms,Edmonton Stingers,2025-2026,offense,Shot types,At Rim,1,,At Rim,At Rim,,,17,0,,64.7,27.0,22.0,Very Good,22,17,1.29,11,6,64.7,75.0,,,64.7,17.0,0.0,64.7,17,11,6,64.7,0,0,0.0,0.0
+Aaron Rhooms,Edmonton Stingers,2025-2026,offense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,17,0,,64.7,100.0,100.0,Excellent,22,17,1.29,11,6,64.7,83.0,,,64.7,17.0,0.0,64.7,17,11,6,64.7,0,0,0.0,0.0
+Aaron Rhooms,Edmonton Stingers,2025-2026,offense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Aaron Rhooms,Edmonton Stingers,2025-2026,offense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Aaron Rhooms,Edmonton Stingers,2025-2026,offense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,10,0,,40.0,23.3,,,8,10,0.8,4,6,40.0,,,,40.0,10.0,0.0,40.0,10,4,6,40.0,0,0,0.0,0.0
+Aaron Rhooms,Edmonton Stingers,2025-2026,offense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,1,0,,0.0,2.3,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,1,0,1,0.0,0,0,0.0,0.0
+Aaron Rhooms,Edmonton Stingers,2025-2026,offense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,32,32,43.8,43.8,74.4,47.0,Excellent,43,32,1.31,14,18,65.6,93.0,,,66.3,32.4,0.03,43.8,0,0,0,,14,18,1.0,3.1
+Aaron Rhooms,Edmonton Stingers,2025-2026,offense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Aaron Rhooms,Edmonton Stingers,2025-2026,offense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Aaron Rhooms,Edmonton Stingers,2025-2026,offense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

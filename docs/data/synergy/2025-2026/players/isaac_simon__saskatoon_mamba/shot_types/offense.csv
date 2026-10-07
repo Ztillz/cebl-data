@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Isaac Simon,Saskatoon Mamba,2025-2026,offense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,87,29,37.9,47.1,100.0,,Very Good,95,87,1.07,41,46,53.4,71.0,,,53.8,88.3,0.03,47.1,58,30,28,51.7,11,18,0.33,3.4
+Isaac Simon,Saskatoon Mamba,2025-2026,offense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,49,29,37.9,36.7,55.7,50.0,Good,47,49,0.96,18,31,48.0,54.0,,,48.0,49.0,0.0,36.7,20,7,13,35.0,11,18,0.59,0.0
+Isaac Simon,Saskatoon Mamba,2025-2026,offense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,23,23,47.8,47.8,46.9,27.0,Excellent,33,23,1.43,11,12,71.7,94.0,,,71.7,23.0,0.0,47.8,0,0,0,,11,12,1.0,0.0
+Isaac Simon,Saskatoon Mamba,2025-2026,offense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,11,11,45.5,45.5,47.8,17.0,Excellent,15,11,1.36,5,6,68.2,89.0,,,68.2,11.0,0.0,45.5,0,0,0,,5,6,1.0,0.0
+Isaac Simon,Saskatoon Mamba,2025-2026,offense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,12,12,50.0,50.0,52.2,68.0,Excellent,18,12,1.5,6,6,75.0,89.0,,,75.0,12.0,0.0,50.0,0,0,0,,6,6,1.0,0.0
+Isaac Simon,Saskatoon Mamba,2025-2026,offense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,26,6,0.0,26.9,53.1,58.0,Below Average,14,26,0.54,7,19,26.9,21.0,,,26.9,26.0,0.0,26.9,20,7,13,35.0,0,6,0.23,0.0
+Isaac Simon,Saskatoon Mamba,2025-2026,offense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Isaac Simon,Saskatoon Mamba,2025-2026,offense,Shot types,Runner,1,,Runner,Runner,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Isaac Simon,Saskatoon Mamba,2025-2026,offense,Shot types,Hook,1,,Hook,Hook,,,1,0,,0.0,1.1,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,1,0,1,0.0,0,0,0.0,0.0
+Isaac Simon,Saskatoon Mamba,2025-2026,offense,Shot types,At Rim,1,,At Rim,At Rim,,,37,0,,62.2,42.0,56.0,Very Good,48,37,1.24,23,14,62.2,73.0,,,62.6,38.3,0.08,62.2,37,23,14,62.2,0,0,0.0,8.1
+Isaac Simon,Saskatoon Mamba,2025-2026,offense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,35,0,,62.9,92.1,56.0,Very Good,46,35,1.26,22,13,62.9,82.0,,,63.3,36.3,0.09,62.9,35,22,13,62.9,0,0,0.0,8.6
+Isaac Simon,Saskatoon Mamba,2025-2026,offense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,2,0,,50.0,5.3,,,2,2,1.0,1,1,50.0,,,,50.0,2.0,0.0,50.0,2,1,1,50.0,0,0,0.0,0.0
+Isaac Simon,Saskatoon Mamba,2025-2026,offense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Isaac Simon,Saskatoon Mamba,2025-2026,offense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,13,0,,38.5,26.5,80.0,Good,10,13,0.77,5,8,38.5,56.0,,,38.5,13.0,0.0,38.5,13,5,8,38.5,0,0,0.0,0.0
+Isaac Simon,Saskatoon Mamba,2025-2026,offense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,7,0,,28.6,14.3,,,4,7,0.57,2,5,28.6,,,,28.6,7.0,0.0,28.6,7,2,5,28.6,0,0,0.0,0.0
+Isaac Simon,Saskatoon Mamba,2025-2026,offense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,29,29,37.9,37.9,59.2,7.0,Very Good,33,29,1.14,11,18,56.9,79.0,,,56.9,29.0,0.0,37.9,0,0,0,,11,18,1.0,0.0
+Isaac Simon,Saskatoon Mamba,2025-2026,offense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Isaac Simon,Saskatoon Mamba,2025-2026,offense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Isaac Simon,Saskatoon Mamba,2025-2026,offense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,

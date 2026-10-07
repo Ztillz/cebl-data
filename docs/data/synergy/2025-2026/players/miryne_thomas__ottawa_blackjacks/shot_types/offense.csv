@@ -1,0 +1,20 @@
+PLAYER,TEAM,SEASON,SIDE,TABLE,STAT,DEPTH,PARENT,PATH,LEVEL_1,LEVEL_2,LEVEL_3,POSS,3FG ATT,3 FG%,FG%,%TIME,%TIME RANK,PPS RATING,PTS,FG ATT,PPS,FG MADE,FG MISS,EFG%,PPS RANK,SSQ,SSM,TS%,TSA,FTA/FGA,SCORE%,2 FG ATT,2 FG MADE,2 FG MISS,2 FG%,3 FG MADE,3 FG MISS,3PA/FGA,+1%
+Miryne Thomas,Ottawa Blackjacks,2025-2026,offense,Shot types,All Field Goal Attempts,1,,All Field Goal Attempts,All Field Goal Attempts,,,42,23,26.1,40.5,100.0,,Average,41,42,0.95,17,25,47.6,41.0,,,48.3,42.4,0.02,40.5,19,11,8,57.9,6,17,0.55,2.4
+Miryne Thomas,Ottawa Blackjacks,2025-2026,offense,Shot types,Jump Shot,1,,Jump Shot,Jump Shot,,,23,23,26.1,26.1,54.8,45.0,Below Average,18,23,0.78,6,17,39.1,21.0,,,39.1,23.0,0.0,26.1,0,0,0,,6,17,1.0,0.0
+Miryne Thomas,Ottawa Blackjacks,2025-2026,offense,Shot types,Catch and Shoot,2,Jump Shot,Jump Shot > Catch and Shoot,Jump Shot,Catch and Shoot,,21,21,23.8,23.8,91.3,93.0,Poor,15,21,0.71,5,16,35.7,11.0,,,35.7,21.0,0.0,23.8,0,0,0,,5,16,1.0,0.0
+Miryne Thomas,Ottawa Blackjacks,2025-2026,offense,Shot types,Guarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Guarded,Jump Shot,Catch and Shoot,Guarded,16,16,18.8,18.8,76.2,95.0,Poor,9,16,0.56,3,13,28.1,6.0,,,28.1,16.0,0.0,18.8,0,0,0,,3,13,1.0,0.0
+Miryne Thomas,Ottawa Blackjacks,2025-2026,offense,Shot types,Unguarded,3,Catch and Shoot,Jump Shot > Catch and Shoot > Unguarded,Jump Shot,Catch and Shoot,Unguarded,5,5,40.0,40.0,23.8,,,6,5,1.2,2,3,60.0,,,,60.0,5.0,0.0,40.0,0,0,0,,2,3,1.0,0.0
+Miryne Thomas,Ottawa Blackjacks,2025-2026,offense,Shot types,Dribble Jumper,2,Jump Shot,Jump Shot > Dribble Jumper,Jump Shot,Dribble Jumper,,2,2,50.0,50.0,8.7,,,3,2,1.5,1,1,75.0,,,,75.0,2.0,0.0,50.0,0,0,0,,1,1,1.0,0.0
+Miryne Thomas,Ottawa Blackjacks,2025-2026,offense,Shot types,Early Jumper,2,Jump Shot,Jump Shot > Early Jumper,Jump Shot,Early Jumper,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Miryne Thomas,Ottawa Blackjacks,2025-2026,offense,Shot types,Runner,1,,Runner,Runner,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Miryne Thomas,Ottawa Blackjacks,2025-2026,offense,Shot types,Hook,1,,Hook,Hook,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Miryne Thomas,Ottawa Blackjacks,2025-2026,offense,Shot types,At Rim,1,,At Rim,At Rim,,,19,0,,57.9,45.2,59.0,Good,23,19,1.16,11,8,57.9,56.0,,,59.2,19.4,0.05,57.9,19,11,8,57.9,0,0,0.0,5.3
+Miryne Thomas,Ottawa Blackjacks,2025-2026,offense,Shot types,Layup,2,At Rim,At Rim > Layup,At Rim,Layup,,18,0,,61.1,94.7,66.0,Very Good,23,18,1.22,11,7,61.1,75.0,,,62.4,18.4,0.06,61.1,18,11,7,61.1,0,0,0.0,5.6
+Miryne Thomas,Ottawa Blackjacks,2025-2026,offense,Shot types,Dunk,2,At Rim,At Rim > Dunk,At Rim,Dunk,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Miryne Thomas,Ottawa Blackjacks,2025-2026,offense,Shot types,Tip,2,At Rim,At Rim > Tip,At Rim,Tip,,1,0,,0.0,5.3,,,0,1,0.0,0,1,0.0,,,,0.0,1.0,0.0,0.0,1,0,1,0.0,0,0,0.0,0.0
+Miryne Thomas,Ottawa Blackjacks,2025-2026,offense,Shot distances,Short to 17,1,,Short to 17,Short to 17,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Miryne Thomas,Ottawa Blackjacks,2025-2026,offense,Shot distances,Medium 17 to < 3 Pts,1,,Medium 17 to < 3 Pts,Medium 17 to < 3 Pts,,,0,0,,,0.0,,,0,0,,0,0,,,,,,0.0,,,0,0,0,,0,0,,
+Miryne Thomas,Ottawa Blackjacks,2025-2026,offense,Shot distances,Long 3 pts,1,,Long 3 pts,Long 3 pts,,,23,23,26.1,26.1,100.0,100.0,Below Average,18,23,0.78,6,17,39.1,19.0,,,39.1,23.0,0.0,26.1,0,0,0,,6,17,1.0,0.0
+Miryne Thomas,Ottawa Blackjacks,2025-2026,offense,Shot quality,"Low, SSQ < 20th Percentile",1,,"Low, SSQ < 20th Percentile","Low, SSQ < 20th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Miryne Thomas,Ottawa Blackjacks,2025-2026,offense,Shot quality,"Medium, SSQ 20-80th Percentile",1,,"Medium, SSQ 20-80th Percentile","Medium, SSQ 20-80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
+Miryne Thomas,Ottawa Blackjacks,2025-2026,offense,Shot quality,"High, SSQ > 80th Percentile",1,,"High, SSQ > 80th Percentile","High, SSQ > 80th Percentile",,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
