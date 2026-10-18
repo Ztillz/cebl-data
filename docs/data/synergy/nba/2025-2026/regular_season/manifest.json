@@ -1,0 +1,261 @@
+{
+  "season": "2025-2026",
+  "league": "NBA",
+  "league_id": "nba",
+  "competition_name": "NBA",
+  "game_scope": "regular_season",
+  "source_competition_label": "Regular Season incl. NBA Cup",
+  "scope": "cumulative_box",
+  "generated_at_utc": "2026-10-18T14:16:51.388485+00:00",
+  "team_count": 30,
+  "player_count": 661,
+  "players": [],
+  "teams": [
+    {
+      "key": "atlanta_hawks",
+      "team": "Atlanta Hawks",
+      "path": "teams/atlanta_hawks/",
+      "cumulative_box": "teams/atlanta_hawks/cumulative_box.json",
+      "cumulative_box_csv": "teams/atlanta_hawks/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "boston_celtics",
+      "team": "Boston Celtics",
+      "path": "teams/boston_celtics/",
+      "cumulative_box": "teams/boston_celtics/cumulative_box.json",
+      "cumulative_box_csv": "teams/boston_celtics/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "brooklyn_nets",
+      "team": "Brooklyn Nets",
+      "path": "teams/brooklyn_nets/",
+      "cumulative_box": "teams/brooklyn_nets/cumulative_box.json",
+      "cumulative_box_csv": "teams/brooklyn_nets/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "charlotte_hornets",
+      "team": "Charlotte Hornets",
+      "path": "teams/charlotte_hornets/",
+      "cumulative_box": "teams/charlotte_hornets/cumulative_box.json",
+      "cumulative_box_csv": "teams/charlotte_hornets/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "chicago_bulls",
+      "team": "Chicago Bulls",
+      "path": "teams/chicago_bulls/",
+      "cumulative_box": "teams/chicago_bulls/cumulative_box.json",
+      "cumulative_box_csv": "teams/chicago_bulls/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "cleveland_cavaliers",
+      "team": "Cleveland Cavaliers",
+      "path": "teams/cleveland_cavaliers/",
+      "cumulative_box": "teams/cleveland_cavaliers/cumulative_box.json",
+      "cumulative_box_csv": "teams/cleveland_cavaliers/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "dallas_mavericks",
+      "team": "Dallas Mavericks",
+      "path": "teams/dallas_mavericks/",
+      "cumulative_box": "teams/dallas_mavericks/cumulative_box.json",
+      "cumulative_box_csv": "teams/dallas_mavericks/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "denver_nuggets",
+      "team": "Denver Nuggets",
+      "path": "teams/denver_nuggets/",
+      "cumulative_box": "teams/denver_nuggets/cumulative_box.json",
+      "cumulative_box_csv": "teams/denver_nuggets/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "detroit_pistons",
+      "team": "Detroit Pistons",
+      "path": "teams/detroit_pistons/",
+      "cumulative_box": "teams/detroit_pistons/cumulative_box.json",
+      "cumulative_box_csv": "teams/detroit_pistons/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "golden_state_warriors",
+      "team": "Golden State Warriors",
+      "path": "teams/golden_state_warriors/",
+      "cumulative_box": "teams/golden_state_warriors/cumulative_box.json",
+      "cumulative_box_csv": "teams/golden_state_warriors/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "houston_rockets",
+      "team": "Houston Rockets",
+      "path": "teams/houston_rockets/",
+      "cumulative_box": "teams/houston_rockets/cumulative_box.json",
+      "cumulative_box_csv": "teams/houston_rockets/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "indiana_pacers",
+      "team": "Indiana Pacers",
+      "path": "teams/indiana_pacers/",
+      "cumulative_box": "teams/indiana_pacers/cumulative_box.json",
+      "cumulative_box_csv": "teams/indiana_pacers/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "los_angeles_clippers",
+      "team": "Los Angeles Clippers",
+      "path": "teams/los_angeles_clippers/",
+      "cumulative_box": "teams/los_angeles_clippers/cumulative_box.json",
+      "cumulative_box_csv": "teams/los_angeles_clippers/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "los_angeles_lakers",
+      "team": "Los Angeles Lakers",
+      "path": "teams/los_angeles_lakers/",
+      "cumulative_box": "teams/los_angeles_lakers/cumulative_box.json",
+      "cumulative_box_csv": "teams/los_angeles_lakers/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "memphis_grizzlies",
+      "team": "Memphis Grizzlies",
+      "path": "teams/memphis_grizzlies/",
+      "cumulative_box": "teams/memphis_grizzlies/cumulative_box.json",
+      "cumulative_box_csv": "teams/memphis_grizzlies/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "miami_heat",
+      "team": "Miami Heat",
+      "path": "teams/miami_heat/",
+      "cumulative_box": "teams/miami_heat/cumulative_box.json",
+      "cumulative_box_csv": "teams/miami_heat/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "milwaukee_bucks",
+      "team": "Milwaukee Bucks",
+      "path": "teams/milwaukee_bucks/",
+      "cumulative_box": "teams/milwaukee_bucks/cumulative_box.json",
+      "cumulative_box_csv": "teams/milwaukee_bucks/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "minnesota_timberwolves",
+      "team": "Minnesota Timberwolves",
+      "path": "teams/minnesota_timberwolves/",
+      "cumulative_box": "teams/minnesota_timberwolves/cumulative_box.json",
+      "cumulative_box_csv": "teams/minnesota_timberwolves/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "new_orleans_pelicans",
+      "team": "New Orleans Pelicans",
+      "path": "teams/new_orleans_pelicans/",
+      "cumulative_box": "teams/new_orleans_pelicans/cumulative_box.json",
+      "cumulative_box_csv": "teams/new_orleans_pelicans/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "new_york_knicks",
+      "team": "New York Knicks",
+      "path": "teams/new_york_knicks/",
+      "cumulative_box": "teams/new_york_knicks/cumulative_box.json",
+      "cumulative_box_csv": "teams/new_york_knicks/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "oklahoma_city_thunder",
+      "team": "Oklahoma City Thunder",
+      "path": "teams/oklahoma_city_thunder/",
+      "cumulative_box": "teams/oklahoma_city_thunder/cumulative_box.json",
+      "cumulative_box_csv": "teams/oklahoma_city_thunder/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "orlando_magic",
+      "team": "Orlando Magic",
+      "path": "teams/orlando_magic/",
+      "cumulative_box": "teams/orlando_magic/cumulative_box.json",
+      "cumulative_box_csv": "teams/orlando_magic/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "philadelphia_76ers",
+      "team": "Philadelphia 76ers",
+      "path": "teams/philadelphia_76ers/",
+      "cumulative_box": "teams/philadelphia_76ers/cumulative_box.json",
+      "cumulative_box_csv": "teams/philadelphia_76ers/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "phoenix_suns",
+      "team": "Phoenix Suns",
+      "path": "teams/phoenix_suns/",
+      "cumulative_box": "teams/phoenix_suns/cumulative_box.json",
+      "cumulative_box_csv": "teams/phoenix_suns/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "portland_trail_blazers",
+      "team": "Portland Trail Blazers",
+      "path": "teams/portland_trail_blazers/",
+      "cumulative_box": "teams/portland_trail_blazers/cumulative_box.json",
+      "cumulative_box_csv": "teams/portland_trail_blazers/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "sacramento_kings",
+      "team": "Sacramento Kings",
+      "path": "teams/sacramento_kings/",
+      "cumulative_box": "teams/sacramento_kings/cumulative_box.json",
+      "cumulative_box_csv": "teams/sacramento_kings/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "san_antonio_spurs",
+      "team": "San Antonio Spurs",
+      "path": "teams/san_antonio_spurs/",
+      "cumulative_box": "teams/san_antonio_spurs/cumulative_box.json",
+      "cumulative_box_csv": "teams/san_antonio_spurs/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "toronto_raptors",
+      "team": "Toronto Raptors",
+      "path": "teams/toronto_raptors/",
+      "cumulative_box": "teams/toronto_raptors/cumulative_box.json",
+      "cumulative_box_csv": "teams/toronto_raptors/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "utah_jazz",
+      "team": "Utah Jazz",
+      "path": "teams/utah_jazz/",
+      "cumulative_box": "teams/utah_jazz/cumulative_box.json",
+      "cumulative_box_csv": "teams/utah_jazz/cumulative_box.csv",
+      "reports": {}
+    },
+    {
+      "key": "washington_wizards",
+      "team": "Washington Wizards",
+      "path": "teams/washington_wizards/",
+      "cumulative_box": "teams/washington_wizards/cumulative_box.json",
+      "cumulative_box_csv": "teams/washington_wizards/cumulative_box.csv",
+      "reports": {}
+    }
+  ],
+  "leaderboards": {},
+  "coverage_notes": [],
+  "combined": {
+    "team_cumulative_box.json": "combined/team_cumulative_box.json",
+    "team_cumulative_box.csv": "combined/team_cumulative_box.csv"
+  }
+}

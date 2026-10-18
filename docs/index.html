@@ -8,11 +8,11 @@
         content="width=device-width, initial-scale=1.0"
     >
 
-    <title>CEBL Synergy Browser</title>
+    <title>Synergy Browser</title>
 
     <link
         rel="stylesheet"
-        href="css/styles.css?v=20261006"
+        href="css/styles.css?v=20261018"
     >
 </head>
 
@@ -23,7 +23,7 @@
         <div class="site-header__inner">
 
             <div>
-                <div class="eyebrow">
+                <div class="eyebrow" id="leagueLabel">
                     CEBL DATA
                 </div>
 
@@ -40,9 +40,15 @@
             </div>
 
             <div class="header-actions">
+                <label class="season-picker" for="leagueSelect">
+                    <span>League</span>
+                    <select id="leagueSelect" class="season-select" disabled>
+                        <option value="cebl">CEBL</option>
+                    </select>
+                </label>
                 <label class="season-picker" for="seasonSelect">
                     <span>Season</span>
-                    <select id="seasonSelect" class="season-select">
+                    <select id="seasonSelect" class="season-select" disabled>
                         <option value="2026-2027">2026</option>
                         <option value="2025-2026">2025</option>
                         <option value="2024-2025">2024</option>
@@ -834,11 +840,11 @@
 
 
         <script
-        src="js/app.js?v=20261006"
+        src="js/app.js?v=20261018"
     ></script>
 
     <script
-        src="js/team.js?v=20261006"
+        src="js/team.js?v=20261018"
     ></script>
 
 </body>

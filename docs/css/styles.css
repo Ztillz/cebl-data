@@ -152,6 +152,16 @@ button {
     font-size: 14px;
 }
 
+.source-coverage-note {
+    margin: 0;
+    padding: 12px 14px;
+    border-bottom: 1px solid var(--border);
+    background: var(--panel-soft);
+    color: var(--muted);
+    font-size: 13px;
+    line-height: 1.5;
+}
+
 .view-tab:disabled {
     opacity: 0.45;
     cursor: not-allowed;

@@ -1,0 +1,53 @@
+{
+  "version": 1,
+  "default_league": "cebl",
+  "leagues": [
+    {
+      "id": "cebl",
+      "label": "CEBL",
+      "seasons": [
+        {
+          "id": "2026-2027",
+          "label": "2026",
+          "path": "2026-2027"
+        },
+        {
+          "id": "2025-2026",
+          "label": "2025",
+          "path": "2025-2026"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024",
+          "path": "2024-2025"
+        }
+      ]
+    },
+    {
+      "id": "nba",
+      "label": "NBA",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "nba/2025-2026/regular_season"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "nba/2024-2025/regular_season"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "nba/2023-2024/regular_season"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "nba/2022-2023/regular_season"
+        }
+      ]
+    }
+  ]
+}
