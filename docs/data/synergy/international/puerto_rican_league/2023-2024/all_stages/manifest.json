@@ -1,0 +1,217 @@
+{
+  "version": 2,
+  "season": "2023-2024",
+  "league": "Puerto Rican League",
+  "league_id": "puerto_rican_league",
+  "competition_name": "Puerto Rican League",
+  "source_competition_key": "54457dce300969b132fcfb3f:COMP:5f91be05f68e52f827d66a53",
+  "game_scope": "all_stages",
+  "source_controls": "Accumulated Stats / All Games / All data",
+  "scope": "cumulative_box",
+  "generated_at_utc": "2026-10-20T18:41:01.447197+00:00",
+  "team_count": 12,
+  "player_count": 271,
+  "teams": [
+    {
+      "key": "atleticos_de_san_german__5fa8168eab5f290001b295fc",
+      "team": "Atleticos de San German",
+      "source_team_id": "5fa8168eab5f290001b295fc",
+      "source_team_games": 48,
+      "path": "teams/atleticos_de_san_german__5fa8168eab5f290001b295fc/",
+      "cumulative_box": "teams/atleticos_de_san_german__5fa8168eab5f290001b295fc/cumulative_box.json",
+      "cumulative_box_csv": "teams/atleticos_de_san_german__5fa8168eab5f290001b295fc/cumulative_box.csv",
+      "team_totals": "teams/atleticos_de_san_german__5fa8168eab5f290001b295fc/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/atleticos_de_san_german__5fa8168eab5f290001b295fc/team_totals.csv"
+    },
+    {
+      "key": "cangrejeros_de_santurce__54457df5300969b132fd0fd7",
+      "team": "Cangrejeros de Santurce",
+      "source_team_id": "54457df5300969b132fd0fd7",
+      "source_team_games": 43,
+      "path": "teams/cangrejeros_de_santurce__54457df5300969b132fd0fd7/",
+      "cumulative_box": "teams/cangrejeros_de_santurce__54457df5300969b132fd0fd7/cumulative_box.json",
+      "cumulative_box_csv": "teams/cangrejeros_de_santurce__54457df5300969b132fd0fd7/cumulative_box.csv",
+      "team_totals": "teams/cangrejeros_de_santurce__54457df5300969b132fd0fd7/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/cangrejeros_de_santurce__54457df5300969b132fd0fd7/team_totals.csv"
+    },
+    {
+      "key": "capitanes_de_arecibo__54e3aa6d3ad33bf4a9d829b2",
+      "team": "Capitanes De Arecibo",
+      "source_team_id": "54e3aa6d3ad33bf4a9d829b2",
+      "source_team_games": 37,
+      "path": "teams/capitanes_de_arecibo__54e3aa6d3ad33bf4a9d829b2/",
+      "cumulative_box": "teams/capitanes_de_arecibo__54e3aa6d3ad33bf4a9d829b2/cumulative_box.json",
+      "cumulative_box_csv": "teams/capitanes_de_arecibo__54e3aa6d3ad33bf4a9d829b2/cumulative_box.csv",
+      "team_totals": "teams/capitanes_de_arecibo__54e3aa6d3ad33bf4a9d829b2/team_totals.json",
+      "source_coverage_notes": [
+        {
+          "type": "source_overview_cumulative_gp_difference",
+          "overview_gp": 36,
+          "cumulative_gp": 37,
+          "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+        }
+      ],
+      "reports": {},
+      "team_totals_csv": "teams/capitanes_de_arecibo__54e3aa6d3ad33bf4a9d829b2/team_totals.csv",
+      "source_coverage": {
+        "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+      }
+    },
+    {
+      "key": "gigantes_de_carolina__60eac0b8691eb76354ff81f1",
+      "team": "Gigantes de Carolina",
+      "source_team_id": "60eac0b8691eb76354ff81f1",
+      "source_team_games": 54,
+      "path": "teams/gigantes_de_carolina__60eac0b8691eb76354ff81f1/",
+      "cumulative_box": "teams/gigantes_de_carolina__60eac0b8691eb76354ff81f1/cumulative_box.json",
+      "cumulative_box_csv": "teams/gigantes_de_carolina__60eac0b8691eb76354ff81f1/cumulative_box.csv",
+      "team_totals": "teams/gigantes_de_carolina__60eac0b8691eb76354ff81f1/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/gigantes_de_carolina__60eac0b8691eb76354ff81f1/team_totals.csv"
+    },
+    {
+      "key": "grises_de_humacao__60eac00bf9760f1f01487800",
+      "team": "Grises de Humacao",
+      "source_team_id": "60eac00bf9760f1f01487800",
+      "source_team_games": 36,
+      "path": "teams/grises_de_humacao__60eac00bf9760f1f01487800/",
+      "cumulative_box": "teams/grises_de_humacao__60eac00bf9760f1f01487800/cumulative_box.json",
+      "cumulative_box_csv": "teams/grises_de_humacao__60eac00bf9760f1f01487800/cumulative_box.csv",
+      "team_totals": "teams/grises_de_humacao__60eac00bf9760f1f01487800/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/grises_de_humacao__60eac00bf9760f1f01487800/team_totals.csv"
+    },
+    {
+      "key": "indios_de_mayaguez__5fa817330fc7310001333d21",
+      "team": "Indios de Mayaguez",
+      "source_team_id": "5fa817330fc7310001333d21",
+      "source_team_games": 41,
+      "path": "teams/indios_de_mayaguez__5fa817330fc7310001333d21/",
+      "cumulative_box": "teams/indios_de_mayaguez__5fa817330fc7310001333d21/cumulative_box.json",
+      "cumulative_box_csv": "teams/indios_de_mayaguez__5fa817330fc7310001333d21/cumulative_box.csv",
+      "team_totals": "teams/indios_de_mayaguez__5fa817330fc7310001333d21/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/indios_de_mayaguez__5fa817330fc7310001333d21/team_totals.csv"
+    },
+    {
+      "key": "leones_de_ponce__589f36bb35268c61b0f68faa",
+      "team": "Leones De Ponce",
+      "source_team_id": "589f36bb35268c61b0f68faa",
+      "source_team_games": 37,
+      "path": "teams/leones_de_ponce__589f36bb35268c61b0f68faa/",
+      "cumulative_box": "teams/leones_de_ponce__589f36bb35268c61b0f68faa/cumulative_box.json",
+      "cumulative_box_csv": "teams/leones_de_ponce__589f36bb35268c61b0f68faa/cumulative_box.csv",
+      "team_totals": "teams/leones_de_ponce__589f36bb35268c61b0f68faa/team_totals.json",
+      "source_coverage_notes": [
+        {
+          "type": "source_overview_cumulative_gp_difference",
+          "overview_gp": 36,
+          "cumulative_gp": 37,
+          "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+        }
+      ],
+      "reports": {},
+      "team_totals_csv": "teams/leones_de_ponce__589f36bb35268c61b0f68faa/team_totals.csv",
+      "source_coverage": {
+        "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+      }
+    },
+    {
+      "key": "mets_de_guaynabo__5fa817720fc7310001333d22",
+      "team": "Mets de Guaynabo",
+      "source_team_id": "5fa817720fc7310001333d22",
+      "source_team_games": 47,
+      "path": "teams/mets_de_guaynabo__5fa817720fc7310001333d22/",
+      "cumulative_box": "teams/mets_de_guaynabo__5fa817720fc7310001333d22/cumulative_box.json",
+      "cumulative_box_csv": "teams/mets_de_guaynabo__5fa817720fc7310001333d22/cumulative_box.csv",
+      "team_totals": "teams/mets_de_guaynabo__5fa817720fc7310001333d22/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/mets_de_guaynabo__5fa817720fc7310001333d22/team_totals.csv"
+    },
+    {
+      "key": "osos_de_manati__641bf4c9b31764659dad373f",
+      "team": "Osos de Manati",
+      "source_team_id": "641bf4c9b31764659dad373f",
+      "source_team_games": 35,
+      "path": "teams/osos_de_manati__641bf4c9b31764659dad373f/",
+      "cumulative_box": "teams/osos_de_manati__641bf4c9b31764659dad373f/cumulative_box.json",
+      "cumulative_box_csv": "teams/osos_de_manati__641bf4c9b31764659dad373f/cumulative_box.csv",
+      "team_totals": "teams/osos_de_manati__641bf4c9b31764659dad373f/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/osos_de_manati__641bf4c9b31764659dad373f/team_totals.csv"
+    },
+    {
+      "key": "piratas_de_quebradillas__5fa81813ab5f290001b295ff",
+      "team": "Piratas de Quebradillas",
+      "source_team_id": "5fa81813ab5f290001b295ff",
+      "source_team_games": 41,
+      "path": "teams/piratas_de_quebradillas__5fa81813ab5f290001b295ff/",
+      "cumulative_box": "teams/piratas_de_quebradillas__5fa81813ab5f290001b295ff/cumulative_box.json",
+      "cumulative_box_csv": "teams/piratas_de_quebradillas__5fa81813ab5f290001b295ff/cumulative_box.csv",
+      "team_totals": "teams/piratas_de_quebradillas__5fa81813ab5f290001b295ff/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/piratas_de_quebradillas__5fa81813ab5f290001b295ff/team_totals.csv"
+    },
+    {
+      "key": "santeros_de_aguada_ex_caridurosfajardo__5fa8170cab5f290001b295fe",
+      "team": "Santeros de Aguada (ex-CaridurosFajardo)",
+      "source_team_id": "5fa8170cab5f290001b295fe",
+      "source_team_games": 36,
+      "path": "teams/santeros_de_aguada_ex_caridurosfajardo__5fa8170cab5f290001b295fe/",
+      "cumulative_box": "teams/santeros_de_aguada_ex_caridurosfajardo__5fa8170cab5f290001b295fe/cumulative_box.json",
+      "cumulative_box_csv": "teams/santeros_de_aguada_ex_caridurosfajardo__5fa8170cab5f290001b295fe/cumulative_box.csv",
+      "team_totals": "teams/santeros_de_aguada_ex_caridurosfajardo__5fa8170cab5f290001b295fe/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/santeros_de_aguada_ex_caridurosfajardo__5fa8170cab5f290001b295fe/team_totals.csv"
+    },
+    {
+      "key": "vaqueros_de_bayamon__5fa8186aab5f290001b29600",
+      "team": "Vaqueros de Bayamon",
+      "source_team_id": "5fa8186aab5f290001b29600",
+      "source_team_games": 51,
+      "path": "teams/vaqueros_de_bayamon__5fa8186aab5f290001b29600/",
+      "cumulative_box": "teams/vaqueros_de_bayamon__5fa8186aab5f290001b29600/cumulative_box.json",
+      "cumulative_box_csv": "teams/vaqueros_de_bayamon__5fa8186aab5f290001b29600/cumulative_box.csv",
+      "team_totals": "teams/vaqueros_de_bayamon__5fa8186aab5f290001b29600/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/vaqueros_de_bayamon__5fa8186aab5f290001b29600/team_totals.csv"
+    }
+  ],
+  "players": [],
+  "leaderboards": {},
+  "regular_season_view": "pending verified source phase filter",
+  "coverage_notes": [
+    "All source-discovered teams captured. Completeness versus official schedules has not been independently audited.",
+    {
+      "team": "Capitanes De Arecibo",
+      "type": "source_overview_cumulative_gp_difference",
+      "overview_gp": 36,
+      "cumulative_gp": 37,
+      "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+    },
+    {
+      "team": "Leones De Ponce",
+      "type": "source_overview_cumulative_gp_difference",
+      "overview_gp": 36,
+      "cumulative_gp": 37,
+      "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+    }
+  ],
+  "combined": {
+    "team_cumulative_box.json": "combined/team_cumulative_box.json",
+    "team_cumulative_box.csv": "combined/team_cumulative_box.csv"
+  },
+  "source_exclusions": []
+}

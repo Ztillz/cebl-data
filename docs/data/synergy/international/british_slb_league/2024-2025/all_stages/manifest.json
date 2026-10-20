@@ -1,0 +1,155 @@
+{
+  "version": 2,
+  "season": "2024-2025",
+  "league": "British SLB League",
+  "league_id": "british_slb_league",
+  "competition_name": "British SLB League",
+  "source_competition_key": "54457dce300969b132fcfb3f:COMP:560100ac8dc7a24394b9569e",
+  "game_scope": "all_stages",
+  "source_controls": "Accumulated Stats / All Games / All data",
+  "scope": "cumulative_box",
+  "generated_at_utc": "2026-10-20T20:15:29.522407+00:00",
+  "team_count": 9,
+  "player_count": 135,
+  "teams": [
+    {
+      "key": "bristol_flyers__55f322d81e31501db4445877",
+      "team": "Bristol Flyers",
+      "source_team_id": "55f322d81e31501db4445877",
+      "source_team_games": 34,
+      "path": "teams/bristol_flyers__55f322d81e31501db4445877/",
+      "cumulative_box": "teams/bristol_flyers__55f322d81e31501db4445877/cumulative_box.json",
+      "cumulative_box_csv": "teams/bristol_flyers__55f322d81e31501db4445877/cumulative_box.csv",
+      "team_totals": "teams/bristol_flyers__55f322d81e31501db4445877/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/bristol_flyers__55f322d81e31501db4445877/team_totals.csv"
+    },
+    {
+      "key": "caledonia_gladiators__54457df4300969b132fd0f65",
+      "team": "Caledonia Gladiators",
+      "source_team_id": "54457df4300969b132fd0f65",
+      "source_team_games": 32,
+      "path": "teams/caledonia_gladiators__54457df4300969b132fd0f65/",
+      "cumulative_box": "teams/caledonia_gladiators__54457df4300969b132fd0f65/cumulative_box.json",
+      "cumulative_box_csv": "teams/caledonia_gladiators__54457df4300969b132fd0f65/cumulative_box.csv",
+      "team_totals": "teams/caledonia_gladiators__54457df4300969b132fd0f65/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/caledonia_gladiators__54457df4300969b132fd0f65/team_totals.csv"
+    },
+    {
+      "key": "cheshire_phoenix__55f322d81e31501db4445878",
+      "team": "Cheshire Phoenix",
+      "source_team_id": "55f322d81e31501db4445878",
+      "source_team_games": 34,
+      "path": "teams/cheshire_phoenix__55f322d81e31501db4445878/",
+      "cumulative_box": "teams/cheshire_phoenix__55f322d81e31501db4445878/cumulative_box.json",
+      "cumulative_box_csv": "teams/cheshire_phoenix__55f322d81e31501db4445878/cumulative_box.csv",
+      "team_totals": "teams/cheshire_phoenix__55f322d81e31501db4445878/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/cheshire_phoenix__55f322d81e31501db4445878/team_totals.csv"
+    },
+    {
+      "key": "leicester_riders__55f325301e31501db444587b",
+      "team": "Leicester Riders",
+      "source_team_id": "55f325301e31501db444587b",
+      "source_team_games": 37,
+      "path": "teams/leicester_riders__55f325301e31501db444587b/",
+      "cumulative_box": "teams/leicester_riders__55f325301e31501db444587b/cumulative_box.json",
+      "cumulative_box_csv": "teams/leicester_riders__55f325301e31501db444587b/cumulative_box.csv",
+      "team_totals": "teams/leicester_riders__55f325301e31501db444587b/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/leicester_riders__55f325301e31501db444587b/team_totals.csv"
+    },
+    {
+      "key": "london_lions__54457df4300969b132fd0f74",
+      "team": "London Lions",
+      "source_team_id": "54457df4300969b132fd0f74",
+      "source_team_games": 36,
+      "path": "teams/london_lions__54457df4300969b132fd0f74/",
+      "cumulative_box": "teams/london_lions__54457df4300969b132fd0f74/cumulative_box.json",
+      "cumulative_box_csv": "teams/london_lions__54457df4300969b132fd0f74/cumulative_box.csv",
+      "team_totals": "teams/london_lions__54457df4300969b132fd0f74/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/london_lions__54457df4300969b132fd0f74/team_totals.csv"
+    },
+    {
+      "key": "manchester_basketball__66f7a8bb266cf183ddf6feeb",
+      "team": "Manchester Basketball",
+      "source_team_id": "66f7a8bb266cf183ddf6feeb",
+      "source_team_games": 34,
+      "path": "teams/manchester_basketball__66f7a8bb266cf183ddf6feeb/",
+      "cumulative_box": "teams/manchester_basketball__66f7a8bb266cf183ddf6feeb/cumulative_box.json",
+      "cumulative_box_csv": "teams/manchester_basketball__66f7a8bb266cf183ddf6feeb/cumulative_box.csv",
+      "team_totals": "teams/manchester_basketball__66f7a8bb266cf183ddf6feeb/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/manchester_basketball__66f7a8bb266cf183ddf6feeb/team_totals.csv"
+    },
+    {
+      "key": "newcastle_eagles__55f3dfbe1e31501db4445957",
+      "team": "Newcastle Eagles",
+      "source_team_id": "55f3dfbe1e31501db4445957",
+      "source_team_games": 37,
+      "path": "teams/newcastle_eagles__55f3dfbe1e31501db4445957/",
+      "cumulative_box": "teams/newcastle_eagles__55f3dfbe1e31501db4445957/cumulative_box.json",
+      "cumulative_box_csv": "teams/newcastle_eagles__55f3dfbe1e31501db4445957/cumulative_box.csv",
+      "team_totals": "teams/newcastle_eagles__55f3dfbe1e31501db4445957/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/newcastle_eagles__55f3dfbe1e31501db4445957/team_totals.csv"
+    },
+    {
+      "key": "sheffield_sharks__55f325a81e31501db4445884",
+      "team": "Sheffield Sharks",
+      "source_team_id": "55f325a81e31501db4445884",
+      "source_team_games": 36,
+      "path": "teams/sheffield_sharks__55f325a81e31501db4445884/",
+      "cumulative_box": "teams/sheffield_sharks__55f325a81e31501db4445884/cumulative_box.json",
+      "cumulative_box_csv": "teams/sheffield_sharks__55f325a81e31501db4445884/cumulative_box.csv",
+      "team_totals": "teams/sheffield_sharks__55f325a81e31501db4445884/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/sheffield_sharks__55f325a81e31501db4445884/team_totals.csv"
+    },
+    {
+      "key": "surrey_89ers__66f7a8f8241c817ecc19c396",
+      "team": "Surrey 89ers",
+      "source_team_id": "66f7a8f8241c817ecc19c396",
+      "source_team_games": 34,
+      "path": "teams/surrey_89ers__66f7a8f8241c817ecc19c396/",
+      "cumulative_box": "teams/surrey_89ers__66f7a8f8241c817ecc19c396/cumulative_box.json",
+      "cumulative_box_csv": "teams/surrey_89ers__66f7a8f8241c817ecc19c396/cumulative_box.csv",
+      "team_totals": "teams/surrey_89ers__66f7a8f8241c817ecc19c396/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/surrey_89ers__66f7a8f8241c817ecc19c396/team_totals.csv"
+    }
+  ],
+  "players": [],
+  "leaderboards": {},
+  "regular_season_view": "pending verified source phase filter",
+  "source_discovered_entry_count": 10,
+  "source_exclusions": [
+    {
+      "team": "Floater",
+      "source_team_id": "54457df4300969b132fd0f57",
+      "reason": "Live source switches the discovered entry to All competitions; no verified box for the requested league. Not an official-schedule completeness claim.",
+      "requested_url": "https://apps.synergysports.com/basketball/teams/54457df4300969b132fd0f57?seasonId=660e623b110cde5343963994&competitionKey=54457dce300969b132fcfb3f:COMP:560100ac8dc7a24394b9569e",
+      "rendered_url": "https://apps.synergysports.com/basketball/teams/54457df4300969b132fd0f57/overall?seasonId=660e623b110cde5343963994&competitionKey=54457dce300969b132fcfb3f:ALL",
+      "reviewed_at_utc": "2026-10-20T20:15:29.456837+00:00"
+    }
+  ],
+  "coverage_status": "complete_with_reviewed_source_exclusions",
+  "coverage_notes": [
+    "All accepted source-discovered teams captured; any reviewed exclusions are documented separately. Completeness versus official schedules has not been independently audited."
+  ],
+  "combined": {
+    "team_cumulative_box.json": "combined/team_cumulative_box.json",
+    "team_cumulative_box.csv": "combined/team_cumulative_box.csv"
+  }
+}

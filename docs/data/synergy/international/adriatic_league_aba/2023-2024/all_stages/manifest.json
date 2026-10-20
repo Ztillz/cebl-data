@@ -1,0 +1,243 @@
+{
+  "version": 2,
+  "season": "2023-2024",
+  "league": "Adriatic League (ABA)",
+  "league_id": "adriatic_league_aba",
+  "competition_name": "Adriatic League (ABA)",
+  "source_competition_key": "54457dce300969b132fcfb3f:COMP:560100ac8dc7a24394b95600",
+  "game_scope": "all_stages",
+  "source_controls": "Accumulated Stats / All Games / All data",
+  "scope": "cumulative_box",
+  "generated_at_utc": "2026-10-20T17:18:37.805147+00:00",
+  "team_count": 14,
+  "player_count": 235,
+  "teams": [
+    {
+      "key": "borac_cacak__54457df2300969b132fd0e63",
+      "team": "Borac Cacak",
+      "source_team_id": "54457df2300969b132fd0e63",
+      "source_team_games": 26,
+      "path": "teams/borac_cacak__54457df2300969b132fd0e63/",
+      "cumulative_box": "teams/borac_cacak__54457df2300969b132fd0e63/cumulative_box.json",
+      "cumulative_box_csv": "teams/borac_cacak__54457df2300969b132fd0e63/cumulative_box.csv",
+      "team_totals": "teams/borac_cacak__54457df2300969b132fd0e63/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/borac_cacak__54457df2300969b132fd0e63/team_totals.csv"
+    },
+    {
+      "key": "buducnost_voli_podgorica__54457def300969b132fd0d44",
+      "team": "Buducnost VOLI Podgorica",
+      "source_team_id": "54457def300969b132fd0d44",
+      "source_team_games": 31,
+      "path": "teams/buducnost_voli_podgorica__54457def300969b132fd0d44/",
+      "cumulative_box": "teams/buducnost_voli_podgorica__54457def300969b132fd0d44/cumulative_box.json",
+      "cumulative_box_csv": "teams/buducnost_voli_podgorica__54457def300969b132fd0d44/cumulative_box.csv",
+      "team_totals": "teams/buducnost_voli_podgorica__54457def300969b132fd0d44/team_totals.json",
+      "source_coverage_notes": [
+        {
+          "type": "source_overview_cumulative_gp_difference",
+          "overview_gp": 30,
+          "cumulative_gp": 31,
+          "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+        }
+      ],
+      "reports": {},
+      "team_totals_csv": "teams/buducnost_voli_podgorica__54457def300969b132fd0d44/team_totals.csv",
+      "source_coverage": {
+        "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+      }
+    },
+    {
+      "key": "cedevita_olimpija_ljubljana__54457df1300969b132fd0e0c",
+      "team": "Cedevita Olimpija Ljubljana",
+      "source_team_id": "54457df1300969b132fd0e0c",
+      "source_team_games": 28,
+      "path": "teams/cedevita_olimpija_ljubljana__54457df1300969b132fd0e0c/",
+      "cumulative_box": "teams/cedevita_olimpija_ljubljana__54457df1300969b132fd0e0c/cumulative_box.json",
+      "cumulative_box_csv": "teams/cedevita_olimpija_ljubljana__54457df1300969b132fd0e0c/cumulative_box.csv",
+      "team_totals": "teams/cedevita_olimpija_ljubljana__54457df1300969b132fd0e0c/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/cedevita_olimpija_ljubljana__54457df1300969b132fd0e0c/team_totals.csv"
+    },
+    {
+      "key": "cibona_zagreb__54457def300969b132fd0d51",
+      "team": "Cibona Zagreb",
+      "source_team_id": "54457def300969b132fd0d51",
+      "source_team_games": 26,
+      "path": "teams/cibona_zagreb__54457def300969b132fd0d51/",
+      "cumulative_box": "teams/cibona_zagreb__54457def300969b132fd0d51/cumulative_box.json",
+      "cumulative_box_csv": "teams/cibona_zagreb__54457def300969b132fd0d51/cumulative_box.csv",
+      "team_totals": "teams/cibona_zagreb__54457def300969b132fd0d51/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/cibona_zagreb__54457def300969b132fd0d51/team_totals.csv"
+    },
+    {
+      "key": "crvena_zvezda_meridianbet_belgrade__54457def300969b132fd0d3e",
+      "team": "Crvena Zvezda Meridianbet Belgrade",
+      "source_team_id": "54457def300969b132fd0d3e",
+      "source_team_games": 33,
+      "path": "teams/crvena_zvezda_meridianbet_belgrade__54457def300969b132fd0d3e/",
+      "cumulative_box": "teams/crvena_zvezda_meridianbet_belgrade__54457def300969b132fd0d3e/cumulative_box.json",
+      "cumulative_box_csv": "teams/crvena_zvezda_meridianbet_belgrade__54457def300969b132fd0d3e/cumulative_box.csv",
+      "team_totals": "teams/crvena_zvezda_meridianbet_belgrade__54457def300969b132fd0d3e/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/crvena_zvezda_meridianbet_belgrade__54457def300969b132fd0d3e/team_totals.csv"
+    },
+    {
+      "key": "fmp_beograd__54457def300969b132fd0d43",
+      "team": "FMP Beograd",
+      "source_team_id": "54457def300969b132fd0d43",
+      "source_team_games": 26,
+      "path": "teams/fmp_beograd__54457def300969b132fd0d43/",
+      "cumulative_box": "teams/fmp_beograd__54457def300969b132fd0d43/cumulative_box.json",
+      "cumulative_box_csv": "teams/fmp_beograd__54457def300969b132fd0d43/cumulative_box.csv",
+      "team_totals": "teams/fmp_beograd__54457def300969b132fd0d43/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/fmp_beograd__54457def300969b132fd0d43/team_totals.csv"
+    },
+    {
+      "key": "igokea_m_tel_aleksandrovac__54457df2300969b132fd0e89",
+      "team": "Igokea m:tel Aleksandrovac",
+      "source_team_id": "54457df2300969b132fd0e89",
+      "source_team_games": 28,
+      "path": "teams/igokea_m_tel_aleksandrovac__54457df2300969b132fd0e89/",
+      "cumulative_box": "teams/igokea_m_tel_aleksandrovac__54457df2300969b132fd0e89/cumulative_box.json",
+      "cumulative_box_csv": "teams/igokea_m_tel_aleksandrovac__54457df2300969b132fd0e89/cumulative_box.csv",
+      "team_totals": "teams/igokea_m_tel_aleksandrovac__54457df2300969b132fd0e89/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/igokea_m_tel_aleksandrovac__54457df2300969b132fd0e89/team_totals.csv"
+    },
+    {
+      "key": "kk_mega_mis_soccerbet__54457df2300969b132fd0ebe",
+      "team": "KK Mega MIS Soccerbet",
+      "source_team_id": "54457df2300969b132fd0ebe",
+      "source_team_games": 30,
+      "path": "teams/kk_mega_mis_soccerbet__54457df2300969b132fd0ebe/",
+      "cumulative_box": "teams/kk_mega_mis_soccerbet__54457df2300969b132fd0ebe/cumulative_box.json",
+      "cumulative_box_csv": "teams/kk_mega_mis_soccerbet__54457df2300969b132fd0ebe/cumulative_box.csv",
+      "team_totals": "teams/kk_mega_mis_soccerbet__54457df2300969b132fd0ebe/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/kk_mega_mis_soccerbet__54457df2300969b132fd0ebe/team_totals.csv"
+    },
+    {
+      "key": "kk_mornar_bar__57baee4857620213988f29bb",
+      "team": "KK Mornar Bar",
+      "source_team_id": "57baee4857620213988f29bb",
+      "source_team_games": 26,
+      "path": "teams/kk_mornar_bar__57baee4857620213988f29bb/",
+      "cumulative_box": "teams/kk_mornar_bar__57baee4857620213988f29bb/cumulative_box.json",
+      "cumulative_box_csv": "teams/kk_mornar_bar__57baee4857620213988f29bb/cumulative_box.csv",
+      "team_totals": "teams/kk_mornar_bar__57baee4857620213988f29bb/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/kk_mornar_bar__57baee4857620213988f29bb/team_totals.csv"
+    },
+    {
+      "key": "kk_split__54457def300969b132fd0d6b",
+      "team": "KK Split",
+      "source_team_id": "54457def300969b132fd0d6b",
+      "source_team_games": 26,
+      "path": "teams/kk_split__54457def300969b132fd0d6b/",
+      "cumulative_box": "teams/kk_split__54457def300969b132fd0d6b/cumulative_box.json",
+      "cumulative_box_csv": "teams/kk_split__54457def300969b132fd0d6b/cumulative_box.csv",
+      "team_totals": "teams/kk_split__54457def300969b132fd0d6b/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/kk_split__54457def300969b132fd0d6b/team_totals.csv"
+    },
+    {
+      "key": "kk_studentski_centar_derby__5f208db9e0962f87ad826bb4",
+      "team": "KK Studentski centar Derby",
+      "source_team_id": "5f208db9e0962f87ad826bb4",
+      "source_team_games": 28,
+      "path": "teams/kk_studentski_centar_derby__5f208db9e0962f87ad826bb4/",
+      "cumulative_box": "teams/kk_studentski_centar_derby__5f208db9e0962f87ad826bb4/cumulative_box.json",
+      "cumulative_box_csv": "teams/kk_studentski_centar_derby__5f208db9e0962f87ad826bb4/cumulative_box.csv",
+      "team_totals": "teams/kk_studentski_centar_derby__5f208db9e0962f87ad826bb4/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/kk_studentski_centar_derby__5f208db9e0962f87ad826bb4/team_totals.csv"
+    },
+    {
+      "key": "kk_zadar__54457def300969b132fd0d6f",
+      "team": "KK Zadar",
+      "source_team_id": "54457def300969b132fd0d6f",
+      "source_team_games": 28,
+      "path": "teams/kk_zadar__54457def300969b132fd0d6f/",
+      "cumulative_box": "teams/kk_zadar__54457def300969b132fd0d6f/cumulative_box.json",
+      "cumulative_box_csv": "teams/kk_zadar__54457def300969b132fd0d6f/cumulative_box.csv",
+      "team_totals": "teams/kk_zadar__54457def300969b132fd0d6f/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/kk_zadar__54457def300969b132fd0d6f/team_totals.csv"
+    },
+    {
+      "key": "krka_novo_mesto__54457def300969b132fd0d73",
+      "team": "Krka Novo Mesto",
+      "source_team_id": "54457def300969b132fd0d73",
+      "source_team_games": 26,
+      "path": "teams/krka_novo_mesto__54457def300969b132fd0d73/",
+      "cumulative_box": "teams/krka_novo_mesto__54457def300969b132fd0d73/cumulative_box.json",
+      "cumulative_box_csv": "teams/krka_novo_mesto__54457def300969b132fd0d73/cumulative_box.csv",
+      "team_totals": "teams/krka_novo_mesto__54457def300969b132fd0d73/team_totals.json",
+      "source_coverage_notes": [
+        {
+          "type": "source_overview_cumulative_gp_difference",
+          "overview_gp": 25,
+          "cumulative_gp": 26,
+          "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+        }
+      ],
+      "reports": {},
+      "team_totals_csv": "teams/krka_novo_mesto__54457def300969b132fd0d73/team_totals.csv",
+      "source_coverage": {
+        "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+      }
+    },
+    {
+      "key": "partizan_mozzart_bet_belgrade__54457def300969b132fd0d64",
+      "team": "Partizan Mozzart Bet Belgrade",
+      "source_team_id": "54457def300969b132fd0d64",
+      "source_team_games": 34,
+      "path": "teams/partizan_mozzart_bet_belgrade__54457def300969b132fd0d64/",
+      "cumulative_box": "teams/partizan_mozzart_bet_belgrade__54457def300969b132fd0d64/cumulative_box.json",
+      "cumulative_box_csv": "teams/partizan_mozzart_bet_belgrade__54457def300969b132fd0d64/cumulative_box.csv",
+      "team_totals": "teams/partizan_mozzart_bet_belgrade__54457def300969b132fd0d64/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/partizan_mozzart_bet_belgrade__54457def300969b132fd0d64/team_totals.csv"
+    }
+  ],
+  "players": [],
+  "leaderboards": {},
+  "regular_season_view": "pending verified source phase filter",
+  "coverage_notes": [
+    "All source-discovered teams captured. Completeness versus official schedules has not been independently audited.",
+    {
+      "team": "Buducnost VOLI Podgorica",
+      "type": "source_overview_cumulative_gp_difference",
+      "overview_gp": 30,
+      "cumulative_gp": 31,
+      "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+    },
+    {
+      "team": "Krka Novo Mesto",
+      "type": "source_overview_cumulative_gp_difference",
+      "overview_gp": 25,
+      "cumulative_gp": 26,
+      "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+    }
+  ],
+  "combined": {
+    "team_cumulative_box.json": "combined/team_cumulative_box.json",
+    "team_cumulative_box.csv": "combined/team_cumulative_box.csv"
+  },
+  "source_exclusions": []
+}

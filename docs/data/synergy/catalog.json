@@ -20,8 +20,19 @@
           "id": "2024-2025",
           "label": "2024",
           "path": "2024-2025"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023",
+          "path": "international/canadian_elite_basketball_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022",
+          "path": "international/canadian_elite_basketball_league/2022-2023/all_stages"
         }
-      ]
+      ],
+      "group": "Main leagues"
     },
     {
       "id": "nba",
@@ -46,6 +57,1316 @@
           "id": "2022-2023",
           "label": "2022-2023",
           "path": "nba/2022-2023/regular_season"
+        }
+      ],
+      "group": "Main leagues"
+    },
+    {
+      "id": "adriatic_league_aba",
+      "label": "Adriatic League (ABA)",
+      "group": "International",
+      "country_region": "Adriatic region / wider Europe; UAE entrant from 2024-25",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/adriatic_league_aba/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/adriatic_league_aba/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/adriatic_league_aba/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/adriatic_league_aba/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "adriatic_league_division_2_aba2",
+      "label": "Adriatic League Division 2 (ABA2)",
+      "group": "International",
+      "country_region": "Adriatic region / Europe",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/adriatic_league_division_2_aba2/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/adriatic_league_division_2_aba2/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/adriatic_league_division_2_aba2/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/adriatic_league_division_2_aba2/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "argentinian_league_lnb",
+      "label": "Argentinian League LNB",
+      "group": "International",
+      "country_region": "Argentina",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/argentinian_league_lnb/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/argentinian_league_lnb/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/argentinian_league_lnb/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/argentinian_league_lnb/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "australian_nbl",
+      "label": "Australian NBL",
+      "group": "International",
+      "country_region": "Australia / New Zealand",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/australian_nbl/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/australian_nbl/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/australian_nbl/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/australian_nbl/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "bnxt_league",
+      "label": "BNXT League",
+      "group": "International",
+      "country_region": "Belgium / Netherlands",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/bnxt_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/bnxt_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/bnxt_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/bnxt_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "brazil_nbb_league",
+      "label": "Brazil NBB League",
+      "group": "International",
+      "country_region": "Brazil",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/brazil_nbb_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/brazil_nbb_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/brazil_nbb_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/brazil_nbb_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "british_slb_league",
+      "label": "British SLB League",
+      "group": "International",
+      "country_region": "United Kingdom",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/british_slb_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/british_slb_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/british_slb_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/british_slb_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "cba_china",
+      "label": "CBA China",
+      "group": "International",
+      "country_region": "China",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/cba_china/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/cba_china/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/cba_china/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/cba_china/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "colombian_league",
+      "label": "Colombian League",
+      "group": "International",
+      "country_region": "Colombia",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/colombian_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/colombian_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/colombian_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "croatian_league",
+      "label": "Croatian League",
+      "group": "International",
+      "country_region": "Croatia",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/croatian_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/croatian_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/croatian_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/croatian_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "cyprus_league",
+      "label": "Cyprus League",
+      "group": "International",
+      "country_region": "Cyprus",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/cyprus_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/cyprus_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/cyprus_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/cyprus_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "czech_league",
+      "label": "Czech League",
+      "group": "International",
+      "country_region": "Czechia",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/czech_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/czech_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/czech_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/czech_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "european_north_basketball_league_enbl",
+      "label": "European North Basketball League (ENBL)",
+      "group": "International",
+      "country_region": "Northern Europe",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/european_north_basketball_league_enbl/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/european_north_basketball_league_enbl/2024-2025/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/european_north_basketball_league_enbl/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "fiba_champions_league",
+      "label": "FIBA Champions League",
+      "group": "International",
+      "country_region": "Europe",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/fiba_champions_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/fiba_champions_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/fiba_champions_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/fiba_champions_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "fiba_europe_cup",
+      "label": "FIBA Europe Cup",
+      "group": "International",
+      "country_region": "Europe",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/fiba_europe_cup/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/fiba_europe_cup/2024-2025/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/fiba_europe_cup/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "finnish_league",
+      "label": "Finnish League",
+      "group": "International",
+      "country_region": "Finland",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/finnish_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/finnish_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/finnish_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/finnish_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "finnish_league_division_1",
+      "label": "Finnish League Division 1",
+      "group": "International",
+      "country_region": "Finland",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/finnish_league_division_1/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/finnish_league_division_1/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/finnish_league_division_1/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/finnish_league_division_1/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "french_betclic_elite_pro_a",
+      "label": "French Betclic Elite (Pro A)",
+      "group": "International",
+      "country_region": "France / Monaco",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/french_betclic_elite_pro_a/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/french_betclic_elite_pro_a/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/french_betclic_elite_pro_a/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/french_betclic_elite_pro_a/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "french_elite_2_pro_b",
+      "label": "French Elite 2 (Pro B)",
+      "group": "International",
+      "country_region": "France",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/french_elite_2_pro_b/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/french_elite_2_pro_b/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/french_elite_2_pro_b/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/french_elite_2_pro_b/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "georgian_superleague",
+      "label": "Georgian Superleague",
+      "group": "International",
+      "country_region": "Georgia",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/georgian_superleague/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/georgian_superleague/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/georgian_superleague/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/georgian_superleague/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "german_league",
+      "label": "German League",
+      "group": "International",
+      "country_region": "Germany",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/german_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/german_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/german_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/german_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "german_league_division_2",
+      "label": "German League Division 2",
+      "group": "International",
+      "country_region": "Germany",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/german_league_division_2/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/german_league_division_2/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/german_league_division_2/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/german_league_division_2/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "german_league_division_3",
+      "label": "German League Division 3",
+      "group": "International",
+      "country_region": "Germany",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/german_league_division_3/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/german_league_division_3/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/german_league_division_3/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/german_league_division_3/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "greek_league",
+      "label": "Greek League",
+      "group": "International",
+      "country_region": "Greece",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/greek_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/greek_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/greek_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/greek_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "hungarian_league",
+      "label": "Hungarian League",
+      "group": "International",
+      "country_region": "Hungary",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/hungarian_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/hungarian_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/hungarian_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/hungarian_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "israeli_league",
+      "label": "Israeli League",
+      "group": "International",
+      "country_region": "Israel",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/israeli_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/israeli_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/israeli_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/israeli_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "italian_serie_a_league",
+      "label": "Italian Serie A League",
+      "group": "International",
+      "country_region": "Italy",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/italian_serie_a_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/italian_serie_a_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/italian_serie_a_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/italian_serie_a_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "italian_serie_a2_league",
+      "label": "Italian Serie A2 League",
+      "group": "International",
+      "country_region": "Italy",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/italian_serie_a2_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/italian_serie_a2_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/italian_serie_a2_league/2023-2024/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "japan_bleague",
+      "label": "Japan BLeague",
+      "group": "International",
+      "country_region": "Japan",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/japan_bleague/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/japan_bleague/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/japan_bleague/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/japan_bleague/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "latvian_estonian_league",
+      "label": "Latvian - Estonian League",
+      "group": "International",
+      "country_region": "Latvia / Estonia",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/latvian_estonian_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/latvian_estonian_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/latvian_estonian_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/latvian_estonian_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "liga_sudamericana",
+      "label": "Liga SudAmericana",
+      "group": "International",
+      "country_region": "South America",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/liga_sudamericana/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/liga_sudamericana/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/liga_sudamericana/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/liga_sudamericana/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "lithuanian_league",
+      "label": "Lithuanian League",
+      "group": "International",
+      "country_region": "Lithuania",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/lithuanian_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/lithuanian_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/lithuanian_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/lithuanian_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "macedonian_league",
+      "label": "Macedonian League",
+      "group": "International",
+      "country_region": "North Macedonia",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/macedonian_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/macedonian_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/macedonian_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/macedonian_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "mexican_lnbp",
+      "label": "Mexican LNBP",
+      "group": "International",
+      "country_region": "Mexico",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/mexican_lnbp/2025-2026/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/mexican_lnbp/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/mexican_lnbp/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "polish_league",
+      "label": "Polish League",
+      "group": "International",
+      "country_region": "Poland",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/polish_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/polish_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/polish_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/polish_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "puerto_rican_league",
+      "label": "Puerto Rican League",
+      "group": "International",
+      "country_region": "Puerto Rico",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/puerto_rican_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/puerto_rican_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/puerto_rican_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/puerto_rican_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "romanian_league",
+      "label": "Romanian League",
+      "group": "International",
+      "country_region": "Romania",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/romanian_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/romanian_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/romanian_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/romanian_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "serbian_league",
+      "label": "Serbian League",
+      "group": "International",
+      "country_region": "Serbia",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/serbian_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/serbian_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "slovenian_league",
+      "label": "Slovenian League",
+      "group": "International",
+      "country_region": "Slovenia",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/slovenian_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/slovenian_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/slovenian_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/slovenian_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "south_korean_kbl_cup",
+      "label": "South Korean KBL Cup",
+      "group": "International",
+      "country_region": "South Korea",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/south_korean_kbl_cup/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/south_korean_kbl_cup/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/south_korean_kbl_cup/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/south_korean_kbl_cup/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "south_korean_league",
+      "label": "South Korean League",
+      "group": "International",
+      "country_region": "South Korea",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/south_korean_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/south_korean_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/south_korean_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/south_korean_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "spanish_acb_league",
+      "label": "Spanish ACB League",
+      "group": "International",
+      "country_region": "Spain / Andorra",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/spanish_acb_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/spanish_acb_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/spanish_acb_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/spanish_acb_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "spanish_feb_primera",
+      "label": "Spanish FEB Primera",
+      "group": "International",
+      "country_region": "Spain",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/spanish_feb_primera/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/spanish_feb_primera/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/spanish_feb_primera/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/spanish_feb_primera/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "spanish_feb_segunda",
+      "label": "Spanish FEB Segunda",
+      "group": "International",
+      "country_region": "Spain",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/spanish_feb_segunda/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/spanish_feb_segunda/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/spanish_feb_segunda/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/spanish_feb_segunda/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "switzerland_sb_league",
+      "label": "Switzerland SB League",
+      "group": "International",
+      "country_region": "Switzerland",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/switzerland_sb_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/switzerland_sb_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/switzerland_sb_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/switzerland_sb_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "turkish_league",
+      "label": "Turkish League",
+      "group": "International",
+      "country_region": "Turkey",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/turkish_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/turkish_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/turkish_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/turkish_league/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "turkish_league_division_2",
+      "label": "Turkish League Division 2",
+      "group": "International",
+      "country_region": "Turkey",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/turkish_league_division_2/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/turkish_league_division_2/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/turkish_league_division_2/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/turkish_league_division_2/2022-2023/all_stages"
+        }
+      ]
+    },
+    {
+      "id": "vtb_united_league",
+      "label": "VTB United League",
+      "group": "International",
+      "country_region": "Eurasia; membership varies by season",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "international/vtb_united_league/2025-2026/all_stages"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "international/vtb_united_league/2024-2025/all_stages"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "international/vtb_united_league/2023-2024/all_stages"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "international/vtb_united_league/2022-2023/all_stages"
         }
       ]
     }

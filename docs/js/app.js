@@ -226,7 +226,17 @@ async function initialize() {
             || selectedLeague.seasons[0];
         SELECTED_SEASON = dataset.id;
         DATA_ROOT = `data/synergy/${dataset.path}`;
-        leagueSelect.replaceChildren(...datasetCatalog.leagues.map(league => new Option(league.label, league.id)));
+        const leagueGroups = new Map();
+        for (const league of datasetCatalog.leagues) {
+            const groupName = league.group || "Leagues";
+            if (!leagueGroups.has(groupName)) {
+                const group = document.createElement("optgroup");
+                group.label = groupName;
+                leagueGroups.set(groupName, group);
+            }
+            leagueGroups.get(groupName).appendChild(new Option(league.label, league.id));
+        }
+        leagueSelect.replaceChildren(...leagueGroups.values());
         leagueSelect.value = selectedLeague.id;
         seasonSelect.replaceChildren(...selectedLeague.seasons.map(season => new Option(season.label, season.id)));
         seasonSelect.value = SELECTED_SEASON;
@@ -237,7 +247,7 @@ async function initialize() {
         manifest = await fetchJson(`${DATA_ROOT}/manifest.json`);
 
         seasonLabel.textContent =
-            `${manifest.season} • ${selectedLeague.label}${manifest.game_scope === "regular_season" ? " • Regular season" : ""}`;
+            `${manifest.season} • ${selectedLeague.label}${manifest.game_scope === "regular_season" ? " • Regular season" : manifest.game_scope === "all_stages" ? " • All stages" : ""}`;
 
         dataStatus.textContent =
             `${manifest.player_count} ${manifest.scope === "cumulative_box" ? "player entries" : "players"} • ${manifest.team_count} teams`;
@@ -255,11 +265,17 @@ async function initialize() {
         document.querySelector('[data-view="leaderboards"]').disabled = !hasLeaderboards;
         seasonCoverage.classList.toggle("hidden", !limitedSeason);
         seasonCoverage.textContent = limitedSeason
-            ? `${manifest.game_scope === "regular_season" ? "Regular season cumulative" : "Cumulative"} box reports are available. Play Types and Shot Types are not available for this league and season.`
+            ? `${manifest.game_scope === "regular_season" ? "Regular season cumulative" : manifest.game_scope === "all_stages" ? "Cumulative (all stages)" : "Cumulative"} box reports are available. Play Types and Shot Types are not available for this league and season.`
             : "";
-        if (manifest.coverage_notes?.length) {
+        const teamsWithNotes = manifest.teams.filter(team => team.source_coverage || team.source_coverage_notes?.length).length;
+        if (teamsWithNotes) {
             seasonCoverage.classList.remove("hidden");
-            seasonCoverage.textContent += ` ${manifest.coverage_notes.length} teams have limited source coverage; see the team notes.`;
+            seasonCoverage.textContent += ` ${teamsWithNotes} teams have source coverage notes; see the team notes.`;
+        }
+        if (manifest.source_exclusions?.length) {
+            seasonCoverage.classList.remove("hidden");
+            const names = [...new Set(manifest.source_exclusions.map(entry => entry.team))].join(", ");
+            seasonCoverage.textContent += ` Source entries excluded from this league: ${names}. Synergy does not provide a verified league-specific box for these entries.`;
         }
         if (limitedSeason) {
             document.querySelector("#teamEmptyState p").textContent =
@@ -1576,7 +1592,9 @@ function renderTeamTable(records) {
     if (coverageNotes.length) {
         const note = document.createElement("p");
         note.className = "source-coverage-note";
-        note.textContent = coverageNotes.map(item => `${item.team}: ${item.message}`).join(" ");
+        note.textContent = coverageNotes.map(item => typeof item === "string"
+            ? item
+            : `${item.team ? `${item.team}: ` : ""}${item.message || ""}`).filter(Boolean).join(" ");
         block.appendChild(note);
     }
 

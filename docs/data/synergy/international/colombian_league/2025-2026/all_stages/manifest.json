@@ -1,0 +1,142 @@
+{
+  "version": 2,
+  "season": "2025-2026",
+  "league": "Colombian League",
+  "league_id": "colombian_league",
+  "competition_name": "Colombian League",
+  "source_competition_key": "54457dce300969b132fcfb3f:COMP:5f80a489f68e52f82718b4a6",
+  "game_scope": "all_stages",
+  "source_controls": "Accumulated Stats / All Games / All data",
+  "scope": "cumulative_box",
+  "generated_at_utc": "2026-10-20T20:15:29.915257+00:00",
+  "team_count": 8,
+  "player_count": 241,
+  "teams": [
+    {
+      "key": "caimanes_del_llano__6821ce7ed0077251c52f4a98",
+      "team": "Caimanes del Llano",
+      "source_team_id": "6821ce7ed0077251c52f4a98",
+      "source_team_games": 33,
+      "path": "teams/caimanes_del_llano__6821ce7ed0077251c52f4a98/",
+      "cumulative_box": "teams/caimanes_del_llano__6821ce7ed0077251c52f4a98/cumulative_box.json",
+      "cumulative_box_csv": "teams/caimanes_del_llano__6821ce7ed0077251c52f4a98/cumulative_box.csv",
+      "team_totals": "teams/caimanes_del_llano__6821ce7ed0077251c52f4a98/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/caimanes_del_llano__6821ce7ed0077251c52f4a98/team_totals.csv"
+    },
+    {
+      "key": "caribbean_storm_coffee_islands__5f7ccfb4f68e52f82780f689",
+      "team": "Caribbean Storm Coffee Islands",
+      "source_team_id": "5f7ccfb4f68e52f82780f689",
+      "source_team_games": 35,
+      "path": "teams/caribbean_storm_coffee_islands__5f7ccfb4f68e52f82780f689/",
+      "cumulative_box": "teams/caribbean_storm_coffee_islands__5f7ccfb4f68e52f82780f689/cumulative_box.json",
+      "cumulative_box_csv": "teams/caribbean_storm_coffee_islands__5f7ccfb4f68e52f82780f689/cumulative_box.csv",
+      "team_totals": "teams/caribbean_storm_coffee_islands__5f7ccfb4f68e52f82780f689/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/caribbean_storm_coffee_islands__5f7ccfb4f68e52f82780f689/team_totals.csv"
+    },
+    {
+      "key": "cimarrones_del_choco__59e6128544b2b8aa7e89ca42",
+      "team": "Cimarrones del Choco",
+      "source_team_id": "59e6128544b2b8aa7e89ca42",
+      "source_team_games": 26,
+      "path": "teams/cimarrones_del_choco__59e6128544b2b8aa7e89ca42/",
+      "cumulative_box": "teams/cimarrones_del_choco__59e6128544b2b8aa7e89ca42/cumulative_box.json",
+      "cumulative_box_csv": "teams/cimarrones_del_choco__59e6128544b2b8aa7e89ca42/cumulative_box.csv",
+      "team_totals": "teams/cimarrones_del_choco__59e6128544b2b8aa7e89ca42/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/cimarrones_del_choco__59e6128544b2b8aa7e89ca42/team_totals.csv"
+    },
+    {
+      "key": "los_paisas_de_medellin_basketball__6704c243a06df00def81fb94",
+      "team": "Los Paisas de Medellin Basketball",
+      "source_team_id": "6704c243a06df00def81fb94",
+      "source_team_games": 39,
+      "path": "teams/los_paisas_de_medellin_basketball__6704c243a06df00def81fb94/",
+      "cumulative_box": "teams/los_paisas_de_medellin_basketball__6704c243a06df00def81fb94/cumulative_box.json",
+      "cumulative_box_csv": "teams/los_paisas_de_medellin_basketball__6704c243a06df00def81fb94/cumulative_box.csv",
+      "team_totals": "teams/los_paisas_de_medellin_basketball__6704c243a06df00def81fb94/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/los_paisas_de_medellin_basketball__6704c243a06df00def81fb94/team_totals.csv"
+    },
+    {
+      "key": "motilones_del_norte__6084460e901370663dd59c68",
+      "team": "Motilones del Norte",
+      "source_team_id": "6084460e901370663dd59c68",
+      "source_team_games": 35,
+      "path": "teams/motilones_del_norte__6084460e901370663dd59c68/",
+      "cumulative_box": "teams/motilones_del_norte__6084460e901370663dd59c68/cumulative_box.json",
+      "cumulative_box_csv": "teams/motilones_del_norte__6084460e901370663dd59c68/cumulative_box.csv",
+      "team_totals": "teams/motilones_del_norte__6084460e901370663dd59c68/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/motilones_del_norte__6084460e901370663dd59c68/team_totals.csv"
+    },
+    {
+      "key": "piratas_de_bogota__5f7cd0dff68e52f827a741be",
+      "team": "Piratas de Bogota",
+      "source_team_id": "5f7cd0dff68e52f827a741be",
+      "source_team_games": 10,
+      "path": "teams/piratas_de_bogota__5f7cd0dff68e52f827a741be/",
+      "cumulative_box": "teams/piratas_de_bogota__5f7cd0dff68e52f827a741be/cumulative_box.json",
+      "cumulative_box_csv": "teams/piratas_de_bogota__5f7cd0dff68e52f827a741be/cumulative_box.csv",
+      "team_totals": "teams/piratas_de_bogota__5f7cd0dff68e52f827a741be/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/piratas_de_bogota__5f7cd0dff68e52f827a741be/team_totals.csv"
+    },
+    {
+      "key": "sabios_de_manizales__5f7cd0dff68e52f827a7427c",
+      "team": "Sabios de Manizales",
+      "source_team_id": "5f7cd0dff68e52f827a7427c",
+      "source_team_games": 33,
+      "path": "teams/sabios_de_manizales__5f7cd0dff68e52f827a7427c/",
+      "cumulative_box": "teams/sabios_de_manizales__5f7cd0dff68e52f827a7427c/cumulative_box.json",
+      "cumulative_box_csv": "teams/sabios_de_manizales__5f7cd0dff68e52f827a7427c/cumulative_box.csv",
+      "team_totals": "teams/sabios_de_manizales__5f7cd0dff68e52f827a7427c/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/sabios_de_manizales__5f7cd0dff68e52f827a7427c/team_totals.csv"
+    },
+    {
+      "key": "toros_del_valle__6630a5e22d526c136de04306",
+      "team": "Toros del Valle",
+      "source_team_id": "6630a5e22d526c136de04306",
+      "source_team_games": 41,
+      "path": "teams/toros_del_valle__6630a5e22d526c136de04306/",
+      "cumulative_box": "teams/toros_del_valle__6630a5e22d526c136de04306/cumulative_box.json",
+      "cumulative_box_csv": "teams/toros_del_valle__6630a5e22d526c136de04306/cumulative_box.csv",
+      "team_totals": "teams/toros_del_valle__6630a5e22d526c136de04306/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/toros_del_valle__6630a5e22d526c136de04306/team_totals.csv"
+    }
+  ],
+  "players": [],
+  "leaderboards": {},
+  "regular_season_view": "pending verified source phase filter",
+  "source_discovered_entry_count": 9,
+  "source_exclusions": [
+    {
+      "team": "Floater",
+      "source_team_id": "54457df4300969b132fd0f57",
+      "reason": "Live source switches the discovered entry to All competitions; no verified box for the requested league. Not an official-schedule completeness claim.",
+      "requested_url": "https://apps.synergysports.com/basketball/teams/54457df4300969b132fd0f57?seasonId=67c22b7f1057eebfa31490a0&competitionKey=54457dce300969b132fcfb3f:COMP:5f80a489f68e52f82718b4a6",
+      "rendered_url": "https://apps.synergysports.com/basketball/teams/54457df4300969b132fd0f57/overall?seasonId=660e623b110cde5343963994&competitionKey=54457dce300969b132fcfb3f:ALL",
+      "reviewed_at_utc": "2026-10-20T20:15:29.836240+00:00"
+    }
+  ],
+  "coverage_status": "complete_with_reviewed_source_exclusions",
+  "coverage_notes": [
+    "All accepted source-discovered teams captured; any reviewed exclusions are documented separately. Completeness versus official schedules has not been independently audited."
+  ],
+  "combined": {
+    "team_cumulative_box.json": "combined/team_cumulative_box.json",
+    "team_cumulative_box.csv": "combined/team_cumulative_box.csv"
+  }
+}

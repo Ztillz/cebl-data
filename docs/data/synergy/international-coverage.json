@@ -1,0 +1,42 @@
+{
+  "scope": "Completed team cumulative boxes, all source stages; Play Types and Shot Types are not included.",
+  "source_completeness": "Source-discovered entries reviewed; completeness against official schedules not independently audited.",
+  "omitted_incomplete_seasons": [
+    {
+      "league": "Colombian League",
+      "season": "2023-2024",
+      "reason": "Export incomplete; not offered in viewer"
+    },
+    {
+      "league": "European North Basketball League (ENBL)",
+      "season": "2023-2024",
+      "reason": "Export incomplete; not offered in viewer"
+    },
+    {
+      "league": "FIBA Europe Cup",
+      "season": "2023-2024",
+      "reason": "Export incomplete; not offered in viewer"
+    },
+    {
+      "league": "Italian Serie A2 League",
+      "season": "2022-2023",
+      "reason": "Export incomplete; not offered in viewer"
+    },
+    {
+      "league": "Mexican LNBP",
+      "season": "2024-2025",
+      "reason": "Export incomplete; not offered in viewer"
+    },
+    {
+      "league": "Serbian League",
+      "season": "2024-2025",
+      "reason": "Export incomplete; not offered in viewer"
+    },
+    {
+      "league": "Serbian League",
+      "season": "2023-2024",
+      "reason": "Export incomplete; not offered in viewer"
+    }
+  ],
+  "published_international_datasets": 187
+}

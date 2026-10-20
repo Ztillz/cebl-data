@@ -122,6 +122,12 @@ button {
     display: flex;
     align-items: center;
     gap: 20px;
+    flex-wrap: wrap;
+}
+
+#leagueSelect {
+    width: clamp(190px, 26vw, 330px);
+    max-width: 100%;
 }
 
 .season-picker {

@@ -1,0 +1,308 @@
+{
+  "version": 2,
+  "season": "2023-2024",
+  "league": "Brazil NBB League",
+  "league_id": "brazil_nbb_league",
+  "competition_name": "Brazil NBB League",
+  "source_competition_key": "54457dce300969b132fcfb3f:COMP:560100ac8dc7a24394b95675",
+  "game_scope": "all_stages",
+  "source_controls": "Accumulated Stats / All Games / All data",
+  "scope": "cumulative_box",
+  "generated_at_utc": "2026-10-20T17:18:42.608989+00:00",
+  "team_count": 19,
+  "player_count": 295,
+  "teams": [
+    {
+      "key": "bauru__54457df6300969b132fd0fe4",
+      "team": "Bauru",
+      "source_team_id": "54457df6300969b132fd0fe4",
+      "source_team_games": 46,
+      "path": "teams/bauru__54457df6300969b132fd0fe4/",
+      "cumulative_box": "teams/bauru__54457df6300969b132fd0fe4/cumulative_box.json",
+      "cumulative_box_csv": "teams/bauru__54457df6300969b132fd0fe4/cumulative_box.csv",
+      "team_totals": "teams/bauru__54457df6300969b132fd0fe4/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/bauru__54457df6300969b132fd0fe4/team_totals.csv"
+    },
+    {
+      "key": "botafogo__59e6128544b2b8aa7e89ca10",
+      "team": "Botafogo",
+      "source_team_id": "59e6128544b2b8aa7e89ca10",
+      "source_team_games": 37,
+      "path": "teams/botafogo__59e6128544b2b8aa7e89ca10/",
+      "cumulative_box": "teams/botafogo__59e6128544b2b8aa7e89ca10/cumulative_box.json",
+      "cumulative_box_csv": "teams/botafogo__59e6128544b2b8aa7e89ca10/cumulative_box.csv",
+      "team_totals": "teams/botafogo__59e6128544b2b8aa7e89ca10/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/botafogo__59e6128544b2b8aa7e89ca10/team_totals.csv"
+    },
+    {
+      "key": "brasilia__54457df5300969b132fd0fa5",
+      "team": "Brasilia",
+      "source_team_id": "54457df5300969b132fd0fa5",
+      "source_team_games": 36,
+      "path": "teams/brasilia__54457df5300969b132fd0fa5/",
+      "cumulative_box": "teams/brasilia__54457df5300969b132fd0fa5/cumulative_box.json",
+      "cumulative_box_csv": "teams/brasilia__54457df5300969b132fd0fa5/cumulative_box.csv",
+      "team_totals": "teams/brasilia__54457df5300969b132fd0fa5/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/brasilia__54457df5300969b132fd0fa5/team_totals.csv"
+    },
+    {
+      "key": "caxias_do_sul__55f95aa11e31501db4445b3b",
+      "team": "Caxias do Sul",
+      "source_team_id": "55f95aa11e31501db4445b3b",
+      "source_team_games": 36,
+      "path": "teams/caxias_do_sul__55f95aa11e31501db4445b3b/",
+      "cumulative_box": "teams/caxias_do_sul__55f95aa11e31501db4445b3b/cumulative_box.json",
+      "cumulative_box_csv": "teams/caxias_do_sul__55f95aa11e31501db4445b3b/cumulative_box.csv",
+      "team_totals": "teams/caxias_do_sul__55f95aa11e31501db4445b3b/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/caxias_do_sul__55f95aa11e31501db4445b3b/team_totals.csv"
+    },
+    {
+      "key": "cerrado__5fa1eb908d9bb80001682c97",
+      "team": "Cerrado",
+      "source_team_id": "5fa1eb908d9bb80001682c97",
+      "source_team_games": 36,
+      "path": "teams/cerrado__5fa1eb908d9bb80001682c97/",
+      "cumulative_box": "teams/cerrado__5fa1eb908d9bb80001682c97/cumulative_box.json",
+      "cumulative_box_csv": "teams/cerrado__5fa1eb908d9bb80001682c97/cumulative_box.csv",
+      "team_totals": "teams/cerrado__5fa1eb908d9bb80001682c97/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/cerrado__5fa1eb908d9bb80001682c97/team_totals.csv"
+    },
+    {
+      "key": "club_de_regatas_vasco_da_gama__57d92fd25762021398cd6468",
+      "team": "Club de Regatas Vasco da Gama",
+      "source_team_id": "57d92fd25762021398cd6468",
+      "source_team_games": 43,
+      "path": "teams/club_de_regatas_vasco_da_gama__57d92fd25762021398cd6468/",
+      "cumulative_box": "teams/club_de_regatas_vasco_da_gama__57d92fd25762021398cd6468/cumulative_box.json",
+      "cumulative_box_csv": "teams/club_de_regatas_vasco_da_gama__57d92fd25762021398cd6468/cumulative_box.csv",
+      "team_totals": "teams/club_de_regatas_vasco_da_gama__57d92fd25762021398cd6468/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/club_de_regatas_vasco_da_gama__57d92fd25762021398cd6468/team_totals.csv"
+    },
+    {
+      "key": "corinthians_paulista__5b6c113211ef0d1103fddab5",
+      "team": "Corinthians Paulista",
+      "source_team_id": "5b6c113211ef0d1103fddab5",
+      "source_team_games": 38,
+      "path": "teams/corinthians_paulista__5b6c113211ef0d1103fddab5/",
+      "cumulative_box": "teams/corinthians_paulista__5b6c113211ef0d1103fddab5/cumulative_box.json",
+      "cumulative_box_csv": "teams/corinthians_paulista__5b6c113211ef0d1103fddab5/cumulative_box.csv",
+      "team_totals": "teams/corinthians_paulista__5b6c113211ef0d1103fddab5/team_totals.json",
+      "source_coverage_notes": [
+        {
+          "type": "source_overview_cumulative_gp_difference",
+          "overview_gp": 37,
+          "cumulative_gp": 38,
+          "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+        }
+      ],
+      "reports": {},
+      "team_totals_csv": "teams/corinthians_paulista__5b6c113211ef0d1103fddab5/team_totals.csv",
+      "source_coverage": {
+        "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+      }
+    },
+    {
+      "key": "flamengo__54457df5300969b132fd0fdb",
+      "team": "Flamengo",
+      "source_team_id": "54457df5300969b132fd0fdb",
+      "source_team_games": 48,
+      "path": "teams/flamengo__54457df5300969b132fd0fdb/",
+      "cumulative_box": "teams/flamengo__54457df5300969b132fd0fdb/cumulative_box.json",
+      "cumulative_box_csv": "teams/flamengo__54457df5300969b132fd0fdb/cumulative_box.csv",
+      "team_totals": "teams/flamengo__54457df5300969b132fd0fdb/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/flamengo__54457df5300969b132fd0fdb/team_totals.csv"
+    },
+    {
+      "key": "fortaleza_basquete_cearense__54457df6300969b132fd0fe5",
+      "team": "Fortaleza Basquete Cearense",
+      "source_team_id": "54457df6300969b132fd0fe5",
+      "source_team_games": 41,
+      "path": "teams/fortaleza_basquete_cearense__54457df6300969b132fd0fe5/",
+      "cumulative_box": "teams/fortaleza_basquete_cearense__54457df6300969b132fd0fe5/cumulative_box.json",
+      "cumulative_box_csv": "teams/fortaleza_basquete_cearense__54457df6300969b132fd0fe5/cumulative_box.csv",
+      "team_totals": "teams/fortaleza_basquete_cearense__54457df6300969b132fd0fe5/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/fortaleza_basquete_cearense__54457df6300969b132fd0fe5/team_totals.csv"
+    },
+    {
+      "key": "franca__54457df6300969b132fd0fe6",
+      "team": "Franca",
+      "source_team_id": "54457df6300969b132fd0fe6",
+      "source_team_games": 50,
+      "path": "teams/franca__54457df6300969b132fd0fe6/",
+      "cumulative_box": "teams/franca__54457df6300969b132fd0fe6/cumulative_box.json",
+      "cumulative_box_csv": "teams/franca__54457df6300969b132fd0fe6/cumulative_box.csv",
+      "team_totals": "teams/franca__54457df6300969b132fd0fe6/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/franca__54457df6300969b132fd0fe6/team_totals.csv"
+    },
+    {
+      "key": "minas__54457df6300969b132fd0fea",
+      "team": "Minas",
+      "source_team_id": "54457df6300969b132fd0fea",
+      "source_team_games": 48,
+      "path": "teams/minas__54457df6300969b132fd0fea/",
+      "cumulative_box": "teams/minas__54457df6300969b132fd0fea/cumulative_box.json",
+      "cumulative_box_csv": "teams/minas__54457df6300969b132fd0fea/cumulative_box.csv",
+      "team_totals": "teams/minas__54457df6300969b132fd0fea/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/minas__54457df6300969b132fd0fea/team_totals.csv"
+    },
+    {
+      "key": "mogi__54457df6300969b132fd0feb",
+      "team": "Mogi",
+      "source_team_id": "54457df6300969b132fd0feb",
+      "source_team_games": 37,
+      "path": "teams/mogi__54457df6300969b132fd0feb/",
+      "cumulative_box": "teams/mogi__54457df6300969b132fd0feb/cumulative_box.json",
+      "cumulative_box_csv": "teams/mogi__54457df6300969b132fd0feb/cumulative_box.csv",
+      "team_totals": "teams/mogi__54457df6300969b132fd0feb/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/mogi__54457df6300969b132fd0feb/team_totals.csv"
+    },
+    {
+      "key": "pato_basquete__5d4bd01ff52909811eb8d15f",
+      "team": "Pato Basquete",
+      "source_team_id": "5d4bd01ff52909811eb8d15f",
+      "source_team_games": 38,
+      "path": "teams/pato_basquete__5d4bd01ff52909811eb8d15f/",
+      "cumulative_box": "teams/pato_basquete__5d4bd01ff52909811eb8d15f/cumulative_box.json",
+      "cumulative_box_csv": "teams/pato_basquete__5d4bd01ff52909811eb8d15f/cumulative_box.csv",
+      "team_totals": "teams/pato_basquete__5d4bd01ff52909811eb8d15f/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/pato_basquete__5d4bd01ff52909811eb8d15f/team_totals.csv"
+    },
+    {
+      "key": "paulistano__54457df6300969b132fd0fee",
+      "team": "Paulistano",
+      "source_team_id": "54457df6300969b132fd0fee",
+      "source_team_games": 40,
+      "path": "teams/paulistano__54457df6300969b132fd0fee/",
+      "cumulative_box": "teams/paulistano__54457df6300969b132fd0fee/cumulative_box.json",
+      "cumulative_box_csv": "teams/paulistano__54457df6300969b132fd0fee/cumulative_box.csv",
+      "team_totals": "teams/paulistano__54457df6300969b132fd0fee/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/paulistano__54457df6300969b132fd0fee/team_totals.csv"
+    },
+    {
+      "key": "pinheiros__54457df5300969b132fd0f96",
+      "team": "Pinheiros",
+      "source_team_id": "54457df5300969b132fd0f96",
+      "source_team_games": 37,
+      "path": "teams/pinheiros__54457df5300969b132fd0f96/",
+      "cumulative_box": "teams/pinheiros__54457df5300969b132fd0f96/cumulative_box.json",
+      "cumulative_box_csv": "teams/pinheiros__54457df5300969b132fd0f96/cumulative_box.csv",
+      "team_totals": "teams/pinheiros__54457df5300969b132fd0f96/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/pinheiros__54457df5300969b132fd0f96/team_totals.csv"
+    },
+    {
+      "key": "sao_jose_basketball__54457df5300969b132fd0fa8",
+      "team": "Sao Jose Basketball",
+      "source_team_id": "54457df5300969b132fd0fa8",
+      "source_team_games": 37,
+      "path": "teams/sao_jose_basketball__54457df5300969b132fd0fa8/",
+      "cumulative_box": "teams/sao_jose_basketball__54457df5300969b132fd0fa8/cumulative_box.json",
+      "cumulative_box_csv": "teams/sao_jose_basketball__54457df5300969b132fd0fa8/cumulative_box.csv",
+      "team_totals": "teams/sao_jose_basketball__54457df5300969b132fd0fa8/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/sao_jose_basketball__54457df5300969b132fd0fa8/team_totals.csv"
+    },
+    {
+      "key": "sao_paulo__5d4be1aff52909811ecff88d",
+      "team": "Sao Paulo",
+      "source_team_id": "5d4be1aff52909811ecff88d",
+      "source_team_games": 43,
+      "path": "teams/sao_paulo__5d4be1aff52909811ecff88d/",
+      "cumulative_box": "teams/sao_paulo__5d4be1aff52909811ecff88d/cumulative_box.json",
+      "cumulative_box_csv": "teams/sao_paulo__5d4be1aff52909811ecff88d/cumulative_box.csv",
+      "team_totals": "teams/sao_paulo__5d4be1aff52909811ecff88d/team_totals.json",
+      "source_coverage_notes": [
+        {
+          "type": "source_overview_cumulative_gp_difference",
+          "overview_gp": 42,
+          "cumulative_gp": 43,
+          "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+        }
+      ],
+      "reports": {},
+      "team_totals_csv": "teams/sao_paulo__5d4be1aff52909811ecff88d/team_totals.csv",
+      "source_coverage": {
+        "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+      }
+    },
+    {
+      "key": "uniao_corinthians__617483a930558ddeb2636af1",
+      "team": "Uniao Corinthians",
+      "source_team_id": "617483a930558ddeb2636af1",
+      "source_team_games": 38,
+      "path": "teams/uniao_corinthians__617483a930558ddeb2636af1/",
+      "cumulative_box": "teams/uniao_corinthians__617483a930558ddeb2636af1/cumulative_box.json",
+      "cumulative_box_csv": "teams/uniao_corinthians__617483a930558ddeb2636af1/cumulative_box.csv",
+      "team_totals": "teams/uniao_corinthians__617483a930558ddeb2636af1/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/uniao_corinthians__617483a930558ddeb2636af1/team_totals.csv"
+    },
+    {
+      "key": "unifacisa__5d4be2e1f52909811ed15501",
+      "team": "Unifacisa",
+      "source_team_id": "5d4be2e1f52909811ed15501",
+      "source_team_games": 39,
+      "path": "teams/unifacisa__5d4be2e1f52909811ed15501/",
+      "cumulative_box": "teams/unifacisa__5d4be2e1f52909811ed15501/cumulative_box.json",
+      "cumulative_box_csv": "teams/unifacisa__5d4be2e1f52909811ed15501/cumulative_box.csv",
+      "team_totals": "teams/unifacisa__5d4be2e1f52909811ed15501/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/unifacisa__5d4be2e1f52909811ed15501/team_totals.csv"
+    }
+  ],
+  "players": [],
+  "leaderboards": {},
+  "regular_season_view": "pending verified source phase filter",
+  "coverage_notes": [
+    "All source-discovered teams captured. Completeness versus official schedules has not been independently audited.",
+    {
+      "team": "Corinthians Paulista",
+      "type": "source_overview_cumulative_gp_difference",
+      "overview_gp": 37,
+      "cumulative_gp": 38,
+      "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+    },
+    {
+      "team": "Sao Paulo",
+      "type": "source_overview_cumulative_gp_difference",
+      "overview_gp": 42,
+      "cumulative_gp": 43,
+      "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+    }
+  ],
+  "combined": {
+    "team_cumulative_box.json": "combined/team_cumulative_box.json",
+    "team_cumulative_box.csv": "combined/team_cumulative_box.csv"
+  },
+  "source_exclusions": []
+}

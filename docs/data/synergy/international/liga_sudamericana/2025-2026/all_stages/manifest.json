@@ -1,0 +1,269 @@
+{
+  "version": 2,
+  "season": "2025-2026",
+  "league": "Liga SudAmericana",
+  "league_id": "liga_sudamericana",
+  "competition_name": "Liga SudAmericana",
+  "source_competition_key": "54457dce300969b132fcfb3f:COMP:57de63841c496ea6cc6d6202",
+  "game_scope": "all_stages",
+  "source_controls": "Accumulated Stats / All Games / All data",
+  "scope": "cumulative_box",
+  "generated_at_utc": "2026-10-20T18:25:26.497903+00:00",
+  "team_count": 16,
+  "player_count": 182,
+  "teams": [
+    {
+      "key": "abc_camp__68d62b768c1cd80e4f35fe0c",
+      "team": "ABC Camp",
+      "source_team_id": "68d62b768c1cd80e4f35fe0c",
+      "source_team_games": 3,
+      "path": "teams/abc_camp__68d62b768c1cd80e4f35fe0c/",
+      "cumulative_box": "teams/abc_camp__68d62b768c1cd80e4f35fe0c/cumulative_box.json",
+      "cumulative_box_csv": "teams/abc_camp__68d62b768c1cd80e4f35fe0c/cumulative_box.csv",
+      "team_totals": "teams/abc_camp__68d62b768c1cd80e4f35fe0c/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/abc_camp__68d62b768c1cd80e4f35fe0c/team_totals.csv"
+    },
+    {
+      "key": "bauru__54457df6300969b132fd0fe4",
+      "team": "Bauru",
+      "source_team_id": "54457df6300969b132fd0fe4",
+      "source_team_games": 3,
+      "path": "teams/bauru__54457df6300969b132fd0fe4/",
+      "cumulative_box": "teams/bauru__54457df6300969b132fd0fe4/cumulative_box.json",
+      "cumulative_box_csv": "teams/bauru__54457df6300969b132fd0fe4/cumulative_box.csv",
+      "team_totals": "teams/bauru__54457df6300969b132fd0fe4/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/bauru__54457df6300969b132fd0fe4/team_totals.csv"
+    },
+    {
+      "key": "club_deportivo_colegio_los_leones_de_quilpue__54cbc02f3ad33bf4a9d7f9a3",
+      "team": "Club Deportivo Colegio Los Leones de Quilpue",
+      "source_team_id": "54cbc02f3ad33bf4a9d7f9a3",
+      "source_team_games": 3,
+      "path": "teams/club_deportivo_colegio_los_leones_de_quilpue__54cbc02f3ad33bf4a9d7f9a3/",
+      "cumulative_box": "teams/club_deportivo_colegio_los_leones_de_quilpue__54cbc02f3ad33bf4a9d7f9a3/cumulative_box.json",
+      "cumulative_box_csv": "teams/club_deportivo_colegio_los_leones_de_quilpue__54cbc02f3ad33bf4a9d7f9a3/cumulative_box.csv",
+      "team_totals": "teams/club_deportivo_colegio_los_leones_de_quilpue__54cbc02f3ad33bf4a9d7f9a3/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/club_deportivo_colegio_los_leones_de_quilpue__54cbc02f3ad33bf4a9d7f9a3/team_totals.csv"
+    },
+    {
+      "key": "club_ferro_carril_oeste_buenos_aires__55f565eb1e31501db4445984",
+      "team": "Club Ferro Carril Oeste Buenos Aires",
+      "source_team_id": "55f565eb1e31501db4445984",
+      "source_team_games": 8,
+      "path": "teams/club_ferro_carril_oeste_buenos_aires__55f565eb1e31501db4445984/",
+      "cumulative_box": "teams/club_ferro_carril_oeste_buenos_aires__55f565eb1e31501db4445984/cumulative_box.json",
+      "cumulative_box_csv": "teams/club_ferro_carril_oeste_buenos_aires__55f565eb1e31501db4445984/cumulative_box.csv",
+      "team_totals": "teams/club_ferro_carril_oeste_buenos_aires__55f565eb1e31501db4445984/team_totals.json",
+      "source_coverage_notes": [
+        {
+          "type": "source_overview_cumulative_gp_difference",
+          "overview_gp": 7,
+          "cumulative_gp": 8,
+          "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+        }
+      ],
+      "reports": {},
+      "team_totals_csv": "teams/club_ferro_carril_oeste_buenos_aires__55f565eb1e31501db4445984/team_totals.csv",
+      "source_coverage": {
+        "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+      }
+    },
+    {
+      "key": "club_de_regatas_vasco_da_gama__57d92fd25762021398cd6468",
+      "team": "Club de Regatas Vasco da Gama",
+      "source_team_id": "57d92fd25762021398cd6468",
+      "source_team_games": 3,
+      "path": "teams/club_de_regatas_vasco_da_gama__57d92fd25762021398cd6468/",
+      "cumulative_box": "teams/club_de_regatas_vasco_da_gama__57d92fd25762021398cd6468/cumulative_box.json",
+      "cumulative_box_csv": "teams/club_de_regatas_vasco_da_gama__57d92fd25762021398cd6468/cumulative_box.csv",
+      "team_totals": "teams/club_de_regatas_vasco_da_gama__57d92fd25762021398cd6468/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/club_de_regatas_vasco_da_gama__57d92fd25762021398cd6468/team_totals.csv"
+    },
+    {
+      "key": "corinthians_paulista__5b6c113211ef0d1103fddab5",
+      "team": "Corinthians Paulista",
+      "source_team_id": "5b6c113211ef0d1103fddab5",
+      "source_team_games": 6,
+      "path": "teams/corinthians_paulista__5b6c113211ef0d1103fddab5/",
+      "cumulative_box": "teams/corinthians_paulista__5b6c113211ef0d1103fddab5/cumulative_box.json",
+      "cumulative_box_csv": "teams/corinthians_paulista__5b6c113211ef0d1103fddab5/cumulative_box.csv",
+      "team_totals": "teams/corinthians_paulista__5b6c113211ef0d1103fddab5/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/corinthians_paulista__5b6c113211ef0d1103fddab5/team_totals.csv"
+    },
+    {
+      "key": "defensor_sporting__57e2bba21c496ea6cc6e4292",
+      "team": "Defensor Sporting",
+      "source_team_id": "57e2bba21c496ea6cc6e4292",
+      "source_team_games": 8,
+      "path": "teams/defensor_sporting__57e2bba21c496ea6cc6e4292/",
+      "cumulative_box": "teams/defensor_sporting__57e2bba21c496ea6cc6e4292/cumulative_box.json",
+      "cumulative_box_csv": "teams/defensor_sporting__57e2bba21c496ea6cc6e4292/cumulative_box.csv",
+      "team_totals": "teams/defensor_sporting__57e2bba21c496ea6cc6e4292/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/defensor_sporting__57e2bba21c496ea6cc6e4292/team_totals.csv"
+    },
+    {
+      "key": "deportivo_san_jose__5d9436717455336e87464d50",
+      "team": "Deportivo San Jose",
+      "source_team_id": "5d9436717455336e87464d50",
+      "source_team_games": 6,
+      "path": "teams/deportivo_san_jose__5d9436717455336e87464d50/",
+      "cumulative_box": "teams/deportivo_san_jose__5d9436717455336e87464d50/cumulative_box.json",
+      "cumulative_box_csv": "teams/deportivo_san_jose__5d9436717455336e87464d50/cumulative_box.csv",
+      "team_totals": "teams/deportivo_san_jose__5d9436717455336e87464d50/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/deportivo_san_jose__5d9436717455336e87464d50/team_totals.csv"
+    },
+    {
+      "key": "jorge_guzman__68d62a768c1cd80e4f35fe0b",
+      "team": "Jorge Guzman",
+      "source_team_id": "68d62a768c1cd80e4f35fe0b",
+      "source_team_games": 6,
+      "path": "teams/jorge_guzman__68d62a768c1cd80e4f35fe0b/",
+      "cumulative_box": "teams/jorge_guzman__68d62a768c1cd80e4f35fe0b/cumulative_box.json",
+      "cumulative_box_csv": "teams/jorge_guzman__68d62a768c1cd80e4f35fe0b/cumulative_box.csv",
+      "team_totals": "teams/jorge_guzman__68d62a768c1cd80e4f35fe0b/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/jorge_guzman__68d62a768c1cd80e4f35fe0b/team_totals.csv"
+    },
+    {
+      "key": "motilones_del_norte__6084460e901370663dd59c68",
+      "team": "Motilones del Norte",
+      "source_team_id": "6084460e901370663dd59c68",
+      "source_team_games": 3,
+      "path": "teams/motilones_del_norte__6084460e901370663dd59c68/",
+      "cumulative_box": "teams/motilones_del_norte__6084460e901370663dd59c68/cumulative_box.json",
+      "cumulative_box_csv": "teams/motilones_del_norte__6084460e901370663dd59c68/cumulative_box.csv",
+      "team_totals": "teams/motilones_del_norte__6084460e901370663dd59c68/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/motilones_del_norte__6084460e901370663dd59c68/team_totals.csv"
+    },
+    {
+      "key": "obera_tc__5fa199df17c96e00010bc17c",
+      "team": "Obera TC",
+      "source_team_id": "5fa199df17c96e00010bc17c",
+      "source_team_games": 3,
+      "path": "teams/obera_tc__5fa199df17c96e00010bc17c/",
+      "cumulative_box": "teams/obera_tc__5fa199df17c96e00010bc17c/cumulative_box.json",
+      "cumulative_box_csv": "teams/obera_tc__5fa199df17c96e00010bc17c/cumulative_box.csv",
+      "team_totals": "teams/obera_tc__5fa199df17c96e00010bc17c/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/obera_tc__5fa199df17c96e00010bc17c/team_totals.csv"
+    },
+    {
+      "key": "olimpia_kings_montevideo__6054c6d38c62106c66d7afa9",
+      "team": "Olimpia Kings Montevideo",
+      "source_team_id": "6054c6d38c62106c66d7afa9",
+      "source_team_games": 8,
+      "path": "teams/olimpia_kings_montevideo__6054c6d38c62106c66d7afa9/",
+      "cumulative_box": "teams/olimpia_kings_montevideo__6054c6d38c62106c66d7afa9/cumulative_box.json",
+      "cumulative_box_csv": "teams/olimpia_kings_montevideo__6054c6d38c62106c66d7afa9/cumulative_box.csv",
+      "team_totals": "teams/olimpia_kings_montevideo__6054c6d38c62106c66d7afa9/team_totals.json",
+      "source_coverage_notes": [
+        {
+          "type": "source_overview_cumulative_gp_difference",
+          "overview_gp": 7,
+          "cumulative_gp": 8,
+          "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+        }
+      ],
+      "reports": {},
+      "team_totals_csv": "teams/olimpia_kings_montevideo__6054c6d38c62106c66d7afa9/team_totals.csv",
+      "source_coverage": {
+        "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+      }
+    },
+    {
+      "key": "pinheiros__54457df5300969b132fd0f96",
+      "team": "Pinheiros",
+      "source_team_id": "54457df5300969b132fd0f96",
+      "source_team_games": 3,
+      "path": "teams/pinheiros__54457df5300969b132fd0f96/",
+      "cumulative_box": "teams/pinheiros__54457df5300969b132fd0f96/cumulative_box.json",
+      "cumulative_box_csv": "teams/pinheiros__54457df5300969b132fd0f96/cumulative_box.csv",
+      "team_totals": "teams/pinheiros__54457df5300969b132fd0f96/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/pinheiros__54457df5300969b132fd0f96/team_totals.csv"
+    },
+    {
+      "key": "quimsa__55f562a31e31501db444597f",
+      "team": "Quimsa",
+      "source_team_id": "55f562a31e31501db444597f",
+      "source_team_games": 3,
+      "path": "teams/quimsa__55f562a31e31501db444597f/",
+      "cumulative_box": "teams/quimsa__55f562a31e31501db444597f/cumulative_box.json",
+      "cumulative_box_csv": "teams/quimsa__55f562a31e31501db444597f/cumulative_box.csv",
+      "team_totals": "teams/quimsa__55f562a31e31501db444597f/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/quimsa__55f562a31e31501db444597f/team_totals.csv"
+    },
+    {
+      "key": "regatas__54d632833ad33bf4a9d80f64",
+      "team": "Regatas",
+      "source_team_id": "54d632833ad33bf4a9d80f64",
+      "source_team_games": 8,
+      "path": "teams/regatas__54d632833ad33bf4a9d80f64/",
+      "cumulative_box": "teams/regatas__54d632833ad33bf4a9d80f64/cumulative_box.json",
+      "cumulative_box_csv": "teams/regatas__54d632833ad33bf4a9d80f64/cumulative_box.csv",
+      "team_totals": "teams/regatas__54d632833ad33bf4a9d80f64/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/regatas__54d632833ad33bf4a9d80f64/team_totals.csv"
+    },
+    {
+      "key": "univ_sucre__68d62b03bb58c4cc1d15a2c6",
+      "team": "Univ. Sucre",
+      "source_team_id": "68d62b03bb58c4cc1d15a2c6",
+      "source_team_games": 6,
+      "path": "teams/univ_sucre__68d62b03bb58c4cc1d15a2c6/",
+      "cumulative_box": "teams/univ_sucre__68d62b03bb58c4cc1d15a2c6/cumulative_box.json",
+      "cumulative_box_csv": "teams/univ_sucre__68d62b03bb58c4cc1d15a2c6/cumulative_box.csv",
+      "team_totals": "teams/univ_sucre__68d62b03bb58c4cc1d15a2c6/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/univ_sucre__68d62b03bb58c4cc1d15a2c6/team_totals.csv"
+    }
+  ],
+  "players": [],
+  "leaderboards": {},
+  "regular_season_view": "pending verified source phase filter",
+  "coverage_notes": [
+    "All source-discovered teams captured. Completeness versus official schedules has not been independently audited.",
+    {
+      "team": "Club Ferro Carril Oeste Buenos Aires",
+      "type": "source_overview_cumulative_gp_difference",
+      "overview_gp": 7,
+      "cumulative_gp": 8,
+      "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+    },
+    {
+      "team": "Olimpia Kings Montevideo",
+      "type": "source_overview_cumulative_gp_difference",
+      "overview_gp": 7,
+      "cumulative_gp": 8,
+      "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+    }
+  ],
+  "combined": {
+    "team_cumulative_box.json": "combined/team_cumulative_box.json",
+    "team_cumulative_box.csv": "combined/team_cumulative_box.csv"
+  },
+  "source_exclusions": []
+}

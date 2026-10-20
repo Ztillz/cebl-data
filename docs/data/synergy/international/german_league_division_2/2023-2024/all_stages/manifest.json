@@ -1,0 +1,295 @@
+{
+  "version": 2,
+  "season": "2023-2024",
+  "league": "German League Division 2",
+  "league_id": "german_league_division_2",
+  "competition_name": "German League Division 2",
+  "source_competition_key": "54457dce300969b132fcfb3f:COMP:5bb3da85aeda719939c1567f",
+  "game_scope": "all_stages",
+  "source_controls": "Accumulated Stats / All Games / All data",
+  "scope": "cumulative_box",
+  "generated_at_utc": "2026-10-20T17:42:17.062598+00:00",
+  "team_count": 18,
+  "player_count": 274,
+  "teams": [
+    {
+      "key": "artland_dragons__54457df0300969b132fd0da9",
+      "team": "Artland Dragons",
+      "source_team_id": "54457df0300969b132fd0da9",
+      "source_team_games": 34,
+      "path": "teams/artland_dragons__54457df0300969b132fd0da9/",
+      "cumulative_box": "teams/artland_dragons__54457df0300969b132fd0da9/cumulative_box.json",
+      "cumulative_box_csv": "teams/artland_dragons__54457df0300969b132fd0da9/cumulative_box.csv",
+      "team_totals": "teams/artland_dragons__54457df0300969b132fd0da9/team_totals.json",
+      "source_coverage_notes": [
+        {
+          "type": "source_overview_cumulative_gp_difference",
+          "overview_gp": 33,
+          "cumulative_gp": 34,
+          "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+        }
+      ],
+      "reports": {},
+      "team_totals_csv": "teams/artland_dragons__54457df0300969b132fd0da9/team_totals.csv",
+      "source_coverage": {
+        "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+      }
+    },
+    {
+      "key": "dresden_titans__5c8f492bf52909811edddadb",
+      "team": "Dresden Titans",
+      "source_team_id": "5c8f492bf52909811edddadb",
+      "source_team_games": 34,
+      "path": "teams/dresden_titans__5c8f492bf52909811edddadb/",
+      "cumulative_box": "teams/dresden_titans__5c8f492bf52909811edddadb/cumulative_box.json",
+      "cumulative_box_csv": "teams/dresden_titans__5c8f492bf52909811edddadb/cumulative_box.csv",
+      "team_totals": "teams/dresden_titans__5c8f492bf52909811edddadb/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/dresden_titans__5c8f492bf52909811edddadb/team_totals.csv"
+    },
+    {
+      "key": "epg_baskets_koblenz__61496bc2246c4bee44ef9b80",
+      "team": "EPG Baskets Koblenz",
+      "source_team_id": "61496bc2246c4bee44ef9b80",
+      "source_team_games": 34,
+      "path": "teams/epg_baskets_koblenz__61496bc2246c4bee44ef9b80/",
+      "cumulative_box": "teams/epg_baskets_koblenz__61496bc2246c4bee44ef9b80/cumulative_box.json",
+      "cumulative_box_csv": "teams/epg_baskets_koblenz__61496bc2246c4bee44ef9b80/cumulative_box.csv",
+      "team_totals": "teams/epg_baskets_koblenz__61496bc2246c4bee44ef9b80/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/epg_baskets_koblenz__61496bc2246c4bee44ef9b80/team_totals.csv"
+    },
+    {
+      "key": "eisbaren_bremerhaven__54457df2300969b132fd0e57",
+      "team": "Eisbaren Bremerhaven",
+      "source_team_id": "54457df2300969b132fd0e57",
+      "source_team_games": 34,
+      "path": "teams/eisbaren_bremerhaven__54457df2300969b132fd0e57/",
+      "cumulative_box": "teams/eisbaren_bremerhaven__54457df2300969b132fd0e57/cumulative_box.json",
+      "cumulative_box_csv": "teams/eisbaren_bremerhaven__54457df2300969b132fd0e57/cumulative_box.csv",
+      "team_totals": "teams/eisbaren_bremerhaven__54457df2300969b132fd0e57/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/eisbaren_bremerhaven__54457df2300969b132fd0e57/team_totals.csv"
+    },
+    {
+      "key": "fraport_skyliners_frankfurt__54457df2300969b132fd0e3f",
+      "team": "Fraport Skyliners Frankfurt",
+      "source_team_id": "54457df2300969b132fd0e3f",
+      "source_team_games": 45,
+      "path": "teams/fraport_skyliners_frankfurt__54457df2300969b132fd0e3f/",
+      "cumulative_box": "teams/fraport_skyliners_frankfurt__54457df2300969b132fd0e3f/cumulative_box.json",
+      "cumulative_box_csv": "teams/fraport_skyliners_frankfurt__54457df2300969b132fd0e3f/cumulative_box.csv",
+      "team_totals": "teams/fraport_skyliners_frankfurt__54457df2300969b132fd0e3f/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/fraport_skyliners_frankfurt__54457df2300969b132fd0e3f/team_totals.csv"
+    },
+    {
+      "key": "giessen_46ers_1st_team__54457df1300969b132fd0df1",
+      "team": "Giessen 46ers (1st team)",
+      "source_team_id": "54457df1300969b132fd0df1",
+      "source_team_games": 38,
+      "path": "teams/giessen_46ers_1st_team__54457df1300969b132fd0df1/",
+      "cumulative_box": "teams/giessen_46ers_1st_team__54457df1300969b132fd0df1/cumulative_box.json",
+      "cumulative_box_csv": "teams/giessen_46ers_1st_team__54457df1300969b132fd0df1/cumulative_box.csv",
+      "team_totals": "teams/giessen_46ers_1st_team__54457df1300969b132fd0df1/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/giessen_46ers_1st_team__54457df1300969b132fd0df1/team_totals.csv"
+    },
+    {
+      "key": "gloria_giants_dusseldorf__54457df2300969b132fd0e58",
+      "team": "Gloria Giants Dusseldorf",
+      "source_team_id": "54457df2300969b132fd0e58",
+      "source_team_games": 34,
+      "path": "teams/gloria_giants_dusseldorf__54457df2300969b132fd0e58/",
+      "cumulative_box": "teams/gloria_giants_dusseldorf__54457df2300969b132fd0e58/cumulative_box.json",
+      "cumulative_box_csv": "teams/gloria_giants_dusseldorf__54457df2300969b132fd0e58/cumulative_box.csv",
+      "team_totals": "teams/gloria_giants_dusseldorf__54457df2300969b132fd0e58/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/gloria_giants_dusseldorf__54457df2300969b132fd0e58/team_totals.csv"
+    },
+    {
+      "key": "nurnberg_falcons_bc__5ad9dc67e182fd4d2fd7850f",
+      "team": "Nurnberg Falcons BC",
+      "source_team_id": "5ad9dc67e182fd4d2fd7850f",
+      "source_team_games": 34,
+      "path": "teams/nurnberg_falcons_bc__5ad9dc67e182fd4d2fd7850f/",
+      "cumulative_box": "teams/nurnberg_falcons_bc__5ad9dc67e182fd4d2fd7850f/cumulative_box.json",
+      "cumulative_box_csv": "teams/nurnberg_falcons_bc__5ad9dc67e182fd4d2fd7850f/cumulative_box.csv",
+      "team_totals": "teams/nurnberg_falcons_bc__5ad9dc67e182fd4d2fd7850f/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/nurnberg_falcons_bc__5ad9dc67e182fd4d2fd7850f/team_totals.csv"
+    },
+    {
+      "key": "ps_karlsruhe_lions__5c135c8885d07ba976d55dbe",
+      "team": "PS Karlsruhe Lions",
+      "source_team_id": "5c135c8885d07ba976d55dbe",
+      "source_team_games": 44,
+      "path": "teams/ps_karlsruhe_lions__5c135c8885d07ba976d55dbe/",
+      "cumulative_box": "teams/ps_karlsruhe_lions__5c135c8885d07ba976d55dbe/cumulative_box.json",
+      "cumulative_box_csv": "teams/ps_karlsruhe_lions__5c135c8885d07ba976d55dbe/cumulative_box.csv",
+      "team_totals": "teams/ps_karlsruhe_lions__5c135c8885d07ba976d55dbe/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/ps_karlsruhe_lions__5c135c8885d07ba976d55dbe/team_totals.csv"
+    },
+    {
+      "key": "phoenix_hagen__54457df2300969b132fd0e56",
+      "team": "Phoenix Hagen",
+      "source_team_id": "54457df2300969b132fd0e56",
+      "source_team_games": 43,
+      "path": "teams/phoenix_hagen__54457df2300969b132fd0e56/",
+      "cumulative_box": "teams/phoenix_hagen__54457df2300969b132fd0e56/cumulative_box.json",
+      "cumulative_box_csv": "teams/phoenix_hagen__54457df2300969b132fd0e56/cumulative_box.csv",
+      "team_totals": "teams/phoenix_hagen__54457df2300969b132fd0e56/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/phoenix_hagen__54457df2300969b132fd0e56/team_totals.csv"
+    },
+    {
+      "key": "rasta_vechta_ii__633ac95b6c11aef5f6788df8",
+      "team": "Rasta Vechta II",
+      "source_team_id": "633ac95b6c11aef5f6788df8",
+      "source_team_games": 34,
+      "path": "teams/rasta_vechta_ii__633ac95b6c11aef5f6788df8/",
+      "cumulative_box": "teams/rasta_vechta_ii__633ac95b6c11aef5f6788df8/cumulative_box.json",
+      "cumulative_box_csv": "teams/rasta_vechta_ii__633ac95b6c11aef5f6788df8/cumulative_box.csv",
+      "team_totals": "teams/rasta_vechta_ii__633ac95b6c11aef5f6788df8/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/rasta_vechta_ii__633ac95b6c11aef5f6788df8/team_totals.csv"
+    },
+    {
+      "key": "science_city_jena__57c1b19757620213988f5818",
+      "team": "Science City Jena",
+      "source_team_id": "57c1b19757620213988f5818",
+      "source_team_games": 38,
+      "path": "teams/science_city_jena__57c1b19757620213988f5818/",
+      "cumulative_box": "teams/science_city_jena__57c1b19757620213988f5818/cumulative_box.json",
+      "cumulative_box_csv": "teams/science_city_jena__57c1b19757620213988f5818/cumulative_box.csv",
+      "team_totals": "teams/science_city_jena__57c1b19757620213988f5818/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/science_city_jena__57c1b19757620213988f5818/team_totals.csv"
+    },
+    {
+      "key": "uni_baskets_munster__5c7ce87585d07ba976a3413d",
+      "team": "UNI Baskets Munster",
+      "source_team_id": "5c7ce87585d07ba976a3413d",
+      "source_team_games": 37,
+      "path": "teams/uni_baskets_munster__5c7ce87585d07ba976a3413d/",
+      "cumulative_box": "teams/uni_baskets_munster__5c7ce87585d07ba976a3413d/cumulative_box.json",
+      "cumulative_box_csv": "teams/uni_baskets_munster__5c7ce87585d07ba976a3413d/cumulative_box.csv",
+      "team_totals": "teams/uni_baskets_munster__5c7ce87585d07ba976a3413d/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/uni_baskets_munster__5c7ce87585d07ba976a3413d/team_totals.csv"
+    },
+    {
+      "key": "uni_baskets_paderborn__54457df2300969b132fd0e59",
+      "team": "Uni Baskets Paderborn",
+      "source_team_id": "54457df2300969b132fd0e59",
+      "source_team_games": 34,
+      "path": "teams/uni_baskets_paderborn__54457df2300969b132fd0e59/",
+      "cumulative_box": "teams/uni_baskets_paderborn__54457df2300969b132fd0e59/cumulative_box.json",
+      "cumulative_box_csv": "teams/uni_baskets_paderborn__54457df2300969b132fd0e59/cumulative_box.csv",
+      "team_totals": "teams/uni_baskets_paderborn__54457df2300969b132fd0e59/team_totals.json",
+      "source_coverage_notes": [
+        {
+          "type": "source_overview_cumulative_gp_difference",
+          "overview_gp": 33,
+          "cumulative_gp": 34,
+          "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+        }
+      ],
+      "reports": {},
+      "team_totals_csv": "teams/uni_baskets_paderborn__54457df2300969b132fd0e59/team_totals.csv",
+      "source_coverage": {
+        "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+      }
+    },
+    {
+      "key": "vet_concept_gladiators_trier__5a70fcbb816353c385b91c59",
+      "team": "VET-CONCEPT Gladiators Trier",
+      "source_team_id": "5a70fcbb816353c385b91c59",
+      "source_team_games": 42,
+      "path": "teams/vet_concept_gladiators_trier__5a70fcbb816353c385b91c59/",
+      "cumulative_box": "teams/vet_concept_gladiators_trier__5a70fcbb816353c385b91c59/cumulative_box.json",
+      "cumulative_box_csv": "teams/vet_concept_gladiators_trier__5a70fcbb816353c385b91c59/cumulative_box.csv",
+      "team_totals": "teams/vet_concept_gladiators_trier__5a70fcbb816353c385b91c59/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/vet_concept_gladiators_trier__5a70fcbb816353c385b91c59/team_totals.csv"
+    },
+    {
+      "key": "vfl_astrostars_bochum__57cbc25b5762021398c7e1d9",
+      "team": "VfL AstroStars Bochum",
+      "source_team_id": "57cbc25b5762021398c7e1d9",
+      "source_team_games": 34,
+      "path": "teams/vfl_astrostars_bochum__57cbc25b5762021398c7e1d9/",
+      "cumulative_box": "teams/vfl_astrostars_bochum__57cbc25b5762021398c7e1d9/cumulative_box.json",
+      "cumulative_box_csv": "teams/vfl_astrostars_bochum__57cbc25b5762021398c7e1d9/cumulative_box.csv",
+      "team_totals": "teams/vfl_astrostars_bochum__57cbc25b5762021398c7e1d9/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/vfl_astrostars_bochum__57cbc25b5762021398c7e1d9/team_totals.csv"
+    },
+    {
+      "key": "vfl_kirchheim_knights__5ad87dc7e182fd4d2f76331f",
+      "team": "VfL Kirchheim Knights",
+      "source_team_id": "5ad87dc7e182fd4d2f76331f",
+      "source_team_games": 39,
+      "path": "teams/vfl_kirchheim_knights__5ad87dc7e182fd4d2f76331f/",
+      "cumulative_box": "teams/vfl_kirchheim_knights__5ad87dc7e182fd4d2f76331f/cumulative_box.json",
+      "cumulative_box_csv": "teams/vfl_kirchheim_knights__5ad87dc7e182fd4d2f76331f/cumulative_box.csv",
+      "team_totals": "teams/vfl_kirchheim_knights__5ad87dc7e182fd4d2f76331f/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/vfl_kirchheim_knights__5ad87dc7e182fd4d2f76331f/team_totals.csv"
+    },
+    {
+      "key": "medi_bayreuth__54457df2300969b132fd0e8b",
+      "team": "medi Bayreuth",
+      "source_team_id": "54457df2300969b132fd0e8b",
+      "source_team_games": 34,
+      "path": "teams/medi_bayreuth__54457df2300969b132fd0e8b/",
+      "cumulative_box": "teams/medi_bayreuth__54457df2300969b132fd0e8b/cumulative_box.json",
+      "cumulative_box_csv": "teams/medi_bayreuth__54457df2300969b132fd0e8b/cumulative_box.csv",
+      "team_totals": "teams/medi_bayreuth__54457df2300969b132fd0e8b/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/medi_bayreuth__54457df2300969b132fd0e8b/team_totals.csv"
+    }
+  ],
+  "players": [],
+  "leaderboards": {},
+  "regular_season_view": "pending verified source phase filter",
+  "coverage_notes": [
+    "All source-discovered teams captured. Completeness versus official schedules has not been independently audited.",
+    {
+      "team": "Artland Dragons",
+      "type": "source_overview_cumulative_gp_difference",
+      "overview_gp": 33,
+      "cumulative_gp": 34,
+      "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+    },
+    {
+      "team": "Uni Baskets Paderborn",
+      "type": "source_overview_cumulative_gp_difference",
+      "overview_gp": 33,
+      "cumulative_gp": 34,
+      "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+    }
+  ],
+  "combined": {
+    "team_cumulative_box.json": "combined/team_cumulative_box.json",
+    "team_cumulative_box.csv": "combined/team_cumulative_box.csv"
+  },
+  "source_exclusions": []
+}

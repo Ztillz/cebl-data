@@ -1,0 +1,295 @@
+{
+  "version": 2,
+  "season": "2024-2025",
+  "league": "Spanish FEB Primera",
+  "league_id": "spanish_feb_primera",
+  "competition_name": "Spanish FEB Primera",
+  "source_competition_key": "54457dce300969b132fcfb3f:COMP:560100ac8dc7a24394b95613",
+  "game_scope": "all_stages",
+  "source_controls": "Accumulated Stats / All Games / All data",
+  "scope": "cumulative_box",
+  "generated_at_utc": "2026-10-20T19:11:30.182440+00:00",
+  "team_count": 18,
+  "player_count": 311,
+  "teams": [
+    {
+      "key": "alimerka_oviedo_baloncesto__54457df5300969b132fd0f98",
+      "team": "Alimerka Oviedo Baloncesto",
+      "source_team_id": "54457df5300969b132fd0f98",
+      "source_team_games": 34,
+      "path": "teams/alimerka_oviedo_baloncesto__54457df5300969b132fd0f98/",
+      "cumulative_box": "teams/alimerka_oviedo_baloncesto__54457df5300969b132fd0f98/cumulative_box.json",
+      "cumulative_box_csv": "teams/alimerka_oviedo_baloncesto__54457df5300969b132fd0f98/cumulative_box.csv",
+      "team_totals": "teams/alimerka_oviedo_baloncesto__54457df5300969b132fd0f98/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/alimerka_oviedo_baloncesto__54457df5300969b132fd0f98/team_totals.csv"
+    },
+    {
+      "key": "amics_castello__54457df4300969b132fd0f47",
+      "team": "Amics Castello",
+      "source_team_id": "54457df4300969b132fd0f47",
+      "source_team_games": 33,
+      "path": "teams/amics_castello__54457df4300969b132fd0f47/",
+      "cumulative_box": "teams/amics_castello__54457df4300969b132fd0f47/cumulative_box.json",
+      "cumulative_box_csv": "teams/amics_castello__54457df4300969b132fd0f47/cumulative_box.csv",
+      "team_totals": "teams/amics_castello__54457df4300969b132fd0f47/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/amics_castello__54457df4300969b132fd0f47/team_totals.csv"
+    },
+    {
+      "key": "caja_rural_cb_zamora__5e65f8187455336e87382736",
+      "team": "Caja Rural CB Zamora",
+      "source_team_id": "5e65f8187455336e87382736",
+      "source_team_games": 34,
+      "path": "teams/caja_rural_cb_zamora__5e65f8187455336e87382736/",
+      "cumulative_box": "teams/caja_rural_cb_zamora__5e65f8187455336e87382736/cumulative_box.json",
+      "cumulative_box_csv": "teams/caja_rural_cb_zamora__5e65f8187455336e87382736/cumulative_box.csv",
+      "team_totals": "teams/caja_rural_cb_zamora__5e65f8187455336e87382736/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/caja_rural_cb_zamora__5e65f8187455336e87382736/team_totals.csv"
+    },
+    {
+      "key": "club_ourense_baloncesto__54457df2300969b132fd0e7d",
+      "team": "Club Ourense Baloncesto",
+      "source_team_id": "54457df2300969b132fd0e7d",
+      "source_team_games": 33,
+      "path": "teams/club_ourense_baloncesto__54457df2300969b132fd0e7d/",
+      "cumulative_box": "teams/club_ourense_baloncesto__54457df2300969b132fd0e7d/cumulative_box.json",
+      "cumulative_box_csv": "teams/club_ourense_baloncesto__54457df2300969b132fd0e7d/cumulative_box.csv",
+      "team_totals": "teams/club_ourense_baloncesto__54457df2300969b132fd0e7d/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/club_ourense_baloncesto__54457df2300969b132fd0e7d/team_totals.csv"
+    },
+    {
+      "key": "coosur_real_betis__54457df0300969b132fd0dad",
+      "team": "Coosur Real Betis",
+      "source_team_id": "54457df0300969b132fd0dad",
+      "source_team_games": 41,
+      "path": "teams/coosur_real_betis__54457df0300969b132fd0dad/",
+      "cumulative_box": "teams/coosur_real_betis__54457df0300969b132fd0dad/cumulative_box.json",
+      "cumulative_box_csv": "teams/coosur_real_betis__54457df0300969b132fd0dad/cumulative_box.csv",
+      "team_totals": "teams/coosur_real_betis__54457df0300969b132fd0dad/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/coosur_real_betis__54457df0300969b132fd0dad/team_totals.csv"
+    },
+    {
+      "key": "grupo_alega_cantabria__5e65f9407455336e873f298a",
+      "team": "Grupo Alega Cantabria",
+      "source_team_id": "5e65f9407455336e873f298a",
+      "source_team_games": 34,
+      "path": "teams/grupo_alega_cantabria__5e65f9407455336e873f298a/",
+      "cumulative_box": "teams/grupo_alega_cantabria__5e65f9407455336e873f298a/cumulative_box.json",
+      "cumulative_box_csv": "teams/grupo_alega_cantabria__5e65f9407455336e873f298a/cumulative_box.csv",
+      "team_totals": "teams/grupo_alega_cantabria__5e65f9407455336e873f298a/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/grupo_alega_cantabria__5e65f9407455336e873f298a/team_totals.csv"
+    },
+    {
+      "key": "grupo_caesa_seg_cartagena_cb__6143bdce1a3a274a0ec643ad",
+      "team": "Grupo Caesa Seg. Cartagena CB",
+      "source_team_id": "6143bdce1a3a274a0ec643ad",
+      "source_team_games": 39,
+      "path": "teams/grupo_caesa_seg_cartagena_cb__6143bdce1a3a274a0ec643ad/",
+      "cumulative_box": "teams/grupo_caesa_seg_cartagena_cb__6143bdce1a3a274a0ec643ad/cumulative_box.json",
+      "cumulative_box_csv": "teams/grupo_caesa_seg_cartagena_cb__6143bdce1a3a274a0ec643ad/cumulative_box.csv",
+      "team_totals": "teams/grupo_caesa_seg_cartagena_cb__6143bdce1a3a274a0ec643ad/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/grupo_caesa_seg_cartagena_cb__6143bdce1a3a274a0ec643ad/team_totals.csv"
+    },
+    {
+      "key": "hla_alicante__54457df1300969b132fd0dda",
+      "team": "HLA Alicante",
+      "source_team_id": "54457df1300969b132fd0dda",
+      "source_team_games": 34,
+      "path": "teams/hla_alicante__54457df1300969b132fd0dda/",
+      "cumulative_box": "teams/hla_alicante__54457df1300969b132fd0dda/cumulative_box.json",
+      "cumulative_box_csv": "teams/hla_alicante__54457df1300969b132fd0dda/cumulative_box.csv",
+      "team_totals": "teams/hla_alicante__54457df1300969b132fd0dda/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/hla_alicante__54457df1300969b132fd0dda/team_totals.csv"
+    },
+    {
+      "key": "hestia_menorca_basquet__54457def300969b132fd0d48",
+      "team": "Hestia Menorca Basquet",
+      "source_team_id": "54457def300969b132fd0d48",
+      "source_team_games": 33,
+      "path": "teams/hestia_menorca_basquet__54457def300969b132fd0d48/",
+      "cumulative_box": "teams/hestia_menorca_basquet__54457def300969b132fd0d48/cumulative_box.json",
+      "cumulative_box_csv": "teams/hestia_menorca_basquet__54457def300969b132fd0d48/cumulative_box.csv",
+      "team_totals": "teams/hestia_menorca_basquet__54457def300969b132fd0d48/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/hestia_menorca_basquet__54457def300969b132fd0d48/team_totals.csv"
+    },
+    {
+      "key": "inveready_gipuzkoa__54457def300969b132fd0d77",
+      "team": "Inveready Gipuzkoa",
+      "source_team_id": "54457def300969b132fd0d77",
+      "source_team_games": 37,
+      "path": "teams/inveready_gipuzkoa__54457def300969b132fd0d77/",
+      "cumulative_box": "teams/inveready_gipuzkoa__54457def300969b132fd0d77/cumulative_box.json",
+      "cumulative_box_csv": "teams/inveready_gipuzkoa__54457def300969b132fd0d77/cumulative_box.csv",
+      "team_totals": "teams/inveready_gipuzkoa__54457def300969b132fd0d77/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/inveready_gipuzkoa__54457def300969b132fd0d77/team_totals.csv"
+    },
+    {
+      "key": "monbus_obradoiro__54457df1300969b132fd0e14",
+      "team": "Monbus Obradoiro",
+      "source_team_id": "54457df1300969b132fd0e14",
+      "source_team_games": 39,
+      "path": "teams/monbus_obradoiro__54457df1300969b132fd0e14/",
+      "cumulative_box": "teams/monbus_obradoiro__54457df1300969b132fd0e14/cumulative_box.json",
+      "cumulative_box_csv": "teams/monbus_obradoiro__54457df1300969b132fd0e14/cumulative_box.csv",
+      "team_totals": "teams/monbus_obradoiro__54457df1300969b132fd0e14/team_totals.json",
+      "source_coverage_notes": [
+        {
+          "type": "source_overview_cumulative_gp_difference",
+          "overview_gp": 38,
+          "cumulative_gp": 39,
+          "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+        }
+      ],
+      "reports": {},
+      "team_totals_csv": "teams/monbus_obradoiro__54457df1300969b132fd0e14/team_totals.csv",
+      "source_coverage": {
+        "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+      }
+    },
+    {
+      "key": "movistar_estudiantes__54457def300969b132fd0d6d",
+      "team": "Movistar Estudiantes",
+      "source_team_id": "54457def300969b132fd0d6d",
+      "source_team_games": 38,
+      "path": "teams/movistar_estudiantes__54457def300969b132fd0d6d/",
+      "cumulative_box": "teams/movistar_estudiantes__54457def300969b132fd0d6d/cumulative_box.json",
+      "cumulative_box_csv": "teams/movistar_estudiantes__54457def300969b132fd0d6d/cumulative_box.csv",
+      "team_totals": "teams/movistar_estudiantes__54457def300969b132fd0d6d/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/movistar_estudiantes__54457def300969b132fd0d6d/team_totals.csv"
+    },
+    {
+      "key": "partizan_de_fuenlabrada__54457df0300969b132fd0d94",
+      "team": "Partizan de Fuenlabrada",
+      "source_team_id": "54457df0300969b132fd0d94",
+      "source_team_games": 39,
+      "path": "teams/partizan_de_fuenlabrada__54457df0300969b132fd0d94/",
+      "cumulative_box": "teams/partizan_de_fuenlabrada__54457df0300969b132fd0d94/cumulative_box.json",
+      "cumulative_box_csv": "teams/partizan_de_fuenlabrada__54457df0300969b132fd0d94/cumulative_box.csv",
+      "team_totals": "teams/partizan_de_fuenlabrada__54457df0300969b132fd0d94/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/partizan_de_fuenlabrada__54457df0300969b132fd0d94/team_totals.csv"
+    },
+    {
+      "key": "san_pablo_burgos__54457df2300969b132fd0e7c",
+      "team": "San Pablo Burgos",
+      "source_team_id": "54457df2300969b132fd0e7c",
+      "source_team_games": 32,
+      "path": "teams/san_pablo_burgos__54457df2300969b132fd0e7c/",
+      "cumulative_box": "teams/san_pablo_burgos__54457df2300969b132fd0e7c/cumulative_box.json",
+      "cumulative_box_csv": "teams/san_pablo_burgos__54457df2300969b132fd0e7c/cumulative_box.csv",
+      "team_totals": "teams/san_pablo_burgos__54457df2300969b132fd0e7c/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/san_pablo_burgos__54457df2300969b132fd0e7c/team_totals.csv"
+    },
+    {
+      "key": "starlabs_moron__5f60023ee6c2413bc4c22428",
+      "team": "Starlabs Moron",
+      "source_team_id": "5f60023ee6c2413bc4c22428",
+      "source_team_games": 34,
+      "path": "teams/starlabs_moron__5f60023ee6c2413bc4c22428/",
+      "cumulative_box": "teams/starlabs_moron__5f60023ee6c2413bc4c22428/cumulative_box.json",
+      "cumulative_box_csv": "teams/starlabs_moron__5f60023ee6c2413bc4c22428/cumulative_box.csv",
+      "team_totals": "teams/starlabs_moron__5f60023ee6c2413bc4c22428/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/starlabs_moron__5f60023ee6c2413bc4c22428/team_totals.csv"
+    },
+    {
+      "key": "super_agropal_palencia__54457df2300969b132fd0e71",
+      "team": "Super Agropal Palencia",
+      "source_team_id": "54457df2300969b132fd0e71",
+      "source_team_games": 39,
+      "path": "teams/super_agropal_palencia__54457df2300969b132fd0e71/",
+      "cumulative_box": "teams/super_agropal_palencia__54457df2300969b132fd0e71/cumulative_box.json",
+      "cumulative_box_csv": "teams/super_agropal_palencia__54457df2300969b132fd0e71/cumulative_box.csv",
+      "team_totals": "teams/super_agropal_palencia__54457df2300969b132fd0e71/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/super_agropal_palencia__54457df2300969b132fd0e71/team_totals.csv"
+    },
+    {
+      "key": "tizona_burgos__5e65f9457455336e873f54f7",
+      "team": "Tizona Burgos",
+      "source_team_id": "5e65f9457455336e873f54f7",
+      "source_team_games": 35,
+      "path": "teams/tizona_burgos__5e65f9457455336e873f54f7/",
+      "cumulative_box": "teams/tizona_burgos__5e65f9457455336e873f54f7/cumulative_box.json",
+      "cumulative_box_csv": "teams/tizona_burgos__5e65f9457455336e873f54f7/cumulative_box.csv",
+      "team_totals": "teams/tizona_burgos__5e65f9457455336e873f54f7/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/tizona_burgos__5e65f9457455336e873f54f7/team_totals.csv"
+    },
+    {
+      "key": "uemc_valladolid__54457df0300969b132fd0d8f",
+      "team": "UEMC Valladolid",
+      "source_team_id": "54457df0300969b132fd0d8f",
+      "source_team_games": 34,
+      "path": "teams/uemc_valladolid__54457df0300969b132fd0d8f/",
+      "cumulative_box": "teams/uemc_valladolid__54457df0300969b132fd0d8f/cumulative_box.json",
+      "cumulative_box_csv": "teams/uemc_valladolid__54457df0300969b132fd0d8f/cumulative_box.csv",
+      "team_totals": "teams/uemc_valladolid__54457df0300969b132fd0d8f/team_totals.json",
+      "source_coverage_notes": [
+        {
+          "type": "source_overview_cumulative_gp_difference",
+          "overview_gp": 33,
+          "cumulative_gp": 34,
+          "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+        }
+      ],
+      "reports": {},
+      "team_totals_csv": "teams/uemc_valladolid__54457df0300969b132fd0d8f/team_totals.csv",
+      "source_coverage": {
+        "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+      }
+    }
+  ],
+  "players": [],
+  "leaderboards": {},
+  "regular_season_view": "pending verified source phase filter",
+  "coverage_notes": [
+    "All source-discovered teams captured. Completeness versus official schedules has not been independently audited.",
+    {
+      "team": "Monbus Obradoiro",
+      "type": "source_overview_cumulative_gp_difference",
+      "overview_gp": 38,
+      "cumulative_gp": 39,
+      "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+    },
+    {
+      "team": "UEMC Valladolid",
+      "type": "source_overview_cumulative_gp_difference",
+      "overview_gp": 33,
+      "cumulative_gp": 34,
+      "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+    }
+  ],
+  "combined": {
+    "team_cumulative_box.json": "combined/team_cumulative_box.json",
+    "team_cumulative_box.csv": "combined/team_cumulative_box.csv"
+  },
+  "source_exclusions": []
+}

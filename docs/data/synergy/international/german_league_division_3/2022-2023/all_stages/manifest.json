@@ -1,0 +1,478 @@
+{
+  "version": 2,
+  "season": "2022-2023",
+  "league": "German League Division 3",
+  "league_id": "german_league_division_3",
+  "competition_name": "German League Division 3",
+  "source_competition_key": "54457dce300969b132fcfb3f:COMP:5c136f4685d07ba976f53b06",
+  "game_scope": "all_stages",
+  "source_controls": "Accumulated Stats / All Games / All data",
+  "scope": "cumulative_box",
+  "generated_at_utc": "2026-10-20T20:15:31.281440+00:00",
+  "team_count": 26,
+  "player_count": 414,
+  "teams": [
+    {
+      "key": "arvato_college_wizards_karlsruhe_kit_sc_basketball__54457df4300969b132fd0f79",
+      "team": "Arvato College Wizards Karlsruhe KIT SC Basketball",
+      "source_team_id": "54457df4300969b132fd0f79",
+      "source_team_games": 24,
+      "path": "teams/arvato_college_wizards_karlsruhe_kit_sc_basketball__54457df4300969b132fd0f79/",
+      "cumulative_box": "teams/arvato_college_wizards_karlsruhe_kit_sc_basketball__54457df4300969b132fd0f79/cumulative_box.json",
+      "cumulative_box_csv": "teams/arvato_college_wizards_karlsruhe_kit_sc_basketball__54457df4300969b132fd0f79/cumulative_box.csv",
+      "team_totals": "teams/arvato_college_wizards_karlsruhe_kit_sc_basketball__54457df4300969b132fd0f79/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/arvato_college_wizards_karlsruhe_kit_sc_basketball__54457df4300969b132fd0f79/team_totals.csv"
+    },
+    {
+      "key": "bbc_coburg__5c136f4685d07ba976f53b9e",
+      "team": "BBC Coburg",
+      "source_team_id": "5c136f4685d07ba976f53b9e",
+      "source_team_games": 26,
+      "path": "teams/bbc_coburg__5c136f4685d07ba976f53b9e/",
+      "cumulative_box": "teams/bbc_coburg__5c136f4685d07ba976f53b9e/cumulative_box.json",
+      "cumulative_box_csv": "teams/bbc_coburg__5c136f4685d07ba976f53b9e/cumulative_box.csv",
+      "team_totals": "teams/bbc_coburg__5c136f4685d07ba976f53b9e/team_totals.json",
+      "source_coverage_notes": [
+        {
+          "type": "source_overview_cumulative_gp_difference",
+          "overview_gp": 25,
+          "cumulative_gp": 26,
+          "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+        }
+      ],
+      "reports": {},
+      "team_totals_csv": "teams/bbc_coburg__5c136f4685d07ba976f53b9e/team_totals.csv",
+      "source_coverage": {
+        "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+      }
+    },
+    {
+      "key": "bbg_herford__631e26fdf72456d383391963",
+      "team": "BBG Herford",
+      "source_team_id": "631e26fdf72456d383391963",
+      "source_team_games": 23,
+      "path": "teams/bbg_herford__631e26fdf72456d383391963/",
+      "cumulative_box": "teams/bbg_herford__631e26fdf72456d383391963/cumulative_box.json",
+      "cumulative_box_csv": "teams/bbg_herford__631e26fdf72456d383391963/cumulative_box.csv",
+      "team_totals": "teams/bbg_herford__631e26fdf72456d383391963/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/bbg_herford__631e26fdf72456d383391963/team_totals.csv"
+    },
+    {
+      "key": "bg_hessing_topstar_leitershofen_stadtbergen_kangaroos__631e2a35f72456d383391964",
+      "team": "BG Hessing Topstar Leitershofen Stadtbergen Kangaroos",
+      "source_team_id": "631e2a35f72456d383391964",
+      "source_team_games": 24,
+      "path": "teams/bg_hessing_topstar_leitershofen_stadtbergen_kangaroos__631e2a35f72456d383391964/",
+      "cumulative_box": "teams/bg_hessing_topstar_leitershofen_stadtbergen_kangaroos__631e2a35f72456d383391964/cumulative_box.json",
+      "cumulative_box_csv": "teams/bg_hessing_topstar_leitershofen_stadtbergen_kangaroos__631e2a35f72456d383391964/cumulative_box.csv",
+      "team_totals": "teams/bg_hessing_topstar_leitershofen_stadtbergen_kangaroos__631e2a35f72456d383391964/team_totals.json",
+      "source_coverage_notes": [
+        {
+          "type": "source_overview_cumulative_gp_difference",
+          "overview_gp": 23,
+          "cumulative_gp": 24,
+          "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+        }
+      ],
+      "reports": {},
+      "team_totals_csv": "teams/bg_hessing_topstar_leitershofen_stadtbergen_kangaroos__631e2a35f72456d383391964/team_totals.csv",
+      "source_coverage": {
+        "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+      }
+    },
+    {
+      "key": "bsw_sixers_sandersdorf__614973c5c24ff3bab6037939",
+      "team": "BSW Sixers Sandersdorf",
+      "source_team_id": "614973c5c24ff3bab6037939",
+      "source_team_games": 29,
+      "path": "teams/bsw_sixers_sandersdorf__614973c5c24ff3bab6037939/",
+      "cumulative_box": "teams/bsw_sixers_sandersdorf__614973c5c24ff3bab6037939/cumulative_box.json",
+      "cumulative_box_csv": "teams/bsw_sixers_sandersdorf__614973c5c24ff3bab6037939/cumulative_box.csv",
+      "team_totals": "teams/bsw_sixers_sandersdorf__614973c5c24ff3bab6037939/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/bsw_sixers_sandersdorf__614973c5c24ff3bab6037939/team_totals.csv"
+    },
+    {
+      "key": "basketball_lowen_prob__5c13600d85d07ba976dac9b4",
+      "team": "Basketball Lowen (PROB)",
+      "source_team_id": "5c13600d85d07ba976dac9b4",
+      "source_team_games": 29,
+      "path": "teams/basketball_lowen_prob__5c13600d85d07ba976dac9b4/",
+      "cumulative_box": "teams/basketball_lowen_prob__5c13600d85d07ba976dac9b4/cumulative_box.json",
+      "cumulative_box_csv": "teams/basketball_lowen_prob__5c13600d85d07ba976dac9b4/cumulative_box.csv",
+      "team_totals": "teams/basketball_lowen_prob__5c13600d85d07ba976dac9b4/team_totals.json",
+      "source_coverage_notes": [
+        {
+          "type": "source_overview_cumulative_gp_difference",
+          "overview_gp": 28,
+          "cumulative_gp": 29,
+          "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+        }
+      ],
+      "reports": {},
+      "team_totals_csv": "teams/basketball_lowen_prob__5c13600d85d07ba976dac9b4/team_totals.csv",
+      "source_coverage": {
+        "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+      }
+    },
+    {
+      "key": "epg_baskets_koblenz__61496bc2246c4bee44ef9b80",
+      "team": "EPG Baskets Koblenz",
+      "source_team_id": "61496bc2246c4bee44ef9b80",
+      "source_team_games": 33,
+      "path": "teams/epg_baskets_koblenz__61496bc2246c4bee44ef9b80/",
+      "cumulative_box": "teams/epg_baskets_koblenz__61496bc2246c4bee44ef9b80/cumulative_box.json",
+      "cumulative_box_csv": "teams/epg_baskets_koblenz__61496bc2246c4bee44ef9b80/cumulative_box.csv",
+      "team_totals": "teams/epg_baskets_koblenz__61496bc2246c4bee44ef9b80/team_totals.json",
+      "source_coverage_notes": [
+        {
+          "type": "source_overview_cumulative_gp_difference",
+          "overview_gp": 32,
+          "cumulative_gp": 33,
+          "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+        }
+      ],
+      "reports": {},
+      "team_totals_csv": "teams/epg_baskets_koblenz__61496bc2246c4bee44ef9b80/team_totals.csv",
+      "source_coverage": {
+        "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+      }
+    },
+    {
+      "key": "ebbecke_white_wings_hanau__57c67e2b57620213988f8ae2",
+      "team": "Ebbecke White Wings Hanau",
+      "source_team_id": "57c67e2b57620213988f8ae2",
+      "source_team_games": 24,
+      "path": "teams/ebbecke_white_wings_hanau__57c67e2b57620213988f8ae2/",
+      "cumulative_box": "teams/ebbecke_white_wings_hanau__57c67e2b57620213988f8ae2/cumulative_box.json",
+      "cumulative_box_csv": "teams/ebbecke_white_wings_hanau__57c67e2b57620213988f8ae2/cumulative_box.csv",
+      "team_totals": "teams/ebbecke_white_wings_hanau__57c67e2b57620213988f8ae2/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/ebbecke_white_wings_hanau__57c67e2b57620213988f8ae2/team_totals.csv"
+    },
+    {
+      "key": "en_baskets_schwelm__5c7ce99f85d07ba976a5929a",
+      "team": "En Baskets Schwelm",
+      "source_team_id": "5c7ce99f85d07ba976a5929a",
+      "source_team_games": 27,
+      "path": "teams/en_baskets_schwelm__5c7ce99f85d07ba976a5929a/",
+      "cumulative_box": "teams/en_baskets_schwelm__5c7ce99f85d07ba976a5929a/cumulative_box.json",
+      "cumulative_box_csv": "teams/en_baskets_schwelm__5c7ce99f85d07ba976a5929a/cumulative_box.csv",
+      "team_totals": "teams/en_baskets_schwelm__5c7ce99f85d07ba976a5929a/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/en_baskets_schwelm__5c7ce99f85d07ba976a5929a/team_totals.csv"
+    },
+    {
+      "key": "fc_bayern_munchen_ii__5c136f4685d07ba976f53b1f",
+      "team": "FC Bayern München II",
+      "source_team_id": "5c136f4685d07ba976f53b1f",
+      "source_team_games": 23,
+      "path": "teams/fc_bayern_munchen_ii__5c136f4685d07ba976f53b1f/",
+      "cumulative_box": "teams/fc_bayern_munchen_ii__5c136f4685d07ba976f53b1f/cumulative_box.json",
+      "cumulative_box_csv": "teams/fc_bayern_munchen_ii__5c136f4685d07ba976f53b1f/cumulative_box.csv",
+      "team_totals": "teams/fc_bayern_munchen_ii__5c136f4685d07ba976f53b1f/team_totals.json",
+      "source_coverage_notes": [
+        {
+          "type": "source_overview_cumulative_gp_difference",
+          "overview_gp": 22,
+          "cumulative_gp": 23,
+          "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+        }
+      ],
+      "reports": {},
+      "team_totals_csv": "teams/fc_bayern_munchen_ii__5c136f4685d07ba976f53b1f/team_totals.csv",
+      "source_coverage": {
+        "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+      }
+    },
+    {
+      "key": "fraport_skyliners_juniors__5c136f4685d07ba976f53b73",
+      "team": "Fraport Skyliners Juniors",
+      "source_team_id": "5c136f4685d07ba976f53b73",
+      "source_team_games": 29,
+      "path": "teams/fraport_skyliners_juniors__5c136f4685d07ba976f53b73/",
+      "cumulative_box": "teams/fraport_skyliners_juniors__5c136f4685d07ba976f53b73/cumulative_box.json",
+      "cumulative_box_csv": "teams/fraport_skyliners_juniors__5c136f4685d07ba976f53b73/cumulative_box.csv",
+      "team_totals": "teams/fraport_skyliners_juniors__5c136f4685d07ba976f53b73/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/fraport_skyliners_juniors__5c136f4685d07ba976f53b73/team_totals.csv"
+    },
+    {
+      "key": "iserlohn_kangaroos__5c7ce61b85d07ba9769f691b",
+      "team": "Iserlohn Kangaroos",
+      "source_team_id": "5c7ce61b85d07ba9769f691b",
+      "source_team_games": 24,
+      "path": "teams/iserlohn_kangaroos__5c7ce61b85d07ba9769f691b/",
+      "cumulative_box": "teams/iserlohn_kangaroos__5c7ce61b85d07ba9769f691b/cumulative_box.json",
+      "cumulative_box_csv": "teams/iserlohn_kangaroos__5c7ce61b85d07ba9769f691b/cumulative_box.csv",
+      "team_totals": "teams/iserlohn_kangaroos__5c7ce61b85d07ba9769f691b/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/iserlohn_kangaroos__5c7ce61b85d07ba9769f691b/team_totals.csv"
+    },
+    {
+      "key": "itzehoe_eagles__5c7ce9a285d07ba976a59843",
+      "team": "Itzehoe Eagles",
+      "source_team_id": "5c7ce9a285d07ba976a59843",
+      "source_team_games": 27,
+      "path": "teams/itzehoe_eagles__5c7ce9a285d07ba976a59843/",
+      "cumulative_box": "teams/itzehoe_eagles__5c7ce9a285d07ba976a59843/cumulative_box.json",
+      "cumulative_box_csv": "teams/itzehoe_eagles__5c7ce9a285d07ba976a59843/cumulative_box.csv",
+      "team_totals": "teams/itzehoe_eagles__5c7ce9a285d07ba976a59843/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/itzehoe_eagles__5c7ce9a285d07ba976a59843/team_totals.csv"
+    },
+    {
+      "key": "morgenstern_bis_baskets_speyer__5d876c377455336e8749e96b",
+      "team": "Morgenstern BIS Baskets Speyer",
+      "source_team_id": "5d876c377455336e8749e96b",
+      "source_team_games": 26,
+      "path": "teams/morgenstern_bis_baskets_speyer__5d876c377455336e8749e96b/",
+      "cumulative_box": "teams/morgenstern_bis_baskets_speyer__5d876c377455336e8749e96b/cumulative_box.json",
+      "cumulative_box_csv": "teams/morgenstern_bis_baskets_speyer__5d876c377455336e8749e96b/cumulative_box.csv",
+      "team_totals": "teams/morgenstern_bis_baskets_speyer__5d876c377455336e8749e96b/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/morgenstern_bis_baskets_speyer__5d876c377455336e8749e96b/team_totals.csv"
+    },
+    {
+      "key": "orangeacademy__5a7415c9053b872385f30d7b",
+      "team": "OrangeAcademy",
+      "source_team_id": "5a7415c9053b872385f30d7b",
+      "source_team_games": 24,
+      "path": "teams/orangeacademy__5a7415c9053b872385f30d7b/",
+      "cumulative_box": "teams/orangeacademy__5a7415c9053b872385f30d7b/cumulative_box.json",
+      "cumulative_box_csv": "teams/orangeacademy__5a7415c9053b872385f30d7b/cumulative_box.csv",
+      "team_totals": "teams/orangeacademy__5a7415c9053b872385f30d7b/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/orangeacademy__5a7415c9053b872385f30d7b/team_totals.csv"
+    },
+    {
+      "key": "porsche_bba_ludwigsburg__633be7dc1d1ad10f01f613c4",
+      "team": "Porsche BBA Ludwigsburg",
+      "source_team_id": "633be7dc1d1ad10f01f613c4",
+      "source_team_games": 24,
+      "path": "teams/porsche_bba_ludwigsburg__633be7dc1d1ad10f01f613c4/",
+      "cumulative_box": "teams/porsche_bba_ludwigsburg__633be7dc1d1ad10f01f613c4/cumulative_box.json",
+      "cumulative_box_csv": "teams/porsche_bba_ludwigsburg__633be7dc1d1ad10f01f613c4/cumulative_box.csv",
+      "team_totals": "teams/porsche_bba_ludwigsburg__633be7dc1d1ad10f01f613c4/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/porsche_bba_ludwigsburg__633be7dc1d1ad10f01f613c4/team_totals.csv"
+    },
+    {
+      "key": "roth_energie_giessen_pointers_don_t_use__631e2ee4f72456d383391965",
+      "team": "ROTH Energie Giessen Pointers (don't use)",
+      "source_team_id": "631e2ee4f72456d383391965",
+      "source_team_games": 23,
+      "path": "teams/roth_energie_giessen_pointers_don_t_use__631e2ee4f72456d383391965/",
+      "cumulative_box": "teams/roth_energie_giessen_pointers_don_t_use__631e2ee4f72456d383391965/cumulative_box.json",
+      "cumulative_box_csv": "teams/roth_energie_giessen_pointers_don_t_use__631e2ee4f72456d383391965/cumulative_box.csv",
+      "team_totals": "teams/roth_energie_giessen_pointers_don_t_use__631e2ee4f72456d383391965/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/roth_energie_giessen_pointers_don_t_use__631e2ee4f72456d383391965/team_totals.csv"
+    },
+    {
+      "key": "rasta_vechta_ii__633ac95b6c11aef5f6788df8",
+      "team": "Rasta Vechta II",
+      "source_team_id": "633ac95b6c11aef5f6788df8",
+      "source_team_games": 32,
+      "path": "teams/rasta_vechta_ii__633ac95b6c11aef5f6788df8/",
+      "cumulative_box": "teams/rasta_vechta_ii__633ac95b6c11aef5f6788df8/cumulative_box.json",
+      "cumulative_box_csv": "teams/rasta_vechta_ii__633ac95b6c11aef5f6788df8/cumulative_box.csv",
+      "team_totals": "teams/rasta_vechta_ii__633ac95b6c11aef5f6788df8/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/rasta_vechta_ii__633ac95b6c11aef5f6788df8/team_totals.csv"
+    },
+    {
+      "key": "rheinstars_koln__54457def300969b132fd0d5c",
+      "team": "RheinStars Koln",
+      "source_team_id": "54457def300969b132fd0d5c",
+      "source_team_games": 26,
+      "path": "teams/rheinstars_koln__54457def300969b132fd0d5c/",
+      "cumulative_box": "teams/rheinstars_koln__54457def300969b132fd0d5c/cumulative_box.json",
+      "cumulative_box_csv": "teams/rheinstars_koln__54457def300969b132fd0d5c/cumulative_box.csv",
+      "team_totals": "teams/rheinstars_koln__54457def300969b132fd0d5c/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/rheinstars_koln__54457def300969b132fd0d5c/team_totals.csv"
+    },
+    {
+      "key": "rhondorf_dragons__57cbc14e5762021398c7e1d6",
+      "team": "Rhondorf Dragons",
+      "source_team_id": "57cbc14e5762021398c7e1d6",
+      "source_team_games": 24,
+      "path": "teams/rhondorf_dragons__57cbc14e5762021398c7e1d6/",
+      "cumulative_box": "teams/rhondorf_dragons__57cbc14e5762021398c7e1d6/cumulative_box.json",
+      "cumulative_box_csv": "teams/rhondorf_dragons__57cbc14e5762021398c7e1d6/cumulative_box.csv",
+      "team_totals": "teams/rhondorf_dragons__57cbc14e5762021398c7e1d6/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/rhondorf_dragons__57cbc14e5762021398c7e1d6/team_totals.csv"
+    },
+    {
+      "key": "sbb_baskets_wolmirstedt__61497626246c4bee44ef9b81",
+      "team": "SBB Baskets Wolmirstedt",
+      "source_team_id": "61497626246c4bee44ef9b81",
+      "source_team_games": 31,
+      "path": "teams/sbb_baskets_wolmirstedt__61497626246c4bee44ef9b81/",
+      "cumulative_box": "teams/sbb_baskets_wolmirstedt__61497626246c4bee44ef9b81/cumulative_box.json",
+      "cumulative_box_csv": "teams/sbb_baskets_wolmirstedt__61497626246c4bee44ef9b81/cumulative_box.csv",
+      "team_totals": "teams/sbb_baskets_wolmirstedt__61497626246c4bee44ef9b81/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/sbb_baskets_wolmirstedt__61497626246c4bee44ef9b81/team_totals.csv"
+    },
+    {
+      "key": "sc_rist_wedel__5c7ce74985d07ba976a1790d",
+      "team": "SC Rist Wedel",
+      "source_team_id": "5c7ce74985d07ba976a1790d",
+      "source_team_games": 24,
+      "path": "teams/sc_rist_wedel__5c7ce74985d07ba976a1790d/",
+      "cumulative_box": "teams/sc_rist_wedel__5c7ce74985d07ba976a1790d/cumulative_box.json",
+      "cumulative_box_csv": "teams/sc_rist_wedel__5c7ce74985d07ba976a1790d/cumulative_box.csv",
+      "team_totals": "teams/sc_rist_wedel__5c7ce74985d07ba976a1790d/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/sc_rist_wedel__5c7ce74985d07ba976a1790d/team_totals.csv"
+    },
+    {
+      "key": "ssv_lokomotive_bernau__5c7ce87585d07ba976a3412f",
+      "team": "SSV Lokomotive Bernau",
+      "source_team_id": "5c7ce87585d07ba976a3412f",
+      "source_team_games": 28,
+      "path": "teams/ssv_lokomotive_bernau__5c7ce87585d07ba976a3412f/",
+      "cumulative_box": "teams/ssv_lokomotive_bernau__5c7ce87585d07ba976a3412f/cumulative_box.json",
+      "cumulative_box_csv": "teams/ssv_lokomotive_bernau__5c7ce87585d07ba976a3412f/cumulative_box.csv",
+      "team_totals": "teams/ssv_lokomotive_bernau__5c7ce87585d07ba976a3412f/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/ssv_lokomotive_bernau__5c7ce87585d07ba976a3412f/team_totals.csv"
+    },
+    {
+      "key": "tks_49ers_rsv_eintracht_stahnsdorf__614b7b389e3cfed40b2ecfce",
+      "team": "TKS 49ers RSV Eintracht Stahnsdorf",
+      "source_team_id": "614b7b389e3cfed40b2ecfce",
+      "source_team_games": 24,
+      "path": "teams/tks_49ers_rsv_eintracht_stahnsdorf__614b7b389e3cfed40b2ecfce/",
+      "cumulative_box": "teams/tks_49ers_rsv_eintracht_stahnsdorf__614b7b389e3cfed40b2ecfce/cumulative_box.json",
+      "cumulative_box_csv": "teams/tks_49ers_rsv_eintracht_stahnsdorf__614b7b389e3cfed40b2ecfce/cumulative_box.csv",
+      "team_totals": "teams/tks_49ers_rsv_eintracht_stahnsdorf__614b7b389e3cfed40b2ecfce/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/tks_49ers_rsv_eintracht_stahnsdorf__614b7b389e3cfed40b2ecfce/team_totals.csv"
+    },
+    {
+      "key": "tsv_oberhaching_tropics__5d876c377455336e8749e961",
+      "team": "TSV Oberhaching Tropics",
+      "source_team_id": "5d876c377455336e8749e961",
+      "source_team_games": 26,
+      "path": "teams/tsv_oberhaching_tropics__5d876c377455336e8749e961/",
+      "cumulative_box": "teams/tsv_oberhaching_tropics__5d876c377455336e8749e961/cumulative_box.json",
+      "cumulative_box_csv": "teams/tsv_oberhaching_tropics__5d876c377455336e8749e961/cumulative_box.csv",
+      "team_totals": "teams/tsv_oberhaching_tropics__5d876c377455336e8749e961/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/tsv_oberhaching_tropics__5d876c377455336e8749e961/team_totals.csv"
+    },
+    {
+      "key": "team_ehingen_urspring__5a71e9d02a2c8fb85585d80b",
+      "team": "Team Ehingen Urspring",
+      "source_team_id": "5a71e9d02a2c8fb85585d80b",
+      "source_team_games": 26,
+      "path": "teams/team_ehingen_urspring__5a71e9d02a2c8fb85585d80b/",
+      "cumulative_box": "teams/team_ehingen_urspring__5a71e9d02a2c8fb85585d80b/cumulative_box.json",
+      "cumulative_box_csv": "teams/team_ehingen_urspring__5a71e9d02a2c8fb85585d80b/cumulative_box.csv",
+      "team_totals": "teams/team_ehingen_urspring__5a71e9d02a2c8fb85585d80b/team_totals.json",
+      "source_coverage_notes": [
+        {
+          "type": "source_overview_cumulative_gp_difference",
+          "overview_gp": 25,
+          "cumulative_gp": 26,
+          "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+        }
+      ],
+      "reports": {},
+      "team_totals_csv": "teams/team_ehingen_urspring__5a71e9d02a2c8fb85585d80b/team_totals.csv",
+      "source_coverage": {
+        "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+      }
+    }
+  ],
+  "players": [],
+  "leaderboards": {},
+  "regular_season_view": "pending verified source phase filter",
+  "source_discovered_entry_count": 27,
+  "source_exclusions": [
+    {
+      "team": "Floater",
+      "source_team_id": "54457df4300969b132fd0f57",
+      "reason": "Live source switches the discovered entry to All competitions; no verified box for the requested league. Not an official-schedule completeness claim.",
+      "requested_url": "https://apps.synergysports.com/basketball/teams/54457df4300969b132fd0f57?seasonId=622609882b7aa6e7196c60fd&competitionKey=54457dce300969b132fcfb3f:COMP:5c136f4685d07ba976f53b06",
+      "rendered_url": "https://apps.synergysports.com/basketball/teams/54457df4300969b132fd0f57/overall?seasonId=622609882b7aa6e7196c60fd&competitionKey=54457dce300969b132fcfb3f:ALL",
+      "reviewed_at_utc": "2026-10-20T20:15:30.997783+00:00"
+    }
+  ],
+  "coverage_status": "complete_with_reviewed_source_exclusions",
+  "coverage_notes": [
+    "All accepted source-discovered teams captured; any reviewed exclusions are documented separately. Completeness versus official schedules has not been independently audited.",
+    {
+      "team": "BBC Coburg",
+      "type": "source_overview_cumulative_gp_difference",
+      "overview_gp": 25,
+      "cumulative_gp": 26,
+      "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+    },
+    {
+      "team": "BG Hessing Topstar Leitershofen Stadtbergen Kangaroos",
+      "type": "source_overview_cumulative_gp_difference",
+      "overview_gp": 23,
+      "cumulative_gp": 24,
+      "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+    },
+    {
+      "team": "Basketball Lowen (PROB)",
+      "type": "source_overview_cumulative_gp_difference",
+      "overview_gp": 28,
+      "cumulative_gp": 29,
+      "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+    },
+    {
+      "team": "EPG Baskets Koblenz",
+      "type": "source_overview_cumulative_gp_difference",
+      "overview_gp": 32,
+      "cumulative_gp": 33,
+      "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+    },
+    {
+      "team": "FC Bayern München II",
+      "type": "source_overview_cumulative_gp_difference",
+      "overview_gp": 22,
+      "cumulative_gp": 23,
+      "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+    },
+    {
+      "team": "Team Ehingen Urspring",
+      "type": "source_overview_cumulative_gp_difference",
+      "overview_gp": 25,
+      "cumulative_gp": 26,
+      "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+    }
+  ],
+  "combined": {
+    "team_cumulative_box.json": "combined/team_cumulative_box.json",
+    "team_cumulative_box.csv": "combined/team_cumulative_box.csv"
+  }
+}

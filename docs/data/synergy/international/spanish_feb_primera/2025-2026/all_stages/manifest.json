@@ -1,0 +1,282 @@
+{
+  "version": 2,
+  "season": "2025-2026",
+  "league": "Spanish FEB Primera",
+  "league_id": "spanish_feb_primera",
+  "competition_name": "Spanish FEB Primera",
+  "source_competition_key": "54457dce300969b132fcfb3f:COMP:560100ac8dc7a24394b95613",
+  "game_scope": "all_stages",
+  "source_controls": "Accumulated Stats / All Games / All data",
+  "scope": "cumulative_box",
+  "generated_at_utc": "2026-10-20T19:12:30.119857+00:00",
+  "team_count": 17,
+  "player_count": 279,
+  "teams": [
+    {
+      "key": "alimerka_oviedo_baloncesto__54457df5300969b132fd0f98",
+      "team": "Alimerka Oviedo Baloncesto",
+      "source_team_id": "54457df5300969b132fd0f98",
+      "source_team_games": 36,
+      "path": "teams/alimerka_oviedo_baloncesto__54457df5300969b132fd0f98/",
+      "cumulative_box": "teams/alimerka_oviedo_baloncesto__54457df5300969b132fd0f98/cumulative_box.json",
+      "cumulative_box_csv": "teams/alimerka_oviedo_baloncesto__54457df5300969b132fd0f98/cumulative_box.csv",
+      "team_totals": "teams/alimerka_oviedo_baloncesto__54457df5300969b132fd0f98/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/alimerka_oviedo_baloncesto__54457df5300969b132fd0f98/team_totals.csv"
+    },
+    {
+      "key": "caja_rural_cb_zamora__5e65f8187455336e87382736",
+      "team": "Caja Rural CB Zamora",
+      "source_team_id": "5e65f8187455336e87382736",
+      "source_team_games": 29,
+      "path": "teams/caja_rural_cb_zamora__5e65f8187455336e87382736/",
+      "cumulative_box": "teams/caja_rural_cb_zamora__5e65f8187455336e87382736/cumulative_box.json",
+      "cumulative_box_csv": "teams/caja_rural_cb_zamora__5e65f8187455336e87382736/cumulative_box.csv",
+      "team_totals": "teams/caja_rural_cb_zamora__5e65f8187455336e87382736/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/caja_rural_cb_zamora__5e65f8187455336e87382736/team_totals.csv"
+    },
+    {
+      "key": "club_melilla_baloncesto_ciudad_del_deporte__54457df1300969b132fd0ddb",
+      "team": "Club Melilla Baloncesto Ciudad del Deporte",
+      "source_team_id": "54457df1300969b132fd0ddb",
+      "source_team_games": 30,
+      "path": "teams/club_melilla_baloncesto_ciudad_del_deporte__54457df1300969b132fd0ddb/",
+      "cumulative_box": "teams/club_melilla_baloncesto_ciudad_del_deporte__54457df1300969b132fd0ddb/cumulative_box.json",
+      "cumulative_box_csv": "teams/club_melilla_baloncesto_ciudad_del_deporte__54457df1300969b132fd0ddb/cumulative_box.csv",
+      "team_totals": "teams/club_melilla_baloncesto_ciudad_del_deporte__54457df1300969b132fd0ddb/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/club_melilla_baloncesto_ciudad_del_deporte__54457df1300969b132fd0ddb/team_totals.csv"
+    },
+    {
+      "key": "club_ourense_baloncesto__54457df2300969b132fd0e7d",
+      "team": "Club Ourense Baloncesto",
+      "source_team_id": "54457df2300969b132fd0e7d",
+      "source_team_games": 27,
+      "path": "teams/club_ourense_baloncesto__54457df2300969b132fd0e7d/",
+      "cumulative_box": "teams/club_ourense_baloncesto__54457df2300969b132fd0e7d/cumulative_box.json",
+      "cumulative_box_csv": "teams/club_ourense_baloncesto__54457df2300969b132fd0e7d/cumulative_box.csv",
+      "team_totals": "teams/club_ourense_baloncesto__54457df2300969b132fd0e7d/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/club_ourense_baloncesto__54457df2300969b132fd0e7d/team_totals.csv"
+    },
+    {
+      "key": "fibwi_palma_de_mallorca__54457df2300969b132fd0e74",
+      "team": "Fibwi Palma de Mallorca",
+      "source_team_id": "54457df2300969b132fd0e74",
+      "source_team_games": 30,
+      "path": "teams/fibwi_palma_de_mallorca__54457df2300969b132fd0e74/",
+      "cumulative_box": "teams/fibwi_palma_de_mallorca__54457df2300969b132fd0e74/cumulative_box.json",
+      "cumulative_box_csv": "teams/fibwi_palma_de_mallorca__54457df2300969b132fd0e74/cumulative_box.csv",
+      "team_totals": "teams/fibwi_palma_de_mallorca__54457df2300969b132fd0e74/team_totals.json",
+      "source_coverage_notes": [
+        {
+          "type": "source_overview_cumulative_gp_difference",
+          "overview_gp": 29,
+          "cumulative_gp": 30,
+          "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+        }
+      ],
+      "reports": {},
+      "team_totals_csv": "teams/fibwi_palma_de_mallorca__54457df2300969b132fd0e74/team_totals.csv",
+      "source_coverage": {
+        "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+      }
+    },
+    {
+      "key": "grupo_alega_cantabria__5e65f9407455336e873f298a",
+      "team": "Grupo Alega Cantabria",
+      "source_team_id": "5e65f9407455336e873f298a",
+      "source_team_games": 31,
+      "path": "teams/grupo_alega_cantabria__5e65f9407455336e873f298a/",
+      "cumulative_box": "teams/grupo_alega_cantabria__5e65f9407455336e873f298a/cumulative_box.json",
+      "cumulative_box_csv": "teams/grupo_alega_cantabria__5e65f9407455336e873f298a/cumulative_box.csv",
+      "team_totals": "teams/grupo_alega_cantabria__5e65f9407455336e873f298a/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/grupo_alega_cantabria__5e65f9407455336e873f298a/team_totals.csv"
+    },
+    {
+      "key": "grupo_caesa_seg_cartagena_cb__6143bdce1a3a274a0ec643ad",
+      "team": "Grupo Caesa Seg. Cartagena CB",
+      "source_team_id": "6143bdce1a3a274a0ec643ad",
+      "source_team_games": 31,
+      "path": "teams/grupo_caesa_seg_cartagena_cb__6143bdce1a3a274a0ec643ad/",
+      "cumulative_box": "teams/grupo_caesa_seg_cartagena_cb__6143bdce1a3a274a0ec643ad/cumulative_box.json",
+      "cumulative_box_csv": "teams/grupo_caesa_seg_cartagena_cb__6143bdce1a3a274a0ec643ad/cumulative_box.csv",
+      "team_totals": "teams/grupo_caesa_seg_cartagena_cb__6143bdce1a3a274a0ec643ad/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/grupo_caesa_seg_cartagena_cb__6143bdce1a3a274a0ec643ad/team_totals.csv"
+    },
+    {
+      "key": "hla_alicante__54457df1300969b132fd0dda",
+      "team": "HLA Alicante",
+      "source_team_id": "54457df1300969b132fd0dda",
+      "source_team_games": 33,
+      "path": "teams/hla_alicante__54457df1300969b132fd0dda/",
+      "cumulative_box": "teams/hla_alicante__54457df1300969b132fd0dda/cumulative_box.json",
+      "cumulative_box_csv": "teams/hla_alicante__54457df1300969b132fd0dda/cumulative_box.csv",
+      "team_totals": "teams/hla_alicante__54457df1300969b132fd0dda/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/hla_alicante__54457df1300969b132fd0dda/team_totals.csv"
+    },
+    {
+      "key": "hestia_menorca_basquet__54457def300969b132fd0d48",
+      "team": "Hestia Menorca Basquet",
+      "source_team_id": "54457def300969b132fd0d48",
+      "source_team_games": 35,
+      "path": "teams/hestia_menorca_basquet__54457def300969b132fd0d48/",
+      "cumulative_box": "teams/hestia_menorca_basquet__54457def300969b132fd0d48/cumulative_box.json",
+      "cumulative_box_csv": "teams/hestia_menorca_basquet__54457def300969b132fd0d48/cumulative_box.csv",
+      "team_totals": "teams/hestia_menorca_basquet__54457def300969b132fd0d48/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/hestia_menorca_basquet__54457def300969b132fd0d48/team_totals.csv"
+    },
+    {
+      "key": "inveready_gipuzkoa__54457def300969b132fd0d77",
+      "team": "Inveready Gipuzkoa",
+      "source_team_id": "54457def300969b132fd0d77",
+      "source_team_games": 33,
+      "path": "teams/inveready_gipuzkoa__54457def300969b132fd0d77/",
+      "cumulative_box": "teams/inveready_gipuzkoa__54457def300969b132fd0d77/cumulative_box.json",
+      "cumulative_box_csv": "teams/inveready_gipuzkoa__54457def300969b132fd0d77/cumulative_box.csv",
+      "team_totals": "teams/inveready_gipuzkoa__54457def300969b132fd0d77/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/inveready_gipuzkoa__54457def300969b132fd0d77/team_totals.csv"
+    },
+    {
+      "key": "leyma_coruna__54457df3300969b132fd0f44",
+      "team": "Leyma Coruna",
+      "source_team_id": "54457df3300969b132fd0f44",
+      "source_team_games": 37,
+      "path": "teams/leyma_coruna__54457df3300969b132fd0f44/",
+      "cumulative_box": "teams/leyma_coruna__54457df3300969b132fd0f44/cumulative_box.json",
+      "cumulative_box_csv": "teams/leyma_coruna__54457df3300969b132fd0f44/cumulative_box.csv",
+      "team_totals": "teams/leyma_coruna__54457df3300969b132fd0f44/team_totals.json",
+      "source_coverage_notes": [
+        {
+          "type": "source_overview_cumulative_gp_difference",
+          "overview_gp": 36,
+          "cumulative_gp": 37,
+          "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+        }
+      ],
+      "reports": {},
+      "team_totals_csv": "teams/leyma_coruna__54457df3300969b132fd0f44/team_totals.csv",
+      "source_coverage": {
+        "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+      }
+    },
+    {
+      "key": "monbus_obradoiro__54457df1300969b132fd0e14",
+      "team": "Monbus Obradoiro",
+      "source_team_id": "54457df1300969b132fd0e14",
+      "source_team_games": 32,
+      "path": "teams/monbus_obradoiro__54457df1300969b132fd0e14/",
+      "cumulative_box": "teams/monbus_obradoiro__54457df1300969b132fd0e14/cumulative_box.json",
+      "cumulative_box_csv": "teams/monbus_obradoiro__54457df1300969b132fd0e14/cumulative_box.csv",
+      "team_totals": "teams/monbus_obradoiro__54457df1300969b132fd0e14/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/monbus_obradoiro__54457df1300969b132fd0e14/team_totals.csv"
+    },
+    {
+      "key": "movistar_estudiantes__54457def300969b132fd0d6d",
+      "team": "Movistar Estudiantes",
+      "source_team_id": "54457def300969b132fd0d6d",
+      "source_team_games": 37,
+      "path": "teams/movistar_estudiantes__54457def300969b132fd0d6d/",
+      "cumulative_box": "teams/movistar_estudiantes__54457def300969b132fd0d6d/cumulative_box.json",
+      "cumulative_box_csv": "teams/movistar_estudiantes__54457def300969b132fd0d6d/cumulative_box.csv",
+      "team_totals": "teams/movistar_estudiantes__54457def300969b132fd0d6d/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/movistar_estudiantes__54457def300969b132fd0d6d/team_totals.csv"
+    },
+    {
+      "key": "palmer_basket_mallorca_palma__54457df3300969b132fd0f02",
+      "team": "Palmer Basket Mallorca Palma",
+      "source_team_id": "54457df3300969b132fd0f02",
+      "source_team_games": 29,
+      "path": "teams/palmer_basket_mallorca_palma__54457df3300969b132fd0f02/",
+      "cumulative_box": "teams/palmer_basket_mallorca_palma__54457df3300969b132fd0f02/cumulative_box.json",
+      "cumulative_box_csv": "teams/palmer_basket_mallorca_palma__54457df3300969b132fd0f02/cumulative_box.csv",
+      "team_totals": "teams/palmer_basket_mallorca_palma__54457df3300969b132fd0f02/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/palmer_basket_mallorca_palma__54457df3300969b132fd0f02/team_totals.csv"
+    },
+    {
+      "key": "partizan_de_fuenlabrada__54457df0300969b132fd0d94",
+      "team": "Partizan de Fuenlabrada",
+      "source_team_id": "54457df0300969b132fd0d94",
+      "source_team_games": 35,
+      "path": "teams/partizan_de_fuenlabrada__54457df0300969b132fd0d94/",
+      "cumulative_box": "teams/partizan_de_fuenlabrada__54457df0300969b132fd0d94/cumulative_box.json",
+      "cumulative_box_csv": "teams/partizan_de_fuenlabrada__54457df0300969b132fd0d94/cumulative_box.csv",
+      "team_totals": "teams/partizan_de_fuenlabrada__54457df0300969b132fd0d94/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/partizan_de_fuenlabrada__54457df0300969b132fd0d94/team_totals.csv"
+    },
+    {
+      "key": "super_agropal_palencia__54457df2300969b132fd0e71",
+      "team": "Super Agropal Palencia",
+      "source_team_id": "54457df2300969b132fd0e71",
+      "source_team_games": 37,
+      "path": "teams/super_agropal_palencia__54457df2300969b132fd0e71/",
+      "cumulative_box": "teams/super_agropal_palencia__54457df2300969b132fd0e71/cumulative_box.json",
+      "cumulative_box_csv": "teams/super_agropal_palencia__54457df2300969b132fd0e71/cumulative_box.csv",
+      "team_totals": "teams/super_agropal_palencia__54457df2300969b132fd0e71/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/super_agropal_palencia__54457df2300969b132fd0e71/team_totals.csv"
+    },
+    {
+      "key": "tizona_burgos__5e65f9457455336e873f54f7",
+      "team": "Tizona Burgos",
+      "source_team_id": "5e65f9457455336e873f54f7",
+      "source_team_games": 30,
+      "path": "teams/tizona_burgos__5e65f9457455336e873f54f7/",
+      "cumulative_box": "teams/tizona_burgos__5e65f9457455336e873f54f7/cumulative_box.json",
+      "cumulative_box_csv": "teams/tizona_burgos__5e65f9457455336e873f54f7/cumulative_box.csv",
+      "team_totals": "teams/tizona_burgos__5e65f9457455336e873f54f7/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/tizona_burgos__5e65f9457455336e873f54f7/team_totals.csv"
+    }
+  ],
+  "players": [],
+  "leaderboards": {},
+  "regular_season_view": "pending verified source phase filter",
+  "coverage_notes": [
+    "All source-discovered teams captured. Completeness versus official schedules has not been independently audited.",
+    {
+      "team": "Fibwi Palma de Mallorca",
+      "type": "source_overview_cumulative_gp_difference",
+      "overview_gp": 29,
+      "cumulative_gp": 30,
+      "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+    },
+    {
+      "team": "Leyma Coruna",
+      "type": "source_overview_cumulative_gp_difference",
+      "overview_gp": 36,
+      "cumulative_gp": 37,
+      "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+    }
+  ],
+  "combined": {
+    "team_cumulative_box.json": "combined/team_cumulative_box.json",
+    "team_cumulative_box.csv": "combined/team_cumulative_box.csv"
+  },
+  "source_exclusions": []
+}

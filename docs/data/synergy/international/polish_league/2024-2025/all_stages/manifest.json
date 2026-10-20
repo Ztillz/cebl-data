@@ -1,0 +1,269 @@
+{
+  "version": 2,
+  "season": "2024-2025",
+  "league": "Polish League",
+  "league_id": "polish_league",
+  "competition_name": "Polish League",
+  "source_competition_key": "54457dce300969b132fcfb3f:COMP:560100ac8dc7a24394b95630",
+  "game_scope": "all_stages",
+  "source_controls": "Accumulated Stats / All Games / All data",
+  "scope": "cumulative_box",
+  "generated_at_utc": "2026-10-20T18:38:37.265060+00:00",
+  "team_count": 16,
+  "player_count": 281,
+  "teams": [
+    {
+      "key": "amw_arka_gdynia__54457def300969b132fd0d5b",
+      "team": "AMW Arka Gdynia",
+      "source_team_id": "54457def300969b132fd0d5b",
+      "source_team_games": 30,
+      "path": "teams/amw_arka_gdynia__54457def300969b132fd0d5b/",
+      "cumulative_box": "teams/amw_arka_gdynia__54457def300969b132fd0d5b/cumulative_box.json",
+      "cumulative_box_csv": "teams/amw_arka_gdynia__54457def300969b132fd0d5b/cumulative_box.csv",
+      "team_totals": "teams/amw_arka_gdynia__54457def300969b132fd0d5b/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/amw_arka_gdynia__54457def300969b132fd0d5b/team_totals.csv"
+    },
+    {
+      "key": "anwil_wloclawek__54457df1300969b132fd0de4",
+      "team": "Anwil Wloclawek",
+      "source_team_id": "54457df1300969b132fd0de4",
+      "source_team_games": 39,
+      "path": "teams/anwil_wloclawek__54457df1300969b132fd0de4/",
+      "cumulative_box": "teams/anwil_wloclawek__54457df1300969b132fd0de4/cumulative_box.json",
+      "cumulative_box_csv": "teams/anwil_wloclawek__54457df1300969b132fd0de4/cumulative_box.csv",
+      "team_totals": "teams/anwil_wloclawek__54457df1300969b132fd0de4/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/anwil_wloclawek__54457df1300969b132fd0de4/team_totals.csv"
+    },
+    {
+      "key": "arriva_lotto_twarde_pierniki_torun__54457df5300969b132fd0fd0",
+      "team": "Arriva Lotto Twarde Pierniki Torun",
+      "source_team_id": "54457df5300969b132fd0fd0",
+      "source_team_games": 36,
+      "path": "teams/arriva_lotto_twarde_pierniki_torun__54457df5300969b132fd0fd0/",
+      "cumulative_box": "teams/arriva_lotto_twarde_pierniki_torun__54457df5300969b132fd0fd0/cumulative_box.json",
+      "cumulative_box_csv": "teams/arriva_lotto_twarde_pierniki_torun__54457df5300969b132fd0fd0/cumulative_box.csv",
+      "team_totals": "teams/arriva_lotto_twarde_pierniki_torun__54457df5300969b132fd0fd0/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/arriva_lotto_twarde_pierniki_torun__54457df5300969b132fd0fd0/team_totals.csv"
+    },
+    {
+      "key": "dziki_warszawa__64fea0f483640b7a31047978",
+      "team": "Dziki Warszawa",
+      "source_team_id": "64fea0f483640b7a31047978",
+      "source_team_games": 31,
+      "path": "teams/dziki_warszawa__64fea0f483640b7a31047978/",
+      "cumulative_box": "teams/dziki_warszawa__64fea0f483640b7a31047978/cumulative_box.json",
+      "cumulative_box_csv": "teams/dziki_warszawa__64fea0f483640b7a31047978/cumulative_box.csv",
+      "team_totals": "teams/dziki_warszawa__64fea0f483640b7a31047978/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/dziki_warszawa__64fea0f483640b7a31047978/team_totals.csv"
+    },
+    {
+      "key": "energa_czarni_slupsk__54457df1300969b132fd0e02",
+      "team": "Energa Czarni Slupsk",
+      "source_team_id": "54457df1300969b132fd0e02",
+      "source_team_games": 34,
+      "path": "teams/energa_czarni_slupsk__54457df1300969b132fd0e02/",
+      "cumulative_box": "teams/energa_czarni_slupsk__54457df1300969b132fd0e02/cumulative_box.json",
+      "cumulative_box_csv": "teams/energa_czarni_slupsk__54457df1300969b132fd0e02/cumulative_box.csv",
+      "team_totals": "teams/energa_czarni_slupsk__54457df1300969b132fd0e02/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/energa_czarni_slupsk__54457df1300969b132fd0e02/team_totals.csv"
+    },
+    {
+      "key": "energa_trefl_sopot__54457df2300969b132fd0e2d",
+      "team": "Energa Trefl Sopot",
+      "source_team_id": "54457df2300969b132fd0e2d",
+      "source_team_games": 41,
+      "path": "teams/energa_trefl_sopot__54457df2300969b132fd0e2d/",
+      "cumulative_box": "teams/energa_trefl_sopot__54457df2300969b132fd0e2d/cumulative_box.json",
+      "cumulative_box_csv": "teams/energa_trefl_sopot__54457df2300969b132fd0e2d/cumulative_box.csv",
+      "team_totals": "teams/energa_trefl_sopot__54457df2300969b132fd0e2d/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/energa_trefl_sopot__54457df2300969b132fd0e2d/team_totals.csv"
+    },
+    {
+      "key": "gornik_walbrzych__6686db67f56878d517da2c9d",
+      "team": "Gornik Walbrzych",
+      "source_team_id": "6686db67f56878d517da2c9d",
+      "source_team_games": 34,
+      "path": "teams/gornik_walbrzych__6686db67f56878d517da2c9d/",
+      "cumulative_box": "teams/gornik_walbrzych__6686db67f56878d517da2c9d/cumulative_box.json",
+      "cumulative_box_csv": "teams/gornik_walbrzych__6686db67f56878d517da2c9d/cumulative_box.csv",
+      "team_totals": "teams/gornik_walbrzych__6686db67f56878d517da2c9d/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/gornik_walbrzych__6686db67f56878d517da2c9d/team_totals.csv"
+    },
+    {
+      "key": "king_wilki_morskie_szczecin__54457df5300969b132fd0fd2",
+      "team": "King Wilki Morskie Szczecin",
+      "source_team_id": "54457df5300969b132fd0fd2",
+      "source_team_games": 34,
+      "path": "teams/king_wilki_morskie_szczecin__54457df5300969b132fd0fd2/",
+      "cumulative_box": "teams/king_wilki_morskie_szczecin__54457df5300969b132fd0fd2/cumulative_box.json",
+      "cumulative_box_csv": "teams/king_wilki_morskie_szczecin__54457df5300969b132fd0fd2/cumulative_box.csv",
+      "team_totals": "teams/king_wilki_morskie_szczecin__54457df5300969b132fd0fd2/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/king_wilki_morskie_szczecin__54457df5300969b132fd0fd2/team_totals.csv"
+    },
+    {
+      "key": "legia_warszawa__59e6128544b2b8aa7e89c9c2",
+      "team": "Legia Warszawa",
+      "source_team_id": "59e6128544b2b8aa7e89c9c2",
+      "source_team_games": 44,
+      "path": "teams/legia_warszawa__59e6128544b2b8aa7e89c9c2/",
+      "cumulative_box": "teams/legia_warszawa__59e6128544b2b8aa7e89c9c2/cumulative_box.json",
+      "cumulative_box_csv": "teams/legia_warszawa__59e6128544b2b8aa7e89c9c2/cumulative_box.csv",
+      "team_totals": "teams/legia_warszawa__59e6128544b2b8aa7e89c9c2/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/legia_warszawa__59e6128544b2b8aa7e89c9c2/team_totals.csv"
+    },
+    {
+      "key": "mks_dabrowa_gornicza__54457df5300969b132fd0fce",
+      "team": "MKS Dabrowa Gornicza",
+      "source_team_id": "54457df5300969b132fd0fce",
+      "source_team_games": 29,
+      "path": "teams/mks_dabrowa_gornicza__54457df5300969b132fd0fce/",
+      "cumulative_box": "teams/mks_dabrowa_gornicza__54457df5300969b132fd0fce/cumulative_box.json",
+      "cumulative_box_csv": "teams/mks_dabrowa_gornicza__54457df5300969b132fd0fce/cumulative_box.csv",
+      "team_totals": "teams/mks_dabrowa_gornicza__54457df5300969b132fd0fce/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/mks_dabrowa_gornicza__54457df5300969b132fd0fce/team_totals.csv"
+    },
+    {
+      "key": "pge_start_lublin__54457df5300969b132fd0fd1",
+      "team": "PGE Start Lublin",
+      "source_team_id": "54457df5300969b132fd0fd1",
+      "source_team_games": 46,
+      "path": "teams/pge_start_lublin__54457df5300969b132fd0fd1/",
+      "cumulative_box": "teams/pge_start_lublin__54457df5300969b132fd0fd1/cumulative_box.json",
+      "cumulative_box_csv": "teams/pge_start_lublin__54457df5300969b132fd0fd1/cumulative_box.csv",
+      "team_totals": "teams/pge_start_lublin__54457df5300969b132fd0fd1/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/pge_start_lublin__54457df5300969b132fd0fd1/team_totals.csv"
+    },
+    {
+      "key": "spojnia_stargard__5b90bf6daeda71993984f989",
+      "team": "Spojnia Stargard",
+      "source_team_id": "5b90bf6daeda71993984f989",
+      "source_team_games": 29,
+      "path": "teams/spojnia_stargard__5b90bf6daeda71993984f989/",
+      "cumulative_box": "teams/spojnia_stargard__5b90bf6daeda71993984f989/cumulative_box.json",
+      "cumulative_box_csv": "teams/spojnia_stargard__5b90bf6daeda71993984f989/cumulative_box.csv",
+      "team_totals": "teams/spojnia_stargard__5b90bf6daeda71993984f989/team_totals.json",
+      "source_coverage_notes": [
+        {
+          "type": "source_overview_cumulative_gp_difference",
+          "overview_gp": 28,
+          "cumulative_gp": 29,
+          "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+        }
+      ],
+      "reports": {},
+      "team_totals_csv": "teams/spojnia_stargard__5b90bf6daeda71993984f989/team_totals.csv",
+      "source_coverage": {
+        "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+      }
+    },
+    {
+      "key": "tasomix_rosiek_stal_ostrow_wielkopolski__55f8945b1e31501db4445b0d",
+      "team": "Tasomix Rosiek Stal Ostrow Wielkopolski",
+      "source_team_id": "55f8945b1e31501db4445b0d",
+      "source_team_games": 30,
+      "path": "teams/tasomix_rosiek_stal_ostrow_wielkopolski__55f8945b1e31501db4445b0d/",
+      "cumulative_box": "teams/tasomix_rosiek_stal_ostrow_wielkopolski__55f8945b1e31501db4445b0d/cumulative_box.json",
+      "cumulative_box_csv": "teams/tasomix_rosiek_stal_ostrow_wielkopolski__55f8945b1e31501db4445b0d/cumulative_box.csv",
+      "team_totals": "teams/tasomix_rosiek_stal_ostrow_wielkopolski__55f8945b1e31501db4445b0d/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/tasomix_rosiek_stal_ostrow_wielkopolski__55f8945b1e31501db4445b0d/team_totals.csv"
+    },
+    {
+      "key": "tauron_gtk_gliwice__59e6128544b2b8aa7e89c9bf",
+      "team": "Tauron GTK Gliwice",
+      "source_team_id": "59e6128544b2b8aa7e89c9bf",
+      "source_team_games": 30,
+      "path": "teams/tauron_gtk_gliwice__59e6128544b2b8aa7e89c9bf/",
+      "cumulative_box": "teams/tauron_gtk_gliwice__59e6128544b2b8aa7e89c9bf/cumulative_box.json",
+      "cumulative_box_csv": "teams/tauron_gtk_gliwice__59e6128544b2b8aa7e89c9bf/cumulative_box.csv",
+      "team_totals": "teams/tauron_gtk_gliwice__59e6128544b2b8aa7e89c9bf/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/tauron_gtk_gliwice__59e6128544b2b8aa7e89c9bf/team_totals.csv"
+    },
+    {
+      "key": "wks_slask_wroclaw__54457df0300969b132fd0dcc",
+      "team": "WKS Slask Wroclaw",
+      "source_team_id": "54457df0300969b132fd0dcc",
+      "source_team_games": 32,
+      "path": "teams/wks_slask_wroclaw__54457df0300969b132fd0dcc/",
+      "cumulative_box": "teams/wks_slask_wroclaw__54457df0300969b132fd0dcc/cumulative_box.json",
+      "cumulative_box_csv": "teams/wks_slask_wroclaw__54457df0300969b132fd0dcc/cumulative_box.csv",
+      "team_totals": "teams/wks_slask_wroclaw__54457df0300969b132fd0dcc/team_totals.json",
+      "source_coverage_notes": [
+        {
+          "type": "source_overview_cumulative_gp_difference",
+          "overview_gp": 31,
+          "cumulative_gp": 32,
+          "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+        }
+      ],
+      "reports": {},
+      "team_totals_csv": "teams/wks_slask_wroclaw__54457df0300969b132fd0dcc/team_totals.csv",
+      "source_coverage": {
+        "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+      }
+    },
+    {
+      "key": "zastal_bc_zielona_gora__54457df3300969b132fd0f0d",
+      "team": "Zastal BC Zielona Gora",
+      "source_team_id": "54457df3300969b132fd0f0d",
+      "source_team_games": 29,
+      "path": "teams/zastal_bc_zielona_gora__54457df3300969b132fd0f0d/",
+      "cumulative_box": "teams/zastal_bc_zielona_gora__54457df3300969b132fd0f0d/cumulative_box.json",
+      "cumulative_box_csv": "teams/zastal_bc_zielona_gora__54457df3300969b132fd0f0d/cumulative_box.csv",
+      "team_totals": "teams/zastal_bc_zielona_gora__54457df3300969b132fd0f0d/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {},
+      "team_totals_csv": "teams/zastal_bc_zielona_gora__54457df3300969b132fd0f0d/team_totals.csv"
+    }
+  ],
+  "players": [],
+  "leaderboards": {},
+  "regular_season_view": "pending verified source phase filter",
+  "coverage_notes": [
+    "All source-discovered teams captured. Completeness versus official schedules has not been independently audited.",
+    {
+      "team": "Spojnia Stargard",
+      "type": "source_overview_cumulative_gp_difference",
+      "overview_gp": 28,
+      "cumulative_gp": 29,
+      "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+    },
+    {
+      "team": "WKS Slask Wroclaw",
+      "type": "source_overview_cumulative_gp_difference",
+      "overview_gp": 31,
+      "cumulative_gp": 32,
+      "message": "Source overview and cumulative footer disagree. Player rows and cumulative footer are retained as displayed; no statistics were added or removed."
+    }
+  ],
+  "combined": {
+    "team_cumulative_box.json": "combined/team_cumulative_box.json",
+    "team_cumulative_box.csv": "combined/team_cumulative_box.csv"
+  },
+  "source_exclusions": []
+}
