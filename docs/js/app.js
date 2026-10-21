@@ -3,6 +3,8 @@ let datasetCatalog = null;
 let selectedLeague = null;
 let SELECTED_SEASON = null;
 let DATA_ROOT = null;
+let selectedSeasonDatasets = [];
+let multiSeasonRows = null;
 
 let manifest = null;
 
@@ -63,7 +65,9 @@ let advancedLeaderboardState = {
 
 const seasonLabel = document.getElementById("seasonLabel");
 const dataStatus = document.getElementById("dataStatus");
-const seasonSelect = document.getElementById("seasonSelect");
+const seasonOptions = document.getElementById("seasonOptions");
+const seasonSummary = document.getElementById("seasonSummary");
+const applySeasons = document.getElementById("applySeasons");
 const seasonCoverage = document.getElementById("seasonCoverage");
 const leagueSelect = document.getElementById("leagueSelect");
 
@@ -72,22 +76,57 @@ leagueSelect.addEventListener("change", () => {
     if (!league) return;
     const url = new URL(window.location.href);
     url.searchParams.set("league", league.id);
-    url.searchParams.set("season", league.seasons[0].id);
+    url.searchParams.delete("seasons");
+    if (selectedSeasonDatasets.length > 1) {
+        url.searchParams.delete("season");
+        url.searchParams.set("seasons", league.seasons.map(season => season.id).join(","));
+    } else url.searchParams.set("season", league.seasons[0].id);
     url.searchParams.delete("team");
     const view = document.querySelector(".view-tab.active")?.dataset.view;
     if (view) url.searchParams.set("view", view);
     window.location.assign(url);
 });
 
-seasonSelect.addEventListener("change", () => {
+applySeasons.addEventListener("click", () => {
+    const selected = [...seasonOptions.querySelectorAll("input:checked")].map(input => input.value);
+    if (!selected.length) return;
     const url = new URL(window.location.href);
     url.searchParams.set("league", selectedLeague.id);
-    url.searchParams.set("season", seasonSelect.value);
+    url.searchParams.delete("season");
+    url.searchParams.delete("seasons");
+    url.searchParams.set(selected.length === 1 ? "season" : "seasons", selected.join(","));
     const view = document.querySelector(".view-tab.active")?.dataset.view;
     if (view) url.searchParams.set("view", view);
     if (teamSelect.value) url.searchParams.set("team", teamSelect.value);
     else url.searchParams.delete("team");
     window.location.assign(url);
+});
+seasonOptions.addEventListener("change", () => {
+    applySeasons.disabled = !seasonOptions.querySelector("input:checked");
+});
+document.getElementById("selectAllSeasons").addEventListener("click", () => {
+    seasonOptions.querySelectorAll("input").forEach(input => { input.checked = true; });
+    applySeasons.disabled = false;
+});
+document.addEventListener("click", event => {
+    const picker = document.getElementById("seasonPicker");
+    if (!picker.contains(event.target)) picker.open = false;
+});
+document.getElementById("seasonPicker").addEventListener("keydown", event => {
+    if (event.key === "Escape") {
+        document.getElementById("seasonPicker").open = false;
+        seasonSummary.focus();
+    }
+});
+document.getElementById("seasonPicker").addEventListener("toggle", event => {
+    if (!event.target.open) return;
+    const panel = event.target.querySelector(".season-panel");
+    panel.style.left = "auto";
+    panel.style.right = "0";
+    if (panel.getBoundingClientRect().left < 12) {
+        panel.style.left = "0";
+        panel.style.right = "auto";
+    }
 });
 
 const playersView = document.getElementById("playersView");
@@ -222,9 +261,9 @@ async function initialize() {
         selectedLeague = datasetCatalog.leagues.find(item => item.id === pageParams.get("league"))
             || datasetCatalog.leagues.find(item => item.id === datasetCatalog.default_league)
             || datasetCatalog.leagues[0];
-        const dataset = selectedLeague.seasons.find(item => item.id === pageParams.get("season"))
-            || selectedLeague.seasons[0];
-        SELECTED_SEASON = dataset.id;
+        selectedSeasonDatasets = requestedSeasonDatasets(selectedLeague, pageParams);
+        const dataset = selectedSeasonDatasets[0];
+        SELECTED_SEASON = selectedSeasonDatasets.map(season => season.id).join("_");
         DATA_ROOT = `data/synergy/${dataset.path}`;
         const leagueGroups = new Map();
         for (const league of datasetCatalog.leagues) {
@@ -238,13 +277,29 @@ async function initialize() {
         }
         leagueSelect.replaceChildren(...leagueGroups.values());
         leagueSelect.value = selectedLeague.id;
-        seasonSelect.replaceChildren(...selectedLeague.seasons.map(season => new Option(season.label, season.id)));
-        seasonSelect.value = SELECTED_SEASON;
+        seasonOptions.replaceChildren(...selectedLeague.seasons.map(season => {
+            const label = document.createElement("label");
+            const input = document.createElement("input");
+            input.type = "checkbox";
+            input.value = season.id;
+            input.checked = selectedSeasonDatasets.some(item => item.id === season.id);
+            label.append(input, document.createTextNode(season.label));
+            return label;
+        }));
+        seasonSummary.textContent = selectedSeasonDatasets.length === 1 ? dataset.label
+            : `${selectedSeasonDatasets.length} seasons${selectedSeasonDatasets.length === selectedLeague.seasons.length ? " (all)" : ""}`;
         leagueSelect.disabled = false;
-        seasonSelect.disabled = false;
+        applySeasons.disabled = false;
         document.getElementById("leagueLabel").textContent = `${selectedLeague.label} DATA`;
         document.title = `${selectedLeague.label} Synergy Browser`;
-        manifest = await fetchJson(`${DATA_ROOT}/manifest.json`);
+        const sources = await Promise.all(selectedSeasonDatasets.map(season => fetchJson(`data/synergy/${season.path}/manifest.json`)));
+        if (selectedSeasonDatasets.length > 1) {
+            const rows = await Promise.all(sources.map((source, index) => fetchJson(
+                `data/synergy/${selectedSeasonDatasets[index].path}/${source.combined["team_cumulative_box.json"]}`)));
+            const combined = combineSeasonBoxes(selectedSeasonDatasets, sources, rows);
+            manifest = combined.manifest;
+            multiSeasonRows = combined.rowsByTeam;
+        } else manifest = sources[0];
 
         seasonLabel.textContent =
             `${manifest.season} • ${selectedLeague.label}${manifest.game_scope === "regular_season" ? " • Regular season" : manifest.game_scope === "all_stages" ? " • All stages" : ""}`;
@@ -267,6 +322,7 @@ async function initialize() {
         seasonCoverage.textContent = limitedSeason
             ? `${manifest.game_scope === "regular_season" ? "Regular season cumulative" : manifest.game_scope === "all_stages" ? "Cumulative (all stages)" : "Cumulative"} box reports are available. Play Types and Shot Types are not available for this league and season.`
             : "";
+        if (multiSeasonRows) seasonCoverage.textContent = "Comparing selected seasons: each player’s team-season stays on its own row; statistics are not added across years. Select one season to browse its other available reports.";
         const teamsWithNotes = manifest.teams.filter(team => team.source_coverage || team.source_coverage_notes?.length).length;
         if (teamsWithNotes) {
             seasonCoverage.classList.remove("hidden");
@@ -289,8 +345,10 @@ async function initialize() {
         const initialView = requestedButton.disabled ? "teams" : requestedButton.dataset.view;
         document.querySelector(`.view-tab[data-view="${initialView}"]`).click();
         const requestedTeam = pageParams.get("team");
-        if (requestedTeam === "__all__" || manifest.teams.some(team => team.key === requestedTeam)) {
-            teamSelect.value = requestedTeam;
+        const matchingTeam = manifest.teams.find(team => team.key === requestedTeam
+            || team.key.replace(/__[a-f0-9]{24}$/, "") === requestedTeam?.replace(/__[a-f0-9]{24}$/, ""));
+        if (requestedTeam === "__all__" || matchingTeam) {
+            teamSelect.value = matchingTeam?.key || requestedTeam;
             teamSelect.dispatchEvent(new Event("change"));
         } else if (limitedSeason) {
             teamSelect.value = "__all__";
@@ -1377,6 +1435,7 @@ function renderTeamTable(records) {
                     "SEASON"
                 ]
         );
+    if (multiSeasonRows) excluded.delete("SEASON");
 
 
     const allColumns = [
@@ -1443,6 +1502,7 @@ function renderTeamTable(records) {
             ];
 
 
+    if (multiSeasonRows) preferred.unshift("SEASON");
     const columns = [
         ...preferred.filter(
             column =>

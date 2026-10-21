@@ -130,6 +130,29 @@ button {
     max-width: 100%;
 }
 
+.season-picker-menu { position: relative; }
+.season-picker-menu summary { cursor: pointer; min-width: 145px; }
+.season-panel {
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 0;
+    width: 240px;
+    padding: 12px;
+    border: 1px solid var(--border-dark);
+    border-radius: 8px;
+    background: white;
+    color: var(--text);
+    box-shadow: 0 8px 24px #0003;
+    z-index: 30;
+}
+#seasonOptions label { display: flex; align-items: center; gap: 10px; padding: 10px 6px; cursor: pointer; }
+#seasonOptions input { width: 17px; height: 17px; accent-color: var(--accent); }
+.season-panel-actions { display: flex; justify-content: space-between; gap: 12px; border-top: 1px solid var(--border); padding-top: 12px; }
+.season-panel-actions button { border: 1px solid var(--border-dark); border-radius: 6px; background: var(--panel-soft); color: var(--text); padding: 8px 12px; }
+#applySeasons { background: var(--accent); color: white; }
+#applySeasons:disabled { opacity: .45; cursor: not-allowed; }
+@media (max-width: 700px) { .season-panel { left: 0; right: auto; width: min(240px, calc(100vw - 40px)); } }
+
 .season-picker {
     display: flex;
     flex-direction: column;

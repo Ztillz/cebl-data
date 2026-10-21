@@ -12,7 +12,7 @@
 
     <link
         rel="stylesheet"
-        href="css/styles.css?v=20261020"
+        href="css/styles.css?v=20261020-multi"
     >
 </head>
 
@@ -46,14 +46,19 @@
                         <option value="cebl">CEBL</option>
                     </select>
                 </label>
-                <label class="season-picker" for="seasonSelect">
-                    <span>Season</span>
-                    <select id="seasonSelect" class="season-select" disabled>
-                        <option value="2026-2027">2026</option>
-                        <option value="2025-2026">2025</option>
-                        <option value="2024-2025">2024</option>
-                    </select>
-                </label>
+                <div class="season-picker">
+                    <span id="seasonPickerLabel">Seasons</span>
+                    <details id="seasonPicker" class="season-picker-menu">
+                        <summary id="seasonSummary" class="season-select" aria-labelledby="seasonPickerLabel seasonSummary">Loading…</summary>
+                        <div class="season-panel">
+                            <div id="seasonOptions" role="group" aria-labelledby="seasonPickerLabel"></div>
+                            <div class="season-panel-actions">
+                                <button type="button" id="selectAllSeasons">Select all</button>
+                                <button type="button" id="applySeasons" disabled>Apply</button>
+                            </div>
+                        </div>
+                    </details>
+                </div>
                 <div id="dataStatus" class="data-status">Loading</div>
             </div>
 
@@ -839,12 +844,13 @@
     </main>
 
 
+    <script src="js/seasons.js?v=20261020-multi"></script>
         <script
-        src="js/app.js?v=20261020"
+        src="js/app.js?v=20261020-multi"
     ></script>
 
     <script
-        src="js/team.js?v=20261018"
+        src="js/team.js?v=20261020-multi"
     ></script>
 
 </body>

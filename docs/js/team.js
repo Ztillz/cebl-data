@@ -135,6 +135,10 @@ function syncTeamControls() {
 
 
 async function fetchTeamData(path) {
+    if (multiSeasonRows) {
+        if (!multiSeasonRows.has(path)) throw new Error("The selected multi-season report is unavailable.");
+        return multiSeasonRows.get(path);
+    }
     if (!path) {
         throw new Error(
             "The selected team report is missing from the manifest."

@@ -51,3 +51,14 @@ python -m http.server 8765 --bind 127.0.0.1 --directory docs
 
 Existing CEBL links such as `?season=2025-2026` still work. NBA links use
 `?league=nba&season=2022-2023&view=teams`.
+
+Use the Seasons menu to check one or more available seasons, then Apply. Select
+all checks every published season for that league. Multi-season views combine
+cumulative-box rows with a visible Season column; each source player/team/season
+row stays separate, and statistics are not summed across years. Team filters and
+CSV downloads work across the selected seasons. Choose one season to use its
+available Play Types, Shot Types, player reports, and leaderboards.
+
+Share a comparison with `?league=nba&seasons=all&view=teams`, or choose specific
+years with `?league=nba&seasons=2025-2026,2023-2024&view=teams`. Only published
+seasons are offered, including when switching leagues.
