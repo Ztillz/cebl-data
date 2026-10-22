@@ -1,0 +1,443 @@
+{
+  "version": 2,
+  "season": "2022-2023",
+  "league": "NBA G League",
+  "league_id": "g_league",
+  "competition_name": "NBA G League",
+  "source_competition_key": "54457dce300969b132fcfb36:COMP:560100ac8dc7a24394b9561e",
+  "game_scope": "regular_season",
+  "source_competition_label": "Regular Season",
+  "source_controls": "Accumulated Stats / All Games / All data",
+  "scope": "cumulative_box",
+  "generated_at_utc": "2026-10-22T12:32:24.220334+00:00",
+  "team_count": 30,
+  "player_count": 556,
+  "teams": [
+    {
+      "key": "austin_spurs__54457dd3300969b132fcfe6f",
+      "team": "Austin Spurs",
+      "source_team_id": "54457dd3300969b132fcfe6f",
+      "source_team_games": 32,
+      "path": "teams/austin_spurs__54457dd3300969b132fcfe6f/",
+      "cumulative_box": "teams/austin_spurs__54457dd3300969b132fcfe6f/cumulative_box.json",
+      "cumulative_box_csv": "teams/austin_spurs__54457dd3300969b132fcfe6f/cumulative_box.csv",
+      "team_totals": "teams/austin_spurs__54457dd3300969b132fcfe6f/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "birmingham_squadron__5d9e5b4f7455336e8763a4ac",
+      "team": "Birmingham Squadron",
+      "source_team_id": "5d9e5b4f7455336e8763a4ac",
+      "source_team_games": 32,
+      "path": "teams/birmingham_squadron__5d9e5b4f7455336e8763a4ac/",
+      "cumulative_box": "teams/birmingham_squadron__5d9e5b4f7455336e8763a4ac/cumulative_box.json",
+      "cumulative_box_csv": "teams/birmingham_squadron__5d9e5b4f7455336e8763a4ac/cumulative_box.csv",
+      "team_totals": "teams/birmingham_squadron__5d9e5b4f7455336e8763a4ac/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "capital_city_go_go__5bc39067aeda7199398147f4",
+      "team": "Capital City Go-Go",
+      "source_team_id": "5bc39067aeda7199398147f4",
+      "source_team_games": 32,
+      "path": "teams/capital_city_go_go__5bc39067aeda7199398147f4/",
+      "cumulative_box": "teams/capital_city_go_go__5bc39067aeda7199398147f4/cumulative_box.json",
+      "cumulative_box_csv": "teams/capital_city_go_go__5bc39067aeda7199398147f4/cumulative_box.csv",
+      "team_totals": "teams/capital_city_go_go__5bc39067aeda7199398147f4/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "cleveland_charge__54457dd3300969b132fcfe71",
+      "team": "Cleveland Charge",
+      "source_team_id": "54457dd3300969b132fcfe71",
+      "source_team_games": 32,
+      "path": "teams/cleveland_charge__54457dd3300969b132fcfe71/",
+      "cumulative_box": "teams/cleveland_charge__54457dd3300969b132fcfe71/cumulative_box.json",
+      "cumulative_box_csv": "teams/cleveland_charge__54457dd3300969b132fcfe71/cumulative_box.csv",
+      "team_totals": "teams/cleveland_charge__54457dd3300969b132fcfe71/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "college_park_skyhawks__59e6128444b2b8aa7e89bf2e",
+      "team": "College Park Skyhawks",
+      "source_team_id": "59e6128444b2b8aa7e89bf2e",
+      "source_team_games": 31,
+      "path": "teams/college_park_skyhawks__59e6128444b2b8aa7e89bf2e/",
+      "cumulative_box": "teams/college_park_skyhawks__59e6128444b2b8aa7e89bf2e/cumulative_box.json",
+      "cumulative_box_csv": "teams/college_park_skyhawks__59e6128444b2b8aa7e89bf2e/cumulative_box.csv",
+      "team_totals": "teams/college_park_skyhawks__59e6128444b2b8aa7e89bf2e/team_totals.json",
+      "source_coverage_notes": [
+        {
+          "type": "limited_regular_season_source_coverage",
+          "available_games": 31,
+          "expected_games": 32,
+          "message": "Synergy cumulative box contains 31 of 32 scheduled regular-season games. Available source statistics are retained; missing games were not added."
+        }
+      ],
+      "reports": {},
+      "source_coverage": {
+        "message": "Synergy cumulative box contains 31 of 32 scheduled regular-season games. Available source statistics are retained; missing games were not added."
+      }
+    },
+    {
+      "key": "delaware_blue_coats__54457dd3300969b132fcfe7c",
+      "team": "Delaware Blue Coats",
+      "source_team_id": "54457dd3300969b132fcfe7c",
+      "source_team_games": 32,
+      "path": "teams/delaware_blue_coats__54457dd3300969b132fcfe7c/",
+      "cumulative_box": "teams/delaware_blue_coats__54457dd3300969b132fcfe7c/cumulative_box.json",
+      "cumulative_box_csv": "teams/delaware_blue_coats__54457dd3300969b132fcfe7c/cumulative_box.csv",
+      "team_totals": "teams/delaware_blue_coats__54457dd3300969b132fcfe7c/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "g_league_ignite__6016e0a9c952fbab2f28a806",
+      "team": "G-League Ignite",
+      "source_team_id": "6016e0a9c952fbab2f28a806",
+      "source_team_games": 32,
+      "path": "teams/g_league_ignite__6016e0a9c952fbab2f28a806/",
+      "cumulative_box": "teams/g_league_ignite__6016e0a9c952fbab2f28a806/cumulative_box.json",
+      "cumulative_box_csv": "teams/g_league_ignite__6016e0a9c952fbab2f28a806/cumulative_box.csv",
+      "team_totals": "teams/g_league_ignite__6016e0a9c952fbab2f28a806/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "grand_rapids_gold__54457dd3300969b132fcfe7d",
+      "team": "Grand Rapids Gold",
+      "source_team_id": "54457dd3300969b132fcfe7d",
+      "source_team_games": 32,
+      "path": "teams/grand_rapids_gold__54457dd3300969b132fcfe7d/",
+      "cumulative_box": "teams/grand_rapids_gold__54457dd3300969b132fcfe7d/cumulative_box.json",
+      "cumulative_box_csv": "teams/grand_rapids_gold__54457dd3300969b132fcfe7d/cumulative_box.csv",
+      "team_totals": "teams/grand_rapids_gold__54457dd3300969b132fcfe7d/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "greensboro_swarm__579647b057620213986093ca",
+      "team": "Greensboro Swarm",
+      "source_team_id": "579647b057620213986093ca",
+      "source_team_games": 32,
+      "path": "teams/greensboro_swarm__579647b057620213986093ca/",
+      "cumulative_box": "teams/greensboro_swarm__579647b057620213986093ca/cumulative_box.json",
+      "cumulative_box_csv": "teams/greensboro_swarm__579647b057620213986093ca/cumulative_box.csv",
+      "team_totals": "teams/greensboro_swarm__579647b057620213986093ca/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "iowa_wolves__54457dd3300969b132fcfe6a",
+      "team": "Iowa Wolves",
+      "source_team_id": "54457dd3300969b132fcfe6a",
+      "source_team_games": 32,
+      "path": "teams/iowa_wolves__54457dd3300969b132fcfe6a/",
+      "cumulative_box": "teams/iowa_wolves__54457dd3300969b132fcfe6a/cumulative_box.json",
+      "cumulative_box_csv": "teams/iowa_wolves__54457dd3300969b132fcfe6a/cumulative_box.csv",
+      "team_totals": "teams/iowa_wolves__54457dd3300969b132fcfe6a/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "long_island_nets__57f3b8c81b427fb40bed5fc9",
+      "team": "Long Island Nets",
+      "source_team_id": "57f3b8c81b427fb40bed5fc9",
+      "source_team_games": 32,
+      "path": "teams/long_island_nets__57f3b8c81b427fb40bed5fc9/",
+      "cumulative_box": "teams/long_island_nets__57f3b8c81b427fb40bed5fc9/cumulative_box.json",
+      "cumulative_box_csv": "teams/long_island_nets__57f3b8c81b427fb40bed5fc9/cumulative_box.csv",
+      "team_totals": "teams/long_island_nets__57f3b8c81b427fb40bed5fc9/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "maine_celtics__54457dd3300969b132fcfe7a",
+      "team": "Maine Celtics",
+      "source_team_id": "54457dd3300969b132fcfe7a",
+      "source_team_games": 32,
+      "path": "teams/maine_celtics__54457dd3300969b132fcfe7a/",
+      "cumulative_box": "teams/maine_celtics__54457dd3300969b132fcfe7a/cumulative_box.json",
+      "cumulative_box_csv": "teams/maine_celtics__54457dd3300969b132fcfe7a/cumulative_box.csv",
+      "team_totals": "teams/maine_celtics__54457dd3300969b132fcfe7a/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "memphis_hustle__59e6128444b2b8aa7e89bf44",
+      "team": "Memphis Hustle",
+      "source_team_id": "59e6128444b2b8aa7e89bf44",
+      "source_team_games": 32,
+      "path": "teams/memphis_hustle__59e6128444b2b8aa7e89bf44/",
+      "cumulative_box": "teams/memphis_hustle__59e6128444b2b8aa7e89bf44/cumulative_box.json",
+      "cumulative_box_csv": "teams/memphis_hustle__59e6128444b2b8aa7e89bf44/cumulative_box.csv",
+      "team_totals": "teams/memphis_hustle__59e6128444b2b8aa7e89bf44/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "mexico_city_capitanes__6138db46ec3a2ac711ae2509",
+      "team": "Mexico City Capitanes",
+      "source_team_id": "6138db46ec3a2ac711ae2509",
+      "source_team_games": 32,
+      "path": "teams/mexico_city_capitanes__6138db46ec3a2ac711ae2509/",
+      "cumulative_box": "teams/mexico_city_capitanes__6138db46ec3a2ac711ae2509/cumulative_box.json",
+      "cumulative_box_csv": "teams/mexico_city_capitanes__6138db46ec3a2ac711ae2509/cumulative_box.csv",
+      "team_totals": "teams/mexico_city_capitanes__6138db46ec3a2ac711ae2509/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "motor_city_cruise__57f3b8c81b427fb40bed5fc7",
+      "team": "Motor City Cruise",
+      "source_team_id": "57f3b8c81b427fb40bed5fc7",
+      "source_team_games": 32,
+      "path": "teams/motor_city_cruise__57f3b8c81b427fb40bed5fc7/",
+      "cumulative_box": "teams/motor_city_cruise__57f3b8c81b427fb40bed5fc7/cumulative_box.json",
+      "cumulative_box_csv": "teams/motor_city_cruise__57f3b8c81b427fb40bed5fc7/cumulative_box.csv",
+      "team_totals": "teams/motor_city_cruise__57f3b8c81b427fb40bed5fc7/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "noblesville_boom__54457dd3300969b132fcfe6c",
+      "team": "Noblesville Boom",
+      "source_team_id": "54457dd3300969b132fcfe6c",
+      "source_team_games": 32,
+      "path": "teams/noblesville_boom__54457dd3300969b132fcfe6c/",
+      "cumulative_box": "teams/noblesville_boom__54457dd3300969b132fcfe6c/cumulative_box.json",
+      "cumulative_box_csv": "teams/noblesville_boom__54457dd3300969b132fcfe6c/cumulative_box.csv",
+      "team_totals": "teams/noblesville_boom__54457dd3300969b132fcfe6c/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "oklahoma_city_blue__54457dd3300969b132fcfe6e",
+      "team": "Oklahoma City Blue",
+      "source_team_id": "54457dd3300969b132fcfe6e",
+      "source_team_games": 32,
+      "path": "teams/oklahoma_city_blue__54457dd3300969b132fcfe6e/",
+      "cumulative_box": "teams/oklahoma_city_blue__54457dd3300969b132fcfe6e/cumulative_box.json",
+      "cumulative_box_csv": "teams/oklahoma_city_blue__54457dd3300969b132fcfe6e/cumulative_box.csv",
+      "team_totals": "teams/oklahoma_city_blue__54457dd3300969b132fcfe6e/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "osceola_magic__54457dd3300969b132fcfe78",
+      "team": "Osceola Magic",
+      "source_team_id": "54457dd3300969b132fcfe78",
+      "source_team_games": 30,
+      "path": "teams/osceola_magic__54457dd3300969b132fcfe78/",
+      "cumulative_box": "teams/osceola_magic__54457dd3300969b132fcfe78/cumulative_box.json",
+      "cumulative_box_csv": "teams/osceola_magic__54457dd3300969b132fcfe78/cumulative_box.csv",
+      "team_totals": "teams/osceola_magic__54457dd3300969b132fcfe78/team_totals.json",
+      "source_coverage_notes": [
+        {
+          "type": "limited_regular_season_source_coverage",
+          "available_games": 30,
+          "expected_games": 32,
+          "message": "Synergy cumulative box contains 30 of 32 scheduled regular-season games. Available source statistics are retained; missing games were not added."
+        }
+      ],
+      "reports": {},
+      "source_coverage": {
+        "message": "Synergy cumulative box contains 30 of 32 scheduled regular-season games. Available source statistics are retained; missing games were not added."
+      }
+    },
+    {
+      "key": "raptors_905__5642e3b6d269224c4b140762",
+      "team": "Raptors 905",
+      "source_team_id": "5642e3b6d269224c4b140762",
+      "source_team_games": 32,
+      "path": "teams/raptors_905__5642e3b6d269224c4b140762/",
+      "cumulative_box": "teams/raptors_905__5642e3b6d269224c4b140762/cumulative_box.json",
+      "cumulative_box_csv": "teams/raptors_905__5642e3b6d269224c4b140762/cumulative_box.csv",
+      "team_totals": "teams/raptors_905__5642e3b6d269224c4b140762/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "rio_grande_valley_vipers__54457dd3300969b132fcfe72",
+      "team": "Rio Grande Valley Vipers",
+      "source_team_id": "54457dd3300969b132fcfe72",
+      "source_team_games": 32,
+      "path": "teams/rio_grande_valley_vipers__54457dd3300969b132fcfe72/",
+      "cumulative_box": "teams/rio_grande_valley_vipers__54457dd3300969b132fcfe72/cumulative_box.json",
+      "cumulative_box_csv": "teams/rio_grande_valley_vipers__54457dd3300969b132fcfe72/cumulative_box.csv",
+      "team_totals": "teams/rio_grande_valley_vipers__54457dd3300969b132fcfe72/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "salt_lake_city_stars__57f3b8c81b427fb40bed5fc8",
+      "team": "Salt Lake City Stars",
+      "source_team_id": "57f3b8c81b427fb40bed5fc8",
+      "source_team_games": 32,
+      "path": "teams/salt_lake_city_stars__57f3b8c81b427fb40bed5fc8/",
+      "cumulative_box": "teams/salt_lake_city_stars__57f3b8c81b427fb40bed5fc8/cumulative_box.json",
+      "cumulative_box_csv": "teams/salt_lake_city_stars__57f3b8c81b427fb40bed5fc8/cumulative_box.csv",
+      "team_totals": "teams/salt_lake_city_stars__57f3b8c81b427fb40bed5fc8/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "san_diego_clippers__59e6128444b2b8aa7e89bf41",
+      "team": "San Diego Clippers",
+      "source_team_id": "59e6128444b2b8aa7e89bf41",
+      "source_team_games": 32,
+      "path": "teams/san_diego_clippers__59e6128444b2b8aa7e89bf41/",
+      "cumulative_box": "teams/san_diego_clippers__59e6128444b2b8aa7e89bf41/cumulative_box.json",
+      "cumulative_box_csv": "teams/san_diego_clippers__59e6128444b2b8aa7e89bf41/cumulative_box.csv",
+      "team_totals": "teams/san_diego_clippers__59e6128444b2b8aa7e89bf41/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "santa_cruz_warriors__54457dd3300969b132fcfe6b",
+      "team": "Santa Cruz Warriors",
+      "source_team_id": "54457dd3300969b132fcfe6b",
+      "source_team_games": 32,
+      "path": "teams/santa_cruz_warriors__54457dd3300969b132fcfe6b/",
+      "cumulative_box": "teams/santa_cruz_warriors__54457dd3300969b132fcfe6b/cumulative_box.json",
+      "cumulative_box_csv": "teams/santa_cruz_warriors__54457dd3300969b132fcfe6b/cumulative_box.csv",
+      "team_totals": "teams/santa_cruz_warriors__54457dd3300969b132fcfe6b/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "sioux_falls_skyforce__54457dd3300969b132fcfe6d",
+      "team": "Sioux Falls Skyforce",
+      "source_team_id": "54457dd3300969b132fcfe6d",
+      "source_team_games": 32,
+      "path": "teams/sioux_falls_skyforce__54457dd3300969b132fcfe6d/",
+      "cumulative_box": "teams/sioux_falls_skyforce__54457dd3300969b132fcfe6d/cumulative_box.json",
+      "cumulative_box_csv": "teams/sioux_falls_skyforce__54457dd3300969b132fcfe6d/cumulative_box.csv",
+      "team_totals": "teams/sioux_falls_skyforce__54457dd3300969b132fcfe6d/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "south_bay_lakers__54457dd3300969b132fcfe77",
+      "team": "South Bay Lakers",
+      "source_team_id": "54457dd3300969b132fcfe77",
+      "source_team_games": 32,
+      "path": "teams/south_bay_lakers__54457dd3300969b132fcfe77/",
+      "cumulative_box": "teams/south_bay_lakers__54457dd3300969b132fcfe77/cumulative_box.json",
+      "cumulative_box_csv": "teams/south_bay_lakers__54457dd3300969b132fcfe77/cumulative_box.csv",
+      "team_totals": "teams/south_bay_lakers__54457dd3300969b132fcfe77/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "stockton_kings__54457dd3300969b132fcfe79",
+      "team": "Stockton Kings",
+      "source_team_id": "54457dd3300969b132fcfe79",
+      "source_team_games": 32,
+      "path": "teams/stockton_kings__54457dd3300969b132fcfe79/",
+      "cumulative_box": "teams/stockton_kings__54457dd3300969b132fcfe79/cumulative_box.json",
+      "cumulative_box_csv": "teams/stockton_kings__54457dd3300969b132fcfe79/cumulative_box.csv",
+      "team_totals": "teams/stockton_kings__54457dd3300969b132fcfe79/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "texas_legends__54457dd3300969b132fcfe70",
+      "team": "Texas Legends",
+      "source_team_id": "54457dd3300969b132fcfe70",
+      "source_team_games": 32,
+      "path": "teams/texas_legends__54457dd3300969b132fcfe70/",
+      "cumulative_box": "teams/texas_legends__54457dd3300969b132fcfe70/cumulative_box.json",
+      "cumulative_box_csv": "teams/texas_legends__54457dd3300969b132fcfe70/cumulative_box.csv",
+      "team_totals": "teams/texas_legends__54457dd3300969b132fcfe70/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "westchester_knicks__54457dd3300969b132fcfe7b",
+      "team": "Westchester Knicks",
+      "source_team_id": "54457dd3300969b132fcfe7b",
+      "source_team_games": 31,
+      "path": "teams/westchester_knicks__54457dd3300969b132fcfe7b/",
+      "cumulative_box": "teams/westchester_knicks__54457dd3300969b132fcfe7b/cumulative_box.json",
+      "cumulative_box_csv": "teams/westchester_knicks__54457dd3300969b132fcfe7b/cumulative_box.csv",
+      "team_totals": "teams/westchester_knicks__54457dd3300969b132fcfe7b/team_totals.json",
+      "source_coverage_notes": [
+        {
+          "type": "limited_regular_season_source_coverage",
+          "available_games": 31,
+          "expected_games": 32,
+          "message": "Synergy cumulative box contains 31 of 32 scheduled regular-season games. Available source statistics are retained; missing games were not added."
+        }
+      ],
+      "reports": {},
+      "source_coverage": {
+        "message": "Synergy cumulative box contains 31 of 32 scheduled regular-season games. Available source statistics are retained; missing games were not added."
+      }
+    },
+    {
+      "key": "windy_city_bulls__57eead5d1c496ea6cc9bb83d",
+      "team": "Windy City Bulls",
+      "source_team_id": "57eead5d1c496ea6cc9bb83d",
+      "source_team_games": 32,
+      "path": "teams/windy_city_bulls__57eead5d1c496ea6cc9bb83d/",
+      "cumulative_box": "teams/windy_city_bulls__57eead5d1c496ea6cc9bb83d/cumulative_box.json",
+      "cumulative_box_csv": "teams/windy_city_bulls__57eead5d1c496ea6cc9bb83d/cumulative_box.csv",
+      "team_totals": "teams/windy_city_bulls__57eead5d1c496ea6cc9bb83d/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    },
+    {
+      "key": "wisconsin_herd__59e6128444b2b8aa7e89bf47",
+      "team": "Wisconsin Herd",
+      "source_team_id": "59e6128444b2b8aa7e89bf47",
+      "source_team_games": 32,
+      "path": "teams/wisconsin_herd__59e6128444b2b8aa7e89bf47/",
+      "cumulative_box": "teams/wisconsin_herd__59e6128444b2b8aa7e89bf47/cumulative_box.json",
+      "cumulative_box_csv": "teams/wisconsin_herd__59e6128444b2b8aa7e89bf47/cumulative_box.csv",
+      "team_totals": "teams/wisconsin_herd__59e6128444b2b8aa7e89bf47/team_totals.json",
+      "source_coverage_notes": [],
+      "reports": {}
+    }
+  ],
+  "players": [],
+  "leaderboards": {},
+  "regular_season_view": "captured",
+  "source_discovered_entry_count": 30,
+  "source_exclusions": [],
+  "coverage_status": "complete_source_discovery",
+  "coverage_notes": [
+    "All accepted source-discovered teams captured; any reviewed exclusions are documented separately. Completeness versus official schedules has not been independently audited.",
+    {
+      "team": "College Park Skyhawks",
+      "type": "limited_regular_season_source_coverage",
+      "available_games": 31,
+      "expected_games": 32,
+      "message": "Synergy cumulative box contains 31 of 32 scheduled regular-season games. Available source statistics are retained; missing games were not added."
+    },
+    {
+      "team": "Osceola Magic",
+      "type": "limited_regular_season_source_coverage",
+      "available_games": 30,
+      "expected_games": 32,
+      "message": "Synergy cumulative box contains 30 of 32 scheduled regular-season games. Available source statistics are retained; missing games were not added."
+    },
+    {
+      "team": "Westchester Knicks",
+      "type": "limited_regular_season_source_coverage",
+      "available_games": 31,
+      "expected_games": 32,
+      "message": "Synergy cumulative box contains 31 of 32 scheduled regular-season games. Available source statistics are retained; missing games were not added."
+    }
+  ],
+  "combined": {
+    "team_cumulative_box.json": "combined/team_cumulative_box.json",
+    "team_cumulative_box.csv": "combined/team_cumulative_box.csv"
+  },
+  "scheduled_regular_season_games": 32,
+  "schedule_source": "https://capitanes.gleague.nba.com/news/capitanes-announce-2022-23-season-schedule"
+}

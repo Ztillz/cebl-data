@@ -62,6 +62,33 @@
       "group": "Main leagues"
     },
     {
+      "id": "g_league",
+      "label": "NBA G League",
+      "group": "Main leagues",
+      "seasons": [
+        {
+          "id": "2025-2026",
+          "label": "2025-2026",
+          "path": "g_league/2025-2026/regular_season"
+        },
+        {
+          "id": "2024-2025",
+          "label": "2024-2025",
+          "path": "g_league/2024-2025/regular_season"
+        },
+        {
+          "id": "2023-2024",
+          "label": "2023-2024",
+          "path": "g_league/2023-2024/regular_season"
+        },
+        {
+          "id": "2022-2023",
+          "label": "2022-2023",
+          "path": "g_league/2022-2023/regular_season"
+        }
+      ]
+    },
+    {
       "id": "adriatic_league_aba",
       "label": "Adriatic League (ABA)",
       "group": "International",

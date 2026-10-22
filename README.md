@@ -9,6 +9,22 @@ player leaderboards for its previously published 2024–2026 seasons. Its older
 regular-season team cumulative boxes from 2022-2023 onward. Views enable only
 when that league/season's manifest advertises the corresponding reports.
 
+NBA G League also provides regular-season cumulative boxes for 2022-2023 through
+2025-2026. Opening Tip-Off Tournament and playoff stages are excluded. In 2025-2026,
+Winter Showcase games count toward the regular season except its championship;
+those eligible games are included and the exact championship game is excluded. Game
+counts are checked against the announced season formats (32, 34, 34, and 36
+regular-season games respectively), with source shortfalls disclosed per team.
+Source team labels are preserved as Synergy displays them, including later
+rebrands applied to historical seasons.
+For 2024-2025 and 2025-2026, Synergy's Regular Season label also covers opening
+tournament games. The exporter narrows the source's existing game query to the
+official regular-season date window and retains the selected game IDs and dates
+in each team's manifest entry. The selected-game count must match the cumulative
+footer GP; all returned games must belong to the requested team, season, league
+and regular-season dates. The 2025-2026 selection includes eligible games from
+Synergy's Showcase category and documents the reviewed championship exclusion.
+
 The League dropdown also includes 48 international competitions, with only
 completed seasons offered from 2022-2023 through 2025-2026. These exports contain
 team cumulative boxes, including player roster rows, across all source stages.
@@ -27,6 +43,7 @@ in `docs/data/synergy/international-coverage.json`.
 
 - Existing CEBL: `docs/data/synergy/<season>/`
 - NBA regular season: `docs/data/synergy/nba/<season>/regular_season/`
+- G League regular season: `docs/data/synergy/g_league/<season>/regular_season/`
 - International all stages: `docs/data/synergy/international/<league>/<season>/all_stages/`
 - Dataset catalog: `docs/data/synergy/catalog.json`
 
