@@ -206,6 +206,22 @@ button {
     line-height: 1.5;
 }
 
+.source-coverage-note summary {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.source-coverage-note ul {
+    max-height: 320px;
+    overflow-y: auto;
+    margin: 12px 0 0;
+    padding-left: 22px;
+}
+
+.source-coverage-note li + li {
+    margin-top: 8px;
+}
+
 .view-tab:disabled {
     opacity: 0.45;
     cursor: not-allowed;

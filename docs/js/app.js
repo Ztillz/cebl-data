@@ -1707,11 +1707,21 @@ function renderTeamTable(records, page = 0) {
         ? (manifest.coverage_notes || [])
         : (selectedTeam.source_coverage ? [{team: selectedTeam.team, ...selectedTeam.source_coverage}] : []);
     if (coverageNotes.length) {
-        const note = document.createElement("p");
+        const note = document.createElement("details");
         note.className = "source-coverage-note";
-        note.textContent = coverageNotes.map(item => typeof item === "string"
+        const messages = [...new Set(coverageNotes.map(item => typeof item === "string"
             ? item
-            : `${item.team ? `${item.team}: ` : ""}${item.message || ""}`).filter(Boolean).join(" ");
+            : `${item.team ? `${item.team}: ` : ""}${item.message || ""}`).filter(Boolean))];
+        const summary = document.createElement("summary");
+        summary.textContent = "Data coverage — view source notes and missing-game details";
+        note.appendChild(summary);
+        const list = document.createElement("ul");
+        messages.forEach(message => {
+            const item = document.createElement("li");
+            item.textContent = message;
+            list.appendChild(item);
+        });
+        note.appendChild(list);
         block.appendChild(note);
     }
 
