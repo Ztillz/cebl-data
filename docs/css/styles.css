@@ -141,9 +141,7 @@ button {
 #leagueSelectionCount { align-self: center; color: var(--muted); }
 #applyLeagues { background: var(--accent); color: white; }
 #applyLeagues:disabled { opacity: .45; cursor: not-allowed; }
-.team-pagination { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 14px; flex-wrap: wrap; color: var(--muted); font-size: 12px; border-bottom: 1px solid var(--border); }
-.team-pagination button { padding: 7px 12px; border: 1px solid var(--border-dark); border-radius: 6px; background: var(--panel-soft); }
-.team-pagination button:disabled { opacity: .4; cursor: not-allowed; }
+.team-scroll-progress { padding: 12px 14px; color: var(--muted); font-size: 12px; text-align: center; }
 
 .season-picker-menu { position: relative; }
 .season-picker-menu summary { cursor: pointer; min-width: 145px; }

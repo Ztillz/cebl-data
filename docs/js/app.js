@@ -1455,7 +1455,11 @@ function resetTeamFilter() {
     };
 }
 
-function renderTeamTable(records, page = 0) {
+let teamRowsObserver = null;
+
+function renderTeamTable(records) {
+    teamRowsObserver?.disconnect();
+    teamRowsObserver = null;
     teamTable.innerHTML = "";
 
     if (
@@ -2053,28 +2057,6 @@ function renderTeamTable(records, page = 0) {
         filterBar
     );
 
-    const pageSize = selectedLeagues.length > 1 ? 250 : displayedRecords.length;
-    const pageCount = Math.max(1, Math.ceil(displayedRecords.length / (pageSize || 1)));
-    const currentPage = Math.min(Math.max(page, 0), pageCount - 1);
-    const visibleRecords = displayedRecords.slice(currentPage * pageSize, (currentPage + 1) * pageSize);
-    if (pageCount > 1) {
-        const pager = document.createElement("div");
-        pager.className = "team-pagination";
-        const previous = document.createElement("button");
-        previous.textContent = "Previous";
-        previous.disabled = currentPage === 0;
-        previous.addEventListener("click", () => renderTeamTable(records, currentPage - 1));
-        const status = document.createElement("span");
-        status.textContent = `${currentPage * pageSize + 1}–${Math.min((currentPage + 1) * pageSize, displayedRecords.length)} of ${displayedRecords.length} rows. CSV includes all filtered rows.`;
-        const next = document.createElement("button");
-        next.textContent = "Next";
-        next.disabled = currentPage === pageCount - 1;
-        next.addEventListener("click", () => renderTeamTable(records, currentPage + 1));
-        pager.append(previous, status, next);
-        block.appendChild(pager);
-    }
-
-
     /* ========================================================
        EMPTY FILTER RESULT
     ======================================================== */
@@ -2218,31 +2200,32 @@ function renderTeamTable(records, page = 0) {
         document.createElement("tbody");
 
 
-    visibleRecords.forEach(record => {
-        const tr =
-            document.createElement("tr");
+    let renderedCount = 0;
+    const batchSize = 250;
+    const progress = document.createElement("div");
+    progress.className = "team-scroll-progress";
+    progress.setAttribute("role", "status");
 
-
-        columns.forEach(column => {
-            const td =
-                document.createElement("td");
-
-            td.textContent =
-                formatValue(
-                    record[column],
-                    column
-                );
-
-            tr.appendChild(
-                td
-            );
+    const appendRows = () => {
+        const fragment = document.createDocumentFragment();
+        const end = Math.min(renderedCount + batchSize, displayedRecords.length);
+        displayedRecords.slice(renderedCount, end).forEach(record => {
+            const tr = document.createElement("tr");
+            columns.forEach(column => {
+                const td = document.createElement("td");
+                td.textContent = formatValue(record[column], column);
+                tr.appendChild(td);
+            });
+            fragment.appendChild(tr);
         });
-
-
-        tbody.appendChild(
-            tr
-        );
-    });
+        tbody.appendChild(fragment);
+        renderedCount = end;
+        progress.textContent = renderedCount < displayedRecords.length
+            ? `${renderedCount.toLocaleString()} of ${displayedRecords.length.toLocaleString()} rows shown — scroll for more`
+            : `All ${displayedRecords.length.toLocaleString()} rows shown`;
+        if (renderedCount === displayedRecords.length) teamRowsObserver?.disconnect();
+    };
+    appendRows();
 
 
     table.appendChild(
@@ -2257,9 +2240,14 @@ function renderTeamTable(records, page = 0) {
         wrapper
     );
 
-    teamTable.appendChild(
-        block
-    );
+    block.appendChild(progress);
+    teamTable.appendChild(block);
+    if (renderedCount < displayedRecords.length) {
+        teamRowsObserver = new IntersectionObserver(entries => {
+            if (entries.some(entry => entry.isIntersecting)) appendRows();
+        }, {rootMargin: "600px 0px"});
+        teamRowsObserver.observe(progress);
+    }
 }
 
 /* ============================================================
