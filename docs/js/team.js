@@ -50,7 +50,7 @@ function populateTeamSelect() {
                 document.createElement("option");
 
             option.value = team.key;
-            option.textContent = team.team;
+            option.textContent = team.display_name || team.team;
 
             teamSelect.appendChild(option);
         });
@@ -177,7 +177,7 @@ async function loadSelectedTeamView() {
     );
 
     selectedTeamName.textContent =
-        selectedTeam.team;
+        selectedTeam.display_name || selectedTeam.team;
 
     syncTeamControls();
 

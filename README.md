@@ -62,3 +62,14 @@ available Play Types, Shot Types, player reports, and leaderboards.
 Share a comparison with `?league=nba&seasons=all&view=teams`, or choose specific
 years with `?league=nba&seasons=2025-2026,2023-2024&view=teams`. Only published
 seasons are offered, including when switching leagues.
+
+The Leagues picker supports searching and checking several competitions before
+applying. Multi-league comparisons add a League column and keep a club's rows
+separate for each competition. Seasons are chosen from the selected leagues'
+published years; leagues without data for a selected year are disclosed rather
+than substituted with another year. Large multi-league tables show 250 rows per
+page, while CSV downloads include every filtered row across all pages.
+
+Reset filters returns to the default CEBL league's latest season with all teams
+and clears team, stat, and sort filters. Share comparisons using, for example,
+`?leagues=nba,australian_nbl&seasons=all&view=teams`.

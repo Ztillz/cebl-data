@@ -5,6 +5,9 @@ let SELECTED_SEASON = null;
 let DATA_ROOT = null;
 let selectedSeasonDatasets = [];
 let multiSeasonRows = null;
+let selectedLeagues = [];
+let selectedSeasonIds = [];
+let seasonChoices = [];
 
 let manifest = null;
 
@@ -69,21 +72,56 @@ const seasonOptions = document.getElementById("seasonOptions");
 const seasonSummary = document.getElementById("seasonSummary");
 const applySeasons = document.getElementById("applySeasons");
 const seasonCoverage = document.getElementById("seasonCoverage");
-const leagueSelect = document.getElementById("leagueSelect");
+const leagueOptions = document.getElementById("leagueOptions");
+const leagueSummary = document.getElementById("leagueSummary");
+const applyLeagues = document.getElementById("applyLeagues");
 
-leagueSelect.addEventListener("change", () => {
-    const league = datasetCatalog.leagues.find(item => item.id === leagueSelect.value);
-    if (!league) return;
+function writeLeagueParams(url, ids) {
+    url.searchParams.delete("league");
+    url.searchParams.delete("leagues");
+    url.searchParams.set(ids.length === 1 ? "league" : "leagues", ids.join(","));
+}
+
+applyLeagues.addEventListener("click", () => {
+    const ids = [...leagueOptions.querySelectorAll("input:checked")].map(input => input.value);
+    if (!ids.length) return;
     const url = new URL(window.location.href);
-    url.searchParams.set("league", league.id);
+    writeLeagueParams(url, ids);
+    const options = availableSeasons(datasetCatalog.leagues.filter(league => ids.includes(league.id)));
+    const keepAll = selectedSeasonIds.length > 1 && selectedSeasonIds.length === seasonChoices.length;
+    const years = options.filter(season => selectedSeasonIds.includes(season.id));
+    url.searchParams.delete("season");
     url.searchParams.delete("seasons");
-    if (selectedSeasonDatasets.length > 1) {
-        url.searchParams.delete("season");
-        url.searchParams.set("seasons", league.seasons.map(season => season.id).join(","));
-    } else url.searchParams.set("season", league.seasons[0].id);
+    if (keepAll) url.searchParams.set("seasons", "all");
+    else {
+        const selected = years.length ? years : [options[0]];
+        url.searchParams.set(selected.length === 1 ? "season" : "seasons", selected.map(season => season.id).join(","));
+    }
     url.searchParams.delete("team");
     const view = document.querySelector(".view-tab.active")?.dataset.view;
     if (view) url.searchParams.set("view", view);
+    window.location.assign(url);
+});
+leagueOptions.addEventListener("change", () => {
+    const count = leagueOptions.querySelectorAll("input:checked").length;
+    applyLeagues.disabled = count === 0;
+    document.getElementById("leagueSelectionCount").textContent = `${count} selected`;
+});
+document.getElementById("leagueSearch").addEventListener("input", event => {
+    const search = event.target.value.trim().toLocaleLowerCase();
+    leagueOptions.querySelectorAll("label").forEach(label => {
+        label.hidden = !label.textContent.toLocaleLowerCase().includes(search);
+    });
+});
+document.getElementById("resetFilters").addEventListener("click", () => {
+    const league = datasetCatalog.leagues.find(item => item.id === datasetCatalog.default_league) || datasetCatalog.leagues[0];
+    const url = new URL(window.location.href);
+    url.search = "";
+    url.hash = "";
+    url.searchParams.set("league", league.id);
+    url.searchParams.set("season", league.seasons[0].id);
+    url.searchParams.set("view", "teams");
+    url.searchParams.set("team", "__all__");
     window.location.assign(url);
 });
 
@@ -91,7 +129,7 @@ applySeasons.addEventListener("click", () => {
     const selected = [...seasonOptions.querySelectorAll("input:checked")].map(input => input.value);
     if (!selected.length) return;
     const url = new URL(window.location.href);
-    url.searchParams.set("league", selectedLeague.id);
+    writeLeagueParams(url, selectedLeagues.map(league => league.id));
     url.searchParams.delete("season");
     url.searchParams.delete("seasons");
     url.searchParams.set(selected.length === 1 ? "season" : "seasons", selected.join(","));
@@ -109,16 +147,18 @@ document.getElementById("selectAllSeasons").addEventListener("click", () => {
     applySeasons.disabled = false;
 });
 document.addEventListener("click", event => {
-    const picker = document.getElementById("seasonPicker");
-    if (!picker.contains(event.target)) picker.open = false;
+    document.querySelectorAll(".season-picker-menu").forEach(picker => {
+        if (!picker.contains(event.target)) picker.open = false;
+    });
 });
-document.getElementById("seasonPicker").addEventListener("keydown", event => {
+document.querySelectorAll(".season-picker-menu").forEach(picker => {
+picker.addEventListener("keydown", event => {
     if (event.key === "Escape") {
-        document.getElementById("seasonPicker").open = false;
-        seasonSummary.focus();
+        picker.open = false;
+        picker.querySelector("summary").focus();
     }
 });
-document.getElementById("seasonPicker").addEventListener("toggle", event => {
+picker.addEventListener("toggle", event => {
     if (!event.target.open) return;
     const panel = event.target.querySelector(".season-panel");
     panel.style.left = "auto";
@@ -127,6 +167,7 @@ document.getElementById("seasonPicker").addEventListener("toggle", event => {
         panel.style.left = "0";
         panel.style.right = "auto";
     }
+});
 });
 
 const playersView = document.getElementById("playersView");
@@ -258,51 +299,56 @@ async function fetchJson(url) {
 async function initialize() {
     try {
         datasetCatalog = await fetchJson("data/synergy/catalog.json");
-        selectedLeague = datasetCatalog.leagues.find(item => item.id === pageParams.get("league"))
-            || datasetCatalog.leagues.find(item => item.id === datasetCatalog.default_league)
-            || datasetCatalog.leagues[0];
-        selectedSeasonDatasets = requestedSeasonDatasets(selectedLeague, pageParams);
+        selectedLeagues = requestedLeagues(datasetCatalog, pageParams);
+        selectedLeague = selectedLeagues[0];
+        seasonChoices = selectedLeagues.length === 1 ? selectedLeague.seasons : availableSeasons(selectedLeagues);
+        selectedSeasonIds = requestedSeasonDatasets({seasons: seasonChoices}, pageParams).map(season => season.id);
+        selectedSeasonDatasets = selectedLeagues.flatMap(league => league.seasons
+            .filter(season => selectedSeasonIds.includes(season.id))
+            .map(season => ({...season, leagueId: league.id, leagueLabel: league.label})));
         const dataset = selectedSeasonDatasets[0];
-        SELECTED_SEASON = selectedSeasonDatasets.map(season => season.id).join("_");
+        SELECTED_SEASON = selectedSeasonIds.join("_");
         DATA_ROOT = `data/synergy/${dataset.path}`;
-        const leagueGroups = new Map();
-        for (const league of datasetCatalog.leagues) {
-            const groupName = league.group || "Leagues";
-            if (!leagueGroups.has(groupName)) {
-                const group = document.createElement("optgroup");
-                group.label = groupName;
-                leagueGroups.set(groupName, group);
-            }
-            leagueGroups.get(groupName).appendChild(new Option(league.label, league.id));
-        }
-        leagueSelect.replaceChildren(...leagueGroups.values());
-        leagueSelect.value = selectedLeague.id;
-        seasonOptions.replaceChildren(...selectedLeague.seasons.map(season => {
+        leagueOptions.replaceChildren(...datasetCatalog.leagues.map(league => {
+            const label = document.createElement("label");
+            const input = document.createElement("input");
+            input.type = "checkbox";
+            input.value = league.id;
+            input.checked = selectedLeagues.some(item => item.id === league.id);
+            label.append(input, document.createTextNode(league.label));
+            return label;
+        }));
+        leagueSummary.textContent = selectedLeagues.length === 1 ? selectedLeague.label : `${selectedLeagues.length} leagues`;
+        applyLeagues.disabled = false;
+        document.getElementById("leagueSelectionCount").textContent = `${selectedLeagues.length} selected`;
+        document.getElementById("resetFilters").disabled = false;
+        seasonOptions.replaceChildren(...seasonChoices.map(season => {
             const label = document.createElement("label");
             const input = document.createElement("input");
             input.type = "checkbox";
             input.value = season.id;
-            input.checked = selectedSeasonDatasets.some(item => item.id === season.id);
+            input.checked = selectedSeasonIds.includes(season.id);
             label.append(input, document.createTextNode(season.label));
             return label;
         }));
-        seasonSummary.textContent = selectedSeasonDatasets.length === 1 ? dataset.label
-            : `${selectedSeasonDatasets.length} seasons${selectedSeasonDatasets.length === selectedLeague.seasons.length ? " (all)" : ""}`;
-        leagueSelect.disabled = false;
+        seasonSummary.textContent = selectedSeasonIds.length === 1 ? seasonChoices.find(season => season.id === selectedSeasonIds[0]).label
+            : `${selectedSeasonIds.length} seasons${selectedSeasonIds.length === seasonChoices.length ? " (all)" : ""}`;
         applySeasons.disabled = false;
-        document.getElementById("leagueLabel").textContent = `${selectedLeague.label} DATA`;
-        document.title = `${selectedLeague.label} Synergy Browser`;
-        const sources = await Promise.all(selectedSeasonDatasets.map(season => fetchJson(`data/synergy/${season.path}/manifest.json`)));
-        if (selectedSeasonDatasets.length > 1) {
-            const rows = await Promise.all(sources.map((source, index) => fetchJson(
-                `data/synergy/${selectedSeasonDatasets[index].path}/${source.combined["team_cumulative_box.json"]}`)));
-            const combined = combineSeasonBoxes(selectedSeasonDatasets, sources, rows);
+        const leagueLabel = selectedLeagues.length === 1 ? selectedLeague.label : `${selectedLeagues.length} leagues`;
+        document.getElementById("leagueLabel").textContent = `${leagueLabel} DATA`;
+        document.title = `${leagueLabel} Synergy Browser`;
+        const sources = await fetchWithLimit(selectedSeasonDatasets, season => fetchJson(`data/synergy/${season.path}/manifest.json`));
+        if (selectedSeasonDatasets.length > 1 || selectedLeagues.length > 1) {
+            dataStatus.textContent = `Loading ${selectedSeasonDatasets.length} league-seasons…`;
+            const rows = await fetchWithLimit(sources, (source, index) => fetchJson(
+                `data/synergy/${selectedSeasonDatasets[index].path}/${source.combined["team_cumulative_box.json"]}`));
+            const combined = combineSeasonBoxes(selectedSeasonDatasets, sources, rows, selectedLeagues.length > 1);
             manifest = combined.manifest;
             multiSeasonRows = combined.rowsByTeam;
         } else manifest = sources[0];
 
         seasonLabel.textContent =
-            `${manifest.season} • ${selectedLeague.label}${manifest.game_scope === "regular_season" ? " • Regular season" : manifest.game_scope === "all_stages" ? " • All stages" : ""}`;
+            `${manifest.season} • ${leagueLabel}${manifest.game_scope === "regular_season" ? " • Regular season" : manifest.game_scope === "all_stages" ? " • All stages" : ""}`;
 
         dataStatus.textContent =
             `${manifest.player_count} ${manifest.scope === "cumulative_box" ? "player entries" : "players"} • ${manifest.team_count} teams`;
@@ -322,7 +368,17 @@ async function initialize() {
         seasonCoverage.textContent = limitedSeason
             ? `${manifest.game_scope === "regular_season" ? "Regular season cumulative" : manifest.game_scope === "all_stages" ? "Cumulative (all stages)" : "Cumulative"} box reports are available. Play Types and Shot Types are not available for this league and season.`
             : "";
-        if (multiSeasonRows) seasonCoverage.textContent = "Comparing selected seasons: each player’s team-season stays on its own row; statistics are not added across years. Select one season to browse its other available reports.";
+        if (multiSeasonRows) seasonCoverage.textContent = "Comparing selected leagues and seasons: each player’s league/team/season stays on its own row; statistics are not added together. Select one league and season to browse its other available reports.";
+        if (selectedLeagues.length > 1 && manifest.game_scope === "mixed") {
+            const scopes = selectedLeagues.filter(league => selectedSeasonDatasets.some(dataset => dataset.leagueId === league.id)).map(league => {
+                const scope = new Set(sources.filter((source, index) => selectedSeasonDatasets[index].leagueId === league.id).map(source => source.game_scope));
+                const label = scope.size === 1 && scope.has("regular_season") ? "regular season" : scope.size === 1 && scope.has("all_stages") ? "all stages" : "published source scope";
+                return `${league.label}: ${label}`;
+            });
+            seasonCoverage.textContent += ` Game scope varies: ${scopes.length <= 4 ? scopes.join("; ") : "check individual league views for coverage"}.`;
+        }
+        const missingLeagues = selectedLeagues.filter(league => !selectedSeasonDatasets.some(dataset => dataset.leagueId === league.id));
+        if (missingLeagues.length) seasonCoverage.textContent += ` No published data in the selected seasons for: ${missingLeagues.map(league => league.label).join(", ")}.`;
         const teamsWithNotes = manifest.teams.filter(team => team.source_coverage || team.source_coverage_notes?.length).length;
         if (teamsWithNotes) {
             seasonCoverage.classList.remove("hidden");
@@ -346,7 +402,7 @@ async function initialize() {
         document.querySelector(`.view-tab[data-view="${initialView}"]`).click();
         const requestedTeam = pageParams.get("team");
         const matchingTeam = manifest.teams.find(team => team.key === requestedTeam
-            || team.key.replace(/__[a-f0-9]{24}$/, "") === requestedTeam?.replace(/__[a-f0-9]{24}$/, ""));
+            || (selectedLeagues.length === 1 && team.key.replace(/__[a-f0-9]{24}$/, "") === requestedTeam?.replace(/__[a-f0-9]{24}$/, "")));
         if (requestedTeam === "__all__" || matchingTeam) {
             teamSelect.value = matchingTeam?.key || requestedTeam;
             teamSelect.dispatchEvent(new Event("change"));
@@ -1399,7 +1455,7 @@ function resetTeamFilter() {
     };
 }
 
-function renderTeamTable(records) {
+function renderTeamTable(records, page = 0) {
     teamTable.innerHTML = "";
 
     if (
@@ -1503,6 +1559,7 @@ function renderTeamTable(records) {
 
 
     if (multiSeasonRows) preferred.unshift("SEASON");
+    if (selectedLeagues.length > 1) preferred.unshift("LEAGUE");
     const columns = [
         ...preferred.filter(
             column =>
@@ -1579,7 +1636,7 @@ function renderTeamTable(records) {
         document.createElement("span");
 
     title.textContent =
-        selectedTeam.team;
+        selectedTeam.display_name || selectedTeam.team;
 
 
     const actions =
@@ -1986,6 +2043,27 @@ function renderTeamTable(records) {
         filterBar
     );
 
+    const pageSize = selectedLeagues.length > 1 ? 250 : displayedRecords.length;
+    const pageCount = Math.max(1, Math.ceil(displayedRecords.length / (pageSize || 1)));
+    const currentPage = Math.min(Math.max(page, 0), pageCount - 1);
+    const visibleRecords = displayedRecords.slice(currentPage * pageSize, (currentPage + 1) * pageSize);
+    if (pageCount > 1) {
+        const pager = document.createElement("div");
+        pager.className = "team-pagination";
+        const previous = document.createElement("button");
+        previous.textContent = "Previous";
+        previous.disabled = currentPage === 0;
+        previous.addEventListener("click", () => renderTeamTable(records, currentPage - 1));
+        const status = document.createElement("span");
+        status.textContent = `${currentPage * pageSize + 1}–${Math.min((currentPage + 1) * pageSize, displayedRecords.length)} of ${displayedRecords.length} rows. CSV includes all filtered rows.`;
+        const next = document.createElement("button");
+        next.textContent = "Next";
+        next.disabled = currentPage === pageCount - 1;
+        next.addEventListener("click", () => renderTeamTable(records, currentPage + 1));
+        pager.append(previous, status, next);
+        block.appendChild(pager);
+    }
+
 
     /* ========================================================
        EMPTY FILTER RESULT
@@ -2130,7 +2208,7 @@ function renderTeamTable(records) {
         document.createElement("tbody");
 
 
-    displayedRecords.forEach(record => {
+    visibleRecords.forEach(record => {
         const tr =
             document.createElement("tr");
 
@@ -6544,6 +6622,7 @@ function downloadTeamTableCsv(
      * Put the most useful identity columns first.
      */
     const preferred = [
+        "LEAGUE",
         "TEAM",
         "SEASON",
         "PLAYER",
@@ -6582,7 +6661,7 @@ function downloadTeamTableCsv(
     ];
 
     const filename =
-        `${selectedLeague.id}__${sanitizeFilenamePart(
+        `${selectedLeagues.length === 1 ? selectedLeague.id : `${selectedLeagues.length}_leagues`}__${sanitizeFilenamePart(
             selectedTeam?.team
         )}__${SELECTED_SEASON}__cumulative_box.csv`;
 

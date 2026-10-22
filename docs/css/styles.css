@@ -125,10 +125,25 @@ button {
     flex-wrap: wrap;
 }
 
-#leagueSelect {
+#leagueSummary {
     width: clamp(190px, 26vw, 330px);
     max-width: 100%;
 }
+
+.season-panel.league-panel { width: min(360px, calc(100vw - 40px)); }
+#leagueSearch { width: 100%; padding: 9px 10px; border: 1px solid var(--border-dark); border-radius: 6px; margin-bottom: 8px; }
+#leagueOptions { max-height: min(340px, 50vh); overflow-y: auto; }
+#leagueOptions label { display: flex; align-items: center; gap: 10px; padding: 10px 6px; cursor: pointer; line-height: 1.4; }
+#leagueOptions label[hidden] { display: none; }
+#leagueOptions input { width: 17px; height: 17px; accent-color: var(--accent); flex: none; }
+.reset-filters { align-self: flex-end; padding: 9px 12px; background: #1f2937; color: white; border: 1px solid #4b5563; border-radius: 7px; font: inherit; font-size: 12px; cursor: pointer; }
+.reset-filters:disabled { opacity: .45; cursor: not-allowed; }
+#leagueSelectionCount { align-self: center; color: var(--muted); }
+#applyLeagues { background: var(--accent); color: white; }
+#applyLeagues:disabled { opacity: .45; cursor: not-allowed; }
+.team-pagination { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 14px; flex-wrap: wrap; color: var(--muted); font-size: 12px; border-bottom: 1px solid var(--border); }
+.team-pagination button { padding: 7px 12px; border: 1px solid var(--border-dark); border-radius: 6px; background: var(--panel-soft); }
+.team-pagination button:disabled { opacity: .4; cursor: not-allowed; }
 
 .season-picker-menu { position: relative; }
 .season-picker-menu summary { cursor: pointer; min-width: 145px; }

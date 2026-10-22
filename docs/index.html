@@ -12,7 +12,7 @@
 
     <link
         rel="stylesheet"
-        href="css/styles.css?v=20261020-multi"
+        href="css/styles.css?v=20261022-leagues"
     >
 </head>
 
@@ -40,12 +40,21 @@
             </div>
 
             <div class="header-actions">
-                <label class="season-picker" for="leagueSelect">
-                    <span>League</span>
-                    <select id="leagueSelect" class="season-select" disabled>
-                        <option value="cebl">CEBL</option>
-                    </select>
-                </label>
+                <div class="season-picker">
+                    <span id="leaguePickerLabel">Leagues</span>
+                    <details id="leaguePicker" class="season-picker-menu">
+                        <summary id="leagueSummary" class="season-select" aria-labelledby="leaguePickerLabel leagueSummary">Loading…</summary>
+                        <div class="season-panel league-panel">
+                            <input id="leagueSearch" type="search" placeholder="Search leagues…" aria-label="Search leagues">
+                            <div id="leagueOptions" role="group" aria-labelledby="leaguePickerLabel"></div>
+                            <div class="season-panel-actions">
+                                <span id="leagueSelectionCount" aria-live="polite"></span>
+                                <button type="button" id="applyLeagues" disabled>Apply</button>
+                            </div>
+                        </div>
+                    </details>
+                </div>
+                <button id="resetFilters" class="reset-filters" type="button" disabled title="Return to the default league and latest season; clear team and stat filters">Reset filters</button>
                 <div class="season-picker">
                     <span id="seasonPickerLabel">Seasons</span>
                     <details id="seasonPicker" class="season-picker-menu">
@@ -844,13 +853,13 @@
     </main>
 
 
-    <script src="js/seasons.js?v=20261020-multi"></script>
+    <script src="js/seasons.js?v=20261022-leagues"></script>
         <script
-        src="js/app.js?v=20261020-multi"
+        src="js/app.js?v=20261022-leagues"
     ></script>
 
     <script
-        src="js/team.js?v=20261020-multi"
+        src="js/team.js?v=20261022-leagues"
     ></script>
 
 </body>
